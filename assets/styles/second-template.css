@@ -11,8 +11,8 @@
 }
 
 .second-template__frame::-webkit-scrollbar {
-  /* width: 0.5em; */
-  /* background-color: #f5f5f5; */
+  width: 0.5em;
+  background-color: #f5f5f5;
 }
 .second-template__frame {
   overflow-x: hidden;
