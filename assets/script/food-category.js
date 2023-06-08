@@ -14,11 +14,17 @@ swiperSlides.forEach(function (slideText, index) {
 
       // Add active class to the clicked slide
       $(this).addClass("active");
+
+      // Update the active index text
+      $(".second-template__food h2").text(slideText);
     });
 
   // Set the first slide as active by default
   if (index === 0) {
     swiperSlide.addClass("active");
+
+    // Set the initial active index text
+    $(".second-template__food h2").text(slideText);
   }
 
   swiperWrapper.append(swiperSlide);
