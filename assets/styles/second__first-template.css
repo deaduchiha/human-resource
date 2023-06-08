@@ -1,6 +1,6 @@
 .first-template__container {
   /* first-template__container background */
-  background: #323232;
+  background: #ffffff;
 
   display: flex;
   align-items: center;
@@ -16,19 +16,14 @@
 }
 
 .first-template__frame {
-  border-bottom-left-radius: 28px;
-  border-top-left-radius: 28px;
-
-  position: relative;
-  right: 0;
-  margin-right: 0;
+  border-radius: 28px;
 
   /* template-container__frame width&height */
   width: 224px;
   height: 56px;
 
   /* template-container__frame background*/
-  background-color: #88b683;
+  background-color: #4a4a3d;
 
   display: flex;
   align-items: center;
@@ -41,30 +36,30 @@
 .first-template__container h2 {
   font-size: 24px;
   font-weight: bold;
-  color: #fff;
+  color: #323232;
 }
 .first-template__container span {
-  color: #fff;
+  color: #323232;
   font-size: 16px;
 }
 
-.first-template__container__pages {
+.first-template__pages {
   position: absolute;
   bottom: 17px;
   left: 17px;
   display: flex;
   gap: 5px;
 }
-.first-template__container__pages div {
+.first-template__pages div {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #575757;
+  background-color: #d9d9d9;
 }
 
-.first-template__container__pages div:first-child {
+.first-template__pages div:first-child {
   width: 16px;
-  background-color: #efefef;
+  background-color: #a9a9a9;
   border-radius: 4px;
 }
 
