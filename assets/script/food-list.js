@@ -60,7 +60,7 @@ const foodItems = [
 // Create a function to generate the HTML structure for each food item
 function createFoodItemHTML(item) {
   // Create the parent container
-  const foodListContainer = $("<div>").addClass("food-list");
+  const foodListContainer = $("<div>").addClass("food-list openBtn");
 
   // Create the image container
   const imageContainer = $("<div>").addClass("food-list__image");

@@ -1,6 +1,20 @@
 // popup
 $(document).ready(function () {
-  $("#openBtn").click(function () {
+  $(".openBtn").click(function () {
+    // Get the index of the clicked element
+    const index = $(this).index();
+
+    // Get the corresponding food item from the foodItems array
+    const foodItem = foodItems[index];
+
+    // Update the popup content with the food item details
+    $("#popup .food-details__heading").text(foodItem.headingText);
+    $("#popup .food-details__image").attr("src", foodItem.imageSrc);
+    $("#popup .food-details__price").text(
+      foodItem.priceValue + " " + foodItem.priceCurrency
+    );
+
+    // Show the popup
     $("#popup").fadeIn();
   });
 
