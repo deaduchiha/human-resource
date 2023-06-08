@@ -11,8 +11,8 @@
 }
 
 .second-template__frame::-webkit-scrollbar {
-  width: 0.5em;
-  background-color: #f5f5f5;
+  /* width: 0.5em; */
+  /* background-color: #f5f5f5; */
 }
 .second-template__frame {
   overflow-x: hidden;
@@ -62,6 +62,10 @@
   bottom: 0;
   margin-bottom: 0;
   margin-left: 0;
+  width: 112px;
+  height: 87px;
+  border-top-right-radius: 34px;
+  border-top-left-radius: 34px;
 }
 
 .food-list {
