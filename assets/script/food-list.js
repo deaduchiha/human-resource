@@ -23,6 +23,38 @@ const foodItems = [
     priceValue: "۱۸۵٬۰۰۰ ",
     priceCurrency: "تومان",
   },
+  {
+    category: "پیتزا",
+    imageSrc: "assets/images/pitza/pitza (3).png",
+    imageAlt: "pizza 3",
+    headingText: "سبزیجات",
+    priceValue: "۱۸۵٬۰۰۰ ",
+    priceCurrency: "تومان",
+  },
+  {
+    category: "پیتزا",
+    imageSrc: "assets/images/pitza/pitza (3).png",
+    imageAlt: "pizza 3",
+    headingText: "سبزیجات",
+    priceValue: "۱۸۵٬۰۰۰ ",
+    priceCurrency: "تومان",
+  },
+  {
+    category: "پیتزا",
+    imageSrc: "assets/images/pitza/pitza (3).png",
+    imageAlt: "pizza 3",
+    headingText: "سبزیجات",
+    priceValue: "۱۸۵٬۰۰۰ ",
+    priceCurrency: "تومان",
+  },
+  {
+    category: "پیتزا",
+    imageSrc: "assets/images/pitza/pitza (3).png",
+    imageAlt: "pizza 3",
+    headingText: "سبزیجات",
+    priceValue: "۱۸۵٬۰۰۰ ",
+    priceCurrency: "تومان",
+  },
 ];
 
 // Create a function to generate the HTML structure for each food item
@@ -65,4 +97,4 @@ function createFoodItemHTML(item) {
 const foodListHTML = foodItems.map(createFoodItemHTML);
 
 // Append the generated HTML structures to the desired element in the document
-$(".second-template__frame").append(foodListHTML);
+$(".foods-list-container").append(foodListHTML);
