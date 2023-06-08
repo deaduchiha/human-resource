@@ -1,6 +1,6 @@
-// Define an array of food items
 const foodItems = [
   {
+    category: "پیتزا",
     imageSrc: "assets/images/pitza/pitza (1).png",
     imageAlt: "pizza 1",
     headingText: "مخصوص فرسکو",
@@ -8,6 +8,7 @@ const foodItems = [
     priceCurrency: "تومان",
   },
   {
+    category: "پیتزا",
     imageSrc: "assets/images/pitza/pitza (2).png",
     imageAlt: "pizza 2",
     headingText: "سیر و استیک",
@@ -15,30 +16,10 @@ const foodItems = [
     priceCurrency: "تومان",
   },
   {
+    category: "پیتزا",
     imageSrc: "assets/images/pitza/pitza (3).png",
     imageAlt: "pizza 3",
     headingText: "سبزیجات",
-    priceValue: "۱۸۵٬۰۰۰ ",
-    priceCurrency: "تومان",
-  },
-  {
-    imageSrc: "assets/images/pitza/pitza (4).png",
-    imageAlt: "pizza 4",
-    headingText: "پپرونی",
-    priceValue: "۱۸۵٬۰۰۰ ",
-    priceCurrency: "تومان",
-  },
-  {
-    imageSrc: "assets/images/pitza/pitza (4).png",
-    imageAlt: "pizza 4",
-    headingText: "پپرونی",
-    priceValue: "۱۸۵٬۰۰۰ ",
-    priceCurrency: "تومان",
-  },
-  {
-    imageSrc: "assets/images/pitza/pitza (4).png",
-    imageAlt: "pizza 4",
-    headingText: "پپرونی",
     priceValue: "۱۸۵٬۰۰۰ ",
     priceCurrency: "تومان",
   },

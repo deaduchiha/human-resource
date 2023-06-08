@@ -16,6 +16,21 @@ function handleSlideClick() {
   // Update the image source based on the active index
   const activeImage = swiperSlides[index].image;
   $(".second-template__food img").attr("src", activeImage);
+
+  // Filter the food list based on the selected category
+  const selectedCategory = swiperSlides[index].text;
+  const filteredFoodList = foodItems.filter(
+    (item) => item.category === selectedCategory
+  );
+
+  // Generate the food list HTML based on the filtered list
+  const filteredFoodListHTML = filteredFoodList.map(createFoodItemHTML);
+
+  // Clear the existing food list
+  $(".food-list").remove();
+
+  // Append the generated food list HTML to the desired element in the document
+  $(".second-template__frame").append(filteredFoodListHTML);
 }
 
 // Create the swiper wrapper element
