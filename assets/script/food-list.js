@@ -9,7 +9,7 @@ const foodItems = [
   },
   {
     category: "پیتزا",
-    imageSrc: "assets/images/pitza/pitza (2).png",
+    imageSrc: "assets/images/pitza.jpg",
     imageAlt: "pizza 2",
     headingText: "سیر و استیک",
     priceValue: "۱۸۵٬۰۰۰ ",

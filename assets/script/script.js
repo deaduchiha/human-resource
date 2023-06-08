@@ -24,11 +24,11 @@ $(document).ready(function () {
 });
 
 // swiper
-// const swiper = new Swiper(".mySwiper", {
-//   watchSlidesProgress: true,
-//   slidesPerView: "auto",
-//   spaceBetween: 45,
-// });
+const swiper = new Swiper(".popupSwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
 
 $(document).ready(function () {
   const outerSwiper = new Swiper(".mySwiper", {});
