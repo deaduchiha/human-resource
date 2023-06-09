@@ -59,8 +59,6 @@ function showNext() {
 
   // Update the popup content with the new food item details
   updatePopupContent(foodItem);
-
-  console.log("next");
 }
 
 // Function to handle "prev" arrow click
@@ -81,8 +79,6 @@ function showPrev() {
 
   // Update the popup content with the new food item details
   updatePopupContent(foodItem);
-
-  console.log("prev");
 }
 
 // Function to get the filtered food list based on the current category
