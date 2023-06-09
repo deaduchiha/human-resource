@@ -1,3 +1,31 @@
+// Create the swiper slide elements
+const swiperSlides = [
+  { text: "پیتزا", image: "assets/images/pitza.png" },
+  { text: "برگر", image: "assets/images/burgur.jpg" },
+  { text: "مرغ سوخاری", image: "assets/images/pitza.png" },
+  { text: "سالاد", image: "assets/images/burgur.jpg" },
+  { text: "پیش غذا", image: "assets/images/pitza.png" },
+];
+// Create a function to generate the HTML structure for each food item
+function createFoodItemHTML(item) {
+  // Create the HTML structure using template literals
+  const html = `
+    <div class="food-list" id="openBtn">
+      <div class="food-list__image">
+        <img src="${item.imageSrc}" alt="${item.imageAlt}">
+      </div>
+      <h3>${item.headingText}</h3>
+      <div>
+        <span>${item.priceValue}</span>
+        <span>${item.priceCurrency}</span>
+      </div>
+    </div>
+  `;
+
+  const $tempContainer = $(html);
+  return $tempContainer[0];
+}
+
 // Function to handle slide click event
 function handleSlideClick() {
   const slide = $(this);
@@ -19,32 +47,33 @@ function handleSlideClick() {
 
   // Filter the food list based on the selected category
   const selectedCategory = swiperSlides[index].text;
-  const filteredFoodList = foodItems.filter(
-    (item) => item.category === selectedCategory
-  );
+  const filteredFoodList = foodItems.filter((item) => {
+    return item.category === selectedCategory;
+  });
 
   // Generate the food list HTML based on the filtered list
   const filteredFoodListHTML = filteredFoodList.map(createFoodItemHTML);
 
   // Clear the existing food list
-  $(".food-list").remove();
+  $(".foods-list-container").empty();
 
   // Append the generated food list HTML to the desired element in the document
-  $(".second-template__frame").append(filteredFoodListHTML);
+  $(".foods-list-container").append(filteredFoodListHTML);
 }
+
+// Generate the food list HTML for the initial category
+const initialCategory = swiperSlides[0].text;
+const initialFilteredFoodList = foodItems.filter((item) => {
+  return item.category === initialCategory;
+});
+const initialFilteredFoodListHTML =
+  initialFilteredFoodList.map(createFoodItemHTML);
+$(".foods-list-container").append(initialFilteredFoodListHTML);
 
 // Create the swiper wrapper element
 const swiperWrapper = $("<div>").addClass("swiper-wrapper");
 
 // Create the swiper slide elements
-const swiperSlides = [
-  { text: "پیتزا", image: "assets/images/pitza.png" },
-  { text: "برگر", image: "assets/images/burgur.jpg" },
-  { text: "مرغ سوخاری", image: "assets/images/pitza.png" },
-  { text: "سالاد", image: "assets/images/burgur.jpg" },
-  { text: "پیش غذا", image: "assets/images/pitza.png" },
-];
-
 swiperSlides.forEach(function (slide, index) {
   const swiperSlide = $("<span>")
     .addClass("swiper-slide")
@@ -65,3 +94,6 @@ swiperSlides.forEach(function (slide, index) {
 
 // Append the swiper wrapper to the menuSwiper element
 $(".menuSwiper").append(swiperWrapper);
+
+// Trigger click event on the first slide
+$(".swiper-slide:first-child").trigger("click");
