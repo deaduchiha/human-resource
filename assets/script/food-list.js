@@ -23,7 +23,7 @@ const foodItems = [
     category: "پیتزا",
     imageSrc: "assets/images/pitza/pitza (3).png",
     imageAlt: "pizza 3",
-    headingText: "سبزیجات",
+    headingText: "1سبزیجات",
     priceValue: "۱۸۵٬۰۰۰ ",
     priceCurrency: "تومان",
     details:
@@ -33,7 +33,7 @@ const foodItems = [
     category: "پیتزا",
     imageSrc: "assets/images/pitza/pitza (3).png",
     imageAlt: "pizza 3",
-    headingText: "سبزیجات",
+    headingText: "2سبزیجات",
     priceValue: "۱۸۵٬۰۰۰ ",
     priceCurrency: "تومان",
     details:
@@ -43,7 +43,7 @@ const foodItems = [
     category: "پیتزا",
     imageSrc: "assets/images/pitza/pitza (3).png",
     imageAlt: "pizza 3",
-    headingText: "سبزیجات",
+    headingText: "3سبزیجات",
     priceValue: "۱۸۵٬۰۰۰ ",
     priceCurrency: "تومان",
     details:
@@ -53,7 +53,7 @@ const foodItems = [
     category: "پیتزا",
     imageSrc: "assets/images/pitza/pitza (3).png",
     imageAlt: "pizza 3",
-    headingText: "سبزیجات",
+    headingText: "4سبزیجات",
     priceValue: "۱۸۵٬۰۰۰ ",
     priceCurrency: "تومان",
     details:
