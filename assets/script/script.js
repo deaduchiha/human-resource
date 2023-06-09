@@ -5,7 +5,6 @@ $(document).ready(function () {
   $(".foods-list-container").on("click", ".food-list", function () {
     // Get the index of the clicked element
     const index = $(this).index();
-    console.log(index);
 
     // Get the corresponding food item from the foodItems array
     const filteredFoodList = foodItems.filter(
