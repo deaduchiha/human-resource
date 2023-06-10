@@ -35,10 +35,6 @@ function updatePopupContent(foodItem) {
   $("#popup .food-details__price").text(
     foodItem.priceValue + " " + foodItem.priceCurrency
   );
-  $("#popup .food-details__slider").html(
-    `<img src="assets/images/right-arrow.svg" alt="right" onclick="showNext()" />` +
-      `<img src="assets/images/left-arrow.svg" alt="left" onclick="showPrev()" />`
-  );
 }
 
 // Function to handle "next" arrow click
