@@ -5,7 +5,7 @@
   flex-direction: column;
   text-align: center;
   display: flex;
-  padding: 7rem 0;
+  padding: 4rem 0;
   /* first-template__container width&height */
   max-width: 360px;
   height: 640px;
@@ -24,6 +24,7 @@
   font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
+  font-family: inter;
 }
 .first-template__container h2 span {
   color: #ffffff;
@@ -31,6 +32,7 @@
 .first-template__container span {
   color: #ffffff;
   font-size: 16px;
+  font-family: dana;
 }
 
 .first-template__frame {

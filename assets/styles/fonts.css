@@ -2,3 +2,13 @@
   font-family: iran yekan;
   src: url("../fonts/Iranyekan.ttf");
 }
+
+@font-face {
+  font-family: inter;
+  src: url("../fonts/Inter.ttf");
+}
+
+@font-face {
+  font-family: dana;
+  src: url("../fonts/dana.ttf");
+}
