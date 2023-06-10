@@ -30,6 +30,7 @@ $(document).ready(function () {
 // Function to update the popup content with food item details
 function updatePopupContent(foodItem) {
   $("#popup .food-details__heading").text(foodItem.headingText);
+  $("#popup .food-details__heading-english").text(foodItem.headingTextEnglish);
   $("#popup .food-details__image").attr("src", foodItem.imageSrc);
   $("#popup .food-details__details").text(foodItem.details);
   $("#popup .food-details__price").text(

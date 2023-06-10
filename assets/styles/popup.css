@@ -115,6 +115,10 @@
   cursor: pointer;
 }
 
+.food-details__heading-english {
+  display: none;
+}
+
 @keyframes popup-fade {
   0% {
     opacity: 0;

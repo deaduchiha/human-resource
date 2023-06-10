@@ -4,6 +4,7 @@ const foodItems = [
     imageSrc: "assets/images/pitza/pitza (1).png",
     imageAlt: "pizza 1",
     headingText: "مخصوص فرسکو",
+    headingTextEnglish: "Fresko",
     priceValue: "۱۸۵٬۰۰۰ ",
     priceCurrency: "تومان",
     details:
@@ -14,6 +15,7 @@ const foodItems = [
     imageSrc: "assets/images/pitza.jpg",
     imageAlt: "pizza 2",
     headingText: "سیر و استیک",
+    headingTextEnglish: "Fresko",
     priceValue: "۱۸۵٬۰۰۰ ",
     priceCurrency: "تومان",
     details:
@@ -24,6 +26,7 @@ const foodItems = [
     imageSrc: "assets/images/pitza/pitza (3).png",
     imageAlt: "pizza 3",
     headingText: "1سبزیجات",
+    headingTextEnglish: "Fresko",
     priceValue: "۱۸۵٬۰۰۰ ",
     priceCurrency: "تومان",
     details:
@@ -34,6 +37,7 @@ const foodItems = [
     imageSrc: "assets/images/pitza/pitza (3).png",
     imageAlt: "pizza 3",
     headingText: "2سبزیجات",
+    headingTextEnglish: "Fresko",
     priceValue: "۱۸۵٬۰۰۰ ",
     priceCurrency: "تومان",
     details:
@@ -44,6 +48,7 @@ const foodItems = [
     imageSrc: "assets/images/pitza/pitza (3).png",
     imageAlt: "pizza 3",
     headingText: "3سبزیجات",
+    headingTextEnglish: "Fresko",
     priceValue: "۱۸۵٬۰۰۰ ",
     priceCurrency: "تومان",
     details:
@@ -54,6 +59,7 @@ const foodItems = [
     imageSrc: "assets/images/pitza/pitza (3).png",
     imageAlt: "pizza 3",
     headingText: "4سبزیجات",
+    headingTextEnglish: "Fresko",
     priceValue: "۱۸۵٬۰۰۰ ",
     priceCurrency: "تومان",
     details:
@@ -64,6 +70,7 @@ const foodItems = [
     imageSrc: "assets/images/burgur.jpg",
     imageAlt: "burgur",
     headingText: "برگر ذغالی",
+    headingTextEnglish: "Fresko",
     priceValue: "۱۸۵٬۰۰۰ ",
     priceCurrency: "تومان",
     details:

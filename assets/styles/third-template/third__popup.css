@@ -94,6 +94,7 @@ body {
   border-radius: 28px;
   color: #fff;
   margin-top: 55px;
+  margin-bottom: 20px;
 }
 
 .food-details__slider {
@@ -110,6 +111,14 @@ body {
   width: fit-content;
   margin: 0;
   cursor: pointer;
+}
+.food-details__heading-english {
+  font-weight: 500;
+  color: #fff;
+  font-size: 16px;
+  padding-right: 35px;
+  position: relative;
+  top: -15px;
 }
 
 @keyframes popup-fade {
