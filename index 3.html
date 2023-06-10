@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Human Resource</title>
+    <!-- jquery -->
+    <script src="assets/script/jquery-3.7.0.min.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="assets/styles/swiper-bundle.min.css" />
+    <script src="assets/script/swiper-bundle.min.js"></script>
+    <!-- fonts -->
+    <link rel="stylesheet" href="assets/styles/fonts.css" />
+    <!-- popup -->
+    <link rel="stylesheet" href="assets/styles/popup.css" />
+    <!-- style-->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <!-- templates -->
+    <link rel="stylesheet" href="assets/styles/third__first-template.css" />
+    <link rel="stylesheet" href="assets/styles/second-template.css" />
+  </head>
+  <body>
+    <div class="mySwiper" style="overflow: hidden">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <!-- first__template-container -->
+          <div class="first-template__container">
+            <h2>
+              <span>the</span>
+              siu
+            </h2>
+            <div class="first-template__image">
+              <img src="assets/images/logo3.svg" alt="logo" />
+            </div>
+
+            <div class="first-template__frame">
+              <a href="#">
+                <img src="./assets/images/template 2/Phone.svg" alt="call" />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/images/template 2/Location.svg"
+                  alt="navigation"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/images/template 2/instagram.svg"
+                  alt="instagram"
+                />
+              </a>
+            </div>
+
+            <span>طعم غذای ما هیچوقت از یاد نمیره!</span>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <!-- second__template-container -->
+          <div class="second-template__container">
+            <img src="assets/images/logo2.svg" alt="logo2" />
+            <div class="second-template__frame">
+              <div class="second-template__menu menuSwiper">
+                <!-- food food-category -->
+              </div>
+              <div class="second-template__food">
+                <!-- selected food-category title and image -->
+                <h2></h2>
+                <img src="" alt="category" />
+              </div>
+              <div class="foods-list-container">
+                <!-- list of foods -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="popup" class="popup-container">
+        <div class="popup-content">
+          <div class="popup-header">
+            <img
+              id="closeBtn"
+              src="assets/images/back-arrow.svg"
+              alt="back"
+              width="34px"
+            />
+            <h3 class="food-details__heading"></h3>
+          </div>
+          <div class="swiper popupSwiper">
+            <div class="swiper-wrapper" dir="rtl">
+              <div class="swiper-slide popup-image">
+                <div class="image-holderr">
+                  <img class="food-details__image" src="" alt="Food Image" />
+                </div>
+              </div>
+              <div class="swiper-slide popup-image">
+                <div class="image-holderr">
+                  <img class="food-details__image" src="" alt="Food Image" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pag">
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="food-details">
+            <p class="food-details__details"></p>
+            <div class="food-details__slider"></div>
+            <p class="food-details__price"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="assets/script/script.js"></script>
+<script src="assets/script/food-list.js"></script>
+<script src="assets/script/food-category.js"></script>
