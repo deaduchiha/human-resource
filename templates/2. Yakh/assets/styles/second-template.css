@@ -106,8 +106,6 @@ body {
 .swiper-slide.food-list {
   transition: all 0.9s ease;
 }
-.swiper-slide-active.food-list {
-}
 
 @media screen and (max-width: 360px) {
 }
