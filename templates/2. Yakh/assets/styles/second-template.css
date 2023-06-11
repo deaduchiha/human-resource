@@ -1,67 +1,60 @@
 .second-template__container {
   /* second-template__container background */
-  background: #f5f5f5;
+
+  background: url("../../images/template\ 3/backcground.svg") no-repeat;
+  background-position: 0 -120px;
+  /* background-size: 100% 100%; */
 
   /* second-template__container width&height */
-  text-align: center;
+  text-align: right;
   padding-top: 15px;
-
   max-width: 360px;
   height: 640px;
 }
 
+.second-template__container img.third-template__logo {
+  width: 77px;
+  padding-right: 12px;
+}
+
+.second-template__container h2.second-template__title {
+  color: #fff;
+  font-size: 24px;
+  padding-right: 12px;
+}
+
+.second-template__food {
+  display: none;
+}
+
 .second-template__frame {
   overflow: hidden;
-
-  background-color: #fff;
+  padding-right: 12px;
   height: calc(100% - 60px);
   padding-bottom: 20px;
 }
 
 .second-template__menu {
-  padding: 14px 34px 0 0;
+  padding: 14px 0 0 0;
 }
 .swiper-slide.active {
-  color: #323232;
-  border-bottom: 1px solid #4a4a3d;
   font-weight: 700;
+  background-color: #de7129;
 }
 
 .second-template__menu span {
   user-select: none;
   width: fit-content !important;
-  color: #535353;
+  min-width: 83px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #2d2f31;
+  padding: 8px 16px;
+  border-radius: 32px;
 }
 .second-template__menu span:hover {
-  color: #323232;
+  color: #ffffff;
   cursor: pointer;
-}
-
-.second-template__food {
-  width: 328px;
-  height: 104px;
-  background-color: #faae78;
-  border-radius: 16px;
-  margin-top: 27px;
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-}
-.second-template__food h2 {
-  font-weight: 800;
-  font-size: 32px;
-  color: #fff;
-}
-.second-template__food img {
-  position: relative;
-  left: 0;
-  bottom: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  width: 112px;
-  height: 87px;
-  border-top-right-radius: 34px;
-  border-top-left-radius: 34px;
 }
 
 .food-list {
@@ -71,7 +64,9 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
+  background-color: red;
 }
+
 .food-list h3 {
   width: 130px;
   font-weight: inherit;
@@ -89,11 +84,18 @@
 
 .foods-list-container::-webkit-scrollbar {
   width: 0.5em;
-  background-color: #f5f5f5;
 }
 .foods-list-container {
   overflow-y: scroll;
   max-height: 68%; /* Adjust the height according to your needs */
+}
+
+.swiper-slide-active:nth-child(1) {
+  /* background-color: red; */
+}
+
+.swiper-notification {
+  display: none;
 }
 
 @media screen and (max-width: 360px) {

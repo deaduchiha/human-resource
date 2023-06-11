@@ -1,6 +1,10 @@
+body {
+  font-family: iran yekan;
+}
+
 .first-template__container {
   /* first-template__container background */
-  background: #ffffff;
+  background: #323232;
 
   display: flex;
   align-items: center;
@@ -9,21 +13,22 @@
 
   padding: 9rem 0;
   position: relative;
-
-  /* first-template__container width&height */
-  max-width: 360px;
-  height: 640px;
 }
 
 .first-template__frame {
-  border-radius: 28px;
+  border-bottom-left-radius: 28px;
+  border-top-left-radius: 28px;
+
+  position: relative;
+  right: 0;
+  margin-right: 0;
 
   /* template-container__frame width&height */
   width: 224px;
   height: 56px;
 
   /* template-container__frame background*/
-  background-color: #4a4a3d;
+  background-color: #88b683;
 
   display: flex;
   align-items: center;
@@ -36,10 +41,10 @@
 .first-template__container h2 {
   font-size: 24px;
   font-weight: bold;
-  color: #323232;
+  color: #fff;
 }
 .first-template__container span {
-  color: #323232;
+  color: #fff;
   font-size: 16px;
 }
 

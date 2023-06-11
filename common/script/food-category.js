@@ -1,10 +1,10 @@
 // Create the swiper slide elements
 const swiperSlides = [
-  { text: "پیتزا", image: "assets/images/pitza.png" },
-  { text: "برگر", image: "assets/images/burgur.jpg" },
-  { text: "مرغ سوخاری", image: "assets/images/pitza.png" },
-  { text: "سالاد", image: "assets/images/burgur.jpg" },
-  { text: "پیش غذا", image: "assets/images/pitza.png" },
+  { text: "پیتزا", image: "../../common/images/pizza.png" },
+  { text: "برگر", image: "../../common/images/burger.jpg" },
+  { text: "مرغ سوخاری", image: "../../common/images/pizza.png" },
+  { text: "سالاد", image: "../../common/images/burger.jpg" },
+  { text: "پیش غذا", image: "../../common/images/pizza.png" },
 ];
 // Create a function to generate the HTML structure for each food item
 function createFoodItemHTML(item) {

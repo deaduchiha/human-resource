@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Human Resource</title>
+    <!-- jquery -->
+    <script src="../../common/script/jquery-3.7.0.min.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="../../common/styles/swiper-bundle.min.css" />
+    <script src="../../common/script/swiper-bundle.min.js"></script>
+    <!-- fonts -->
+    <link rel="stylesheet" href="../../common/styles/fonts.css" />
+    <!-- popup -->
+    <link rel="stylesheet" href="assets/styles/popup.css" />
+    <!-- style-->
+    <link rel="stylesheet" href="../../common/styles/global.css" />
+    <!-- templates -->
+    <link rel="stylesheet" href="assets/styles/first-template.css" />
+    <link rel="stylesheet" href="assets/styles/second-template.css" />
+  </head>
+  <body>
+    <div class="mySwiper" style="overflow: hidden">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <!-- first__template-container -->
+          <div class="first-template__container container">
+            <img src="assets/images/logo 2.svg" alt="Logo" />
+            <h2>فرسکو</h2>
+            <div class="first-template__frame">
+              <a href="#">
+                <img src="./assets/images/icons/dark/Phone.svg" alt="call" />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/images/icons/dark/Location.svg"
+                  alt="navigation"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/images/icons/dark/Instagram.svg"
+                  alt="instagram"
+                />
+              </a>
+            </div>
+            <span>مزه‌ی پیتزای ما از یاد نمیره</span>
+            <div class="first-template__pages">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <!-- second__template-container -->
+          <div class="second-template__container container">
+            <img src="assets/images/logo 2.svg" alt="logo2" />
+            <div class="second-template__frame">
+              <div class="second-template__menu menuSwiper">
+                <!-- food food-category -->
+              </div>
+              <div class="second-template__food">
+                <!-- selected food-category title and image -->
+                <h2></h2>
+                <img src="" alt="category" />
+              </div>
+              <div class="foods-list-container">
+                <!-- list of foods -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="popup" class="popup-container">
+        <div class="popup-content">
+          <div class="popup-header">
+            <img
+              id="closeBtn"
+              src="assets/images/icons/light/back-arrow.svg"
+              alt="back"
+              width="34px"
+            />
+            <h3 class="food-details__heading"></h3>
+          </div>
+          <div class="swiper popupSwiper">
+            <div class="swiper-wrapper" dir="rtl">
+              <div class="swiper-slide popup-image">
+                <div class="image-holderr">
+                  <img class="food-details__image" src="" alt="Food Image" />
+                </div>
+              </div>
+              <div class="swiper-slide popup-image">
+                <div class="image-holderr">
+                  <img class="food-details__image" src="" alt="Food Image" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pag">
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="food-details">
+            <p class="food-details__details"></p>
+            <div class="food-details__slider">
+              <img
+                src="assets/images/icons/light/right-arrow.svg"
+                alt="right"
+                onclick="showNext()"
+              />
+              <img
+                src="assets/images/icons/light/left-arrow.svg"
+                alt="left"
+                onclick="showNext()"
+              />
+            </div>
+            <p class="food-details__price"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="../../common/script/script.js"></script>
+<script src="../../common/script/food-list.js"></script>
+<script src="../../common/script/food-category.js"></script>

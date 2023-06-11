@@ -1,7 +1,7 @@
 const foodItems = [
   {
     category: "پیتزا",
-    imageSrc: "assets/images/pitza/pitza (1).png",
+    imageSrc: "../../common/images/pizza.jpg",
     imageAlt: "pizza 1",
     headingText: "مخصوص فرسکو",
     headingTextEnglish: "Fresko",
@@ -12,7 +12,7 @@ const foodItems = [
   },
   {
     category: "پیتزا",
-    imageSrc: "assets/images/pitza.jpg",
+    imageSrc: "../../common/images/pizza.jpg",
     imageAlt: "pizza 2",
     headingText: "سیر و استیک",
     headingTextEnglish: "Fresko",
@@ -23,7 +23,7 @@ const foodItems = [
   },
   {
     category: "پیتزا",
-    imageSrc: "assets/images/pitza/pitza (3).png",
+    imageSrc: "../../common/images/pitza/pitza (1).png",
     imageAlt: "pizza 3",
     headingText: "1سبزیجات",
     headingTextEnglish: "Fresko",
@@ -34,7 +34,7 @@ const foodItems = [
   },
   {
     category: "پیتزا",
-    imageSrc: "assets/images/pitza/pitza (3).png",
+    imageSrc: "../../common/images/pitza/pitza (2).png",
     imageAlt: "pizza 3",
     headingText: "2سبزیجات",
     headingTextEnglish: "Fresko",
@@ -45,7 +45,7 @@ const foodItems = [
   },
   {
     category: "پیتزا",
-    imageSrc: "assets/images/pitza/pitza (3).png",
+    imageSrc: "../../common/images/pitza/pitza (3).png",
     imageAlt: "pizza 3",
     headingText: "3سبزیجات",
     headingTextEnglish: "Fresko",
@@ -56,7 +56,7 @@ const foodItems = [
   },
   {
     category: "پیتزا",
-    imageSrc: "assets/images/pitza/pitza (3).png",
+    imageSrc: "../../common/images/pitza/pitza (4).png",
     imageAlt: "pizza 3",
     headingText: "4سبزیجات",
     headingTextEnglish: "Fresko",
@@ -67,7 +67,7 @@ const foodItems = [
   },
   {
     category: "برگر",
-    imageSrc: "assets/images/burgur.jpg",
+    imageSrc: "../../common/images/burger.jpg",
     imageAlt: "burgur",
     headingText: "برگر ذغالی",
     headingTextEnglish: "Fresko",

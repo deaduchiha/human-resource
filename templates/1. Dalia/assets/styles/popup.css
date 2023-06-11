@@ -1,14 +1,3 @@
-.popup-container {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9999;
-}
-
 .popup-content {
   position: absolute;
   overflow: hidden;
@@ -127,5 +116,18 @@
   100% {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .image-holderr {
+    width: 150px;
+    height: 150px;
+  }
+  .food-details__price {
+    margin-top: 36px;
+  }
+  .food-details__details {
+    font-size: small;
   }
 }
