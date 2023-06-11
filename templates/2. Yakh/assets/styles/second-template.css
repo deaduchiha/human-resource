@@ -64,7 +64,7 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
-  background-color: red;
+  color: #fff;
 }
 
 .food-list h3 {
