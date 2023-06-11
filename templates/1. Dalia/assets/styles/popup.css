@@ -1,0 +1,133 @@
+.popup-content {
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #efefef;
+  padding-top: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 45px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: popup-fade 0.6s ease-in-out;
+}
+
+.popup-header {
+  display: flex;
+  margin-bottom: 20px;
+}
+.food-details__heading {
+  flex: 1;
+  font-weight: 500;
+  color: #323232;
+  font-size: 16px;
+}
+
+.swiper-slide.popup-image {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-holderr {
+  width: 240px;
+  height: 240px;
+  border-radius: 150px;
+  overflow: hidden;
+}
+
+.food-details__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper.popupSwiper {
+  position: relative;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #7d7d7d;
+  width: 16px;
+  height: 6px;
+  border-radius: 4px;
+}
+
+.pag {
+  position: relative;
+  top: 0px;
+  z-index: 10;
+}
+
+.food-details {
+  background-color: #fff;
+  height: 100%;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  padding: 30px 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
+}
+
+.food-details__details {
+  text-align: justify;
+  padding: 0 44px;
+}
+
+.food-details__price {
+  padding: 8px 28px;
+  width: 244px;
+  height: 57px;
+  background-color: #4a4a3d;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+  color: #fff;
+}
+
+.food-details__slider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+.food-details__slider img {
+  width: fit-content;
+  margin: 0;
+  cursor: pointer;
+}
+
+.food-details__heading-english {
+  display: none;
+}
+
+@keyframes popup-fade {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .image-holderr {
+    width: 150px;
+    height: 150px;
+  }
+  .food-details__price {
+    margin-top: 36px;
+  }
+  .food-details__details {
+    font-size: small;
+  }
+}

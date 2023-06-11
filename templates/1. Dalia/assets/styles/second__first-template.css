@@ -1,0 +1,72 @@
+body {
+  font-family: iran yekan;
+}
+
+.first-template__container {
+  /* first-template__container background */
+  background: #323232;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 9rem 0;
+  position: relative;
+}
+
+.first-template__frame {
+  border-bottom-left-radius: 28px;
+  border-top-left-radius: 28px;
+
+  position: relative;
+  right: 0;
+  margin-right: 0;
+
+  /* template-container__frame width&height */
+  width: 224px;
+  height: 56px;
+
+  /* template-container__frame background*/
+  background-color: #88b683;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.first-template__frame a {
+  height: 32px;
+}
+
+.first-template__container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+.first-template__container span {
+  color: #fff;
+  font-size: 16px;
+}
+
+.first-template__pages {
+  position: absolute;
+  bottom: 17px;
+  left: 17px;
+  display: flex;
+  gap: 5px;
+}
+.first-template__pages div {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+
+.first-template__pages div:first-child {
+  width: 16px;
+  background-color: #a9a9a9;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 360px) {
+}

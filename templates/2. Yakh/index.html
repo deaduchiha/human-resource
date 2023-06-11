@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Human Resource</title>
+    <!-- jquery -->
+    <script src="../../common/script/jquery-3.7.0.min.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="../../common/styles/swiper-bundle.min.css" />
+    <script src="../../common/script/swiper-bundle.min.js"></script>
+    <!-- fonts -->
+    <link rel="stylesheet" href="../../common/styles/fonts.css" />
+    <!-- popup -->
+    <link rel="stylesheet" href="assets/styles/popup.css" />
+    <!-- style-->
+    <link rel="stylesheet" href="../../common/styles/global.css" />
+    <!-- templates -->
+    <link rel="stylesheet" href="assets/styles/first-template.css" />
+    <link rel="stylesheet" href="assets/styles/second-template.css" />
+  </head>
+  <body>
+    <div class="mySwiper" style="overflow: hidden">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <!-- first__template-container -->
+          <div class="first-template__container container">
+            <h2>
+              <span>the</span>
+              siu
+            </h2>
+            <div class="first-template__image">
+              <img src="assets/images/Logo.svg" alt="logo" />
+            </div>
+
+            <div class="first-template__frame">
+              <a href="#">
+                <img src="assets/images/icons/phone.svg" alt="phone" />
+              </a>
+              <a href="#">
+                <img src="assets/images/icons/location.svg" alt="location" />
+              </a>
+              <a href="#">
+                <img src="assets/images/icons/instagram.svg" alt="instagram" />
+              </a>
+            </div>
+
+            <span>طعم غذای ما هیچوقت از یاد نمیره!</span>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <!-- second__template-container -->
+          <div class="second-template__container container">
+            <img
+              src="assets/images/Logo.svg"
+              class="third-template__logo"
+              alt="Logo"
+            />
+            <h2 class="second-template__title">رستوران سیو</h2>
+            <div class="second-template__frame">
+              <div class="second-template__menu menuSwiper">
+                <!-- food food-category -->
+              </div>
+
+              <div class="second-template__food">
+                <!-- selected food-category title and image -->
+                <h2></h2>
+                <img src="" alt="category" />
+              </div>
+
+              <div class="foods-list-container">
+                <!-- list of foods -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="popup" class="popup-container">
+        <div class="popup-content">
+          <div class="popup__holder">
+            <div class="popup-header">
+              <img
+                id="closeBtn"
+                src="assets/images/template 3/back-arrow.svg"
+                alt="back"
+                width="34px"
+              />
+              <h3 class="food-details__heading"></h3>
+            </div>
+            <h3 class="food-details__heading-english"></h3>
+          </div>
+
+          <div class="image-holderr">
+            <img class="food-details__image" src="" alt="Food Image" />
+          </div>
+
+          <div class="food-details">
+            <div class="food-details__slider">
+              <img
+                src="assets/images/right-arrow.svg"
+                alt="right"
+                onclick="showNext()"
+              />
+              <img
+                src="assets/images/left-arrow.svg"
+                alt="left"
+                onclick="showNext()"
+              />
+            </div>
+            <h2 class="food-details__description">توضیحات</h2>
+            <p class="food-details__details"></p>
+            <p class="food-details__price"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="../../common/script/script.js"></script>
+<script src="../../common/script/food-list.js"></script>
+<script src="../../common/script/food-category.js"></script>

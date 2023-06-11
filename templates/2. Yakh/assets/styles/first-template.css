@@ -1,0 +1,80 @@
+.first-template__container {
+  /* first-template__container background */
+  background: #030303;
+
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  padding: 4rem 0;
+  /* first-template__container width&height */
+  max-width: 360px;
+  height: 640px;
+}
+
+.first-template__image {
+  height: 200px;
+}
+.first-template__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.first-template__container h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: inter;
+}
+.first-template__container h2 span {
+  color: #ffffff;
+}
+.first-template__container span {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: dana;
+}
+
+.first-template__frame {
+  border-radius: 28px;
+
+  /* template-container__frame width&height */
+  width: 224px;
+  height: 56px;
+
+  display: flex;
+
+  margin-bottom: 44px;
+}
+.first-template__frame a {
+  height: 48px;
+  width: 48px;
+  background-color: #de7129;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-template__pages {
+  position: absolute;
+  bottom: 17px;
+  left: 17px;
+  display: flex;
+  gap: 5px;
+}
+.first-template__pages div {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+
+.first-template__pages div:first-child {
+  width: 16px;
+  background-color: #a9a9a9;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 360px) {
+}
