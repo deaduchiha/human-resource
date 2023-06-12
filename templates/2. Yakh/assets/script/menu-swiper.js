@@ -21,8 +21,9 @@ $(document).ready(function () {
   outerSwiper.controller = innerSwiper;
 });
 
-var elem = document.getElementById("myvideo");
+//video
 function openFullscreen() {
+  var elem = document.getElementById("myvideo");
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
   } else if (elem.webkitRequestFullscreen) {
@@ -38,7 +39,7 @@ $(document).ready(function () {
   $(".food-details__video").click(function () {
     $(".food-details video").css("display", "inherit");
     $(".food-details video").on("ended webkitendfullscreen", function () {
-      $(".food-details video").css("display", "none");
+      $(this).css("display", "none");
     });
   });
 });
