@@ -15,7 +15,7 @@
 
 .second-template__menu {
   padding: 14px 34px;
-  max-width: 360px;
+  /* max-width: 360px; */
   overflow: hidden;
 }
 .swiper-slide.active {
@@ -35,7 +35,7 @@
 }
 
 .second-template__food {
-  width: 328px;
+  width: 95%;
   height: 104px;
   background-color: #faae78;
   border-radius: 16px;
@@ -62,7 +62,7 @@
 }
 
 .food-list {
-  width: 328px;
+  /* width: 328px; */
   margin-top: 23px;
   display: flex;
   align-items: center;
