@@ -20,3 +20,25 @@ $(document).ready(function () {
 
   outerSwiper.controller = innerSwiper;
 });
+
+var elem = document.getElementById("myvideo");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) {
+    /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) {
+    /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
+$(document).ready(function () {
+  $(".food-details__video").click(function () {
+    $(".food-details video").css("display", "inherit");
+    $(".food-details video").on("ended webkitendfullscreen", function () {
+      $(".food-details video").css("display", "none");
+    });
+  });
+});

@@ -121,6 +121,30 @@ body {
   top: -15px;
 }
 
+.food-details__video {
+  display: flex;
+  height: 35px;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  right: 0;
+  margin-right: 44px;
+  width: 40%;
+  font-size: 14px;
+  color: #de7129;
+}
+.food-details__video span {
+  margin: 0;
+}
+.food-details__video img {
+  margin: 0;
+}
+
+.food-details video {
+  display: none;
+  height: 200px;
+}
+
 @keyframes popup-fade {
   0% {
     opacity: 0;
