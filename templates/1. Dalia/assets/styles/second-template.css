@@ -90,7 +90,7 @@
 }
 .foods-list-container {
   overflow-y: scroll;
-  height: calc(100vh - 200px);
+  height: calc(100% - 200px);
 }
 
 @media screen and (max-width: 360px) {
