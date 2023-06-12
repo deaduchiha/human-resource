@@ -50,8 +50,8 @@ body {
 
 .first-template__pages {
   position: absolute;
-  bottom: 17px;
-  left: 17px;
+  bottom: 10%;
+  left: 7%;
   display: flex;
   gap: 5px;
 }

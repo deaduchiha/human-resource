@@ -66,16 +66,19 @@
 
 .food-details {
   background-color: #fff;
-  height: 100%;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
-  padding: 30px 0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
+  height: calc(100% - 335px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
 .food-details__details {
   text-align: justify;
-  padding: 0 44px;
 }
 
 .food-details__price {
@@ -84,7 +87,6 @@
   height: 57px;
   background-color: #4a4a3d;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 28px;
