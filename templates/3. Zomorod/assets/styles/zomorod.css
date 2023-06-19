@@ -10,6 +10,7 @@ body {
 .zomorod__container {
   /* first-template__container background */
   background: #ffffff;
+
   height: 100vh;
   width: 700px;
 }
@@ -28,24 +29,26 @@ body {
 }
 
 .zomorod__title {
-  margin-top: 58px;
+  margin-top: 28px;
   text-align: center;
   margin-bottom: 26px;
   font-weight: 500;
   font-size: 18px;
   color: #323232;
+  border-top: 1px solid red;
+  border-radius: 125px 125px 0 0 / 50px 50px 0 0;
 }
 
 .zomorod__menu {
-  height: calc(100% - 163.6px);
+  height: calc(100vh - 163.6px);
   background-color: #40976c;
   overflow: hidden;
-  border-radius: 255px 255px 0px 0px / 60px 60px 0px 0px;
+  border-radius: 250px 250px 0px 0px / 90px 90px 0px 0px;
 }
 
 .zomorod__menu-category {
   background-color: #3f9369;
-  padding-top: 27px;
+  padding-top: 30px;
   overflow: hidden;
   height: 150px;
 }
@@ -73,17 +76,45 @@ body {
   align-items: center;
   justify-content: center;
 }
-.swiper.zomorodSwiper .swiper-slide div img {
-  margin: auto;
+.zomorod-items__container {
+  margin-top: 20px;
+  width: 100%;
 }
 
 .zomorod__slider {
-  height: calc(100vh - 309.6px);
   background-color: #40976c;
   border-radius: 255px 255px 0px 0px / 60px 60px 0px 0px;
   position: relative;
   top: -40px;
-  padding-top: 45px;
+}
+
+.zomorod-items:last-child {
+  margin-left: 40px;
+}
+
+.zomorod-items {
+  margin-top: 5px;
+  width: fit-content !important;
+  height: fit-content !important;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-right: 30px;
+  margin-left: -20px;
+}
+.items__image {
+  background-color: #49a979;
+  width: 245px;
+  height: 245px;
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.items__image img {
+  height: 86%;
+  margin: auto;
 }
 
 @media screen and (max-width: 700px) {

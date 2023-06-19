@@ -1,4 +1,4 @@
-import { foodCategory } from "./data.js";
+import { foodCategory, foodList } from "./data.js";
 
 // loop foodCategory data
 foodCategory.forEach(function (category) {
@@ -25,4 +25,26 @@ new Swiper(".zomorodSwiper", {
   // swiper configuration options
   slidesPerView: 4,
   slideToClickedSlide: true,
+});
+
+// create food list
+$(document).ready(function () {
+  const foodContainer = $(".swiper-wrapper.zomorod-items__container");
+
+  // Iterate through the foodList array
+  foodList.forEach(function (food) {
+    // Create the HTML structure using template literals
+    const html = `
+      <div class="swiper-slide zomorod-items">
+        <div class="items__image">
+          <img src="${food.image}" alt="image" />
+        </div>
+        <span>${food.name}</span>
+        <span>${food.price} تومان</span>
+      </div>
+    `;
+
+    // Append the HTML to the food container
+    foodContainer.append(html);
+  });
 });

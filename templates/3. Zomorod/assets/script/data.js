@@ -17,7 +17,7 @@ const foodList = [
     ],
     category: "بیکری",
     price: 75000,
-    image: "url",
+    image: "./assets/images/starbucks/starbucks1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
@@ -31,7 +31,7 @@ const foodList = [
     ],
     category: "بیکری",
     price: 75000,
-    image: "url",
+    image: "./assets/images/starbucks/starbucks1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
@@ -45,7 +45,7 @@ const foodList = [
     ],
     category: "بیکری",
     price: 75000,
-    image: "url",
+    image: "./assets/images/starbucks/starbucks1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
@@ -59,7 +59,7 @@ const foodList = [
     ],
     category: "چای",
     price: 75000,
-    image: "url",
+    image: "./assets/images/starbucks/starbucks1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
@@ -73,7 +73,7 @@ const foodList = [
     ],
     category: "قهوه",
     price: 75000,
-    image: "url",
+    image: "./assets/images/starbucks/starbucks1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
@@ -87,7 +87,7 @@ const foodList = [
     ],
     category: "چای",
     price: 75000,
-    image: "url",
+    image: "./assets/images/starbucks/starbucks1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
