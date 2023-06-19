@@ -1,26 +1,26 @@
 import { foodCategory } from "./data.js";
 
-// Loop through the foodCategory array
+// loop foodCategory data
 foodCategory.forEach(function (category) {
-  // Create a new swiper-slide element
+  // create a swiper-slide
   const swiperSlide = $("<div>").addClass("swiper-slide");
 
-  // Create the swiper-image-holder element and append the image
+  // create swiper-image-holder and append image
   const imageHolder = $("<div>").addClass("swiper-image-holder");
   const image = $("<img>").attr("src", category.image).attr("alt", "image");
   imageHolder.append(image);
 
-  // Create the span element and set its text
+  // create span and category name
   const span = $("<span>").text(category.text);
 
-  // Append the image holder and span to the swiper-slide element
+  // append image and category name to swiper-slide
   swiperSlide.append(imageHolder, span);
 
-  // Append the swiper-slide element to the swiper-wrapper
+  // append swiper-slide to swiper-wrapper
   $(".zomorodSwiper .swiper-wrapper").append(swiperSlide);
 });
 
-// Initialize the swiper after appending all the swiper-slide elements
+// initialize swiper after
 new Swiper(".zomorodSwiper", {
   // swiper configuration options
   slidesPerView: 4,

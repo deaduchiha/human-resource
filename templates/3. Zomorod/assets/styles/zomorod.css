@@ -50,14 +50,6 @@ body {
   height: 150px;
 }
 
-.zomorod__slider {
-  height: calc(100vh - 313.6px);
-  background-color: #40976c;
-  border-radius: 255px 255px 0px 0px / 60px 60px 0px 0px;
-  position: relative;
-  top: -40px;
-}
-
 .swiper.zomorodSwiper {
   width: 100%;
   height: 70%;
@@ -85,7 +77,13 @@ body {
   margin: auto;
 }
 
-@media screen and (max-width: 360px) {
+.zomorod__slider {
+  height: calc(100vh - 309.6px);
+  background-color: #40976c;
+  border-radius: 255px 255px 0px 0px / 60px 60px 0px 0px;
+  position: relative;
+  top: -40px;
+  padding-top: 45px;
 }
 
 @media screen and (max-width: 700px) {
