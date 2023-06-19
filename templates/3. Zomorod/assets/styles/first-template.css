@@ -58,21 +58,21 @@ body {
   top: -40px;
 }
 
-.swiper.zomordSwiper {
+.swiper.zomorodSwiper {
   width: 100%;
   height: 70%;
 }
 
-.swiper.zomordSwiper .swiper-slide {
+.swiper-slide {
   text-align: center;
 }
 
-.swiper.zomordSwiper .swiper-slide span {
+.swiper.zomorodSwiper .swiper-slide span {
   color: #fff;
   font-size: 14px;
 }
 
-.swiper.zomordSwiper .swiper-slide div {
+.swiper-image-holder {
   background: #fff;
   border-radius: 100%;
   height: 56px;
@@ -81,7 +81,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.swiper.zomordSwiper .swiper-slide div img {
+.swiper.zomorodSwiper .swiper-slide div img {
   margin: auto;
 }
 
