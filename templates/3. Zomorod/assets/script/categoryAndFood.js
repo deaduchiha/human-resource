@@ -35,7 +35,7 @@ $(document).ready(function () {
   foodList.forEach(function (food) {
     // Create the HTML structure using template literals
     const html = `
-      <div class="swiper-slide zomorod-items">
+      <div class="swiper-slide zomorod-items" id="openBtn">
         <div class="items__image">
           <img src="${food.image}" alt="image" />
         </div>
