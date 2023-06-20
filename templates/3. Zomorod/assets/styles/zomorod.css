@@ -105,6 +105,20 @@ body {
   /* margin-left: 40px; */
   padding-left: 45px;
 }
+.swiper-slide-active.zomorod-items {
+  transform: translateY(-25px);
+}
+.swiper-slide-next.zomorod-items {
+  transform: translateY(45px);
+}
+.swiper-slide-prev.zomorod-items {
+  transform: translateY(45px);
+}
+.swiper-slide-active.zomorod-items,
+.swiper-slide-next.zomorod-items,
+.swiper-slide-prev.zomorod-items {
+  transition: transform 0.3s ease;
+}
 
 .zomorod-items {
   margin-top: 5px;
