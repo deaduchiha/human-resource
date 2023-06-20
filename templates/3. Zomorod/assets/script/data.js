@@ -77,20 +77,6 @@ const foodList = [
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
-  {
-    name: "شیک کیت کت",
-    sizes: [
-      { size: "small", price: 65000, title: "کوچک" },
-      { size: "medium", price: 75000, title: "متوسط" },
-      { size: "large", price: 85000, title: "بزرگ" },
-      { size: "big", price: 95000, title: "خیلی بزرگ" },
-    ],
-    category: "چای",
-    price: 75000,
-    image: "./assets/images/starbucks/starbucks1.png",
-    description:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
-  },
 ];
 
 export { foodCategory, foodList };
