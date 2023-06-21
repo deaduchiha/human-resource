@@ -1,6 +1,15 @@
 const swiper = new Swiper(".zomorod__slider", {
   watchSlidesProgress: true,
   slidesPerView: "auto",
+  centeredSlides: true,
+
+  breakpoints: {
+    500: {
+      slidesPerView: 2,
+      // spaceBetween: 50,
+      centeredSlides: true,
+    },
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
