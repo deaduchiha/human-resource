@@ -110,8 +110,6 @@ body {
   align-items: center;
   color: #fff;
 }
-.zomorod-items > span {
-}
 
 .items__image {
   background-color: #49a979;
@@ -138,7 +136,7 @@ body {
 
 @media screen and (max-width: 500px) {
   .zomorod-items {
-    width: 245px;
+    width: 240px;
   }
 
   .swiper-slide-active.zomorod-items .items__image {
@@ -169,5 +167,11 @@ body {
 @media screen and (min-height: 685px) {
   .zomorod-items {
     margin-top: 20%;
+  }
+}
+
+@media screen and (min-height: 685px) and (min-width: 500px) {
+  .zomorod-items {
+    margin-top: 20px;
   }
 }
