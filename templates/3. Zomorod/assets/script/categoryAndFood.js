@@ -32,12 +32,23 @@ function filterFoodItems(category) {
     // Append the HTML to the food container
     $(".swiper-wrapper.zomorod-items__container").append(html);
   });
+
+  // Remove the red border from all swiper-image-holder elements
+  $(".swiper-image-holder").css("border", "none");
+
+  // Add the red border to the selected category
+  $(`.swiper-image-holder[data-category="${category}"]`).css(
+    "border",
+    "3px solid #D2C798"
+  );
 }
 
 // Loop foodCategory data
 foodCategory.forEach(function (category) {
   const swiperSlide = $("<div>").addClass("swiper-slide");
-  const imageHolder = $("<div>").addClass("swiper-image-holder");
+  const imageHolder = $("<div>")
+    .addClass("swiper-image-holder")
+    .attr("data-category", category.text);
   const image = $("<img>").attr("src", category.image).attr("alt", "image");
   imageHolder.append(image);
   const span = $("<span>").text(category.text);
@@ -56,13 +67,13 @@ foodCategory.forEach(function (category) {
 
 // Add event listener to update the margin top
 mySwiper.on("slideChange", function () {
-  var activeIndex = mySwiper.activeIndex;
-  var swiperContainer = document.querySelector(".zomorodSwiper");
+  const activeIndex = mySwiper.activeIndex;
+  const swiperContainer = $(".zomorodSwiper");
 
   if (activeIndex === 1 || activeIndex === 2) {
-    swiperContainer.classList.add("swiper-with-margin");
+    swiperContainer.addClass("swiper-with-margin");
   } else {
-    swiperContainer.classList.remove("swiper-with-margin");
+    swiperContainer.removeClass("swiper-with-margin");
   }
 });
 
