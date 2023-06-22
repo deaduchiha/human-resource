@@ -1,35 +1,43 @@
 import { foodCategory, foodList } from "./data.js";
 
+// Initialize swiper globally
+let mySwiper;
+
+// Create a function to initialize the swiper
+mySwiper = new Swiper(".zomorodSwiper", {
+  slidesPerView: 4,
+  slideToClickedSlide: true,
+});
+
 // Create a function to filter food items based on category
 function filterFoodItems(category) {
   // Clear the food container
   $(".swiper-wrapper.zomorod-items__container").empty();
 
-  // Iterate through the foodList array
-  foodList.forEach(function (food) {
-    // Check if the food item belongs to the selected category
-    if (food.category === category) {
-      // Create the HTML structure using template literals
-      const html = `
-        <div class="swiper-slide zomorod-items" id="openBtn">
-          <div class="items__image">
-            <img src="${food.image}" alt="image" />
-          </div>
-          <span>${food.name}</span>
-          <span>${food.price} تومان</span>
+  // Filter the foodList based on the selected category
+  const filteredFoodList = foodList.filter(function (food) {
+    return food.category === category;
+  });
+
+  // Iterate through the filtered foodList array
+  filteredFoodList.forEach(function (food) {
+    // Create the HTML structure using template literals
+    const html = `
+      <div class="swiper-slide zomorod-items" id="openBtn">
+        <div class="items__image">
+          <img src="${food.image}" alt="image" />
         </div>
-      `;
+        <span>${food.name}</span>
+        <span>${food.price} تومان</span>
+      </div>
+    `;
 
-      // Append the HTML to the food container
-      $(".swiper-wrapper.zomorod-items__container").append(html);
-    }
+    // Append the HTML to the food container
+    $(".swiper-wrapper.zomorod-items__container").append(html);
   });
 
-  // Initialize swiper after filtering
-  new Swiper(".zomorodSwiper", {
-    slidesPerView: 4,
-    slideToClickedSlide: true,
-  });
+  // Set the active slide to the first slide
+  mySwiper.slideTo(0);
 }
 
 // Loop foodCategory data
@@ -44,7 +52,7 @@ foodCategory.forEach(function (category) {
   // Add click event listener to each category slide
   swiperSlide.click(function () {
     // Get the category value
-    const categoryValue = category.text; // Use "category.text" instead of "category.value"
+    const categoryValue = category.text;
     // Filter food items based on the selected category
     filterFoodItems(categoryValue);
   });
@@ -52,10 +60,16 @@ foodCategory.forEach(function (category) {
   $(".zomorodSwiper .swiper-wrapper").append(swiperSlide);
 });
 
-// Initialize swiper initially
-new Swiper(".zomorodSwiper", {
-  slidesPerView: 4,
-  slideToClickedSlide: true,
+// Add event listener to update the margin top
+mySwiper.on("slideChange", function () {
+  var activeIndex = mySwiper.activeIndex;
+  var swiperContainer = document.querySelector(".zomorodSwiper");
+
+  if (activeIndex === 1 || activeIndex === 2) {
+    swiperContainer.classList.add("swiper-with-margin");
+  } else {
+    swiperContainer.classList.remove("swiper-with-margin");
+  }
 });
 
 // Create food list
