@@ -1,10 +1,7 @@
 import { foodCategory, foodList } from "./data.js";
 
-// Initialize swiper globally
-let mySwiper;
-
 // Create a function to initialize the swiper
-mySwiper = new Swiper(".zomorodSwiper", {
+const mySwiper = new Swiper(".zomorodSwiper", {
   slidesPerView: 4,
   slideToClickedSlide: true,
 });
@@ -35,9 +32,6 @@ function filterFoodItems(category) {
     // Append the HTML to the food container
     $(".swiper-wrapper.zomorod-items__container").append(html);
   });
-
-  // Set the active slide to the first slide
-  mySwiper.slideTo(0);
 }
 
 // Loop foodCategory data
