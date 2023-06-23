@@ -21,9 +21,15 @@ $(document).ready(function () {
 
     selectedFood.sizes.forEach((size, index) => {
       const sizeElement = `
-        <div data-index="${index}">
+        <div data-index="${index}" ${
+        size.size === "small" ? 'class="active-size"' : ""
+      }>
           <div class="sizes__image">
-            <img src="assets/images/bucket.svg" alt="" />
+            <img src="${
+              size.size === "small"
+                ? "assets/images/active-bucket.svg"
+                : "assets/images/bucket.svg"
+            }" alt="" />
           </div>
           <span>${size.title}</span>
         </div>
