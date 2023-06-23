@@ -1,0 +1,107 @@
+body {
+  background-color: #f5f5f5 !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: dana;
+}
+
+.container {
+  /* first-template__container background */
+  background: #ffffff;
+
+  position: relative;
+
+  height: 100vh;
+  width: 700px;
+}
+
+.header {
+  padding: 0.5rem 0.7rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header span {
+  margin-top: 10px;
+}
+
+.categorySwiper {
+  margin-top: 35px;
+  padding-right: 10px;
+}
+.categorySwiper .swiper-slide {
+  color: #7b7b7b;
+  text-align: center;
+  padding: 10px 15px;
+  /* border: 1px solid red; */
+  width: fit-content !important;
+}
+
+.foodSwiper {
+  background-color: #fafafa;
+  height: 100%;
+  padding-top: 9vh;
+}
+.foodSwiper .swiper-slide {
+  width: 212px;
+  height: 330px;
+  background-color: #fff;
+  box-shadow: 0px 4px 18px 0px #1d273714;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  gap: 20px;
+}
+.food-names p {
+  font-weight: 700;
+  font-size: 18px;
+  color: #272727;
+}
+.food-names span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #727272;
+}
+.foodSwiper .swiper-slide > span {
+  font-weight: 500;
+  color: #323232;
+  font-size: 16px;
+}
+
+.foodSwiper .swiper-slide img {
+  width: 121px;
+  height: 138px;
+}
+.foodSwiper .swiper-slide-active {
+  transform: translateY(-30px);
+}
+.foodSwiper .swiper-slide-next {
+  transform: translateY(10px);
+}
+.foodSwiper .swiper-slide-prev {
+  transform: translateY(10px);
+}
+.foodSwiper .swiper-slide-active,
+.foodSwiper .swiper-slide-next,
+.foodSwiper .swiper-slide-prev {
+  transition: transform 0.4s ease;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    height: 100vh;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 388px) {
+  .categorySwiper {
+    padding: 0;
+  }
+}

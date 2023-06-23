@@ -1,0 +1,122 @@
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.681);
+  z-index: 9999;
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  animation: popup-fade 0.6s ease-in-out;
+  border-radius: 28px;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-image {
+  width: 262px;
+  height: 262px;
+  margin: auto;
+  background-color: #49a979;
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup-image img {
+  height: 86%;
+  margin: auto;
+}
+
+.popup-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.popup-info span {
+  font-size: 22px;
+  color: #323232;
+}
+.popup-info span:last-child {
+  color: #2c875a;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.popup-size p {
+  color: #a1a1a1;
+  font-size: 16px;
+}
+
+.sizes > div {
+  width: 72px;
+  height: 101px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sizes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sizes__image {
+  width: 72px;
+  height: 72px;
+  background-color: #f0f7f2;
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sizes__image img {
+  height: 55%;
+  margin: auto;
+}
+
+.sizes > div > span {
+  font-size: 12px;
+  color: #4d4d4d;
+  margin-top: 11px;
+}
+.popup__description {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.active-size .sizes__image {
+  background-color: #40976c;
+}
+.active-size .sizes__image img {
+  color: #fff;
+}
+
+@keyframes popup-fade {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
