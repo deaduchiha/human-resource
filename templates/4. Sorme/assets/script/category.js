@@ -1,7 +1,8 @@
-import { foodCategory } from "./data.js";
+import { foodCategory, foodList } from "./data.js";
 
 $(document).ready(function () {
   const swiperWrapper = $(".categorySwiper .swiper-wrapper");
+  const foodSwiperWrapper = $(".foodSwiper .swiper-wrapper");
 
   // Generate HTML for each category
   foodCategory.forEach((category) => {
@@ -39,7 +40,37 @@ $(document).ready(function () {
       "border-top-right-radius": "12px",
       "border-top-left-radius": "12px",
       transition: "all 0.3s ease",
-      // padding: "10px",
+    });
+
+    // Get the selected category ID
+    const categoryId = $(this).data("category-id");
+
+    // Filter foodList based on the selected category
+    const filteredFoodList = getFoodListByCategory(categoryId);
+
+    // Clear existing food items
+    foodSwiperWrapper.empty();
+
+    // Generate HTML for each food item
+    filteredFoodList.forEach(function (food) {
+      const foodSlide = $('<div class="swiper-slide"></div>');
+      const foodImage = $("<img>").attr("src", food.mainImage).attr("alt", "");
+      const foodNames = $('<div class="food-names"></div>');
+      const foodTitle = $("<p>").text(food.title);
+      const foodEnglishTitle = $("<span>").text(food.englishTitle);
+      const foodPrice = $("<span>").text(food.price + " تومان");
+
+      foodNames.append(foodTitle, foodEnglishTitle);
+      foodSlide.append(foodImage, foodNames, foodPrice);
+      foodSwiperWrapper.append(foodSlide);
+    });
+
+    // Initialize the food Swiper component
+    const foodSwiper = new Swiper(".foodSwiper", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      watchSlidesProgress: true,
+      initialSlide: 1,
     });
   });
 
@@ -51,6 +82,20 @@ $(document).ready(function () {
     background: "#FAFAFA",
     "border-top-right-radius": "12px",
     "border-top-left-radius": "12px",
-    // padding: "10px",
   });
+
+  // Function to filter foodList based on the category ID
+  function getFoodListByCategory(categoryId) {
+    if (categoryId === 1) {
+      // Return all food items
+      return foodList;
+    } else {
+      // Filter food items based on the selected category ID
+      return foodList.filter(
+        (food) =>
+          food.category ===
+          foodCategory.find((category) => category.id === categoryId).text
+      );
+    }
+  }
 });
