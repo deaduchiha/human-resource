@@ -11,31 +11,39 @@ $(document).ready(function () {
     // Set the details in the popup
     $("#popup .popup-image img").attr("src", selectedFood.image);
     $("#popup .popup-info span:first-child").text(selectedFood.name);
-    $("#popup .popup-info span:last-child").text(
-      selectedFood.price.toLocaleString("fa-IR") + " تومان"
-    );
 
     // Clear the existing sizes and add new sizes based on the selected food
     const sizesContainer = $("#popup .sizes");
     sizesContainer.empty();
 
     selectedFood.sizes.forEach((size, index) => {
+      const isActiveSize = size.size === "small";
+      const activeClass = isActiveSize ? "active-size" : "";
+      const activeImage = isActiveSize
+        ? "assets/images/active-bucket.svg"
+        : "assets/images/bucket.svg";
       const sizeElement = `
-        <div data-index="${index}" ${
-        size.size === "small" ? 'class="active-size"' : ""
-      }>
+        <div data-index="${index}" class="${activeClass}">
           <div class="sizes__image">
-            <img src="${
-              size.size === "small"
-                ? "assets/images/active-bucket.svg"
-                : "assets/images/bucket.svg"
-            }" alt="" />
+            <img src="${activeImage}" alt="" />
           </div>
           <span>${size.title}</span>
         </div>
       `;
       sizesContainer.append(sizeElement);
     });
+
+    // Get the active size object
+    const activeSize = selectedFood.sizes.find((size) => size.size === "small");
+    if (activeSize) {
+      const activeSizePrice =
+        activeSize.price.toLocaleString("fa-IR") + " تومان";
+      $("#popup .popup-info span:last-child").text(activeSizePrice);
+    } else {
+      const defaultPrice =
+        selectedFood.price.toLocaleString("fa-IR") + " تومان";
+      $("#popup .popup-info span:last-child").text(defaultPrice);
+    }
 
     $("#popup .popup__description").text(selectedFood.description);
 
