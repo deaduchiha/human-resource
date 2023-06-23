@@ -156,7 +156,7 @@ body {
   }
   .swiper-slide-active.zomorod-items {
     transform: translateY(-5%);
-    width: 215px;
+    width: 245px;
   }
   .swiper-slide-prev.zomorod-items {
     transform: translateY(55px);
