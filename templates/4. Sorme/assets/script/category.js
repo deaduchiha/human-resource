@@ -31,12 +31,14 @@ $(document).ready(function () {
       color: "#7b7b7b",
       background: "none",
       padding: "10px",
+      transition: "all 0.3s ease",
     });
     $(this).css({
       color: "#222222",
       background: "#FAFAFA",
       "border-top-right-radius": "12px",
       "border-top-left-radius": "12px",
+      transition: "all 0.3s ease",
       // padding: "10px",
     });
   });
