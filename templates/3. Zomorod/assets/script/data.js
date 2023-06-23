@@ -4,6 +4,9 @@ const foodCategory = [
   { id: 3, text: "قهوه", image: "assets/images/ice-vanila.png" },
   { id: 4, text: "قهوه سرد", image: "assets/images/bakery.png" },
   { id: 5, text: "نوشیدنی", image: "assets/images/coffe.png" },
+  { id: 6, text: "جدید", image: "assets/images/coffe.png" },
+  { id: 7, text: "جدید", image: "assets/images/bakery.png" },
+  { id: 8, text: "جدید", image: "assets/images/ice-vanila.png" },
 ];
 
 const foodList = [
