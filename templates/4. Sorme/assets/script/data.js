@@ -14,7 +14,7 @@ const foodList = [
     englishTitle: "Dragon roll",
     category: "سوشی",
     price: 75000,
-    mainImage: "./assets/images/starbucks/starbucks1.png",
+    mainImage: "assets/images/foods/dragon roll.png",
     slideImage: [],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -25,7 +25,7 @@ const foodList = [
     englishTitle: "English Name",
     category: "سوشی",
     price: 75000,
-    mainImage: "./assets/images/starbucks/starbucks1.png",
+    mainImage: "assets/images/foods/dragon roll.png",
     slideImage: [],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -36,7 +36,7 @@ const foodList = [
     englishTitle: "English Name",
     category: "سوشی",
     price: 75000,
-    mainImage: "./assets/images/starbucks/starbucks1.png",
+    mainImage: "assets/images/foods/dragon roll.png",
     slideImage: [],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -47,7 +47,7 @@ const foodList = [
     englishTitle: "English Name",
     category: "رامن",
     price: 75000,
-    mainImage: "./assets/images/starbucks/starbucks1.png",
+    mainImage: "assets/images/foods/dragon roll.png",
     slideImage: [],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -58,7 +58,7 @@ const foodList = [
     englishTitle: "English Name",
     category: "رامن",
     price: 75000,
-    mainImage: "./assets/images/starbucks/starbucks1.png",
+    mainImage: "assets/images/foods/dragon roll.png",
     slideImage: [],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -69,7 +69,7 @@ const foodList = [
     englishTitle: "English Name",
     category: "کیمچی",
     price: 75000,
-    mainImage: "./assets/images/starbucks/starbucks1.png",
+    mainImage: "assets/images/foods/dragon roll.png",
     slideImage: [],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
