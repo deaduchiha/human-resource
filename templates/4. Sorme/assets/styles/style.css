@@ -145,3 +145,12 @@ body {
     padding: 0;
   }
 }
+
+@media screen and (min-height: 700px) {
+  .foodSwiper {
+    margin-top: 5vh;
+  }
+  .categorySwiper {
+    margin-top: 35px;
+  }
+}
