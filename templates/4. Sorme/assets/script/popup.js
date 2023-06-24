@@ -9,6 +9,8 @@ $(document).ready(function () {
 
     $("#popup .popup-header p").text(food.title);
     $("#popup .popup-header span").text(food.englishTitle);
+    $("#popup .popup-information .price").text(food.price + " تومان");
+    $("#popup .popup-information .description span").text(food.description);
 
     // Set the src attribute of the img tag inside popup-image__holder
     const popupImageHolder = $(".popup-image__holder");

@@ -94,6 +94,34 @@
   object-fit: cover;
 }
 
+.popup-information {
+  margin-top: 20px;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+}
+.price {
+  align-self: flex-end;
+  font-weight: 700;
+  font-size: 24px;
+  color: #323232;
+}
+
+.description {
+  margin-bottom: 10px;
+}
+
+.description p {
+  color: #323232;
+  font-weight: 500;
+  font-size: 16px;
+}
+.description span {
+  color: #727272;
+  font-weight: 400;
+  font-size: 14px;
+}
+
 @keyframes popup-fade {
   0% {
     opacity: 0;
@@ -102,5 +130,14 @@
   100% {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media screen and (max-height: 644px) {
+  .popup-image {
+    height: 215px;
+  }
+  .nextEl {
+    margin-bottom: -5px;
   }
 }
