@@ -15,7 +15,12 @@ const foodList = [
     category: "سوشی",
     price: 75000,
     mainImage: "assets/images/foods/dragon roll.png",
-    slideImage: [],
+    slideImage: [
+      "assets/images/foods/kimchi.jpg",
+      "assets/images/foods/kimchi.jpg",
+      "assets/images/foods/kimchi.jpg",
+      "assets/images/foods/kimchi.jpg",
+    ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
@@ -26,7 +31,12 @@ const foodList = [
     category: "سوشی",
     price: 75000,
     mainImage: "assets/images/foods/dragon roll.png",
-    slideImage: [],
+    slideImage: [
+      "assets/images/foods/kimchi.jpg",
+      "assets/images/foods/dragon roll.png",
+      "assets/images/foods/kimchi.jpg",
+      "assets/images/foods/ramen 2.png",
+    ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
@@ -37,7 +47,12 @@ const foodList = [
     category: "سوشی",
     price: 75000,
     mainImage: "assets/images/foods/dragon roll.png",
-    slideImage: [],
+    slideImage: [
+      "assets/images/foods/ramen 2.png",
+      "assets/images/foods/ramen.png",
+      "assets/images/foods/ramen 2.png",
+      "assets/images/foods/ramen.png",
+    ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
@@ -48,7 +63,12 @@ const foodList = [
     category: "رامن",
     price: 75000,
     mainImage: "assets/images/foods/ramen 2.png",
-    slideImage: [],
+    slideImage: [
+      "assets/images/foods/ramen.png",
+      "assets/images/foods/ramen 2.png",
+      "assets/images/foods/ramen.png",
+      "assets/images/foods/ramen 2.png",
+    ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
@@ -59,7 +79,12 @@ const foodList = [
     category: "رامن",
     price: 75000,
     mainImage: "assets/images/foods/ramen.png",
-    slideImage: [],
+    slideImage: [
+      "assets/images/foods/kimchi.jpg",
+      "assets/images/foods/ramen.png",
+      "assets/images/foods/kimchi.jpg",
+      "assets/images/foods/ramen.png",
+    ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
@@ -70,7 +95,12 @@ const foodList = [
     category: "کیمچی",
     price: 75000,
     mainImage: "assets/images/foods/kimchi.jpg",
-    slideImage: [],
+    slideImage: [
+      "assets/images/foods/kimchi.jpg",
+      "assets/images/foods/ramen.png",
+      "assets/images/foods/kimchi.jpg",
+      "assets/images/foods/ramen.png",
+    ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
