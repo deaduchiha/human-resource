@@ -107,7 +107,7 @@ body {
 
 .social {
   position: absolute;
-  bottom: 4vh;
+  bottom: 0;
   right: 0;
   left: 0;
   padding-bottom: 20px;
@@ -152,6 +152,9 @@ body {
 }
 
 @media screen and (min-height: 700px) {
+  .social {
+    bottom: 8vh;
+  }
   .foodSwiper {
     margin-top: 5vh;
   }
@@ -159,6 +162,7 @@ body {
     margin-top: 35px;
   }
 }
+
 @media screen and (max-height: 602px) {
   .foodSwiper .swiper-slide {
     height: 280px;
