@@ -141,3 +141,12 @@
     margin-bottom: -5px;
   }
 }
+
+@media screen and (min-height: 602px) {
+  .verticalSwiper {
+    height: 410px;
+  }
+  .popup-image {
+    overflow: hidden;
+  }
+}
