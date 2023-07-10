@@ -180,11 +180,11 @@ $(document).ready(function () {
     } else {
       // Filter food items based on the selected category ID
       const selectedCategory = foodCategory.find(
-        (category) => category.id === categoryId
+        (category) => category.id === categoryId,
       );
       if (selectedCategory) {
         return foodList.filter(
-          (food) => food.category === selectedCategory.text
+          (food) => food.category === selectedCategory.text,
         );
       } else {
         // Invalid category ID, return an empty array
