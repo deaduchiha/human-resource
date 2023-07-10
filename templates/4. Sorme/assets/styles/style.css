@@ -152,11 +152,11 @@ body {
 }
 
 @media screen and (min-height: 700px) {
-  .social {
-    bottom: 8vh;
-  }
   .foodSwiper {
     margin-top: 5vh;
+  }
+  .social {
+    bottom: 7.5vh;
   }
   .categorySwiper {
     margin-top: 35px;
