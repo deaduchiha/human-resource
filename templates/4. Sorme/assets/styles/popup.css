@@ -68,16 +68,18 @@
 }
 .nextEl {
   position: absolute;
+  z-index: 999;
   width: 40px;
   height: 40px;
-  bottom: -25px;
-  left: 11vw;
+  left: 14vw;
+  top: -30px;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .nextEl img {
-  width: 18px;
+  width: 70%;
 }
 
 .verticalSwiper .swiper-slide {
@@ -96,9 +98,10 @@
 
 .popup-information {
   margin-top: 20px;
-  padding: 0 16px;
+  padding: 5px 16px 0;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .price {
   align-self: flex-end;
