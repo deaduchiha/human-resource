@@ -150,16 +150,6 @@ $(document).ready(function () {
       watchSlidesProgress: true,
       initialSlide: 1,
     });
-
-    // Add click event handler to each food slide
-    const foodSlides = $(".foodSwiper .swiper-slide");
-    foodSlides.on("click", function () {
-      const foodId = $(this).data("food-id");
-      const selectedFood = foodList.find((food) => food.id === foodId);
-
-      // Display the details of the selected food item
-      console.log(selectedFood); // Replace this line with your code to show the details
-    });
   });
 
   // Set "همه" category as active by default
@@ -180,11 +170,11 @@ $(document).ready(function () {
     } else {
       // Filter food items based on the selected category ID
       const selectedCategory = foodCategory.find(
-        (category) => category.id === categoryId,
+        (category) => category.id === categoryId
       );
       if (selectedCategory) {
         return foodList.filter(
-          (food) => food.category === selectedCategory.text,
+          (food) => food.category === selectedCategory.text
         );
       } else {
         // Invalid category ID, return an empty array
