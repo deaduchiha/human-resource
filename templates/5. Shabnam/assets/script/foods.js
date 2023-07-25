@@ -1,18 +1,20 @@
 import { foodList } from "./data.js";
 
 $(document).ready(function () {
-  const swiperWrapper = $(".foodSwiper .swiper-wrapper");
+  const foodsWrapper = $(".foods");
 
   foodList.forEach(function (food) {
-    const foodSlide = $('<div class="foods" id="openBtn"></div>');
-    const foodImage = $("<img>").attr("src", food.mainImage).attr("alt", "");
-    const foodNames = $('<div class="food-names"></div>');
+    const foodSlide = $('<div class="foods-item" id="openBtn"></div>'); // Fixed class name to "foods-item"
+    const foodImageHolder = $('<div class="food-item__image"></div>');
+    const foodImage = $("<img>")
+      .attr("src", food.mainImage)
+      .attr("alt", food.title); // Use food title as alt text
     const foodTitle = $("<p>").text(food.title);
     const foodEnglishTitle = $("<span>").text(food.englishTitle);
-    const foodPrice = $("<span>").text(food.price + " تومان");
+    const foodPrice = $('<span class="price">').text(food.price + " تومان");
 
-    foodNames.append(foodTitle, foodEnglishTitle);
-    foodSlide.append(foodImage, foodNames, foodPrice);
-    swiperWrapper.append(foodSlide);
+    foodImageHolder.append(foodImage);
+    foodSlide.append(foodImageHolder, foodTitle, foodEnglishTitle, foodPrice); // Fixed the order of appended elements
+    foodsWrapper.append(foodSlide);
   });
 });

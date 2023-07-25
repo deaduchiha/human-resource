@@ -3,7 +3,7 @@ import { openPopup } from "./utils.js";
 
 $(document).ready(function () {
   const swiperWrapper = $(".categorySwiper .swiper-wrapper");
-  const foodSwiperWrapper = $(".foodSwiper .swiper-wrapper");
+  const foodsWrapper = $(".foods");
   let foodSwiper;
 
   // Generate HTML for each category
@@ -47,20 +47,22 @@ $(document).ready(function () {
     const filteredFoodList = getFoodListByCategory(categoryId);
 
     // Clear existing food items
-    foodSwiperWrapper.empty();
+    foodsWrapper.empty();
 
     // Generate HTML for each food item
     filteredFoodList.forEach(function (food) {
-      const foodSlide = $('<div class="foods"></div>');
-      const foodImage = $("<img>").attr("src", food.mainImage).attr("alt", "");
-      const foodNames = $('<div class="food-names"></div>');
+      const foodSlide = $('<div class="foods-item" id="openBtn"></div>'); // Fixed class name to "foods-item"
+      const foodImageHolder = $('<div class="food-item__image"></div>');
+      const foodImage = $("<img>")
+        .attr("src", food.mainImage)
+        .attr("alt", food.title); // Use food title as alt text
       const foodTitle = $("<p>").text(food.title);
       const foodEnglishTitle = $("<span>").text(food.englishTitle);
-      const foodPrice = $("<span>").text(food.price + " تومان");
+      const foodPrice = $('<span class="price">').text(food.price + " تومان");
 
-      foodNames.append(foodTitle, foodEnglishTitle);
-      foodSlide.append(foodImage, foodNames, foodPrice);
-      foodSwiperWrapper.append(foodSlide);
+      foodImageHolder.append(foodImage);
+      foodSlide.append(foodImageHolder, foodTitle, foodEnglishTitle, foodPrice); // Fixed the order of appended elements
+      foodsWrapper.append(foodSlide);
 
       // Add click event handler to the food slide
       foodSlide.on("click", function () {
