@@ -4,7 +4,7 @@ import { openPopup } from "./utils.js";
 $(document).ready(function () {
   const swiperWrapper = $(".categorySwiper .swiper-wrapper");
   const foodSwiperWrapper = $(".foodSwiper .swiper-wrapper");
-  let foodSwiper = null; // Declare the foodSwiper variable
+  let foodSwiper;
 
   // Generate HTML for each category
   foodCategory.forEach((category) => {
@@ -46,6 +46,38 @@ $(document).ready(function () {
 
     // Get the selected category ID
     const categoryId = $(this).data("category-id");
+
+    // Check if the selected category has subcategories
+    const selectedCategory = foodCategory.find(
+      (category) => category.id === categoryId
+    );
+
+    // generate subcategories
+    if (selectedCategory && selectedCategory.subCategory) {
+      // Clear existing subcategories
+      $(".subCategory .swiper-wrapper").empty();
+
+      selectedCategory.subCategory.map((cat) => {
+        const subSlide = $("<div>").addClass("swiper-slide").text(cat);
+        subSlide.attr("data-subcategory", cat);
+        $(".subCategory .swiper-wrapper").append(subSlide);
+      });
+
+      // Add click event handler to each subcategory slide
+      const subSlides = $(".subCategory .swiper-wrapper .swiper-slide");
+      subSlides.on("click", function () {
+        // Remove active class from all subcategory slides
+        subSlides.removeClass("active-subcategory");
+
+        // Add active class to the clicked subcategory slide
+        $(this).addClass("active-subcategory");
+        const subCategory = $(this).data("subcategory");
+
+        console.log(subCategory);
+      });
+    } else {
+      $(".subCategory .swiper-wrapper").empty();
+    }
 
     // Filter foodList based on the selected category
     const filteredFoodList = getFoodListByCategory(categoryId);

@@ -56,3 +56,29 @@ export function openPopup(food) {
   // Show the popup
   $("#popup").fadeIn();
 }
+
+export function createFood(food) {
+  const foodSlide = $('<div class="swiper-slide"></div>');
+  const foodImage = $("<img>").attr("src", food.mainImage).attr("alt", "");
+  const foodNames = $('<div class="food-names"></div>');
+  const foodTitle = $("<p>").text(food.title);
+  const foodEnglishTitle = $("<span>").text(food.englishTitle);
+  const foodPrice = $("<span>").text(food.price + " تومان");
+
+  foodNames.append(foodTitle, foodEnglishTitle);
+  foodSlide.append(foodImage, foodNames, foodPrice);
+  foodSwiperWrapper.append(foodSlide);
+
+  // Add click event handler to the food slide
+  foodSlide.on("click", function () {
+    const foodId = food.id; // Use the ID or a unique identifier of the food item
+    const clickedFood = foodList.find((item) => item.id === foodId);
+
+    // Show the details of the clicked food item
+    console.log(clickedFood);
+    // Replace the above line with your code to show the details of the clicked food item
+
+    // Open the popup with the details of the clicked food item
+    openPopup(clickedFood);
+  });
+}
