@@ -4,7 +4,6 @@ import { openPopup } from "./utils.js";
 $(document).ready(function () {
   const swiperWrapper = $(".categorySwiper .swiper-wrapper");
   const foodsWrapper = $(".foods");
-  let foodSwiper;
 
   // Generate HTML for each category
   foodCategory.forEach((category) => {
@@ -69,54 +68,23 @@ $(document).ready(function () {
         const foodId = food.id; // Use the ID or a unique identifier of the food item
         const clickedFood = foodList.find((item) => item.id === foodId);
 
-        // Show the details of the clicked food item
-        console.log(clickedFood);
-        // Replace the above line with your code to show the details of the clicked food item
-
         // Open the popup with the details of the clicked food item
         openPopup(clickedFood);
       });
     });
-
-    // Destroy the previous foodSwiper instance if it exists
-    if (foodSwiper) {
-      foodSwiper.destroy();
-    }
-
-    // Initialize the foodSwiper component
-    foodSwiper = new Swiper(".foodSwiper", {
-      slidesPerView: "auto",
-      centeredSlides: true,
-      watchSlidesProgress: true,
-      initialSlide: 1,
-    });
-  });
-
-  // Set "همه" category as active by default
-  const defaultCategory = swiperSlides.first();
-  defaultCategory.addClass("active-category");
-  defaultCategory.css({
-    color: "#fff",
   });
 
   // Function to filter foodList based on the category ID
   function getFoodListByCategory(categoryId) {
-    if (categoryId === 1) {
-      // Return all food items
-      return foodList;
+    // Filter food items based on the selected category ID
+    const selectedCategory = foodCategory.find(
+      (category) => category.id === categoryId
+    );
+    if (selectedCategory) {
+      return foodList.filter((food) => food.category === selectedCategory.text);
     } else {
-      // Filter food items based on the selected category ID
-      const selectedCategory = foodCategory.find(
-        (category) => category.id === categoryId
-      );
-      if (selectedCategory) {
-        return foodList.filter(
-          (food) => food.category === selectedCategory.text
-        );
-      } else {
-        // Invalid category ID, return an empty array
-        return [];
-      }
+      // Invalid category ID, return an empty array
+      return [];
     }
   }
 });
