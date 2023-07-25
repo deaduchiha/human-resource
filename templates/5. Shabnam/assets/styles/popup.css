@@ -1,0 +1,182 @@
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.681);
+  z-index: 9999;
+}
+
+.popup-content {
+  position: absolute;
+  overflow-y: scroll;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  animation: popup-fade 0.6s ease-in-out;
+  border-radius: 28px;
+}
+
+.popup-header {
+  padding: 20px 16px;
+}
+.popup-header p {
+  font-size: 32px;
+  font-weight: 700;
+  color: #272727;
+  margin-top: 20px;
+}
+.popup-header span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #727272;
+  margin-top: 4px;
+}
+.popup-header__image-holder {
+  width: 40px;
+  height: 40px;
+  box-shadow: 0px 2px 8px 0px #233b600f;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+.popup-image {
+  height: 284px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.popup-image__holder {
+  width: 65%;
+  overflow: hidden;
+}
+.popup-image__holder img {
+  width: 100%;
+  height: 92%;
+  object-fit: cover;
+  border-radius: 13px;
+}
+.verticalSwiper {
+  width: 35%;
+}
+.nextEl {
+  position: absolute;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  left: 14vw;
+  top: -30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nextEl img {
+  width: 70%;
+}
+
+.verticalSwiper .swiper-slide {
+  width: 64px !important;
+  height: 64px !important;
+  margin: auto;
+  padding: 0 !important;
+  border-radius: 13px;
+  overflow: hidden;
+}
+.verticalSwiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popup-information {
+  margin-top: 20px;
+  padding: 5px 16px 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.price {
+  align-self: flex-end;
+  font-weight: 700;
+  font-size: 24px;
+  color: #323232;
+}
+
+.description {
+  margin-bottom: 10px;
+}
+
+.description p {
+  color: #323232;
+  font-weight: 500;
+  font-size: 16px;
+}
+.description span {
+  color: #727272;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.food-details__video {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  right: 0;
+
+  width: 40%;
+  font-size: 14px;
+  color: #323232;
+  margin-bottom: 20px;
+}
+.food-details__video span {
+  margin: 0;
+}
+.food-details__video img {
+  margin: 0 0 0 10px;
+}
+
+.popup-information video {
+  display: none;
+  height: 200px;
+}
+
+@keyframes popup-fade {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media screen and (max-height: 644px) {
+  .popup-image {
+    height: 215px;
+  }
+  .nextEl {
+    margin-bottom: -5px;
+  }
+}
+
+@media screen and (min-height: 602px) {
+  .verticalSwiper {
+    height: 410px;
+  }
+  .popup-image {
+    overflow: hidden;
+  }
+}

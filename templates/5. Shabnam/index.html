@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zomorod</title>
+    <!-- jquery -->
+    <script src="../../common/script/jquery-3.7.0.min.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="../../common/styles/swiper-bundle.min.css" />
+    <script src="../../common/script/swiper-bundle.min.js"></script>
+    <!-- fonts -->
+    <link rel="stylesheet" href="../../common/styles/fonts.css" />
+    <!-- popup -->
+    <link rel="stylesheet" href="assets/styles/popup.css" />
+    <!-- style-->
+    <link rel="stylesheet" href="../../common/styles/global.css" />
+    <!-- templates -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/header.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header__contents">
+          <span>رستوران بودگا</span>
+          <div class="social-media">
+            <a href="">
+              <img src="assets/images/icons/instagram.svg" alt="instagram" />
+            </a>
+            <a href="">
+              <img src="assets/images/icons/location.svg" alt="location" />
+            </a>
+            <a href="">
+              <img src="assets/images/icons/phone.svg" alt="phone" />
+            </a>
+          </div>
+        </div>
+        <img src="assets/images/Logo.svg" alt="Logo" />
+      </div>
+
+      <!-- menu category -->
+      <div class="swiper categorySwiper">
+        <div class="swiper-wrapper">
+          <!-- category swiper-slide -->
+        </div>
+      </div>
+
+      <!-- foods -->
+      <div class="foods">
+        <div class="foods-item">
+          <div class="food-item__image">
+            <img src="assets/images/foods/salad 1.png" alt="salad 1" />
+          </div>
+          <p>سالاد تابستانه</p>
+          <span>summer salad</span>
+          <span class="price">160,000 تومان</span>
+        </div>
+        <div class="foods-item">
+          <div class="food-item__image">
+            <img src="assets/images/foods/salad 2.png" alt="salad 1" />
+          </div>
+          <p>سالاد تابستانه</p>
+          <span>summer salad</span>
+          <span class="price">160,000 تومان</span>
+        </div>
+        <div class="foods-item">
+          <div class="food-item__image">
+            <img src="assets/images/foods/salad 3.png" alt="salad 1" />
+          </div>
+          <p>سالاد تابستانه</p>
+          <span>summer salad</span>
+          <span class="price">160,000 تومان</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup" class="popup-container">
+      <div class="popup-content">
+        <!-- popup header -->
+        <div class="popup-header">
+          <div class="popup-header__image-holder" id="closeBtn">
+            <img src="assets/images/back.svg" alt="back" />
+          </div>
+          <p>title</p>
+          <span>englishTitle</span>
+        </div>
+        <!-- popup image -->
+        <div class="popup-image">
+          <div class="popup-image__holder">
+            <img src="" alt="" />
+          </div>
+
+          <div class="swiper verticalSwiper">
+            <div class="swiper-wrapper">
+              <!-- swiper images -->
+            </div>
+          </div>
+        </div>
+        <div class="popup-information">
+          <div class="nextEl">
+            <img src="assets/images/next.svg" alt="" />
+          </div>
+          <span class="price">price</span>
+          <div class="description">
+            <p>توضیحات</p>
+            <span></span>
+          </div>
+          <div class="food-details__video">
+            <img src="assets/images/video.svg" alt="video" />
+            <span> تماشای ویدئو </span>
+          </div>
+          <video width="100%" controls id="myvideo"></video>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="assets/script/category.js" type="module"></script>
+<script src="assets/script/foods.js" type="module"></script>
+<script src="assets/script/video.js" type="module"></script>
+<script src="assets/script/popup.js" type="module"></script>

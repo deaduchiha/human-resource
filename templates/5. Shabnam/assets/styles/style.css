@@ -1,0 +1,126 @@
+body {
+  background-color: #05090e !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: dana;
+}
+
+.container {
+  /* first-template__container background */
+  background-color: #05090e;
+  position: relative;
+  /* height: 100vh; */
+  width: 700px;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+}
+
+.categorySwiper {
+  margin-top: 20px;
+  padding-right: 10px;
+}
+.categorySwiper .swiper-slide {
+  color: #959595;
+  text-align: center;
+  padding: 10px 15px;
+  width: fit-content !important;
+}
+
+.foods {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  row-gap: 50px;
+  flex-wrap: wrap;
+}
+.foods-item {
+  background-color: #0f151c;
+  width: 144px;
+  height: 195px;
+  border-radius: 24px;
+  position: relative;
+  text-align: center;
+}
+.food-item__image {
+  margin: -30px auto 0;
+  width: 104px;
+  height: 104px;
+}
+.food-item__image img {
+  width: 100%;
+  height: 100%;
+}
+.foods-item span {
+  color: #727272;
+}
+.foods-item p {
+  margin-top: 13px;
+  color: #fff;
+}
+.price {
+  margin-top: 10px;
+  font-size: 13px;
+  background-color: #db2664;
+  color: #fff !important;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.active-category {
+  color: #fff;
+  position: relative;
+}
+.active-category:after {
+  content: "";
+  border-top: 6px dotted red;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 0;
+  top: 80%;
+  width: 6px;
+  height: 6px;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    height: 100vh;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 388px) {
+  .categorySwiper {
+    padding: 0;
+  }
+}
+
+@media screen and (min-height: 700px) {
+  .foodSwiper {
+    margin-top: 5vh;
+  }
+  .social {
+    bottom: 8.5vh;
+  }
+  .categorySwiper {
+    margin-top: 35px;
+  }
+}
+
+@media screen and (min-height: 602px) {
+  .foodSwiper .swiper-slide {
+    height: 280px;
+  }
+  .categorySwiper {
+    margin-top: 5px;
+  }
+  .social {
+    bottom: 6vh;
+  }
+}
