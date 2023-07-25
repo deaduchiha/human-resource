@@ -73,7 +73,47 @@ $(document).ready(function () {
         $(this).addClass("active-subcategory");
         const subCategory = $(this).data("subcategory");
 
-        console.log(subCategory);
+        // Function to filter foodList based on the subcategory
+        function getFoodListBySubCategory(subCategory) {
+          return filteredFoodList.filter(
+            (food) => food.subCategoryFood === subCategory
+          );
+        }
+        // Filter foodList based on the selected subcategory
+        const filteredFoodList = getFoodListByCategory(categoryId);
+        const filteredFoodListBySubCategory =
+          getFoodListBySubCategory(subCategory);
+        // Clear existing food items
+        foodSwiperWrapper.empty();
+
+        // Generate HTML for each food item
+        filteredFoodListBySubCategory.forEach(function (food) {
+          const foodSlide = $('<div class="swiper-slide"></div>');
+          const foodImage = $("<img>")
+            .attr("src", food.mainImage)
+            .attr("alt", "");
+          const foodNames = $('<div class="food-names"></div>');
+          const foodTitle = $("<p>").text(food.title);
+          const foodEnglishTitle = $("<span>").text(food.englishTitle);
+          const foodPrice = $("<span>").text(food.price + " تومان");
+
+          foodNames.append(foodTitle, foodEnglishTitle);
+          foodSlide.append(foodImage, foodNames, foodPrice);
+          foodSwiperWrapper.append(foodSlide);
+
+          // Add click event handler to the food slide
+          foodSlide.on("click", function () {
+            const foodId = food.id; // Use the ID or a unique identifier of the food item
+            const clickedFood = foodList.find((item) => item.id === foodId);
+
+            // Show the details of the clicked food item
+            console.log(clickedFood);
+            // Replace the above line with your code to show the details of the clicked food item
+
+            // Open the popup with the details of the clicked food item
+            openPopup(clickedFood);
+          });
+        });
       });
     } else {
       $(".subCategory .swiper-wrapper").empty();

@@ -37,7 +37,7 @@ const foodList = [
     title: "دراگون رول2",
     englishTitle: "Dragon roll 2",
     category: "سوشی",
-    subCategoryFood: "رامن",
+    subCategoryFood: "سبزیجات",
     price: 75000,
     mainImage: "assets/images/foods/dragon roll.png",
     slideImage: [
@@ -54,7 +54,7 @@ const foodList = [
     title: "دراگون رول3",
     englishTitle: "Dragon roll 3",
     category: "سوشی",
-    subCategoryFood: "رامن",
+    subCategoryFood: "گیاهی",
     price: 75000,
     mainImage: "assets/images/foods/dragon roll.png",
     slideImage: [
@@ -71,7 +71,7 @@ const foodList = [
     title: "رامن اسپاگتی",
     englishTitle: "Spagethi Ramen",
     category: "رامن",
-    subCategoryFood: "غذای دوم",
+    subCategoryFood: "تند",
     price: 75000,
     mainImage: "assets/images/foods/ramen 2.png",
     slideImage: [
@@ -88,7 +88,7 @@ const foodList = [
     title: "رامن تخم مرغ",
     englishTitle: "Ramen",
     category: "رامن",
-    subCategoryFood: "غذای دوم",
+    subCategoryFood: "خرچنگ",
     price: 75000,
     mainImage: "assets/images/foods/ramen.png",
     slideImage: [
@@ -104,8 +104,25 @@ const foodList = [
     id: 6,
     title: "کیمچی",
     englishTitle: "kimchi",
-    category: "کیمچی",
-    subCategoryFood: "غذای دوم",
+    category: "نوشیدنی",
+    subCategoryFood: "اسموتی",
+    price: 75000,
+    mainImage: "assets/images/foods/kimchi.jpg",
+    slideImage: [
+      "assets/images/foods/kimchi.jpg",
+      "assets/images/foods/ramen.png",
+      "assets/images/foods/kimchi.jpg",
+      "assets/images/foods/ramen.png",
+    ],
+    description:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
+  },
+  {
+    id: 6,
+    title: "کیمچی",
+    englishTitle: "kimchi",
+    category: "سوشی",
+    subCategoryFood: "تند",
     price: 75000,
     mainImage: "assets/images/foods/kimchi.jpg",
     slideImage: [
