@@ -11,6 +11,8 @@
 
 .popup-content {
   position: absolute;
+  overflow-y: scroll;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -123,6 +125,31 @@
   color: #727272;
   font-weight: 400;
   font-size: 14px;
+}
+
+.food-details__video {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  right: 0;
+
+  width: 40%;
+  font-size: 14px;
+  color: #323232;
+  margin-bottom: 20px;
+}
+.food-details__video span {
+  margin: 0;
+}
+.food-details__video img {
+  margin: 0 0 0 10px;
+}
+
+.popup-information video {
+  display: none;
+  height: 200px;
 }
 
 @keyframes popup-fade {
