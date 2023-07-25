@@ -1,10 +1,17 @@
 const foodCategory = [
   { id: 1, text: "همه" },
-  { id: 2, text: "سوشی" },
+  {
+    id: 2,
+    text: "سوشی",
+    subCategory: ["سبزیجات", "گیاهی", "تند", "خرچنگ"],
+  },
   { id: 3, text: "رامن" },
   { id: 4, text: "کیمچی" },
-  { id: 5, text: "نودل سوپ" },
-  { id: 6, text: "نوشیدنی" },
+  {
+    id: 6,
+    text: "نوشیدنی",
+    subCategory: ["اسموتی", "سرد", "دلستر"],
+  },
 ];
 
 const foodList = [
@@ -13,6 +20,7 @@ const foodList = [
     title: "دراگون رول",
     englishTitle: "Dragon roll",
     category: "سوشی",
+    subCategoryFood: "سبزیجات",
     price: 75000,
     mainImage: "assets/images/foods/dragon roll.png",
     slideImage: [
@@ -29,6 +37,7 @@ const foodList = [
     title: "دراگون رول2",
     englishTitle: "Dragon roll 2",
     category: "سوشی",
+    subCategoryFood: "رامن",
     price: 75000,
     mainImage: "assets/images/foods/dragon roll.png",
     slideImage: [
@@ -45,6 +54,7 @@ const foodList = [
     title: "دراگون رول3",
     englishTitle: "Dragon roll 3",
     category: "سوشی",
+    subCategoryFood: "رامن",
     price: 75000,
     mainImage: "assets/images/foods/dragon roll.png",
     slideImage: [
@@ -61,6 +71,7 @@ const foodList = [
     title: "رامن اسپاگتی",
     englishTitle: "Spagethi Ramen",
     category: "رامن",
+    subCategoryFood: "غذای دوم",
     price: 75000,
     mainImage: "assets/images/foods/ramen 2.png",
     slideImage: [
@@ -77,6 +88,7 @@ const foodList = [
     title: "رامن تخم مرغ",
     englishTitle: "Ramen",
     category: "رامن",
+    subCategoryFood: "غذای دوم",
     price: 75000,
     mainImage: "assets/images/foods/ramen.png",
     slideImage: [
@@ -93,6 +105,7 @@ const foodList = [
     title: "کیمچی",
     englishTitle: "kimchi",
     category: "کیمچی",
+    subCategoryFood: "غذای دوم",
     price: 75000,
     mainImage: "assets/images/foods/kimchi.jpg",
     slideImage: [

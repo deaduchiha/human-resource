@@ -46,6 +46,19 @@ body {
   width: fit-content !important;
 }
 
+.subCategory {
+  padding-right: 10px;
+}
+.subCategory .swiper-slide {
+  color: #7b7b7b;
+  text-align: center;
+  padding: 10px 15px;
+  min-width: 77px !important;
+  max-width: fit-content !important;
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+
 .foodSwiper {
   background-color: #fafafa;
   height: 450px !important;
@@ -137,6 +150,18 @@ body {
   height: 48px;
   background-color: #fff;
   border-radius: 16px;
+}
+
+.active-category {
+  color: #222222;
+  background: #fafafa;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.active-subcategory {
+  background-color: #222222 !important;
+  color: #fff !important;
 }
 
 @media screen and (max-width: 700px) {
