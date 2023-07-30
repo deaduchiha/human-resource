@@ -12,7 +12,7 @@ export function openPopup(food) {
   popupImageHolder.find("img").attr("src", activeImageSrc);
 
   // Create swiper slides dynamically
-  const swiperWrapper = $(".verticalSwiper .swiper-wrapper");
+  const swiperWrapper = $(".popupSlider .swiper-wrapper");
   swiperWrapper.empty(); // Clear existing slides
 
   // Loop through slideImage array and create swiper-slide elements
@@ -43,13 +43,10 @@ export function openPopup(food) {
   }
 
   // Initialize the swiper after dynamically creating the slides
-  const verticalSwiper = new Swiper(".verticalSwiper", {
-    direction: "vertical",
-    slidesPerView: 3,
-    spaceBetween: 35,
-    initialSlide: 0,
-    navigation: {
-      nextEl: ".nextEl",
+  const verticalSwiper = new Swiper(".popupSlider", {
+    slidesPerView: 1,
+    pagination: {
+      el: ".swiper-pagination",
     },
   });
 
