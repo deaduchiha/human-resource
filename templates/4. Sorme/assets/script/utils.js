@@ -46,10 +46,11 @@ export function openPopup(food) {
   const verticalSwiper = new Swiper(".verticalSwiper", {
     direction: "vertical",
     slidesPerView: 3,
-    spaceBetween: 35,
+    spaceBetween: 15,
     initialSlide: 0,
     navigation: {
       nextEl: ".nextEl",
+      prevEl: ".prevEl",
     },
   });
 

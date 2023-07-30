@@ -50,7 +50,7 @@
   border-radius: 100%;
 }
 .popup-image {
-  height: 284px;
+  height: 250px !important;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -68,20 +68,33 @@
 .verticalSwiper {
   width: 35%;
 }
-.nextEl {
+.prevEl {
   position: absolute;
   z-index: 999;
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   left: 14vw;
-  top: -30px;
-
+  top: -295px;
+  transform: rotate(180deg);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.nextEl img {
-  width: 70%;
+.nextEl {
+  position: absolute;
+  z-index: 999;
+  width: 25px;
+  height: 25px;
+  left: 14vw;
+  top: -35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nextEl img,
+.prevEl img {
+  width: 60%;
 }
 
 .verticalSwiper .swiper-slide {
@@ -150,6 +163,7 @@
 .popup-information video {
   display: none;
   height: 200px;
+  margin-bottom: 30px;
 }
 
 @keyframes popup-fade {
