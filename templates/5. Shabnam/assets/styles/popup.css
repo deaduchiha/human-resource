@@ -129,6 +129,12 @@
   font-weight: 700;
 }
 
+video {
+  display: none;
+  height: 200px;
+  margin: 25px 0;
+}
+
 @keyframes popup-fade {
   0% {
     opacity: 0;
