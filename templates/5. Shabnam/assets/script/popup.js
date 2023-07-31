@@ -1,5 +1,5 @@
 import { foodList } from "./data.js";
-import { openPopup } from "./utils.js";
+import { openPopup, destroyPopupSwiper } from "./utils.js";
 
 $(document).ready(function () {
   $(document).on("click", "#openBtn", function () {
@@ -11,12 +11,6 @@ $(document).ready(function () {
 
   $(document).on("click", "#closeBtn", function () {
     $("#popup").fadeOut();
+    destroyPopupSwiper(); // Destroy the Swiper instance when closing the popup
   });
-
-  // Function to open the popup with food details
-  openPopup;
-});
-
-$(document).on("click", "#closeBtn", function () {
-  $("#popup").fadeOut();
 });
