@@ -12,7 +12,7 @@ const foodList = [
     title: "سالاد تابستانه",
     englishTitle: "Summer Salad",
     category: "سالاد",
-    price: 75000,
+    price: 25000,
     mainImage: "assets/images/foods/salad 1.png",
     slideImage: [
       "assets/images/foods/salad 1.png",
@@ -28,7 +28,7 @@ const foodList = [
     title: "سالاد استفناج ساده",
     englishTitle: "Spinach Salad",
     category: "سالاد",
-    price: 75000,
+    price: 35000,
     mainImage: "assets/images/foods/salad 2.png",
     slideImage: [
       "assets/images/foods/salad 1.png",
@@ -44,7 +44,7 @@ const foodList = [
     title: "سالاد آووکادو",
     englishTitle: "Avocado Salad",
     category: "سالاد",
-    price: 75000,
+    price: 45000,
     mainImage: "assets/images/foods/salad 3.png",
     slideImage: [
       "assets/images/foods/salad 1.png",
@@ -60,7 +60,7 @@ const foodList = [
     title: "سالاد فصل",
     englishTitle: "Season Salad",
     category: "صبحانه",
-    price: 75000,
+    price: 55000,
     mainImage: "assets/images/foods/salad 4.png",
     slideImage: [
       "assets/images/foods/salad 1.png",
@@ -76,7 +76,7 @@ const foodList = [
     title: "سالاد توت‌فرنگی",
     englishTitle: "strawberry salad",
     category: "صبحانه",
-    price: 75000,
+    price: 65000,
     mainImage: "assets/images/foods/salad 5.png",
     slideImage: [
       "assets/images/foods/salad 1.png",
@@ -108,7 +108,7 @@ const foodList = [
     title: "سالاد تابستانه",
     englishTitle: "سالاد تابستانه",
     category: "سالاد",
-    price: 75000,
+    price: 85000,
     mainImage: "assets/images/foods/salad 1.png",
     slideImage: [
       "assets/images/foods/salad 1.png",

@@ -5,7 +5,7 @@ export function openPopup(food) {
   $("#popup .food-name p").text(food.title);
   $("#popup .food-name span").text(food.englishTitle);
   $("#popup .food-information span").text(food.description);
-  $("#popup .popup-information .price").text(food.price + " تومان");
+  $("#popup .food-price span").text(food.price + " تومان");
 
   // Create swiper slides dynamically
   const swiperWrapper = $(".popupSlider .swiper-wrapper");

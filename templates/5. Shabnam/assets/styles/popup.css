@@ -12,6 +12,7 @@
 .popup-content {
   position: absolute;
   overflow: hidden;
+  overflow-y: scroll;
 
   top: 50%;
   left: 50%;
@@ -105,6 +106,27 @@
 }
 .food-information span {
   color: #a2a2a2;
+}
+
+.food-price {
+  display: flex;
+  margin-top: 20px;
+  padding: 0 24px;
+  justify-content: space-between;
+}
+.food-price div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #db2664;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+.food-price span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 @keyframes popup-fade {
