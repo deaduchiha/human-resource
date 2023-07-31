@@ -1,5 +1,5 @@
 import { foodCategory, foodList } from "./data.js";
-import { openPopup } from "./utils.js";
+import { destroyPopupSwiper, openPopup } from "./utils.js";
 
 $(document).ready(function () {
   const swiperWrapper = $(".categorySwiper .swiper-wrapper");
@@ -62,15 +62,6 @@ $(document).ready(function () {
       foodImageHolder.append(foodImage);
       foodSlide.append(foodImageHolder, foodTitle, foodEnglishTitle, foodPrice); // Fixed the order of appended elements
       foodsWrapper.append(foodSlide);
-
-      // Add click event handler to the food slide
-      foodSlide.on("click", function () {
-        const foodId = food.id; // Use the ID or a unique identifier of the food item
-        const clickedFood = foodList.find((item) => item.id === foodId);
-
-        // Open the popup with the details of the clicked food item
-        openPopup(clickedFood);
-      });
     });
   });
 
