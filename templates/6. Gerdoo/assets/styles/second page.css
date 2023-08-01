@@ -28,3 +28,33 @@
   height: 100%;
   object-fit: cover;
 }
+
+.categorySwiper {
+  margin-top: 31px;
+  padding-right: 32px;
+}
+
+.categorySwiper .swiper-slide {
+  color: #727272;
+  border: 1px solid #727272;
+  text-align: center;
+  height: 96px;
+  width: 96px;
+  border-radius: 18px;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.categorySwiper .swiper-slide img {
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  display: block;
+}
+
+.categorySwiper .swiper-slide span {
+  font-size: 14px;
+}

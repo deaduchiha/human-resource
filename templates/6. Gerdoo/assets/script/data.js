@@ -1,9 +1,9 @@
 const foodCategory = [
-  { id: 1, text: "قهوه گرم" },
-  { id: 2, text: "فهوه سرد" },
-  { id: 3, text: "شیرینی" },
-  { id: 4, text: "کیک" },
-  { id: 5, text: "دیگر" },
+  { id: 1, text: "قهوه گرم", icon: "assets/images/foods-icon/1.svg" },
+  { id: 2, text: "فهوه سرد", icon: "assets/images/foods-icon/2.svg" },
+  { id: 3, text: "شیرینی", icon: "assets/images/foods-icon/3.svg" },
+  { id: 4, text: "کیک", icon: "assets/images/foods-icon/2.svg" },
+  { id: 5, text: "دیگر", icon: "assets/images/foods-icon/1.svg" },
 ];
 
 const foodList = [
