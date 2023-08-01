@@ -66,7 +66,7 @@ $(document).ready(function () {
     // Generate HTML for each food item of the selected category
     foodList.forEach(function (food) {
       if (food.category === selectedCategory.text) {
-        const foodSlide = $('<div class="foods-item"></div>');
+        const foodSlide = $('<div class="foods-item" id="openBtn" ></div>');
         const foodImageHolder = $('<div class="food-item__image"></div>');
         const foodImage = $("<img>")
           .attr("src", food.mainImage)
