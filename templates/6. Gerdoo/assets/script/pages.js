@@ -6,7 +6,12 @@ const swiper = new Swiper(".popupSwiper", {
 });
 
 $(document).ready(function () {
-  const outerSwiper = new Swiper(".mySwiper", {});
+  const outerSwiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".first-page__next",
+      // prevEl: ".swiper-button-prev",
+    },
+  });
 
   const innerSwiper = new Swiper(".menuSwiper", {
     initialSlide: 0,
