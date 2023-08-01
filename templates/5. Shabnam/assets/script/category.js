@@ -12,6 +12,10 @@ $(document).ready(function () {
     // Set the first category as active
     if (index === 0) {
       slide.addClass("active-category");
+      slide.css({
+        color: "#fff",
+        transition: "all 0.3s ease",
+      });
     }
 
     swiperWrapper.append(slide);
