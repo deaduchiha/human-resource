@@ -10,10 +10,8 @@ body {
 }
 
 .container {
-  /* first-template__container background */
   background-color: #05090e;
   position: relative;
-  /* height: 100vh; */
   width: 700px;
   overflow-y: scroll;
   padding-bottom: 20px;
