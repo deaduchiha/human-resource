@@ -15,10 +15,10 @@ const foodList = [
     price: 25000,
     mainImage: "assets/images/foods/salad 1.png",
     slideImage: [
-      "assets/images/foods/salad 1.png",
-      "assets/images/foods/salad 2.png",
-      "assets/images/foods/salad 3.png",
-      "assets/images/foods/salad 4.png",
+      "assets/images/foods/image test.png",
+      "assets/images/foods/test 2.jpg",
+      "assets/images/foods/test 3.webp",
+      "assets/images/foods/test 4.webp",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -31,10 +31,10 @@ const foodList = [
     price: 35000,
     mainImage: "assets/images/foods/salad 2.png",
     slideImage: [
-      "assets/images/foods/salad 1.png",
-      "assets/images/foods/salad 2.png",
-      "assets/images/foods/salad 3.png",
-      "assets/images/foods/salad 4.png",
+      "assets/images/foods/image test.png",
+      "assets/images/foods/test 2.jpg",
+      "assets/images/foods/test 3.webp",
+      "assets/images/foods/test 4.webp",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -47,10 +47,10 @@ const foodList = [
     price: 45000,
     mainImage: "assets/images/foods/salad 3.png",
     slideImage: [
-      "assets/images/foods/salad 1.png",
-      "assets/images/foods/salad 2.png",
-      "assets/images/foods/salad 3.png",
-      "assets/images/foods/salad 4.png",
+      "assets/images/foods/image test.png",
+      "assets/images/foods/test 2.jpg",
+      "assets/images/foods/test 3.webp",
+      "assets/images/foods/test 4.webp",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -63,10 +63,10 @@ const foodList = [
     price: 55000,
     mainImage: "assets/images/foods/salad 4.png",
     slideImage: [
-      "assets/images/foods/salad 1.png",
-      "assets/images/foods/salad 2.png",
-      "assets/images/foods/salad 3.png",
-      "assets/images/foods/salad 4.png",
+      "assets/images/foods/image test.png",
+      "assets/images/foods/test 2.jpg",
+      "assets/images/foods/test 3.webp",
+      "assets/images/foods/test 4.webp",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -79,10 +79,10 @@ const foodList = [
     price: 65000,
     mainImage: "assets/images/foods/salad 5.png",
     slideImage: [
-      "assets/images/foods/salad 1.png",
-      "assets/images/foods/salad 2.png",
-      "assets/images/foods/salad 3.png",
-      "assets/images/foods/salad 4.png",
+      "assets/images/foods/image test.png",
+      "assets/images/foods/test 2.jpg",
+      "assets/images/foods/test 3.webp",
+      "assets/images/foods/test 4.webp",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -95,10 +95,10 @@ const foodList = [
     price: 75000,
     mainImage: "assets/images/foods/salad 6.png",
     slideImage: [
-      "assets/images/foods/salad 1.png",
-      "assets/images/foods/salad 2.png",
-      "assets/images/foods/salad 3.png",
-      "assets/images/foods/salad 4.png",
+      "assets/images/foods/image test.png",
+      "assets/images/foods/test 2.jpg",
+      "assets/images/foods/test 3.webp",
+      "assets/images/foods/test 4.webp",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -111,10 +111,10 @@ const foodList = [
     price: 85000,
     mainImage: "assets/images/foods/salad 1.png",
     slideImage: [
-      "assets/images/foods/salad 1.png",
-      "assets/images/foods/salad 2.png",
-      "assets/images/foods/salad 3.png",
-      "assets/images/foods/salad 4.png",
+      "assets/images/foods/image test.png",
+      "assets/images/foods/test 2.jpg",
+      "assets/images/foods/test 3.webp",
+      "assets/images/foods/test 4.webp",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",

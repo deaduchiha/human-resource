@@ -1,14 +1,18 @@
 import { foodCategory, foodList } from "./data.js";
-import { destroyPopupSwiper, openPopup } from "./utils.js";
 
 $(document).ready(function () {
   const swiperWrapper = $(".categorySwiper .swiper-wrapper");
   const foodsWrapper = $(".foods");
 
   // Generate HTML for each category
-  foodCategory.forEach((category) => {
+  foodCategory.forEach((category, index) => {
     const slide = $("<div>").addClass("swiper-slide").text(category.text);
     slide.attr("data-category-id", category.id);
+
+    // Set the first category as active
+    if (index === 0) {
+      slide.addClass("active-category");
+    }
 
     swiperWrapper.append(slide);
   });
@@ -18,6 +22,9 @@ $(document).ready(function () {
     slidesPerView: "auto",
     spaceBetween: 15,
   });
+
+  // Filter foods based on the first category when the page loads
+  filterFoodsByCategory(foodCategory[0].id);
 
   // Add click event handler to each slide
   const swiperSlides = $(".swiper-slide");
@@ -30,7 +37,7 @@ $(document).ready(function () {
 
     // Apply CSS styles to the clicked category
     swiperSlides.css({
-      color: "#fff",
+      color: "#959595",
       padding: "10px",
       transition: "all 0.3s ease",
     });
@@ -43,39 +50,40 @@ $(document).ready(function () {
     const categoryId = $(this).data("category-id");
 
     // Filter foodList based on the selected category
-    const filteredFoodList = getFoodListByCategory(categoryId);
-
-    // Clear existing food items
-    foodsWrapper.empty();
-
-    // Generate HTML for each food item
-    filteredFoodList.forEach(function (food) {
-      const foodSlide = $('<div class="foods-item" id="openBtn"></div>'); // Fixed class name to "foods-item"
-      const foodImageHolder = $('<div class="food-item__image"></div>');
-      const foodImage = $("<img>")
-        .attr("src", food.mainImage)
-        .attr("alt", food.title); // Use food title as alt text
-      const foodTitle = $("<p>").text(food.title);
-      const foodEnglishTitle = $("<span>").text(food.englishTitle);
-      const foodPrice = $('<span class="price">').text(food.price + " تومان");
-
-      foodImageHolder.append(foodImage);
-      foodSlide.append(foodImageHolder, foodTitle, foodEnglishTitle, foodPrice); // Fixed the order of appended elements
-      foodsWrapper.append(foodSlide);
-    });
+    filterFoodsByCategory(categoryId);
   });
 
   // Function to filter foodList based on the category ID
-  function getFoodListByCategory(categoryId) {
-    // Filter food items based on the selected category ID
+  function filterFoodsByCategory(categoryId) {
+    // Clear existing food items
+    foodsWrapper.empty();
+
+    // Get the selected category
     const selectedCategory = foodCategory.find(
       (category) => category.id === categoryId
     );
-    if (selectedCategory) {
-      return foodList.filter((food) => food.category === selectedCategory.text);
-    } else {
-      // Invalid category ID, return an empty array
-      return [];
-    }
+
+    // Generate HTML for each food item of the selected category
+    foodList.forEach(function (food) {
+      if (food.category === selectedCategory.text) {
+        const foodSlide = $('<div class="foods-item"></div>');
+        const foodImageHolder = $('<div class="food-item__image"></div>');
+        const foodImage = $("<img>")
+          .attr("src", food.mainImage)
+          .attr("alt", food.title);
+        const foodTitle = $("<p>").text(food.title);
+        const foodEnglishTitle = $("<span>").text(food.englishTitle);
+        const foodPrice = $('<span class="price">').text(food.price + " تومان");
+
+        foodImageHolder.append(foodImage);
+        foodSlide.append(
+          foodImageHolder,
+          foodTitle,
+          foodEnglishTitle,
+          foodPrice
+        );
+        foodsWrapper.append(foodSlide);
+      }
+    });
   }
 });

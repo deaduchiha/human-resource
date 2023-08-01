@@ -30,10 +30,31 @@
   position: relative;
   overflow: visible;
 }
+.popupSlider .swiper-slide {
+  position: relative;
+}
 .popupSlider img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: 0%;
+  display: block;
+  z-index: -1;
+}
+
+.sliderShadow {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  background: radial-gradient(
+    100% 100% at 50% 0%,
+    rgba(5, 9, 14, 0) 52.72%,
+    #05090e 100%
+  );
+
+  width: 100%;
+  height: 102px;
+  z-index: 999;
 }
 .popup-content .swiper-pagination-bullet {
   width: 6px;
@@ -53,9 +74,9 @@
   bottom: -30px;
 }
 .popupClose {
-  width: 30px;
-  height: 30px;
-  background-color: #8a8a8a;
+  width: 40px;
+  height: 40px;
+  background-color: #c8c8c8be;
   border-radius: 20px;
   padding: 2px 0 0 1px;
 
@@ -63,8 +84,8 @@
   font-weight: 700;
 
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   z-index: 999;
 
   display: flex;

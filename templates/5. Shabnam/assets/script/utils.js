@@ -15,6 +15,7 @@ export function openPopup(food) {
   for (let i = 0; i < food.slideImage.length; i++) {
     const slideImage = food.slideImage[i];
     const swiperSlide = $("<div>").addClass("swiper-slide");
+    const imageShadow = $("<div>").addClass("sliderShadow");
 
     // Create img tag and set the source from slideImage array
     const img = $("<img>")
@@ -23,6 +24,7 @@ export function openPopup(food) {
       .data("index", i); // Set the data-index attribute with the slide index
 
     swiperSlide.append(img);
+    swiperSlide.append(imageShadow);
     swiperWrapper.append(swiperSlide);
   }
 
