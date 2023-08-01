@@ -11,7 +11,7 @@ const foodList = [
     id: 1,
     title: "آفوگاتو",
     englishTitle: "Afogato",
-    category: "فهوه سرد",
+    category: "قهوه سرد",
     price: 25000,
     mainImage: "assets/images/foods/1.png",
     slideImage: [
@@ -27,7 +27,7 @@ const foodList = [
     id: 2,
     title: "لوتوس",
     englishTitle: "lotus",
-    category: "فهوه سرد",
+    category: "قهوه سرد",
     price: 35000,
     mainImage: "assets/images/foods/1.png",
 
@@ -61,7 +61,7 @@ const foodList = [
     id: 4,
     title: "آیس کارامل",
     englishTitle: "ice caramel",
-    category: "فهوه سرد",
+    category: "قهوه سرد",
     price: 55000,
     mainImage: "assets/images/foods/2.png",
 
