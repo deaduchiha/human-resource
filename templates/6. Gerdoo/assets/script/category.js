@@ -52,7 +52,7 @@ $(document).ready(function () {
     // Apply CSS styles to the clicked category
     swiperSlides.css({
       backgroundColor: "transparent",
-      color: "727272",
+      color: "#727272",
       padding: "10px",
       transition: "all 0.3s ease",
     });
