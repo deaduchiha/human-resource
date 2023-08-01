@@ -9,7 +9,7 @@ $(document).ready(function () {
   const outerSwiper = new Swiper(".mySwiper", {
     navigation: {
       nextEl: ".first-page__next",
-      // prevEl: ".swiper-button-prev",
+      prevEl: ".second-page__prev",
     },
   });
 
