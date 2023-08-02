@@ -60,7 +60,7 @@
   display: block;
 }
 .active-category svg path {
-  stroke: #fff;
+  stroke: #fff !important;
 }
 
 .categorySwiper .swiper-slide span {
