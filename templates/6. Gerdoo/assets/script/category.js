@@ -82,21 +82,24 @@ $(document).ready(function () {
     // Generate HTML for each food item of the selected category
     foodList.forEach(function (food) {
       if (food.category === selectedCategory.text) {
-        const foodSlide = $('<div class="foods-item" id="openBtn" ></div>');
+        const foodSlide = $('<div class="foods-item" id="openBtn"></div>');
         const foodImageHolder = $('<div class="food-item__image"></div>');
         const foodImage = $("<img>")
           .attr("src", food.mainImage)
           .attr("alt", food.title);
+        const foodNameAndPriceHolder = $(
+          '<div class="food-item_price_holder"></div>'
+        );
         const foodTitle = $("<p>").text(food.title);
         const foodEnglishTitle = $("<span>").text(food.englishTitle);
         const foodPrice = $('<span class="price">').text(food.price + " تومان");
 
         foodImageHolder.append(foodImage);
+        foodNameAndPriceHolder.append(foodTitle, foodPrice);
         foodSlide.append(
           foodImageHolder,
-          foodTitle,
-          foodEnglishTitle,
-          foodPrice
+          foodNameAndPriceHolder,
+          foodEnglishTitle
         );
         foodsWrapper.append(foodSlide);
       }
