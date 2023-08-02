@@ -43,30 +43,33 @@ $(document).ready(function () {
   // Add click event handler to each slide
   const swiperSlides = $(".second-page .swiper-slide");
   swiperSlides.on("click", function () {
-    // Remove active class from all slides
-    swiperSlides.removeClass("active-category");
+    // Only do something if the clicked slide is not already active
+    if (!$(this).hasClass("active-category")) {
+      // Remove active class from all slides
+      swiperSlides.removeClass("active-category");
 
-    // Add active class to the clicked slide
-    $(this).addClass("active-category");
+      // Add active class to the clicked slide
+      $(this).addClass("active-category");
 
-    // Apply CSS styles to the clicked category
-    swiperSlides.css({
-      backgroundColor: "transparent",
-      color: "#727272",
-      padding: "10px",
-      transition: "all 0.3s ease",
-    });
-    $(this).css({
-      backgroundColor: "#B46A2A",
-      color: "#fff",
-      transition: "all 0.3s ease",
-    });
+      // Apply CSS styles to the clicked category
+      swiperSlides.css({
+        backgroundColor: "transparent",
+        color: "#727272",
+        padding: "10px",
+        transition: "all 0.3s ease",
+      });
+      $(this).css({
+        backgroundColor: "#B46A2A",
+        color: "#fff",
+        transition: "all 0.3s ease",
+      });
 
-    // Get the selected category ID
-    const categoryId = $(this).data("category-id");
+      // Get the selected category ID
+      const categoryId = $(this).data("category-id");
 
-    // Filter foodList based on the selected category
-    filterFoodsByCategory(categoryId);
+      // Filter foodList based on the selected category
+      filterFoodsByCategory(categoryId);
+    }
   });
 
   // Function to filter foodList based on the category ID
