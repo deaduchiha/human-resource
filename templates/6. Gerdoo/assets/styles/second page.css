@@ -1,5 +1,7 @@
 .second-page {
   background-color: #fcf2ea;
+  overflow: scroll;
+  padding-bottom: 10px;
 }
 
 .second-page__header {
