@@ -73,13 +73,45 @@
       </div>
 
       <div id="popup" class="popup-container">
-        <div class="popup-content"></div>
+        <div class="popup-content">
+          <div class="swiper popupSlider">
+            <div class="swiper-wrapper">
+              <!-- swiper-slide -->
+            </div>
+            <div class="sliderShadow">
+              <!-- food name -->
+              <div class="food-name">
+                <p><!-- title --></p>
+                <span><!-- english title --></span>
+              </div>
+              <!-- video -->
+              <div class="food-details__video">
+                <img src="assets/images/icons/video.svg" alt="video" />
+                <p>نمایش ویدئو</p>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="popupClose" id="closeBtn"><</div>
+
+          <!-- food information -->
+          <div class="food-information">
+            <li>توضیحات</li>
+            <span><!-- description --></span>
+          </div>
+
+          <div class="food-price">
+            <span>188000</span>
+          </div>
+          <video width="100%" controls id="myvideo"></video>
+        </div>
       </div>
     </div>
   </body>
 </html>
 
 <script src="assets/script/category.js" type="module"></script>
-<!-- <script src="assets/script/video.js" type="module"></script> -->
-<!-- <script src="assets/script/popup.js" type="module"></script> -->
+<script src="assets/script/video.js" type="module"></script>
+<script src="assets/script/popup.js" type="module"></script>
 <script src="assets/script/pages.js" type="module"></script>

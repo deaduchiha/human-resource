@@ -15,10 +15,10 @@ const foodList = [
     price: 25000,
     mainImage: "assets/images/foods/1.png",
     slideImage: [
-      "assets/images/foods/image test.png",
-      "assets/images/foods/test 2.jpg",
-      "assets/images/foods/test 3.webp",
-      "assets/images/foods/test 4.webp",
+      "assets/images/foods/1.png",
+      "assets/images/foods/2.png",
+      "assets/images/foods/3.png",
+      "assets/images/foods/4.png",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -32,10 +32,10 @@ const foodList = [
     mainImage: "assets/images/foods/1.png",
 
     slideImage: [
-      "assets/images/foods/image test.png",
-      "assets/images/foods/test 2.jpg",
-      "assets/images/foods/test 3.webp",
-      "assets/images/foods/test 4.webp",
+      "assets/images/foods/1.png",
+      "assets/images/foods/2.png",
+      "assets/images/foods/3.png",
+      "assets/images/foods/4.png",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
