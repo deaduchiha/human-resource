@@ -71,6 +71,8 @@ $(document).ready(function () {
     foodList.forEach(function (food) {
       if (food.category === selectedCategory.text) {
         const foodSlide = $('<div class="foods-item" id="openBtn" ></div>');
+        foodSlide.attr("data-food-id", food.id); // Set the data-food-id attribute
+
         const foodImageHolder = $('<div class="food-item__image"></div>');
         const foodImage = $("<img>")
           .attr("src", food.mainImage)

@@ -86,6 +86,7 @@ $(document).ready(function () {
     foodList.forEach(function (food) {
       if (food.category === selectedCategory.text) {
         const foodSlide = $('<div class="foods-item" id="openBtn"></div>');
+        foodSlide.attr("data-food-id", food.id); // Set the data-food-id attribute
         const foodImageHolder = $('<div class="food-item__image"></div>');
         const foodImage = $("<img>")
           .attr("src", food.mainImage)
@@ -95,7 +96,7 @@ $(document).ready(function () {
         );
         const foodTitle = $("<p>").text(food.title);
         const foodEnglishTitle = $("<span>").text(food.englishTitle);
-        const foodPrice = $('<span class="price">').text(food.price + " تومان");
+        const foodPrice = $('<span class="price">').text(food.price);
 
         foodImageHolder.append(foodImage);
         foodNameAndPriceHolder.append(foodTitle, foodPrice);

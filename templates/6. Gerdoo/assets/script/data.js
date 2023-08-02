@@ -13,6 +13,11 @@ const foodList = [
     englishTitle: "Afogato",
     category: "قهوه سرد",
     price: 25000,
+    sizes: [
+      { size: "کوچک", sizePrice: 75000 },
+      { size: "متوسط", sizePrice: 85000 },
+      { size: "بزرگ", sizePrice: 95000 },
+    ],
     mainImage: "assets/images/foods/1.png",
     slideImage: [
       "assets/images/foods/1.png",
@@ -29,6 +34,11 @@ const foodList = [
     englishTitle: "lotus",
     category: "قهوه سرد",
     price: 35000,
+    sizes: [
+      { size: "کوچک", sizePrice: 75000 },
+      { size: "متوسط", sizePrice: 85000 },
+      { size: "بزرگ", sizePrice: 95000 },
+    ],
     mainImage: "assets/images/foods/1.png",
 
     slideImage: [
@@ -46,6 +56,11 @@ const foodList = [
     englishTitle: "latte",
     category: "قهوه گرم",
     price: 45000,
+    sizes: [
+      { size: "کوچک", sizePrice: 75000 },
+      { size: "متوسط", sizePrice: 85000 },
+      { size: "بزرگ", sizePrice: 95000 },
+    ],
     mainImage: "assets/images/foods/1.png",
 
     slideImage: [
@@ -63,6 +78,11 @@ const foodList = [
     englishTitle: "ice caramel",
     category: "قهوه سرد",
     price: 55000,
+    sizes: [
+      { size: "کوچک", sizePrice: 75000 },
+      { size: "متوسط", sizePrice: 85000 },
+      { size: "بزرگ", sizePrice: 95000 },
+    ],
     mainImage: "assets/images/foods/2.png",
 
     slideImage: [
@@ -80,6 +100,11 @@ const foodList = [
     englishTitle: "marshmello",
     category: "قهوه گرم",
     price: 65000,
+    sizes: [
+      { size: "کوچک", sizePrice: 75000 },
+      { size: "متوسط", sizePrice: 85000 },
+      { size: "بزرگ", sizePrice: 95000 },
+    ],
     mainImage: "assets/images/foods/3.png",
 
     slideImage: [
@@ -97,6 +122,11 @@ const foodList = [
     englishTitle: "tiramiso",
     category: "دیگر",
     price: 75000,
+    sizes: [
+      { size: "کوچک", sizePrice: 75000 },
+      { size: "متوسط", sizePrice: 85000 },
+      { size: "بزرگ", sizePrice: 95000 },
+    ],
     mainImage: "assets/images/foods/4.png",
 
     slideImage: [
@@ -109,11 +139,16 @@ const foodList = [
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
   {
-    id: 6,
+    id: 7,
     title: "موکا",
     englishTitle: "moca",
     category: "قهوه گرم",
     price: 85000,
+    sizes: [
+      { size: "کوچک", sizePrice: 75000 },
+      { size: "متوسط", sizePrice: 85000 },
+      { size: "بزرگ", sizePrice: 95000 },
+    ],
     mainImage: "assets/images/foods/5.png",
 
     slideImage: [

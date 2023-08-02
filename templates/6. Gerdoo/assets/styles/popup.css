@@ -122,25 +122,46 @@
   color: #ffffff;
 }
 
-.food-price {
+.food-size {
   display: flex;
-  margin-top: 20px;
+  flex-direction: column;
   padding: 0 24px;
+}
+.food-size > p {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  color: #a2a2a2;
+  font-weight: 400;
+}
+.sizes {
+  display: flex;
   justify-content: space-between;
 }
-.food-price div {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  background-color: #db2664;
-  color: #fff;
-  padding: 6px 12px;
-  border-radius: 8px;
+.sizes span {
+  padding: 6px 10px;
+  background-color: #141921;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 6px;
+  width: 100px;
+  height: 34px;
+  text-align: center;
 }
-.food-price span {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 700;
+.food-size > span {
+  justify-self: flex-end;
+  margin-top: 24px;
+  text-align: left;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+}
+.food-size > span::after {
+  content: "تومان ";
+  color: #b46a2a;
+  margin-right: 5px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .food-details__video {
