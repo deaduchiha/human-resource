@@ -11,7 +11,10 @@ $(document).ready(function () {
     const slide = $("<div>").addClass("swiper-slide");
     slide.attr("data-category-id", category.id);
 
-    const img = $("<img>").attr("src", category.icon).attr("alt", "icon");
+    const img = $("<svg>").attr("stroke", "currentColor").load(category.icon);
+    const paths = img.find("path");
+    console.log(paths);
+
     const span = $("<span>").text(category.text);
 
     // Append the image and span to the slide

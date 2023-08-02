@@ -53,11 +53,14 @@
   margin-left: 10px;
 }
 
-.categorySwiper .swiper-slide img {
+.categorySwiper .swiper-slide svg {
   width: 32px;
   height: 32px;
   margin: 0 auto;
   display: block;
+}
+.active-category svg path {
+  stroke: #fff;
 }
 
 .categorySwiper .swiper-slide span {
