@@ -1,0 +1,40 @@
+.categories {
+  margin-top: 31px;
+  padding-right: 16px;
+  height: 72px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: #202226;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin-right: 16px;
+}
+
+.categories .swiper-slide {
+  color: #727272;
+
+  text-align: center;
+  width: 54px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.categories .swiper-slide:last-child {
+  margin-left: 10px;
+}
+
+.categories .swiper-slide svg {
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  display: block;
+}
+svg path {
+  stroke: #fff !important;
+}
+
+.categories .swiper-slide span {
+  font-size: 14px;
+}

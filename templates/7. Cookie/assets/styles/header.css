@@ -1,0 +1,23 @@
+.header {
+  padding: 1rem 1.7rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header span {
+  color: #fff;
+}
+.header img {
+  max-width: 44px;
+  max-height: 56px;
+  object-fit: cover;
+}
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}

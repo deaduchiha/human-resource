@@ -1,0 +1,24 @@
+body {
+  background: linear-gradient(180deg, #2e2f36 0%, #1a1d22 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: dana;
+}
+
+.container {
+  position: relative;
+  width: 700px;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    height: 100vh;
+    width: 100%;
+  }
+}

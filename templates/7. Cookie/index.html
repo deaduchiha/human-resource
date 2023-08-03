@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shabnam</title>
+    <title>Cookie</title>
     <!-- jquery -->
     <script src="../../common/script/jquery-3.7.0.min.js"></script>
     <!-- swiper -->
@@ -17,14 +17,14 @@
     <!-- style-->
     <link rel="stylesheet" href="../../common/styles/global.css" />
     <!-- templates -->
-    <link rel="stylesheet" href="assets/styles/style.css" />
     <link rel="stylesheet" href="assets/styles/header.css" />
+    <link rel="stylesheet" href="assets/styles/category.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
   <body>
     <div class="container">
       <div class="header">
         <div class="header__contents">
-          <span>رستوران بودگا</span>
           <div class="social-media">
             <a href="">
               <img src="assets/images/icons/instagram.svg" alt="instagram" />
@@ -41,55 +41,22 @@
       </div>
 
       <!-- menu category -->
-      <div class="swiper categorySwiper">
+      <div class="swiper categories">
         <div class="swiper-wrapper">
-          <!-- category swiper-slide -->
+          <!-- categories swiper-slide -->
         </div>
-      </div>
-
-      <!-- foods -->
-      <div class="foods">
-        <!-- food items -->
       </div>
     </div>
 
     <div id="popup" class="popup-container">
-      <div class="popup-content">
-        <div class="swiper popupSlider">
-          <div class="swiper-wrapper">
-            <!-- swiper-slide -->
-          </div>
-          <!-- <div class="sliderShadow"></div> -->
-          <div class="swiper-pagination"></div>
-        </div>
-
-        <div class="popupClose" id="closeBtn"><</div>
-
-        <!-- food name -->
-        <div class="food-name">
-          <p><!-- title --></p>
-          <span><!-- english title --></span>
-        </div>
-
-        <!-- food information -->
-        <div class="food-information">
-          <li>توضیحات</li>
-          <span><!-- description --></span>
-        </div>
-
-        <div class="food-price">
-          <div class="food-details__video">
-            <img src="assets/images/video.svg" alt="video" />
-            <p>نمایش ویدئو</p>
-          </div>
-          <span>188000</span>
-        </div>
-        <video width="100%" controls id="myvideo"></video>
-      </div>
+      <div class="popup-content"></div>
     </div>
   </body>
 </html>
 
 <script src="assets/script/category.js" type="module"></script>
-<script src="assets/script/video.js" type="module"></script>
-<script src="assets/script/popup.js" type="module"></script>
+<script
+  type="text/javascript"
+  src="https://unpkg.com/external-svg-loader@latest/svg-loader.min.js"
+  async
+></script>
