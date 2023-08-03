@@ -8,6 +8,7 @@ $(document).ready(() => {
   });
 
   const swiperWrapper = $(".categories .swiper-wrapper");
+  const foodsWrapper = $(".foods");
 
   // show categories
   foodCategory.map((data, index) => {
@@ -37,4 +38,21 @@ $(document).ready(() => {
     // Add the "active-category" class to the clicked category
     clickedCategory.addClass("active-category");
   };
+
+  //filter foods based category
+  foodList.map((data) => {
+    const food = $("<div>").addClass("items");
+    food.attr("data-food-id", data.id); // Set the data-food-id attribute
+    const foodImage = $("<img>")
+      .attr("src", data.mainImage)
+      .attr("alt", data.title);
+    const foodTitle = $("<p>").addClass("title").text(data.title);
+    const foodEnglishTitle = $("<p>")
+      .addClass("english-title")
+      .text(data.englishTitle);
+    const foodPrice = $("<p>").addClass("price").text(data.price);
+
+    food.append(foodImage, foodTitle, foodEnglishTitle, foodPrice);
+    foodsWrapper.append(food);
+  });
 });

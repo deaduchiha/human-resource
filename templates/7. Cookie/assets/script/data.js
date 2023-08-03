@@ -63,7 +63,7 @@ const foodList = [
       { size: "متوسط", sizePrice: 85000 },
       { size: "بزرگ", sizePrice: 95000 },
     ],
-    mainImage: "assets/images/foods/2.png",
+    mainImage: "assets/images/foods/1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
@@ -78,7 +78,7 @@ const foodList = [
       { size: "متوسط", sizePrice: 85000 },
       { size: "بزرگ", sizePrice: 95000 },
     ],
-    mainImage: "assets/images/foods/3.png",
+    mainImage: "assets/images/foods/1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
@@ -93,7 +93,7 @@ const foodList = [
       { size: "متوسط", sizePrice: 85000 },
       { size: "بزرگ", sizePrice: 95000 },
     ],
-    mainImage: "assets/images/foods/4.png",
+    mainImage: "assets/images/foods/1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
@@ -108,7 +108,7 @@ const foodList = [
       { size: "متوسط", sizePrice: 85000 },
       { size: "بزرگ", sizePrice: 95000 },
     ],
-    mainImage: "assets/images/foods/5.png",
+    mainImage: "assets/images/foods/1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
