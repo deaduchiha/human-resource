@@ -1,8 +1,7 @@
 .categories {
   margin-top: 24px;
   padding-right: 16px;
-  max-height: 72px;
-  min-height: 72px;
+  height: 72px;
   overflow: visible;
 
   background-color: #202226;

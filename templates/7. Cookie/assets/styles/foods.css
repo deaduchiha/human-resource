@@ -1,0 +1,61 @@
+.foods {
+  margin-top: 80px;
+  padding: 0 16px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 80px;
+  overflow: visible;
+}
+
+.foods .items {
+  width: 144px;
+  height: 152px;
+  border-radius: 12px 12px 72px 12px;
+  background-color: #353842;
+  padding: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.items img {
+  width: 101px;
+  height: 97px;
+  display: block;
+  margin: -50px auto 0;
+}
+.items p {
+  font-size: 14px;
+}
+.title {
+  color: #ffffff;
+  font-weight: 400;
+  width: 100%;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: right;
+  white-space: nowrap;
+}
+.english-title {
+  color: #a2a2a2;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+}
+.price {
+  color: #db813e;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+}
+.price::after {
+  content: "تومان";
+  color: #a2a2a2;
+  font-size: 12px;
+  font-weight: 400;
+  margin-right: 5px;
+}
