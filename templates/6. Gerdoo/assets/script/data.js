@@ -57,9 +57,9 @@ const foodList = [
     category: "قهوه گرم",
     price: 45000,
     sizes: [
-      { size: "کوچک", sizePrice: 75000 },
-      { size: "متوسط", sizePrice: 85000 },
-      { size: "بزرگ", sizePrice: 95000 },
+      { size: "کوچک", sizePrice: 45000 },
+      { size: "متوسط", sizePrice: 55000 },
+      { size: "بزرگ", sizePrice: 65000 },
     ],
     mainImage: "assets/images/foods/1.png",
 

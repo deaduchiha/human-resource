@@ -5,7 +5,40 @@ export function openPopup(food) {
   $("#popup .food-name p").text(food.title);
   $("#popup .food-name span").text(food.englishTitle);
   $("#popup .food-information span").text(food.description);
-  $("#popup .food-size > span").text(food.price);
+
+  const foodSizes = $("#popup .food-size");
+  const sizesTitle = $("<p>").text("اندازه");
+  const sizesDiv = $("<div>").addClass("sizes");
+  const sizesPrice = $("<span>");
+
+  // Set the default price to the first item's sizePrice
+  sizesPrice.text(food.sizes[0].sizePrice);
+
+  food.sizes.map((data, index) => {
+    // Create a div to hold the size options
+    const sizeOption = $("<span>").text(data.size);
+
+    if (index === 0) {
+      sizeOption.addClass("active-size");
+    }
+
+    // Add click event listener to each size option
+    sizeOption.on("click", () => handleSizeClick(data.sizePrice, sizeOption));
+
+    sizesDiv.append(sizeOption);
+  });
+
+  // handle click event on size options price
+  function handleSizeClick(sizePrice, sizeOption) {
+    // Remove the "active-size" class from all size options
+    sizesDiv.find("span").removeClass("active-size");
+
+    // Add the "active-size" class to the clicked size option
+    sizeOption.addClass("active-size");
+    sizesPrice.text(sizePrice);
+  }
+
+  foodSizes.empty().append(sizesTitle, sizesDiv, sizesPrice);
 
   // Create swiper slides dynamically
   const swiperWrapper = $(".popupSlider .swiper-wrapper");

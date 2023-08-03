@@ -181,6 +181,13 @@
   height: 20px;
 }
 
+.active-size {
+  border: 1px solid #b46a2a;
+  color: #b46a2a;
+  background-color: transparent !important;
+  transition: 0.3s all;
+}
+
 video {
   display: none;
   height: 200px;

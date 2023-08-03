@@ -12,8 +12,6 @@ $(document).ready(function () {
     slide.attr("data-category-id", category.id);
 
     const img = $("<svg>").attr("stroke", "currentColor").load(category.icon);
-    const paths = img.find("path");
-
     const span = $("<span>").text(category.text);
 
     // Append the image and span to the slide
