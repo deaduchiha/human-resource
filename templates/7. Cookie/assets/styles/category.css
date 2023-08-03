@@ -1,9 +1,10 @@
 .categories {
-  margin-top: 31px;
+  margin-top: 24px;
   padding-right: 16px;
-  height: 72px;
+  max-height: 72px;
+  min-height: 72px;
+  overflow: visible;
 
-  overflow-y: hidden;
   background-color: #202226;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
@@ -12,24 +13,37 @@
 
 .categories .swiper-slide {
   color: #727272;
-
   text-align: center;
   width: 54px;
+  height: 81px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
+  justify-content: flex-start;
   cursor: pointer;
 }
 .categories .swiper-slide:last-child {
   margin-left: 10px;
 }
 
+.icon-holder {
+  background-color: #353840;
+  border-radius: 24px;
+  height: 48px;
+  width: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  z-index: 999;
+  top: -12px;
+}
+
 .categories .swiper-slide svg {
   width: 32px;
   height: 32px;
-  margin: 0 auto;
-  display: block;
 }
 svg path {
   stroke: #fff !important;
@@ -37,4 +51,11 @@ svg path {
 
 .categories .swiper-slide span {
   font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.active-category span,
+.active-category svg path {
+  color: #db813e;
+  stroke: #db813e !important;
 }
