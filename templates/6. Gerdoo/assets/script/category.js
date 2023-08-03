@@ -13,7 +13,6 @@ $(document).ready(function () {
 
     const img = $("<svg>").attr("stroke", "currentColor").load(category.icon);
     const paths = img.find("path");
-    console.log(paths);
 
     const span = $("<span>").text(category.text);
 

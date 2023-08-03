@@ -15,6 +15,7 @@
 .second-page__prev {
   width: 25px;
   height: 25px;
+  cursor: pointer;
 }
 .second-page__prev img {
   width: 100%;
@@ -48,6 +49,7 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  cursor: pointer;
 }
 .categorySwiper .swiper-slide:last-child {
   margin-left: 10px;
@@ -86,6 +88,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
 }
 .food-item__image {
   width: 100%;
