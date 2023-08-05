@@ -98,14 +98,14 @@ body {
 }
 .active-category::after {
   content: "";
-  border-bottom: 6px dotted #db2664;
+  background-color: #db2664;
+  border-radius: 100%;
   position: absolute;
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
   width: 6px;
   height: 6px;
-  /* border-radius: 100%; */
 }
 
 @media screen and (max-width: 700px) {
