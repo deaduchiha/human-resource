@@ -42,6 +42,7 @@ body {
   width: -webkit-fit-content !important;
   width: -moz-fit-content !important;
   width: fit-content !important;
+  cursor: pointer;
 }
 
 .foods {
@@ -62,6 +63,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
 }
 .food-item__image {
   margin: -30px auto 0;
