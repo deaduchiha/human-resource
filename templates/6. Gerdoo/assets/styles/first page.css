@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .first-page {
   background: url("../images//first page bg.png") no-repeat;
   background-position: center;
@@ -6,8 +13,17 @@
   color: #fff;
   padding: 6vh 0;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 40px;
 }
@@ -15,9 +31,18 @@
 /* - - - - - - - - - - - - - - - - - -  */
 
 .first-page__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   gap: 16px;
@@ -27,12 +52,17 @@
   font-weight: 500;
 }
 .first-page__information_social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 10px;
   font-size: 10px;
 }
 .first-page__information_social-media img {
+  border: 1px solid red;
   width: 32px;
   height: 32px;
 }
@@ -48,13 +78,18 @@
 .first-page__main-image img {
   width: 100%;
   height: 100%;
-  object-fit: scale-down;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 /* - - - - - - - - - - - - - - - - - -  */
 
 .first-page__next {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 10px;
   font-weight: 400;
