@@ -2,6 +2,13 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
+* Browsers: >0.3%,last 4 version,not dead
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
 
@@ -12,7 +19,6 @@ body {
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: dana;
 }
@@ -40,14 +46,10 @@ body {
 
 .foods {
   margin-top: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
   padding: 0 10px;
   row-gap: 50px;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .foods-item {
@@ -57,15 +59,8 @@ body {
   border-radius: 24px;
   position: relative;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 .food-item__image {
@@ -99,17 +94,13 @@ body {
   position: relative;
   top: -4px;
 }
-.active-category:after {
+.active-category::after {
   content: "";
   border-top: 6px dotted #db2664;
   position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-
-  z-index: 0;
-  top: 80%;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
   width: 6px;
   height: 6px;
 }
