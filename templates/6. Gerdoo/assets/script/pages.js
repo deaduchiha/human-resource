@@ -11,6 +11,7 @@ $(document).ready(function () {
       nextEl: ".first-page__next",
       prevEl: ".second-page__prev",
     },
+    allowTouchMove: false, // Disable dragging on touch devices
   });
 
   const innerSwiper = new Swiper(".menuSwiper", {
