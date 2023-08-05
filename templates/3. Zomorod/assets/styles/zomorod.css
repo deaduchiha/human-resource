@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: >0.3%,last 4 version,not dead
+*/
+
 body {
   background-color: #f5f5f5 !important;
 }
@@ -131,10 +138,12 @@ body {
 .zomorodSwiper .swiper-slide-next,
 .zomorodSwiper .swiper-slide-next + .swiper-slide {
   transition: all 0.3s ease;
+  -webkit-transform: translateY(-20px);
   transform: translateY(-20px);
 }
 
 .zomorodSwiper .custom-slide {
+  -webkit-transform: translateY(-20px);
   transform: translateY(-20px);
 }
 
@@ -155,20 +164,26 @@ body {
     height: 215px;
   }
   .swiper-slide-active.zomorod-items {
+    -webkit-transform: translateY(-5%);
     transform: translateY(-5%);
     width: 245px;
   }
   .swiper-slide-prev.zomorod-items {
+    -webkit-transform: translateY(55px);
     transform: translateY(55px);
   }
   .swiper-slide-next.zomorod-items {
+    -webkit-transform: translateY(55px);
     transform: translateY(55px);
   }
   .swiper-slide-active.zomorod-items,
   .swiper-slide-next.zomorod-items,
   .swiper-slide-prev.zomorod-items,
   .swiper-slide-active.zomorod-items .items__image {
+    transition: width 0.3s ease, height 0.3s ease, -webkit-transform 0.3s ease;
     transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease,
+      -webkit-transform 0.3s ease;
   }
   .zomorod-items > span {
     margin: 0;
