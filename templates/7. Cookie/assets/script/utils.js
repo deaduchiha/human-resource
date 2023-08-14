@@ -1,6 +1,6 @@
 export let popupSwiper; // Declare a global variable to hold the Swiper instance
 
-export function openPopup(food, popupWrapper, prices) {
+export function openPopup(food, popupWrapper, prices, priceHolder) {
   const popupContainer = $(".popup-container");
 
   const title = $("<p>").addClass("popup-food_title").text(food.title);
@@ -11,7 +11,7 @@ export function openPopup(food, popupWrapper, prices) {
     .addClass("popup-food_description")
     .text(food.description);
 
-  const priceHolder = $("<div>").addClass("popup-food_priceHolder");
+  // const priceHolder = $("<div>").addClass("popup-food_priceHolder");
   const sizesPrice = $("<span>")
     .addClass("popup-food_price")
     .text(food.sizes[0].sizePrice);
