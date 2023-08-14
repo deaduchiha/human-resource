@@ -72,21 +72,22 @@
 }
 .popup-food_priceHolder__price span {
   background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-size: 12px;
   color: #323232;
   font-weight: 400;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   border-radius: 100%;
   text-align: center;
-  line-height: 40px;
+
   transform: rotate(-45deg); /* Counter-rotate the spans */
 }
-.popup-food_priceHolder__price span:first-child {
-  margin-top: 26px;
-}
-.popup-food_priceHolder__price span:last-child {
-  margin-top: 16px;
+.active-size {
+  border: 3px solid #5b5a61;
 }
 
 @keyframes popup-fade {

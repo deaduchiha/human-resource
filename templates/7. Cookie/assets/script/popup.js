@@ -2,17 +2,19 @@ import { foodList } from "./data.js";
 import { openPopup } from "./utils.js";
 
 const popupWrapper = $(".popup__info");
+const prices = $("<div>").addClass("popup-food_priceHolder__price");
 
 $(document).ready(function () {
   $(document).on("click", "#openBtn", function () {
     const foodId = $(this).data("food-id"); // Get the data-food-id attribute from the clicked food item
     const food = foodList.find((item) => item.id === foodId); // Find the corresponding food object
 
-    openPopup(food, popupWrapper);
+    openPopup(food, popupWrapper, prices);
   });
 
   $(document).on("click", "#closeBtn", function () {
     $("#popup").fadeOut();
     popupWrapper.empty();
+    prices.empty();
   });
 });

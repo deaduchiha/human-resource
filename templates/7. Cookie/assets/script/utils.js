@@ -1,6 +1,6 @@
 export let popupSwiper; // Declare a global variable to hold the Swiper instance
 
-export function openPopup(food, popupWrapper) {
+export function openPopup(food, popupWrapper, prices) {
   const popupContainer = $(".popup-container");
 
   const title = $("<p>").addClass("popup-food_title").text(food.title);
@@ -12,23 +12,47 @@ export function openPopup(food, popupWrapper) {
     .text(food.description);
 
   const priceHolder = $("<div>").addClass("popup-food_priceHolder");
-  const prices = $("<div>").addClass("popup-food_priceHolder__price");
+  const sizesPrice = $("<span>")
+    .addClass("popup-food_price")
+    .text(food.sizes[0].sizePrice);
 
   food.sizes.map((data, index) => {
     // Create a div to hold the size options
     const sizeOption = $("<span>").text(data.size);
-
-    // if (index === 0) {
-    //   sizeOption.addClass("active-size");
-    // }
-
+    if (index === 0) {
+      sizeOption.addClass("active-size");
+    }
     // Add click event listener to each size option
-    // sizeOption.on("click", () => handleSizeClick(data.sizePrice, sizeOption));
+    sizeOption.on("click", () => handleSizeClick(data.sizePrice, sizeOption));
 
     prices.append(sizeOption);
   });
+  // handle click event on size options price
+  function handleSizeClick(sizePrice, sizeOption) {
+    // Remove the "active-size" class from all size options
+    priceHolder.find("span").removeClass("active-size");
+
+    // Add the "active-size" class to the clicked size option
+    sizeOption.addClass("active-size");
+    sizesPrice.text(sizePrice);
+  }
 
   priceHolder.append(prices);
+
+  if (food.sizes.length === 3) {
+    priceHolder.find("span:first-child").css({
+      marginTop: "26px",
+    });
+    priceHolder.find("span:last-child").css({
+      marginTop: "10px",
+    });
+  } else if (food.sizes.length === 2) {
+    priceHolder.find("span:first-child").css({
+      marginTop: "16px",
+    });
+  } else {
+    ("");
+  }
 
   popupContainer.append(priceHolder);
   popupWrapper.append(title, englishTitle, description);
