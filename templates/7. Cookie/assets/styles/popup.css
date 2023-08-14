@@ -23,7 +23,7 @@
   height: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   animation: popup-fade 0.6s ease-in-out;
-  border-radius: 28px;
+  /* border-radius: 28px; */
 }
 .popup__info {
   padding: 24px 16px;
@@ -52,13 +52,16 @@
   font-weight: 600;
 }
 
-.abbas {
-  background-color: blue;
-  height: 200px;
-  border: 10px dashed red;
+.popup-food_priceHolder {
+  background: linear-gradient(51.18deg, #09090b 14.48%, #5f5f64 96.39%);
+  height: 240px;
+  width: 240px;
   border-radius: 100%;
-  outline: 1px solid red;
-  outline-offset: 14px; /* Adjust the space between outline and border */
+  outline: 2px dashed #fff;
+  outline-offset: 32px;
+  position: absolute;
+  bottom: -55px;
+  left: -55px;
 }
 
 @keyframes popup-fade {
