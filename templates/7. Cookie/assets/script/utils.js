@@ -11,9 +11,26 @@ export function openPopup(food, popupWrapper) {
     .addClass("popup-food_description")
     .text(food.description);
 
-  const video = $("<div>").addClass("popup-food_priceHolder");
+  const priceHolder = $("<div>").addClass("popup-food_priceHolder");
+  const prices = $("<div>").addClass("popup-food_priceHolder__price");
 
-  popupContainer.append(video);
+  food.sizes.map((data, index) => {
+    // Create a div to hold the size options
+    const sizeOption = $("<span>").text(data.size);
+
+    // if (index === 0) {
+    //   sizeOption.addClass("active-size");
+    // }
+
+    // Add click event listener to each size option
+    // sizeOption.on("click", () => handleSizeClick(data.sizePrice, sizeOption));
+
+    prices.append(sizeOption);
+  });
+
+  priceHolder.append(prices);
+
+  popupContainer.append(priceHolder);
   popupWrapper.append(title, englishTitle, description);
 
   // Show the popup
