@@ -9,7 +9,9 @@ export function openPopup(food, popupWrapper) {
     .addClass("popup-food_description")
     .text(food.description);
 
-  popupWrapper.append(title, englishTitle, description);
+  const video = $("<p>").addClass("abbas").text("salam");
+
+  popupWrapper.append(title, englishTitle, description, video);
 
   // Show the popup
   $("#popup").fadeIn();

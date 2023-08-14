@@ -52,6 +52,15 @@
   font-weight: 600;
 }
 
+.abbas {
+  background-color: blue;
+  height: 200px;
+  border: 10px dashed red;
+  border-radius: 100%;
+  outline: 1px solid red;
+  outline-offset: 14px; /* Adjust the space between outline and border */
+}
+
 @keyframes popup-fade {
   0% {
     opacity: 0;
