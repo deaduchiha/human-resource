@@ -1,4 +1,4 @@
-export let popupSwiper; // Declare a global variable to hold the Swiper instance
+export const videoHolder = $("<div>").addClass("videoHolder");
 
 export function openPopup(food, popupWrapper, prices, priceHolder) {
   const popupContainer = $(".popup-container");
@@ -15,7 +15,21 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
   const sizesPrice = $("<span>")
     .addClass("popup-food_price")
     .text(food.sizes[0].sizePrice);
+
   const toman = $("<p>").addClass("toman").text("تومان");
+
+  const video = $("<video>", {
+    width: "100%",
+    controls: true,
+    id: "myvideo",
+  });
+
+  const videoLogo = $("<img>")
+    .attr("src", "assets/images/icons/video.svg")
+    .attr("alt", "video");
+  const showVideo = $("<span>").text("نمایش ویدئو");
+
+  videoHolder.append(videoLogo, showVideo);
 
   food.sizes.map((data, index) => {
     // Create a div to hold the size options
@@ -38,6 +52,26 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
     sizesPrice.text(sizePrice);
   }
 
+  videoHolder.on("click", () => handleVideo());
+
+  function handleVideo() {
+    const videoSrc = "../../common/video/pizza.mp4";
+    const videoType = "video/mp4";
+
+    video.empty();
+    const source = $("<source>");
+    source.attr("src", videoSrc);
+    source.attr("type", videoType);
+
+    video.append(source);
+    video.css("visibility", "visible");
+    video.get(0).play(); // Start playing the video
+
+    video.on("ended", function () {
+      $(this).css("visibility", "hidden");
+    });
+  }
+
   priceHolder.append(prices, sizesPrice, toman);
 
   if (food.sizes.length === 3) {
@@ -56,7 +90,7 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
   }
 
   popupContainer.append(priceHolder);
-  popupWrapper.append(title, englishTitle, description);
+  popupWrapper.append(title, englishTitle, description, video, videoHolder);
 
   // Show the popup
   $("#popup").fadeIn();

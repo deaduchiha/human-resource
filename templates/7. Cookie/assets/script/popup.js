@@ -1,5 +1,5 @@
 import { foodList } from "./data.js";
-import { openPopup } from "./utils.js";
+import { openPopup, videoHolder } from "./utils.js";
 
 const popupWrapper = $(".popup__info");
 const prices = $("<div>").addClass("popup-food_priceHolder__price");
@@ -17,6 +17,7 @@ $(document).ready(function () {
     popupWrapper.empty();
     prices.empty();
     priceHolder.empty();
+    videoHolder.empty();
     $("#popup").fadeOut();
   });
 });

@@ -1,5 +1,7 @@
+import { videoHolder } from "./utils.js";
+
 $(document).ready(function () {
-  $(".food-details__video").click(function () {
+  $(videoHolder).click(function () {
     const videoSrc = "../../common/video/pizza.mp4"; // New video source
     const videoType = "video/mp4"; // New video type
 
@@ -11,11 +13,11 @@ $(document).ready(function () {
     $source.attr("type", videoType);
 
     $video.append($source);
-    $video.css("display", "inherit");
+    $video.css("visibility", "visible");
     $video.get(0).play(); // Start playing the video
 
     $video.on("ended", function () {
-      $(this).css("display", "none");
+      $(this).css("visibility", "visible");
     });
   });
 });

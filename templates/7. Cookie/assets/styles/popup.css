@@ -109,6 +109,37 @@
   padding-right: 40px;
 }
 
+.videoHolder {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 32px;
+  width: 136px;
+  height: 40px;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #fff;
+  background-color: #000000a4;
+}
+
+video {
+  /* display: none; */
+
+  visibility: hidden;
+  height: 200px;
+  width: 100%;
+  margin: 25px 0;
+}
+
+@media screen and (max-height: 710px) {
+  video {
+    height: 150px;
+    margin: 10px 0;
+    object-fit: contain;
+  }
+}
+
 @keyframes popup-fade {
   0% {
     opacity: 0;
