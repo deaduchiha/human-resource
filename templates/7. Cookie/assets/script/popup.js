@@ -6,6 +6,7 @@ $(document).ready(function () {
     const foodId = $(this).data("food-id"); // Get the data-food-id attribute from the clicked food item
     const food = foodList.find((item) => item.id === foodId); // Find the corresponding food object
 
+  
     openPopup(food);
   });
 

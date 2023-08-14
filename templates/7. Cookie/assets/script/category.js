@@ -54,6 +54,8 @@ $(document).ready(() => {
     const foodElements = selectedCategory.map((data) => {
       const food = $("<div>").addClass("items");
       food.attr("data-food-id", data.id); // Set the data-food-id attribute
+      food.attr("id", "openBtn"); // Set the data-food-id attribute
+      
       const foodImage = $("<img>")
         .attr("src", data.mainImage)
         .attr("alt", data.title);
