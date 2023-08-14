@@ -15,6 +15,7 @@ export function openPopup(food, popupWrapper, prices) {
   const sizesPrice = $("<span>")
     .addClass("popup-food_price")
     .text(food.sizes[0].sizePrice);
+  const toman = $("<p>").addClass("toman").text("تومان");
 
   food.sizes.map((data, index) => {
     // Create a div to hold the size options
@@ -37,7 +38,7 @@ export function openPopup(food, popupWrapper, prices) {
     sizesPrice.text(sizePrice);
   }
 
-  priceHolder.append(prices);
+  priceHolder.append(prices, sizesPrice, toman);
 
   if (food.sizes.length === 3) {
     priceHolder.find("span:first-child").css({

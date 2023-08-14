@@ -87,7 +87,23 @@
   transform: rotate(-45deg); /* Counter-rotate the spans */
 }
 .active-size {
+  transition: 0.3s;
   border: 3px solid #5b5a61;
+  background-color: #1a1d22 !important;
+  color: #fff !important;
+}
+.popup-food_price {
+  line-height: 30px;
+  color: #db813e;
+  font-weight: 600;
+  font-size: 32px;
+  padding-right: 40px;
+}
+.toman {
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  padding-right: 40px;
 }
 
 @keyframes popup-fade {
