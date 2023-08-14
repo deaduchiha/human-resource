@@ -17,14 +17,40 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #155eb8;
+  background: url("../images/popup-background.png") no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   animation: popup-fade 0.6s ease-in-out;
   border-radius: 28px;
 }
-
+.popup__info {
+  padding: 24px 16px;
+  color: #fff;
+}
+#closeBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 16px 0 0;
+}
+.popup-food_title {
+  font-weight: 800;
+  font-size: 24px;
+}
+.popup-food_english-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+.popup-food_description {
+  font-size: 16px;
+  font-weight: 600;
+}
 
 @keyframes popup-fade {
   0% {
@@ -36,4 +62,3 @@
     transform: translate(-50%, -50%) scale(1);
   }
 }
-
