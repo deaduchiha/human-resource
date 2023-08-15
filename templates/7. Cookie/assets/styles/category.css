@@ -5,7 +5,9 @@
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
   background-color: #202226;
-  overflow: visible;
+
+  overflow-y: auto;
+  overflow-x: auto;
 }
 
 .categories .swiper-slide {
