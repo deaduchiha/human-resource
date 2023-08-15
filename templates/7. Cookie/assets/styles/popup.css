@@ -146,7 +146,7 @@ video {
 
 @media screen and (max-height: 710px) {
   video {
-    height: 150px;
+    height: 170px;
     margin: 10px 0;
     object-fit: contain;
   }
