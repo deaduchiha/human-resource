@@ -132,6 +132,7 @@
   border: 1px solid #fff;
   background: rgba(0, 0, 0, 0.04);
   backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 video {
