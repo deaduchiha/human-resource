@@ -58,8 +58,10 @@
   background: linear-gradient(51.18deg, #09090b 14.48%, #5f5f64 96.39%);
   height: 240px;
   width: 240px;
-  border-radius: 100%;
+  border-radius: 100% !important;
+  -webkit-border-radius: 100% !important;
   outline: 2px dashed #fff;
+  -webkit-outline: 2px dashed #fff;
   outline-offset: 32px;
   position: absolute;
   bottom: -55px;
