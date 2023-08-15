@@ -150,6 +150,13 @@ video {
     margin: 10px 0;
     object-fit: contain;
   }
+  .popup-food_priceHolder {
+    bottom: -75px;
+    left: -75px;
+  }
+  .popup-food_description {
+    font-size: 14px;
+  }
 }
 
 @keyframes popup-fade {
