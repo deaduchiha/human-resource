@@ -60,12 +60,20 @@
   width: 240px;
   border-radius: 100% !important;
   -webkit-border-radius: 100% !important;
-  outline: 2px dashed #fff;
-  -webkit-outline: 2px dashed #fff;
-  outline-offset: 32px;
+
   position: absolute;
   bottom: -55px;
   left: -55px;
+}
+.popup-food_priceHolder::before {
+  content: "";
+  position: absolute;
+  top: -33px;
+  right: -33px;
+  bottom: -33px;
+  left: -33px;
+  border: 2px dashed #fff;
+  border-radius: 100%;
 }
 .popup-food_priceHolder__price {
   display: flex;
@@ -116,7 +124,7 @@
   align-items: center;
   padding: 8px 12px;
   border-radius: 32px;
-  width: 136px;
+  width: 146px;
   height: 40px;
   gap: 8px;
   font-size: 14px;
