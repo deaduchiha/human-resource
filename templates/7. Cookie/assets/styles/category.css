@@ -5,6 +5,7 @@
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
   background-color: #202226;
+  overflow: visible;
 }
 
 .categories .swiper-slide {
@@ -20,6 +21,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
+  height: 72px;
 }
 
 .icon-holder {
@@ -33,6 +36,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: -20px;
 }
 
 .categories .swiper-slide svg {
@@ -53,6 +58,8 @@ svg path {
   text-overflow: ellipsis;
   text-align: center;
   white-space: nowrap;
+  position: absolute;
+  bottom: 10px;
 }
 
 .active-category span,
