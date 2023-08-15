@@ -22,8 +22,8 @@
   background-size: cover;
   width: 100%;
   height: 100%;
-  box-shadow: inset 0px 97px 104px -66px rgba(0, 0, 0, 0.75),
-    inset 0px -162px 77px -52px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 97px 104px -66px rgba(0, 0, 0, 0.836),
+    inset 0px -162px 77px -52px rgba(0, 0, 0, 0.836);
 
   animation: popup-fade 0.6s ease-in-out;
   /* border-radius: 28px; */
