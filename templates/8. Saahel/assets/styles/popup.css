@@ -41,6 +41,7 @@
   height: 202px;
   overflow: visible;
   margin-top: 8px;
+  /* border: ; */
 }
 
 .popupImages .swiper-slide img {
