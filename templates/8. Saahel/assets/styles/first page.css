@@ -1,0 +1,94 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.first-page {
+  background: url("../images/Saahel.png") no-repeat;
+
+  background-size: contain;
+  background-position: center;
+  height: 100vh !important;
+  color: #323232;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* - - - - - - - - - - - - - - - - - -  */
+
+.first-page__information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 16px;
+}
+.first-page__information_title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.first-page__information > span {
+  font-size: 20px;
+  font-weight: 400;
+}
+.first-page__information_social-media {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 10px;
+}
+.first-page__information_social-media a {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 8px;
+}
+.first-page__information_social-media a img {
+  width: 32px;
+  height: 32px;
+}
+
+/* - - - - - - - - - - - - - - - - - -  */
+
+.first-page__main-image {
+  width: 102px;
+  height: 136px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.first-page__main-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+/* - - - - - - - - - - - - - - - - - -  */
+
+.first-page__next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 8px 16px;
+  cursor: pointer;
+  width: 145px;
+}
