@@ -135,11 +135,12 @@
   background: rgba(0, 0, 0, 0.04);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  position: absolute;
+  bottom: 29vh;
 }
 
 video {
   /* display: none; */
-
   visibility: hidden;
   height: 200px;
   width: 100%;
