@@ -47,7 +47,7 @@ const foodList = [
       { size: "بزرگ", sizePrice: 95000 },
     ],
     images: [
-      "assets/images/foods/1.png",
+      "assets/images/foods/burger.jpg",
       "assets/images/foods/2.png",
       "assets/images/foods/3.png",
       "assets/images/foods/4.png",
@@ -65,7 +65,7 @@ const foodList = [
       { size: "بزرگ", sizePrice: 95000 },
     ],
     images: [
-      "assets/images/foods/1.png",
+      "assets/images/foods/cheeseburger.jpg",
       "assets/images/foods/2.png",
       "assets/images/foods/3.png",
       "assets/images/foods/4.png",
@@ -83,7 +83,7 @@ const foodList = [
       { size: "بزرگ", sizePrice: 65000 },
     ],
     images: [
-      "assets/images/foods/1.png",
+      "assets/images/foods/double burger.jpg",
       "assets/images/foods/2.png",
       "assets/images/foods/3.png",
       "assets/images/foods/4.png",
@@ -137,7 +137,7 @@ const foodList = [
       { size: "بزرگ", sizePrice: 95000 },
     ],
     images: [
-      "assets/images/foods/2.png",
+      "assets/images/foods/pizza.webp",
       "assets/images/foods/1.png",
       "assets/images/foods/4.png",
       "assets/images/foods/6.png",

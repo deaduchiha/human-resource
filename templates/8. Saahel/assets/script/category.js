@@ -41,7 +41,7 @@ $(document).ready(() => {
 
     swiperWrapper.empty();
 
-    filteredFoodCategory.map((data) => {
+    filteredFoodCategory.map((data, index) => {
       const category = $("<div>").addClass("swiper-slide");
       category.attr("category-id", data.id);
       const iconHolder = $("<div>").addClass("icon-holder");
