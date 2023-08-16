@@ -86,7 +86,9 @@ $(document).ready(() => {
       const foodImage = $("<img>")
         .attr("src", data.images[0])
         .attr("alt", data.title);
+
       const foodTitle = $("<p>").addClass("title").text(data.title);
+
       const foodPrice = $("<p>")
         .addClass("price")
         .text(data.sizes[0].sizePrice);
