@@ -12,186 +12,73 @@
 .popup-content {
   position: absolute;
   overflow: hidden;
-  overflow-y: scroll;
-
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #05090e;
+  background-color: #ffffff;
   width: 100%;
   height: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   animation: popup-fade 0.6s ease-in-out;
-  /* border-radius: 28px; */
 }
 
-.popupSlider {
-  height: 468px;
-  position: relative;
-  overflow: hidden;
-  /* border-radius: 24px; */
-  border-bottom-right-radius: 24px;
-  border-bottom-left-radius: 24px;
-}
-.popupSlider .swiper-slide {
-  position: relative;
-}
-.popupSlider img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  z-index: -1;
-}
-
-.sliderShadow {
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  background-color: #0000009d;
-
-  width: 100%;
-  height: 87px;
-  z-index: 999;
-  border-radius: 24px;
+.popup_header {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin: 24px 16px 0 0;
 
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 24px;
 }
-.popup-content .swiper-pagination-bullet {
+
+.popup_food-details {
+  padding: 0 16px;
+}
+.popupImages {
+  width: 100%;
+  height: 202px;
+  overflow: visible;
+  margin-top: 8px;
+}
+
+.popupImages .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.popupImages .swiper-pagination-bullet {
   width: 6px;
   height: 6px;
   border-radius: 4px;
-  background-color: #cecfd0;
+  background-color: #cecece;
   transition: 0.5s;
 }
 
-.popup-content .swiper-pagination-bullet-active {
-  background-color: #ffffff;
+.popupImages .swiper-pagination-bullet-active {
+  background-color: #f3b5c5;
   width: 26px;
 }
 
-.popup-content .swiper-pagination {
+.popupImages .swiper-pagination {
   position: absolute;
-  bottom: 87px;
-}
-.popupClose {
-  width: 40px;
-  height: 40px;
-  background-color: #c8c8c8be;
-  border-radius: 20px;
-  padding: 2px 0 0 1px;
-
-  font-size: 1rem;
-  font-weight: 700;
-
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  z-index: 999;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #000;
+  bottom: -20px;
 }
 
-.food-name p {
-  font-size: 24px;
-  font-weight: 600;
-  color: #fff;
-}
-.food-name span {
-  font-size: 14px;
-  font-weight: 400;
-  color: #a2a2a2;
-}
-.food-information {
-  padding: 0 24px;
-  margin-top: 16px;
-  text-align: justify;
-}
-
-.food-information li {
-  color: #a2a2a2;
-  list-style: none;
-  font-weight: 500;
-}
-.food-information span {
-  color: #ffffff;
-}
-
-.food-size {
-  display: flex;
-  flex-direction: column;
-  padding: 0 24px;
-}
-.food-size > p {
-  margin-top: 24px;
-  margin-bottom: 8px;
-  color: #a2a2a2;
-  font-weight: 400;
-}
-.sizes {
-  display: flex;
-  justify-content: space-between;
-}
-.sizes span {
-  padding: 6px 10px;
-  background-color: #141921;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 300;
-  border-radius: 6px;
-  width: 100px;
-  height: 34px;
+.popup_food-title {
   text-align: center;
-}
-.food-size > span {
-  justify-self: flex-end;
-  margin-top: 24px;
-  text-align: left;
-  color: #ffffff;
+  margin-top: 40px;
   font-size: 24px;
   font-weight: 600;
+  color: #323232;
 }
-.food-size > span::after {
-  content: "تومان ";
-  color: #b46a2a;
-  margin-right: 5px;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.food-details__video {
-  align-self: flex-end;
-  color: #ffffff;
+.popup_food-description {
   font-size: 14px;
   font-weight: 400;
-  display: flex;
-  align-items: center;
-
-  gap: 10px;
-  padding-bottom: 16px;
-}
-.food-details__video img {
-  width: 20px;
-  height: 20px;
-}
-
-.active-size {
-  border: 1px solid #b46a2a;
-  color: #b46a2a;
-  background-color: transparent !important;
-  transition: 0.3s all;
-}
-
-video {
-  display: none;
-  height: 200px;
-  margin: 25px 0;
+  color: #727272;
+  text-align: justify;
 }
 
 @keyframes popup-fade {
@@ -202,20 +89,5 @@ video {
   100% {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
-  }
-}
-
-@media screen and (max-height: 644px) {
-  .popup-image {
-    height: 215px;
-  }
-  .nextEl {
-    margin-bottom: -5px;
-  }
-}
-
-@media screen and (min-height: 602px) {
-  .popup-image {
-    overflow: hidden;
   }
 }

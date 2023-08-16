@@ -78,39 +78,25 @@
 
       <div id="popup" class="popup-container">
         <div class="popup-content">
-          <div class="swiper popupSlider">
-            <div class="swiper-wrapper">
-              <!-- swiper-slide -->
-            </div>
-            <div class="sliderShadow">
-              <!-- food name -->
-              <div class="food-name">
-                <p><!-- title --></p>
-                <span><!-- english title --></span>
-              </div>
-              <!-- video -->
-              <div class="food-details__video">
-                <img src="assets/images/icons/video.svg" alt="video" />
-                <p>نمایش ویدئو</p>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
+          <!-- popup header -->
+          <div class="popup_header" id="closeBtn">
+            <img src="assets/images/icons/back-arrow.svg" alt="close" />
           </div>
 
-          <div class="popupClose" id="closeBtn"><</div>
+          <!-- food details -->
+          <div class="popup_food-details">
+            <!-- swiper -->
+            <div class="swiper popupImages">
+              <div class="swiper-wrapper">
+                <!-- popup swiper images -->
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
 
-          <video width="100%" controls id="myvideo"></video>
-
-          <!-- food information -->
-          <div class="food-information">
-            <li>توضیحات</li>
-            <span><!-- description --></span>
-          </div>
-
-          <div class="food-size">
-            <p></p>
-            <div class="sizes"></div>
-            <span class="price"></span>
+            <!-- food title -->
+            <p class="popup_food-title"></p>
+            <!-- food description -->
+            <p class="popup_food-description"></p>
           </div>
         </div>
       </div>
