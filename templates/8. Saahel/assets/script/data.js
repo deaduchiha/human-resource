@@ -1,25 +1,52 @@
+const baseCategory = [
+  { id: 1, text: "غذا" },
+  { id: 2, text: "نوشیدنی" },
+];
+
 const foodCategory = [
-  { id: 1, text: "قهوه گرم", icon: "assets/images/foods-icon/1.svg" },
-  { id: 2, text: "قهوه سرد", icon: "assets/images/foods-icon/2.svg" },
-  { id: 3, text: "شیرینی", icon: "assets/images/foods-icon/3.svg" },
-  { id: 4, text: "کیک", icon: "assets/images/foods-icon/2.svg" },
-  { id: 5, text: "دیگر", icon: "assets/images/foods-icon/1.svg" },
+  {
+    id: 1,
+    base: "غذا",
+    text: "همبرگر",
+    icon: "assets/images/foods-icon/1.svg",
+  },
+  {
+    id: 2,
+    base: "غذا",
+    text: "پیتزا",
+    icon: "assets/images/foods-icon/2.svg",
+  },
+  {
+    id: 3,
+    base: "غذا",
+    text: "شیرینی",
+    icon: "assets/images/foods-icon/3.svg",
+  },
+  {
+    id: 4,
+    base: "نوشیدنی",
+    text: "قهوه گرم",
+    icon: "assets/images/foods-icon/2.svg",
+  },
+  {
+    id: 5,
+    base: "نوشیدنی",
+    text: "قهوه سرد",
+    icon: "assets/images/foods-icon/1.svg",
+  },
 ];
 
 const foodList = [
   {
     id: 1,
-    title: "آفوگاتو",
-    englishTitle: "Afogato",
-    category: "قهوه سرد",
-    price: 25000,
+    title: "برگر کلاسیک",
+    category: "همبرگر",
     sizes: [
       { size: "کوچک", sizePrice: 75000 },
       { size: "متوسط", sizePrice: 85000 },
       { size: "بزرگ", sizePrice: 95000 },
     ],
-    mainImage: "assets/images/foods/1.png",
-    slideImage: [
+    images: [
       "assets/images/foods/1.png",
       "assets/images/foods/2.png",
       "assets/images/foods/3.png",
@@ -30,18 +57,14 @@ const foodList = [
   },
   {
     id: 2,
-    title: "لوتوس",
-    englishTitle: "lotus",
-    category: "قهوه سرد",
-    price: 35000,
+    title: "چیز برگر",
+    category: "همبرگر",
     sizes: [
       { size: "کوچک", sizePrice: 75000 },
       { size: "متوسط", sizePrice: 85000 },
       { size: "بزرگ", sizePrice: 95000 },
     ],
-    mainImage: "assets/images/foods/1.png",
-
-    slideImage: [
+    images: [
       "assets/images/foods/1.png",
       "assets/images/foods/2.png",
       "assets/images/foods/3.png",
@@ -52,18 +75,14 @@ const foodList = [
   },
   {
     id: 3,
-    title: "لاته",
-    englishTitle: "latte",
-    category: "قهوه گرم",
-    price: 45000,
+    title: "دوبل برگر",
+    category: "همبرگر",
     sizes: [
       { size: "کوچک", sizePrice: 45000 },
       { size: "متوسط", sizePrice: 55000 },
       { size: "بزرگ", sizePrice: 65000 },
     ],
-    mainImage: "assets/images/foods/1.png",
-
-    slideImage: [
+    images: [
       "assets/images/foods/1.png",
       "assets/images/foods/2.png",
       "assets/images/foods/3.png",
@@ -74,18 +93,14 @@ const foodList = [
   },
   {
     id: 4,
-    title: "آیس کارامل",
-    englishTitle: "ice caramel",
+    title: "آیس آمریکانو",
     category: "قهوه سرد",
-    price: 55000,
     sizes: [
       { size: "کوچک", sizePrice: 75000 },
       { size: "متوسط", sizePrice: 85000 },
       { size: "بزرگ", sizePrice: 95000 },
     ],
-    mainImage: "assets/images/foods/2.png",
-
-    slideImage: [
+    images: [
       "assets/images/foods/6.png",
       "assets/images/foods/5.png",
       "assets/images/foods/4.png",
@@ -96,18 +111,14 @@ const foodList = [
   },
   {
     id: 5,
-    title: "مارشملو",
-    englishTitle: "marshmello",
+    title: "اسپرسو",
     category: "قهوه گرم",
-    price: 65000,
     sizes: [
       { size: "کوچک", sizePrice: 75000 },
       { size: "متوسط", sizePrice: 85000 },
       { size: "بزرگ", sizePrice: 95000 },
     ],
-    mainImage: "assets/images/foods/3.png",
-
-    slideImage: [
+    images: [
       "assets/images/foods/3.png",
       "assets/images/foods/6.png",
       "assets/images/foods/5.png",
@@ -118,18 +129,14 @@ const foodList = [
   },
   {
     id: 6,
-    title: "تیرامیسو",
-    englishTitle: "tiramiso",
-    category: "دیگر",
-    price: 75000,
+    title: "پیتزا مخصوص",
+    category: "پیتزا",
     sizes: [
       { size: "کوچک", sizePrice: 75000 },
       { size: "متوسط", sizePrice: 85000 },
       { size: "بزرگ", sizePrice: 95000 },
     ],
-    mainImage: "assets/images/foods/4.png",
-
-    slideImage: [
+    images: [
       "assets/images/foods/2.png",
       "assets/images/foods/1.png",
       "assets/images/foods/4.png",
@@ -141,17 +148,13 @@ const foodList = [
   {
     id: 7,
     title: "موکا",
-    englishTitle: "moca",
     category: "قهوه گرم",
-    price: 85000,
     sizes: [
       { size: "کوچک", sizePrice: 75000 },
       { size: "متوسط", sizePrice: 85000 },
       { size: "بزرگ", sizePrice: 95000 },
     ],
-    mainImage: "assets/images/foods/5.png",
-
-    slideImage: [
+    images: [
       "assets/images/foods/6.png",
       "assets/images/foods/1.png",
       "assets/images/foods/5.png",
@@ -162,4 +165,4 @@ const foodList = [
   },
 ];
 
-export { foodCategory, foodList };
+export { foodCategory, foodList, baseCategory };

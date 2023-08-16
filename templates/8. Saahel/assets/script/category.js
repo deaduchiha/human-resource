@@ -1,112 +1,102 @@
-import { foodCategory, foodList } from "./data.js"; // Import the foodCategory array
+import { foodCategory, foodList, baseCategory } from "./data.js";
 
-// Function to generate the swiper slides
-$(document).ready(function () {
-  const swiperWrapper = $(".categorySwiper .swiper-wrapper");
-  const foodsWrapper = $(".foods");
-
-  // Loop through the foodCategory array
-  foodCategory.forEach((category, index) => {
-    // Create a new swiper slide div with the category text and icon
-    const slide = $("<div>").addClass("swiper-slide");
-    slide.attr("data-category-id", category.id);
-
-    const img = $("<svg>").attr("stroke", "currentColor").load(category.icon);
-    const span = $("<span>").text(category.text);
-
-    // Append the image and span to the slide
-    slide.append(img).append(span);
-
-    // Append the slide to the swiper wrapper
-    swiperWrapper.append(slide);
-
-    // Set the first category as active
-    if (index === 0) {
-      slide.addClass("active-category");
-      slide.css({
-        backgroundColor: "#B46A2A",
-        color: "#fff",
-        transition: "all 0.3s ease",
-      });
-    }
-  });
-
-  // Initialize the Swiper component after adding all the slides
-  const mySwiper = new Swiper(".categorySwiper", {
+$(document).ready(() => {
+  // categories slider
+  let mySwiper = new Swiper(".categories", {
     slidesPerView: "auto",
-    spaceBetween: 25,
+    spaceBetween: 15,
   });
 
-  // Filter foods based on the first category when the page loads
-  filterFoodsByCategory(foodCategory[0].id);
+  const swiperWrapper = $(".categories .swiper-wrapper");
+  const foodsWrapper = $(".foods");
+  const baseCategoryHolder = $(".second-page__base-category");
 
-  // Add click event handler to each slide
-  const swiperSlides = $(".second-page .swiper-slide");
-  swiperSlides.on("click", function () {
-    // Only do something if the clicked slide is not already active
-    if (!$(this).hasClass("active-category")) {
-      // Remove active class from all slides
-      swiperSlides.removeClass("active-category");
+  baseCategory.map((base, index) => {
+    const baseItems = $("<span>").text(base.text);
 
-      // Add active class to the clicked slide
-      $(this).addClass("active-category");
-
-      // Apply CSS styles to the clicked category
-      swiperSlides.css({
-        backgroundColor: "transparent",
-        color: "#727272",
-        padding: "10px",
-        transition: "all 0.3s ease",
-      });
-      $(this).css({
-        backgroundColor: "#B46A2A",
-        color: "#fff",
-        transition: "all 0.3s ease",
-      });
-
-      // Get the selected category ID
-      const categoryId = $(this).data("category-id");
-
-      // Filter foodList based on the selected category
-      filterFoodsByCategory(categoryId);
+    if (index === 0) {
+      baseItems.addClass("active-base-category");
+      handleBaseCategoryClick(
+        base.text,
+        baseCategoryHolder.find("span:first-child")
+      );
     }
+
+    baseCategoryHolder.append(baseItems);
+    baseItems.on("click", () => handleBaseCategoryClick(base.text, baseItems));
   });
 
-  // Function to filter foodList based on the category ID
-  function filterFoodsByCategory(categoryId) {
-    // Clear existing food items
-    foodsWrapper.empty();
+  // handle click event on category
+  function handleBaseCategoryClick(base, baseItems) {
+    baseCategoryHolder
+      .find(".active-base-category")
+      .removeClass("active-base-category");
 
-    // Get the selected category
-    const selectedCategory = foodCategory.find(
-      (category) => category.id === categoryId
+    baseItems.addClass("active-base-category");
+
+    // filter foodCategory based on the selected base category
+    const filteredFoodCategory = foodCategory.filter(
+      (item) => item.base === base
     );
 
-    // Generate HTML for each food item of the selected category
-    foodList.forEach(function (food) {
-      if (food.category === selectedCategory.text) {
-        const foodSlide = $('<div class="foods-item" id="openBtn"></div>');
-        foodSlide.attr("data-food-id", food.id); // Set the data-food-id attribute
-        const foodImageHolder = $('<div class="food-item__image"></div>');
-        const foodImage = $("<img>")
-          .attr("src", food.mainImage)
-          .attr("alt", food.title);
-        const foodNameAndPriceHolder = $(
-          '<div class="food-item_price_holder"></div>'
-        );
-        const foodTitle = $("<p>").text(food.title);
-        const foodEnglishTitle = $("<span>").text(food.englishTitle);
-        const foodPrice = $('<span class="price">').text(food.price);
+    swiperWrapper.empty();
 
-        foodImageHolder.append(foodImage);
-        foodNameAndPriceHolder.append(foodTitle, foodPrice);
-        foodSlide.append(
-          foodImageHolder,
-          foodNameAndPriceHolder,
-          foodEnglishTitle
-        );
-        foodsWrapper.append(foodSlide);
-      }
+    filteredFoodCategory.map((data) => {
+      const category = $("<div>").addClass("swiper-slide");
+      category.attr("category-id", data.id);
+      const iconHolder = $("<div>").addClass("icon-holder");
+      const icon = $("<svg>").attr("stroke", "currentColor").load(data.icon);
+      iconHolder.append(icon);
+      const categoryTitle = $("<span>").text(data.text);
+
+      category.append(iconHolder, categoryTitle);
+      swiperWrapper.append(category);
+
+      category.on("click", () => handleCategoryClick(category, data.text));
+    });
+    mySwiper.destroy(); // Destroy the existing Swiper instance
+    mySwiper = new Swiper(".categories", {
+      slidesPerView: "auto",
+      spaceBetween: 32,
     });
   }
+
+  // handle click event on category
+  const handleCategoryClick = (clickedCategory, categoryName) => {
+    const categories = $(".categories .swiper-slide");
+    categories.removeClass("active-category");
+    clickedCategory.addClass("active-category");
+
+    filterFoodsByCategory(categoryName);
+  };
+
+  //filter foods based category
+  const filterFoodsByCategory = (categoryName) => {
+    foodsWrapper.empty();
+
+    const selectedCategory = foodList.filter(
+      (data) => data.category === categoryName
+    );
+
+    const foodElements = selectedCategory.map((data) => {
+      const food = $("<div>").addClass("items");
+      food.attr("data-food-id", data.id);
+      food.attr("id", "openBtn");
+
+      const foodImage = $("<img>")
+        .attr("src", data.images[0])
+        .attr("alt", data.title);
+      const foodTitle = $("<p>").addClass("title").text(data.title);
+      const foodPrice = $("<p>")
+        .addClass("price")
+        .text(data.sizes[0].sizePrice);
+
+      food.append(foodImage, foodTitle, foodPrice);
+      return food;
+    });
+
+    foodsWrapper.append(foodElements);
+  };
+
+  filterFoodsByCategory(foodCategory[0].text);
 });
