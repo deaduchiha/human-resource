@@ -82,6 +82,65 @@
   text-align: justify;
 }
 
+.popup_bottom-holder {
+  background-color: #f5f5f5;
+  border-radius: 24px 24px 0 0;
+  margin-top: 24px;
+  height: 40vh;
+  width: 100%;
+  padding: 0 32px;
+
+  position: absolute;
+  bottom: 0;
+}
+.divider {
+  width: 64px;
+  height: 8px;
+  background-color: #c6c6c6;
+  border-radius: 4px;
+  margin: 25px auto;
+}
+.popup_sizes {
+  display: flex;
+  justify-content: space-between;
+  color: #323232;
+}
+.size-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+.size-holder svg path {
+  stroke: #323232 !important;
+}
+
+.video-button {
+  display: flex;
+  align-items: center;
+  border: 1px solid #f3b5c5;
+  background-color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 12px;
+  width: fit-content;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.popup_price::after {
+  content: "تومان";
+  margin-right: 5px;
+}
+.popup_price {
+  text-align: left;
+  width: 100%;
+  margin-top: 20px;
+}
+
 @keyframes popup-fade {
   0% {
     opacity: 0;
@@ -90,5 +149,20 @@
   100% {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media screen and (max-height: 734px) {
+  .popup_header {
+    margin: 10px;
+  }
+  .popup_food-title {
+    margin-top: 20px;
+  }
+  .divider {
+    margin: 10px auto;
+  }
+  .video-button {
+    margin-top: 18px;
   }
 }

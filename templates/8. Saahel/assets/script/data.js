@@ -42,9 +42,21 @@ const foodList = [
     title: "برگر کلاسیک",
     category: "همبرگر",
     sizes: [
-      { size: "کوچک", sizePrice: 75000 },
-      { size: "متوسط", sizePrice: 85000 },
-      { size: "بزرگ", sizePrice: 95000 },
+      {
+        size: "کوچک",
+        sizePrice: 75000,
+        icon: "assets/images/foods-icon/1.svg",
+      },
+      {
+        size: "متوسط",
+        sizePrice: 85000,
+        icon: "assets/images/foods-icon/1.svg",
+      },
+      {
+        size: "بزرگ",
+        sizePrice: 95000,
+        icon: "assets/images/foods-icon/1.svg",
+      },
     ],
     images: [
       "assets/images/foods/burger.jpg",
@@ -60,9 +72,21 @@ const foodList = [
     title: "چیز برگر",
     category: "همبرگر",
     sizes: [
-      { size: "کوچک", sizePrice: 75000 },
-      { size: "متوسط", sizePrice: 85000 },
-      { size: "بزرگ", sizePrice: 95000 },
+      {
+        size: "کوچک",
+        sizePrice: 75000,
+        icon: "assets/images/foods-icon/1.svg",
+      },
+      {
+        size: "متوسط",
+        sizePrice: 85000,
+        icon: "assets/images/foods-icon/1.svg",
+      },
+      {
+        size: "بزرگ",
+        sizePrice: 95000,
+        icon: "assets/images/foods-icon/1.svg",
+      },
     ],
     images: [
       "assets/images/foods/cheeseburger.jpg",
@@ -78,9 +102,21 @@ const foodList = [
     title: "دوبل برگر",
     category: "همبرگر",
     sizes: [
-      { size: "کوچک", sizePrice: 45000 },
-      { size: "متوسط", sizePrice: 55000 },
-      { size: "بزرگ", sizePrice: 65000 },
+      {
+        size: "کوچک",
+        sizePrice: 45000,
+        icon: "assets/images/foods-icon/1.svg",
+      },
+      {
+        size: "متوسط",
+        sizePrice: 55000,
+        icon: "assets/images/foods-icon/1.svg",
+      },
+      {
+        size: "بزرگ",
+        sizePrice: 65000,
+        icon: "assets/images/foods-icon/1.svg",
+      },
     ],
     images: [
       "assets/images/foods/double burger.jpg",
@@ -96,9 +132,21 @@ const foodList = [
     title: "آیس آمریکانو",
     category: "قهوه سرد",
     sizes: [
-      { size: "کوچک", sizePrice: 75000 },
-      { size: "متوسط", sizePrice: 85000 },
-      { size: "بزرگ", sizePrice: 95000 },
+      {
+        size: "کوچک",
+        sizePrice: 75000,
+        icon: "assets/images/foods-icon/1.svg",
+      },
+      {
+        size: "متوسط",
+        sizePrice: 85000,
+        icon: "assets/images/foods-icon/1.svg",
+      },
+      {
+        size: "بزرگ",
+        sizePrice: 95000,
+        icon: "assets/images/foods-icon/1.svg",
+      },
     ],
     images: [
       "assets/images/foods/6.png",
@@ -114,9 +162,21 @@ const foodList = [
     title: "اسپرسو",
     category: "قهوه گرم",
     sizes: [
-      { size: "کوچک", sizePrice: 75000 },
-      { size: "متوسط", sizePrice: 85000 },
-      { size: "بزرگ", sizePrice: 95000 },
+      {
+        size: "کوچک",
+        sizePrice: 75000,
+        icon: "assets/images/foods-icon/1.svg",
+      },
+      {
+        size: "متوسط",
+        sizePrice: 85000,
+        icon: "assets/images/foods-icon/1.svg",
+      },
+      {
+        size: "بزرگ",
+        sizePrice: 95000,
+        icon: "assets/images/foods-icon/1.svg",
+      },
     ],
     images: [
       "assets/images/foods/3.png",
@@ -132,9 +192,21 @@ const foodList = [
     title: "پیتزا مخصوص",
     category: "پیتزا",
     sizes: [
-      { size: "کوچک", sizePrice: 75000 },
-      { size: "متوسط", sizePrice: 85000 },
-      { size: "بزرگ", sizePrice: 95000 },
+      {
+        size: "کوچک",
+        sizePrice: 75000,
+        icon: "assets/images/foods-icon/1.svg",
+      },
+      {
+        size: "متوسط",
+        sizePrice: 85000,
+        icon: "assets/images/foods-icon/1.svg",
+      },
+      {
+        size: "بزرگ",
+        sizePrice: 95000,
+        icon: "assets/images/foods-icon/1.svg",
+      },
     ],
     images: [
       "assets/images/foods/pizza.webp",
@@ -150,9 +222,21 @@ const foodList = [
     title: "موکا",
     category: "قهوه گرم",
     sizes: [
-      { size: "کوچک", sizePrice: 75000 },
-      { size: "متوسط", sizePrice: 85000 },
-      { size: "بزرگ", sizePrice: 95000 },
+      {
+        size: "کوچک",
+        sizePrice: 75000,
+        icon: "assets/images/foods-icon/1.svg",
+      },
+      {
+        size: "متوسط",
+        sizePrice: 85000,
+        icon: "assets/images/foods-icon/1.svg",
+      },
+      {
+        size: "بزرگ",
+        sizePrice: 95000,
+        icon: "assets/images/foods-icon/1.svg",
+      },
     ],
     images: [
       "assets/images/foods/6.png",

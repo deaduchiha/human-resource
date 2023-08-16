@@ -16,6 +16,18 @@ export function openPopup(food) {
   $(".popup_food-title").text(food.title);
   $(".popup_food-description").text(food.description);
 
+  const sizes = $(".popup_sizes");
+  food.sizes.map((data) => {
+    const sizeHolder = $("<div>").addClass("size-holder");
+    const sizeIcon = $("<svg>").attr("stroke", "currentColor").load(data.icon);
+    const sizeText = $("<span>").text(data.size);
+
+    sizeHolder.append(sizeIcon, sizeText);
+    sizes.append(sizeHolder);
+  });
+
+  $(".popup_price").text(food.sizes[0].sizePrice);
+
   // Show the popup
   $("#popup").fadeIn();
 }
