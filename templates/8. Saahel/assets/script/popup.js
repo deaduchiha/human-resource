@@ -2,6 +2,7 @@ import { foodList } from "./data.js";
 import { openPopup } from "./utils.js";
 
 const swiper = $(".popupImages .swiper-wrapper");
+const sizes = $(".popup_sizes");
 
 $(document).ready(function () {
   $(document).on("click", "#openBtn", function () {
@@ -13,6 +14,7 @@ $(document).ready(function () {
 
   $(document).on("click", "#closeBtn", function () {
     swiper.empty();
+    sizes.empty();
     $("#popup").fadeOut();
   });
 });
