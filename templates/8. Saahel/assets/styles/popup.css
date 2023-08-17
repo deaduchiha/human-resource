@@ -105,6 +105,10 @@
   justify-content: space-between;
   color: #323232;
 }
+.size-holder span {
+  font-size: 12px;
+  font-weight: 400;
+}
 .size-holder {
   display: flex;
   flex-direction: column;
@@ -140,8 +144,13 @@
   width: 100%;
   margin-top: 20px;
 }
+.active-size span {
+  font-weight: 600 !important;
+  font-size: 13px;
+}
 .active-size {
   background-color: #f3b5c5;
+  transition: 0.3s;
 }
 
 @keyframes popup-fade {
