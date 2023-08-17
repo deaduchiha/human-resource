@@ -17,14 +17,29 @@ export function openPopup(food) {
   $(".popup_food-description").text(food.description);
 
   const sizes = $(".popup_sizes");
-  food.sizes.map((data) => {
+  food.sizes.map((data, index) => {
     const sizeHolder = $("<div>").addClass("size-holder");
     const sizeIcon = $("<svg>").attr("stroke", "currentColor").load(data.icon);
     const sizeText = $("<span>").text(data.size);
 
+    index === 0 && sizeHolder.addClass("active-size");
+    sizeHolder.on("click", () => handleSizeClick(data.sizePrice, sizeHolder));
+
     sizeHolder.append(sizeIcon, sizeText);
     sizes.append(sizeHolder);
   });
+
+  let price = $(".popup_price");
+
+  // handle click event on size options price
+  function handleSizeClick(sizePrice, sizeHolder) {
+    // Remove the "active-size" class from all size options
+    sizes.find("div").removeClass("active-size");
+
+    // Add the "active-size" class to the clicked size option
+    sizeHolder.addClass("active-size");
+    price.text(sizePrice);
+  }
 
   $(".popup_price").text(food.sizes[0].sizePrice);
 
