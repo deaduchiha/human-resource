@@ -3,18 +3,22 @@ import { openPopup } from "./utils.js";
 
 const swiper = $(".popupImages .swiper-wrapper");
 const sizes = $(".popup_sizes");
+let isVideoOpen = false;
+const showVideoText = $(".video-button span ");
 
 $(document).ready(function () {
   $(document).on("click", "#openBtn", function () {
     const foodId = $(this).data("food-id"); // Get the data-food-id attribute from the clicked food item
     const food = foodList.find((item) => item.id === foodId); // Find the corresponding food object
 
-    openPopup(food);
+    openPopup(food, isVideoOpen);
   });
 
   $(document).on("click", "#closeBtn", function () {
     swiper.empty();
     sizes.empty();
+    isVideoOpen = false;
+    showVideoText.text("نمایش ویدیو");
     $("#popup").fadeOut();
   });
 });

@@ -1,7 +1,12 @@
-export function openPopup(food) {
+export function openPopup(food, isVideoOpen) {
   // const popupContainer = $(".popup-container");
   const swiper = $(".popupImages .swiper-wrapper");
   const foodDetails = $(".popup_food-details");
+
+  const showVideoButton = $(".video-button ");
+  const spanText = showVideoButton.find("span");
+
+  const popupBottomHolder = $(".popup_bottom-holder ");
 
   food.images.map((image) => {
     const swiperSlide = $("<div>").addClass("swiper-slide");
@@ -43,6 +48,21 @@ export function openPopup(food) {
 
   $(".popup_price").text(food.sizes[0].sizePrice);
 
+  showVideoButton.click(function () {
+    isVideoOpen = !isVideoOpen;
+    if (isVideoOpen) {
+      spanText.text("بستن ویدیو");
+      popupBottomHolder.css({
+        height: "60vh",
+      });
+    } else {
+      spanText.text("نمایش ویدیو");
+      popupBottomHolder.css({
+        height: "40vh",
+      });
+    }
+  });
+
   // Show the popup
   $("#popup").fadeIn();
 }
@@ -52,3 +72,7 @@ export const popupSwiper = new Swiper(".popupImages", {
     el: ".swiper-pagination",
   },
 });
+
+export function closePopup() {
+  isVideoOpen = false; // Reset isVideoOpen to default
+}
