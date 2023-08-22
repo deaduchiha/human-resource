@@ -49,6 +49,11 @@ $(document).ready(() => {
       iconHolder.append(icon);
       const categoryTitle = $("<span>").text(data.text);
 
+      if (index === 0) {
+        category.addClass("active-category");
+        filterFoodsByCategory(data.text);
+      }
+
       category.append(iconHolder, categoryTitle);
       swiperWrapper.append(category);
 
@@ -71,7 +76,7 @@ $(document).ready(() => {
   };
 
   //filter foods based category
-  const filterFoodsByCategory = (categoryName) => {
+  function filterFoodsByCategory(categoryName) {
     foodsWrapper.empty();
 
     const selectedCategory = foodList.filter(
@@ -98,7 +103,7 @@ $(document).ready(() => {
     });
 
     foodsWrapper.append(foodElements);
-  };
+  }
 
   filterFoodsByCategory(foodCategory[0].text);
 });
