@@ -1,9 +1,9 @@
 .first-page {
   background: url("../images/Saahel.png") no-repeat;
 
-  background-size: 100% 100%;
+  background-size: contain;
   background-position: center;
-  height: 100vh !important;
+  height: 95vh !important;
 
   background-clip: content-box;
   color: #323232;
