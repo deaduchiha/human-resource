@@ -169,10 +169,13 @@
 
 @media screen and (max-height: 734px) {
   .popup_header {
-    margin: 10px;
+    margin: 5px;
+  }
+  .popupImages {
+    height: 155px;
   }
   .popup_food-title {
-    margin-top: 20px;
+    margin-top: 15px;
   }
   .divider {
     margin: 10px auto;
@@ -195,9 +198,7 @@
   .popup_food-description {
     font-size: 12px;
   }
-  .popup_bottom-holder {
-    height: 60px;
-  }
+
   .divider {
     margin: 10px auto;
   }

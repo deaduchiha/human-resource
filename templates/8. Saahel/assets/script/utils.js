@@ -1,12 +1,10 @@
-export function openPopup(food, isVideoOpen) {
+export function openPopup(food, isVideoOpen, popupBottomHolder) {
   // const popupContainer = $(".popup-container");
   const swiper = $(".popupImages .swiper-wrapper");
   const foodDetails = $(".popup_food-details");
 
   const showVideoButton = $(".video-button ");
   const spanText = showVideoButton.find("span");
-
-  const popupBottomHolder = $(".popup_bottom-holder ");
 
   food.images.map((image) => {
     const swiperSlide = $("<div>").addClass("swiper-slide");
@@ -54,7 +52,6 @@ export function openPopup(food, isVideoOpen) {
       spanText.text("بستن ویدیو");
       popupBottomHolder.css({
         height: "60vh",
-        zIndex: 999,
       });
     } else {
       spanText.text("نمایش ویدیو");
