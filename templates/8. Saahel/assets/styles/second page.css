@@ -112,7 +112,7 @@
   flex-wrap: wrap;
 }
 .items {
-  width: 152px;
+  width: 172px;
   height: 202px;
   border-radius: 8px;
   overflow: hidden;
@@ -152,7 +152,7 @@
   color: #000000;
 }
 
-@media screen and (max-width: 358px) {
+@media screen and (max-width: 378px) {
   .foods {
     justify-content: center;
   }
