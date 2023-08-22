@@ -2,8 +2,10 @@
   background: url("../images/Saahel.png") no-repeat;
 
   background-size: contain;
-  background-position: 50% 50%;
+  background-position: center;
+  /* background-origin: padding-box; */
   height: 100vh !important;
+  background-clip: content-box;
   color: #323232;
 
   display: flex;
