@@ -28,8 +28,6 @@ $(document).ready(() => {
 
   // handle click event on category
   function handleBaseCategoryClick(base, baseItems) {
-    swiperWrapper.empty();
-
     baseCategoryHolder
       .find(".active-base-category")
       .removeClass("active-base-category");
@@ -40,6 +38,7 @@ $(document).ready(() => {
     const filteredFoodCategory = foodCategory.filter(
       (item) => item.base === base
     );
+    swiperWrapper.empty();
 
     filteredFoodCategory.map((data, index) => {
       const category = $("<div>").addClass("swiper-slide");
@@ -59,6 +58,7 @@ $(document).ready(() => {
 
       category.on("click", () => handleCategoryClick(category, data.text));
     });
+
     mySwiper.destroy(); // Destroy the existing Swiper instance
     mySwiper = new Swiper(".categories", {
       slidesPerView: "auto",
