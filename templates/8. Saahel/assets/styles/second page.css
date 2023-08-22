@@ -153,6 +153,17 @@
 }
 
 @media screen and (max-width: 378px) {
+  .items {
+    width: 155px;
+  }
+}
+@media screen and (max-width: 345px) {
+  .items {
+    width: 145px;
+    height: 180px;
+  }
+}
+@media screen and (max-width: 321px) {
   .foods {
     justify-content: center;
   }
