@@ -1,7 +1,7 @@
 .first-page {
   background-size: contain;
   background-position: center;
-  height: 100vh !important;
+  height: 95vh !important;
   background-clip: content-box;
   color: #323232;
   /* style */
@@ -26,7 +26,7 @@
   left: 6vw;
 }
 .leaf2 {
-  bottom: 2vh;
+  bottom: 1vh;
   right: 6vw;
 }
 
