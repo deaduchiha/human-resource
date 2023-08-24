@@ -92,7 +92,6 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
       video.get(0).pause(); // Pause the video
       video.css("visibility", "hidden");
       video.get(0).currentTime = 0;
-      video.remove();
     }
 
     priceHolder.css({
@@ -126,6 +125,16 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
 
   popupContainer.append(priceHolder);
   popupWrapper.append(title, englishTitle, description, video, videoHolder);
+
+  $(window).on("resize", function () {
+    if ($(window).height() <= 741 && isVideoOpen) {
+      $(".videoHolder").css("bottom", "19vh");
+    } else {
+      $(".videoHolder").css("bottom", "30vh");
+    }
+  });
+
+  $(window).trigger("resize");
 
   // Show the popup
   $("#popup").fadeIn();
