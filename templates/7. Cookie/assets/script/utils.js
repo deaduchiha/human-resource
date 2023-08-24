@@ -1,6 +1,7 @@
 export const videoHolder = $("<div>").addClass("videoHolder");
 
 export function openPopup(food, popupWrapper, prices, priceHolder) {
+  let isVideoOpen = false;
   const popupContainer = $(".popup-container");
 
   const title = $("<p>").addClass("popup-food_title").text(food.title);
@@ -27,7 +28,9 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
   const videoLogo = $("<img>")
     .attr("src", "assets/images/icons/video.svg")
     .attr("alt", "video");
+
   const showVideo = $("<span>").text("نمایش ویدئو");
+  console.log(isVideoOpen);
 
   videoHolder.append(videoLogo, showVideo);
 
@@ -55,26 +58,44 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
   videoHolder.on("click", () => handleVideo());
 
   function handleVideo() {
-    const videoSrc = "../../common/video/pizza.mp4";
-    const videoType = "video/mp4";
+    if (!isVideoOpen) {
+      isVideoOpen = true;
+      videoLogo.remove();
+      showVideo.text("بستن ویدئو");
 
-    video.empty();
-    const source = $("<source>");
-    source.attr("src", videoSrc);
-    source.attr("type", videoType);
+      const videoSrc = "../../common/video/pizza.mp4";
+      const videoType = "video/mp4";
 
-    video.append(source);
-    video.css("visibility", "visible");
-    video.get(0).play(); // Start playing the video
-    priceHolder.css({
-      visibility: "hidden",
-    });
+      video.empty();
+      const source = $("<source>");
+      source.attr("src", videoSrc);
+      source.attr("type", videoType);
 
-    video.on("ended", function () {
-      $(this).css("visibility", "hidden");
-      priceHolder.css({
-        visibility: "visible",
+      video.append(source);
+      video.css("visibility", "visible");
+      video.get(0).play(); // Start playing the video
+
+      // Listen for video end event
+      video.on("ended", function () {
+        video.css("visibility", "hidden");
+        showVideo.text("نمایش ویدئو");
+        videoLogo
+          .attr("src", "assets/images/icons/video.svg")
+          .attr("alt", "video");
+        isVideoOpen = false;
       });
+    } else {
+      isVideoOpen = false;
+      showVideo.text("نمایش ویدئو");
+      videoLogo
+        .attr("src", "assets/images/icons/video.svg")
+        .attr("alt", "video");
+      video.get(0).pause(); // Pause the video
+      video.css("visibility", "hidden");
+    }
+
+    priceHolder.css({
+      visibility: isVideoOpen ? "hidden" : "visible",
     });
   }
 
