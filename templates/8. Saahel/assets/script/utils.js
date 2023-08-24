@@ -52,6 +52,7 @@ export function openPopup(food, isVideoOpen, popupBottomHolder) {
       spanText.text("بستن ویدیو");
       popupBottomHolder.css({
         height: "60vh",
+        zIndex: 20,
       });
     } else {
       spanText.text("نمایش ویدیو");
