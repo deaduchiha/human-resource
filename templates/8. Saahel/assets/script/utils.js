@@ -54,10 +54,35 @@ export function openPopup(food, isVideoOpen, popupBottomHolder) {
         height: "60vh",
         zIndex: 20,
       });
+      $(".popup_price").css({
+        display: "none",
+      });
+
+      const video = $("<video>", {
+        width: "100%",
+        controls: true,
+        id: "myvideo",
+      });
+      const videoSrc = "../../common/video/pizza.mp4";
+      const videoType = "video/mp4";
+
+      video.empty();
+      const source = $("<source>");
+      source.attr("src", videoSrc);
+      source.attr("type", videoType);
+
+      video.append(source);
+      video.css("visibility", "visible");
+      video.get(0).play();
+
+      popupBottomHolder.append(video);
     } else {
       spanText.text("نمایش ویدیو");
       popupBottomHolder.css({
         height: "40vh",
+      });
+      $(".popup_price").css({
+        display: "block",
       });
     }
   });
