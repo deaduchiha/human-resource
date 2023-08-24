@@ -60,7 +60,7 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
   function handleVideo() {
     if (!isVideoOpen) {
       isVideoOpen = true;
-      videoLogo.remove();
+      videoLogo.removeAttr("src").removeAttr("alt");
       showVideo.text("بستن ویدئو");
 
       const videoSrc = "../../common/video/pizza.mp4";
