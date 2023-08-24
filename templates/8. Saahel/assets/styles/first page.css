@@ -4,6 +4,7 @@
   height: 100vh !important;
   background-clip: content-box;
   color: #323232;
+  /* style */
 
   display: flex;
   flex-direction: column;
