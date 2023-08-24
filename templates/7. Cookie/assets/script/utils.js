@@ -30,7 +30,6 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
     .attr("alt", "video");
 
   const showVideo = $("<span>").text("نمایش ویدئو");
-  console.log(isVideoOpen);
 
   videoHolder.append(videoLogo, showVideo);
 
@@ -96,6 +95,13 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
 
     priceHolder.css({
       visibility: isVideoOpen ? "hidden" : "visible",
+    });
+    video.on("ended", function () {
+      $(this).css("visibility", "hidden");
+
+      priceHolder.css({
+        visibility: "visible",
+      });
     });
   }
 
