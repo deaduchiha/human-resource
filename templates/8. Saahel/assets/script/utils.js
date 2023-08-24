@@ -67,7 +67,7 @@ export function openPopup(food, isVideoOpen, popupBottomHolder, video) {
       source.attr("type", videoType);
 
       video.append(source);
-      video.css("visibility", "visible");
+      video.css("display", "block");
       video.get(0).play();
 
       popupBottomHolder.append(video);
@@ -79,6 +79,7 @@ export function openPopup(food, isVideoOpen, popupBottomHolder, video) {
       $(".popup_price").css({
         display: "block",
       });
+      video.css("display", "none");
       video.get(0).pause(); // Pause the video
     }
   });
