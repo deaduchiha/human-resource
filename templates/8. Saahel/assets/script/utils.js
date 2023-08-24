@@ -1,4 +1,4 @@
-export function openPopup(food, isVideoOpen, popupBottomHolder) {
+export function openPopup(food, isVideoOpen, popupBottomHolder, video) {
   // const popupContainer = $(".popup-container");
   const swiper = $(".popupImages .swiper-wrapper");
   const foodDetails = $(".popup_food-details");
@@ -58,11 +58,6 @@ export function openPopup(food, isVideoOpen, popupBottomHolder) {
         display: "none",
       });
 
-      const video = $("<video>", {
-        width: "100%",
-        controls: true,
-        id: "myvideo",
-      });
       const videoSrc = "../../common/video/pizza.mp4";
       const videoType = "video/mp4";
 
@@ -84,6 +79,7 @@ export function openPopup(food, isVideoOpen, popupBottomHolder) {
       $(".popup_price").css({
         display: "block",
       });
+      video.get(0).pause(); // Pause the video
     }
   });
 
