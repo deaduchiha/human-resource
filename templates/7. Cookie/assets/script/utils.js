@@ -66,9 +66,15 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
     video.append(source);
     video.css("visibility", "visible");
     video.get(0).play(); // Start playing the video
+    priceHolder.css({
+      visibility: "hidden",
+    });
 
     video.on("ended", function () {
       $(this).css("visibility", "hidden");
+      priceHolder.css({
+        visibility: "visible",
+      });
     });
   }
 
