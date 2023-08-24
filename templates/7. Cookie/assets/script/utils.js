@@ -91,6 +91,7 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
         .attr("alt", "video");
       video.get(0).pause(); // Pause the video
       video.css("visibility", "hidden");
+      video.get(0).currentTime = 0;
       video.remove();
     }
 

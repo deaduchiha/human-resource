@@ -69,6 +69,7 @@ export function openPopup(food, isVideoOpen, popupBottomHolder, video) {
       video.append(source);
       video.css("display", "block");
       video.get(0).play();
+      console.log(video.get(0).currentTime);
 
       popupBottomHolder.append(video);
     } else {
@@ -80,6 +81,8 @@ export function openPopup(food, isVideoOpen, popupBottomHolder, video) {
         display: "block",
       });
       video.css("display", "none");
+      video.get(0).pause(); // Pause the video
+      video.get(0).currentTime = 0;
       video.remove();
     }
   });
