@@ -90,6 +90,7 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
         .attr("src", "assets/images/icons/video.svg")
         .attr("alt", "video");
       video.get(0).pause(); // Pause the video
+      video.currentTime = 0;
       video.css("visibility", "hidden");
     }
 
