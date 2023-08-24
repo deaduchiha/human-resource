@@ -80,8 +80,7 @@ export function openPopup(food, isVideoOpen, popupBottomHolder, video) {
         display: "block",
       });
       video.css("display", "none");
-      video.get(0).pause(); // Pause the video
-      video.currentTime = 0;
+      video.remove();
     }
   });
 
