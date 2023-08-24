@@ -1,6 +1,4 @@
 .first-page {
-  background: url("../images/Saahel.png") no-repeat;
-
   background-size: contain;
   background-position: center;
   height: 95vh !important;
@@ -12,6 +10,23 @@
   align-items: center;
   justify-content: center;
   gap: 40px;
+
+  position: relative;
+}
+
+.leaf {
+  position: absolute;
+  display: block;
+  width: 116px;
+  height: 149px;
+}
+.leaf1 {
+  top: 2vh;
+  left: 6vw;
+}
+.leaf2 {
+  bottom: 2vh;
+  right: 6vw;
 }
 
 /* - - - - - - - - - - - - - - - - - -  */
