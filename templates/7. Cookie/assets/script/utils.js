@@ -56,6 +56,12 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
 
   videoHolder.on("click", () => handleVideo());
 
+  function setInitialPosition() {
+    const windowHeight = $(window).height();
+    const initialBottom = windowHeight <= 741 ? "17vh" : "30vh";
+    videoHolder.css("bottom", initialBottom);
+  }
+
   function handleVideo() {
     if (!isVideoOpen) {
       isVideoOpen = true;
@@ -74,6 +80,8 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
       video.css("visibility", "visible");
       video.get(0).play(); // Start playing the video
 
+      setInitialPosition(); // Call to set the initial position
+
       // Listen for video end event
       video.on("ended", function () {
         video.css("visibility", "hidden");
@@ -85,6 +93,7 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
       });
     } else {
       isVideoOpen = false;
+      videoHolder.css("bottom", "30vh");
       showVideo.text("نمایش ویدئو");
       videoLogo
         .attr("src", "assets/images/icons/video.svg")
@@ -125,14 +134,6 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
 
   popupContainer.append(priceHolder);
   popupWrapper.append(title, englishTitle, description, video, videoHolder);
-
-  $(window).on("resize", function () {
-    if ($(window).height() <= 741 && isVideoOpen) {
-      $(".videoHolder").css("bottom", "19vh");
-    } else {
-      $(".videoHolder").css("bottom", "30vh");
-    }
-  });
 
   $(window).trigger("resize");
 
