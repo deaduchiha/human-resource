@@ -51,11 +51,11 @@ export function openPopup(food, isVideoOpen, popupBottomHolder, video) {
     if (isVideoOpen) {
       spanText.text("بستن ویدیو");
       popupBottomHolder.css({
-        height: "60vh",
+        height: "68vh",
         zIndex: 20,
       });
       $(".popup_price").css({
-        display: "none",
+        margin: "0 0 10px",
       });
 
       const videoSrc = "../../common/video/pizza.mp4";
@@ -67,7 +67,10 @@ export function openPopup(food, isVideoOpen, popupBottomHolder, video) {
       source.attr("type", videoType);
 
       video.append(source);
-      video.css("display", "block");
+      video.css({
+        display: "block",
+        marginBottom: "10px",
+      });
       video.get(0).play();
       console.log(video.get(0).currentTime);
 
@@ -77,9 +80,7 @@ export function openPopup(food, isVideoOpen, popupBottomHolder, video) {
       popupBottomHolder.css({
         height: "40vh",
       });
-      $(".popup_price").css({
-        display: "block",
-      });
+
       video.css("display", "none");
       video.get(0).pause(); // Pause the video
       video.get(0).currentTime = 0;
