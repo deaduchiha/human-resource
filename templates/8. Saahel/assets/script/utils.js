@@ -72,7 +72,6 @@ export function openPopup(food, isVideoOpen, popupBottomHolder, video) {
         marginBottom: "10px",
       });
       video.get(0).play();
-      console.log(video.get(0).currentTime);
 
       popupBottomHolder.append(video);
     } else {
