@@ -84,7 +84,7 @@
   flex-wrap: wrap;
 
   overflow: scroll;
-  /* height: 100vh; */
+  height: 75vh;
 }
 .items:last-child {
   margin-bottom: 10px;
