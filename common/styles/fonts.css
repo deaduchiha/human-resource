@@ -12,3 +12,7 @@
   font-family: dana;
   src: url("../fonts/dana.ttf");
 }
+@font-face {
+  font-family: iranSansX;
+  src: url("../fonts/iran\ sans\ x.ttf");
+}

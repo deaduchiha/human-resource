@@ -4,16 +4,16 @@ const categories = [
     category: "پیش غذا",
     subCategory: ["حمص", "سوپ"],
   },
-  { id: 2, text: "غذای اصلی" },
-  { id: 3, text: "سالاد" },
+  { id: 2, category: "غذای اصلی" },
+  { id: 3, category: "سالاد" },
   {
     id: 4,
-    text: "دسر",
+    category: "دسر",
     subCategory: ["اسموتی", "سرد", "دلستر"],
   },
   {
     id: 5,
-    text: "نوشیدنی",
+    category: "نوشیدنی",
     subCategory: ["اسموتی", "سرد", "دلستر"],
   },
 ];
