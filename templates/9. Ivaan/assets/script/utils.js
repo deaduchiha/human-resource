@@ -1,10 +1,6 @@
-export function openPopup(food, isVideoOpen, popupBottomHolder, video) {
-  // const popupContainer = $(".popup-container");
+export function openPopup(food) {
   const swiper = $(".popupImages .swiper-wrapper");
-  const foodDetails = $(".popup_food-details");
-
   const showVideoButton = $(".video-button ");
-  const spanText = showVideoButton.find("span");
 
   food.images.map((image) => {
     const swiperSlide = $("<div>").addClass("swiper-slide");
@@ -32,6 +28,7 @@ export function openPopup(food, isVideoOpen, popupBottomHolder, video) {
       price.text(data.price);
     }
     sizeHolder.on("click", () => handleSizeClick(data.price, sizeHolder));
+
     sizeHolder.append(sizeText);
     sizes.append(sizeHolder);
   });
@@ -44,10 +41,22 @@ export function openPopup(food, isVideoOpen, popupBottomHolder, video) {
     sizeHolder.addClass("active-size");
     price.text(sizePrice);
   }
-
   $(".popup_price").text(food.sizes[0].sizePrice);
 
-  // Show the popup
+  let isVideoOpen = false;
+  showVideoButton.on("click", () => {
+    if (!isVideoOpen) {
+      $("#myVideo").css({
+        display: "block",
+      });
+    } else if (isVideoOpen) {
+      $("#myVideo").css({
+        display: "none",
+      });
+    }
+    isVideoOpen = !isVideoOpen;
+  });
+
   $("#popup").fadeIn();
 }
 
@@ -58,7 +67,3 @@ export const popupSwiper = new Swiper(".popupImages", {
   slidesPerView: 1,
   spaceBetween: 25,
 });
-
-export function closePopup() {
-  isVideoOpen = false; // Reset isVideoOpen to default
-}
