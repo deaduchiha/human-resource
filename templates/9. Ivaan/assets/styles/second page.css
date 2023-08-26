@@ -1,16 +1,16 @@
 .second-page {
-  background-color: #ffffff;
   overflow: scroll;
-  padding-bottom: 10px;
-  color: #323232;
+  color: #ffffff;
 }
 
 .second-page__header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
+  height: 56px;
+  max-height: 56px;
   padding: 26px 16px;
+  margin-bottom: 40px;
 }
 
 .second-page__prev {
@@ -24,8 +24,8 @@
 }
 
 .second-page__header-logo {
-  width: 56px;
-  height: 56px;
+  width: 40px;
+  height: 40px;
   overflow: hidden;
   flex: 1;
 }
@@ -35,30 +35,6 @@
   object-fit: contain;
 }
 
-.second-page__base-category {
-  width: fit-content;
-  background-color: #f5f5f5;
-  border-radius: 24px;
-  padding: 8px;
-
-  display: flex;
-  gap: 10px;
-  margin: 0 auto;
-}
-.second-page__base-category span {
-  width: 89px;
-  padding: 4px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 16px;
-  font-size: 16px;
-  font-weight: 400;
-  cursor: pointer;
-}
-.active-base-category {
-  background-color: #f3b5c5;
-}
 .categories {
   margin-top: 31px;
   padding-right: 16px;

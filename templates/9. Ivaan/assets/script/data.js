@@ -1,252 +1,151 @@
-const baseCategory = [
-  { id: 1, text: "غذا" },
-  { id: 2, text: "نوشیدنی" },
-];
-
-const foodCategory = [
+const categories = [
   {
     id: 1,
-    base: "غذا",
-    text: "همبرگر",
-    icon: "assets/images/foods-icon/1.svg",
+    category: "پیش غذا",
+    subCategory: ["حمص", "سوپ"],
   },
-  {
-    id: 2,
-    base: "غذا",
-    text: "پیتزا",
-    icon: "assets/images/foods-icon/2.svg",
-  },
-  {
-    id: 3,
-    base: "غذا",
-    text: "شیرینی",
-    icon: "assets/images/foods-icon/3.svg",
-  },
+  { id: 2, text: "غذای اصلی" },
+  { id: 3, text: "سالاد" },
   {
     id: 4,
-    base: "نوشیدنی",
-    text: "قهوه گرم",
-    icon: "assets/images/foods-icon/2.svg",
+    text: "دسر",
+    subCategory: ["اسموتی", "سرد", "دلستر"],
   },
   {
     id: 5,
-    base: "نوشیدنی",
-    text: "قهوه سرد",
-    icon: "assets/images/foods-icon/1.svg",
+    text: "نوشیدنی",
+    subCategory: ["اسموتی", "سرد", "دلستر"],
   },
 ];
 
-const foodList = [
+const foodsData = [
   {
     id: 1,
-    title: "برگر کلاسیک",
-    category: "همبرگر",
+    title: "حمص اسفناج",
+    category: "پیش غذا",
+    subCategory: "حمص",
     sizes: [
       {
-        size: "کوچک",
-        sizePrice: 75000,
-        icon: "assets/images/foods-icon/1.svg",
+        size: "یک نفره",
+        price: 25000,
       },
       {
-        size: "متوسط",
-        sizePrice: 85000,
-        icon: "assets/images/foods-icon/1.svg",
+        size: "دو نفره",
+        price: 45000,
       },
       {
-        size: "بزرگ",
-        sizePrice: 95000,
-        icon: "assets/images/foods-icon/1.svg",
+        size: "خانوادگی",
+        price: 70000,
       },
     ],
-    images: [
-      "assets/images/foods/burger.jpg",
-      "assets/images/foods/2.png",
-      "assets/images/foods/3.png",
-      "assets/images/foods/4.png",
+    slideImage: [
+      "esfenaj.jpg",
+      "assets/images/foods/kimchi.jpg",
+      "esfenaj 1.jpeg",
+      "esfenaj 2.jpg",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
   {
     id: 2,
-    title: "چیز برگر",
-    category: "همبرگر",
+    title: "حمص قارچ",
+    category: "پیش غذا",
+    subCategory: "حمص",
     sizes: [
       {
-        size: "کوچک",
-        sizePrice: 75000,
-        icon: "assets/images/foods-icon/1.svg",
+        size: "یک نفره",
+        price: 35000,
       },
       {
-        size: "متوسط",
-        sizePrice: 85000,
-        icon: "assets/images/foods-icon/1.svg",
+        size: "دو نفره",
+        price: 45000,
       },
       {
-        size: "بزرگ",
-        sizePrice: 95000,
-        icon: "assets/images/foods-icon/1.svg",
+        size: "خانوادگی",
+        price: 55000,
       },
     ],
-    images: [
-      "assets/images/foods/cheeseburger.jpg",
-      "assets/images/foods/2.png",
-      "assets/images/foods/3.png",
-      "assets/images/foods/4.png",
+    slideImage: [
+      "assets/images/foods/gharch.jpg",
+      "assets/images/foods/gharch 2.jpeg",
+      "assets/images/foods/gharch 3.jpg",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
   {
     id: 3,
-    title: "دوبل برگر",
-    category: "همبرگر",
+    title: "سوپ جو",
+    category: "پیش غذا",
+    subCategory: "سوپ",
     sizes: [
       {
-        size: "کوچک",
-        sizePrice: 45000,
-        icon: "assets/images/foods-icon/1.svg",
+        size: "یک نفره",
+        price: 50000,
       },
       {
-        size: "متوسط",
-        sizePrice: 55000,
-        icon: "assets/images/foods-icon/1.svg",
+        size: "دو نفره",
+        price: 65000,
       },
       {
-        size: "بزرگ",
-        sizePrice: 65000,
-        icon: "assets/images/foods-icon/1.svg",
+        size: "خانوادگی",
+        price: 110000,
       },
     ],
-    images: [
-      "assets/images/foods/double burger.jpg",
-      "assets/images/foods/2.png",
-      "assets/images/foods/3.png",
-      "assets/images/foods/4.png",
+    slideImage: [
+      "assets/images/foods/soop jo.jpg",
+      "assets/images/foods/soop jo 1.jpg",
+      "assets/images/foods/soop jo 2.jpg",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
   {
     id: 4,
-    title: "آیس آمریکانو",
-    category: "قهوه سرد",
+    title: "چلو کوبیده",
+    category: "غذای اصلی",
     sizes: [
       {
-        size: "کوچک",
-        sizePrice: 75000,
-        icon: "assets/images/foods-icon/1.svg",
+        size: "یک نفره",
+        price: 70000,
       },
       {
-        size: "متوسط",
-        sizePrice: 85000,
-        icon: "assets/images/foods-icon/1.svg",
+        size: "دو نفره",
+        price: 90000,
       },
       {
-        size: "بزرگ",
-        sizePrice: 95000,
-        icon: "assets/images/foods-icon/1.svg",
+        size: "خانوادگی",
+        price: 120000,
       },
     ],
-    images: [
-      "assets/images/foods/6.png",
-      "assets/images/foods/5.png",
-      "assets/images/foods/4.png",
-      "assets/images/foods/3.png",
+    slideImage: [
+      "assets/images/foods/koobide.jpg",
+      "assets/images/foods/koobide 1.jpg",
+      "assets/images/foods/koobide.jpg",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
   {
     id: 5,
-    title: "اسپرسو",
-    category: "قهوه گرم",
+    title: "نوشابه",
+    category: "نوشیدنی",
+    subCategory: "سرد",
     sizes: [
       {
-        size: "کوچک",
-        sizePrice: 75000,
-        icon: "assets/images/foods-icon/1.svg",
-      },
-      {
-        size: "متوسط",
-        sizePrice: 85000,
-        icon: "assets/images/foods-icon/1.svg",
+        size: "کوچیک",
+        price: 10000,
       },
       {
         size: "بزرگ",
-        sizePrice: 95000,
-        icon: "assets/images/foods-icon/1.svg",
+        price: 20000,
       },
     ],
-    images: [
-      "assets/images/foods/3.png",
-      "assets/images/foods/6.png",
-      "assets/images/foods/5.png",
-      "assets/images/foods/2.png",
-    ],
-    description:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
-  },
-  {
-    id: 6,
-    title: "پیتزا مخصوص",
-    category: "پیتزا",
-    sizes: [
-      {
-        size: "کوچک",
-        sizePrice: 75000,
-        icon: "assets/images/foods-icon/1.svg",
-      },
-      {
-        size: "متوسط",
-        sizePrice: 85000,
-        icon: "assets/images/foods-icon/1.svg",
-      },
-      {
-        size: "بزرگ",
-        sizePrice: 95000,
-        icon: "assets/images/foods-icon/1.svg",
-      },
-    ],
-    images: [
-      "assets/images/foods/pizza.webp",
-      "assets/images/foods/1.png",
-      "assets/images/foods/4.png",
-      "assets/images/foods/6.png",
-    ],
-    description:
-      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
-  },
-  {
-    id: 7,
-    title: "موکا",
-    category: "قهوه گرم",
-    sizes: [
-      {
-        size: "کوچک",
-        sizePrice: 75000,
-        icon: "assets/images/foods-icon/1.svg",
-      },
-      {
-        size: "متوسط",
-        sizePrice: 85000,
-        icon: "assets/images/foods-icon/1.svg",
-      },
-      {
-        size: "بزرگ",
-        sizePrice: 95000,
-        icon: "assets/images/foods-icon/1.svg",
-      },
-    ],
-    images: [
-      "assets/images/foods/6.png",
-      "assets/images/foods/1.png",
-      "assets/images/foods/5.png",
-      "assets/images/foods/2.png",
-    ],
+    slideImage: ["assets/images/foods/coca.png"],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
 ];
 
-export { foodCategory, foodList, baseCategory };
+export { categories, foodsData };
