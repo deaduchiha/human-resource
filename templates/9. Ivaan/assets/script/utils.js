@@ -20,25 +20,26 @@ export function openPopup(food, isVideoOpen, popupBottomHolder, video) {
   $(".popup_food-description").text(food.description);
 
   const sizes = $(".popup_sizes");
+  let price = $(".popup_price");
+
   food.sizes.map((data, index) => {
     const sizeHolder = $("<div>").addClass("size-holder");
 
     const sizeText = $("<span>").text(data.size);
 
-    index === 0 && sizeHolder.addClass("active-size");
+    if (index === 0) {
+      sizeHolder.addClass("active-size");
+      price.text(data.price);
+    }
     sizeHolder.on("click", () => handleSizeClick(data.price, sizeHolder));
-
     sizeHolder.append(sizeText);
     sizes.append(sizeHolder);
   });
-
-  let price = $(".popup_price");
 
   // handle click event on size options price
   function handleSizeClick(sizePrice, sizeHolder) {
     // Remove the "active-size" class from all size options
     sizes.find("div").removeClass("active-size");
-
     // Add the "active-size" class to the clicked size option
     sizeHolder.addClass("active-size");
     price.text(sizePrice);
