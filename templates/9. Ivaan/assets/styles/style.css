@@ -12,5 +12,4 @@ body {
   position: relative;
   width: 700px;
   height: 100vh !important;
-  overflow: scroll;
 }

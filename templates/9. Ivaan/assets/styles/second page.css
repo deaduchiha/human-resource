@@ -3,6 +3,8 @@
   font-family: iranSansX !important;
   color: #ffffff;
   overflow: scroll;
+
+  padding: 0 0 30px;
 }
 
 .second-page__header {
@@ -84,11 +86,9 @@
   row-gap: 17px;
   flex-wrap: wrap;
   /* done */
-
-  overflow: scroll;
 }
 .items:last-child {
-  margin-bottom: 15vh;
+  /* margin-bottom: 15vh; */
 }
 .items {
   background-color: #2d3338;
