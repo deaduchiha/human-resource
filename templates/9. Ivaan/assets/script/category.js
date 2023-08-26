@@ -66,10 +66,12 @@ $(document).ready(() => {
         .attr("alt", data.title);
 
       const foodTitle = $("<p>").addClass("title").text(data.title);
-
       const foodPrice = $("<p>").addClass("price").text(data.sizes[0].price);
+      const foodDescription = $("<p>")
+        .addClass("description")
+        .text(data.description);
 
-      food.append(foodImage, foodTitle, foodPrice);
+      food.append(foodImage, foodTitle, foodPrice, foodDescription);
       foods.append(food);
     });
   }
