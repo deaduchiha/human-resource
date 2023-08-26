@@ -84,10 +84,8 @@
   row-gap: 17px;
   flex-wrap: wrap;
   /* done */
-  overflow-x: hidden !important;
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
-  -webkit-overflow-y: auto; /* added css prefix for safari */
+  height: 73vh;
+  border: 1px solid red;
 }
 .items:last-child {
   margin-bottom: 20px;
