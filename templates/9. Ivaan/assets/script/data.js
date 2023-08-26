@@ -21,6 +21,7 @@ const foodsData = [
   {
     id: 1,
     title: "حمص اسفناج",
+    videoUrl: "../../common/video/pizza.mp4",
     category: "پیش غذا",
     subCategory: "حمص",
     sizes: [
@@ -48,6 +49,7 @@ const foodsData = [
   {
     id: 2,
     title: "حمص قارچ",
+    videoUrl: "../../common/video/pizza.mp4",
     category: "پیش غذا",
     subCategory: "حمص",
     sizes: [
@@ -75,6 +77,7 @@ const foodsData = [
   {
     id: 3,
     title: "سوپ جو",
+    videoUrl: "../../common/video/pizza.mp4",
     category: "پیش غذا",
     subCategory: "سوپ",
     sizes: [
@@ -102,6 +105,7 @@ const foodsData = [
   {
     id: 4,
     title: "چلو کوبیده",
+    videoUrl: "../../common/video/pizza.mp4",
     category: "غذای اصلی",
     subCategory: "کباب",
     sizes: [
@@ -129,6 +133,7 @@ const foodsData = [
   {
     id: 5,
     title: "نوشابه",
+    videoUrl: "../../common/video/pizza.mp4",
     category: "نوشیدنی",
     subCategory: "سرد",
     sizes: [

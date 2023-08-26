@@ -15,6 +15,12 @@ $(document).ready(function () {
   $(document).on("click", "#closeBtn", function () {
     swiper.empty();
     sizes.empty();
+    $("#myVideo").get(0).pause();
+    $("#myVideo").get(0).currentTime = 0;
+    $("#myVideo").css({
+      display: "none",
+    });
+    $(".video-button span").text("نمایش ویدیو");
     $("#popup").fadeOut();
   });
 });

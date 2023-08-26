@@ -44,15 +44,23 @@ export function openPopup(food) {
   $(".popup_price").text(food.sizes[0].sizePrice);
 
   let isVideoOpen = false;
+
+  $("#myVideo").attr("src", food.videoUrl);
+
   showVideoButton.on("click", () => {
     if (!isVideoOpen) {
       $("#myVideo").css({
         display: "block",
       });
+      $(".video-button span").text("بستن ویدیو");
+      $("#myVideo").get(0).play();
     } else if (isVideoOpen) {
       $("#myVideo").css({
         display: "none",
       });
+      $("#myVideo").get(0).pause();
+      $("#myVideo").get(0).currentTime = 0;
+      $(".video-button span").text("نمایش ویدیو");
     }
     isVideoOpen = !isVideoOpen;
   });
