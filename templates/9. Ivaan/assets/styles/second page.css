@@ -93,6 +93,10 @@
   /* done */
 }
 
+.items:last-child {
+  margin-bottom: 4vh;
+}
+
 .items {
   background-color: #2d3338;
   width: 42.5vw;
