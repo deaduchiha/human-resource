@@ -22,13 +22,13 @@ export function openPopup(food, isVideoOpen, popupBottomHolder, video) {
   const sizes = $(".popup_sizes");
   food.sizes.map((data, index) => {
     const sizeHolder = $("<div>").addClass("size-holder");
-    const sizeIcon = $("<svg>").attr("stroke", "currentColor").load(data.icon);
+
     const sizeText = $("<span>").text(data.size);
 
     index === 0 && sizeHolder.addClass("active-size");
-    sizeHolder.on("click", () => handleSizeClick(data.sizePrice, sizeHolder));
+    sizeHolder.on("click", () => handleSizeClick(data.price, sizeHolder));
 
-    sizeHolder.append(sizeIcon, sizeText);
+    sizeHolder.append(sizeText);
     sizes.append(sizeHolder);
   });
 
@@ -46,47 +46,6 @@ export function openPopup(food, isVideoOpen, popupBottomHolder, video) {
 
   $(".popup_price").text(food.sizes[0].sizePrice);
 
-  showVideoButton.click(function () {
-    isVideoOpen = !isVideoOpen;
-    if (isVideoOpen) {
-      spanText.text("بستن ویدیو");
-      popupBottomHolder.css({
-        height: "68vh",
-        zIndex: 20,
-      });
-      $(".popup_price").css({
-        margin: "0 0 10px",
-      });
-
-      const videoSrc = "../../common/video/pizza.mp4";
-      const videoType = "video/mp4";
-
-      video.empty();
-      const source = $("<source>");
-      source.attr("src", videoSrc);
-      source.attr("type", videoType);
-
-      video.append(source);
-      video.css({
-        display: "block",
-        marginBottom: "10px",
-      });
-      video.get(0).play();
-
-      popupBottomHolder.append(video);
-    } else {
-      spanText.text("نمایش ویدیو");
-      popupBottomHolder.css({
-        height: "40vh",
-      });
-
-      video.css("display", "none");
-      video.get(0).pause(); // Pause the video
-      video.get(0).currentTime = 0;
-      video.remove();
-    }
-  });
-
   // Show the popup
   $("#popup").fadeIn();
 }
@@ -95,6 +54,8 @@ export const popupSwiper = new Swiper(".popupImages", {
   pagination: {
     el: ".swiper-pagination",
   },
+  slidesPerView: 1,
+  spaceBetween: 25,
 });
 
 export function closePopup() {

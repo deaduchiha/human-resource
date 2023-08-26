@@ -1,4 +1,4 @@
-import { foodList } from "./data.js";
+import { foodsData } from "./data.js";
 import { openPopup } from "./utils.js";
 
 const swiper = $(".popupImages .swiper-wrapper");
@@ -16,7 +16,7 @@ const video = $("<video>", {
 $(document).ready(function () {
   $(document).on("click", "#openBtn", function () {
     const foodId = $(this).data("food-id"); // Get the data-food-id attribute from the clicked food item
-    const food = foodList.find((item) => item.id === foodId); // Find the corresponding food object
+    const food = foodsData.find((item) => item.id === foodId); // Find the corresponding food object
 
     openPopup(food, isVideoOpen, popupBottomHolder, video);
   });
