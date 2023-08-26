@@ -28,14 +28,17 @@ const foodsData = [
       {
         size: "یک نفره",
         price: 25000,
+        icon: "assets/images/icons/size/one.svg",
       },
       {
         size: "دو نفره",
         price: 45000,
+        icon: "assets/images/icons/size/two.svg",
       },
       {
         size: "خانوادگی",
         price: 70000,
+        icon: "assets/images/icons/size/family.svg",
       },
     ],
     images: [
@@ -56,14 +59,17 @@ const foodsData = [
       {
         size: "یک نفره",
         price: 35000,
+        icon: "assets/images/icons/size/one.svg",
       },
       {
         size: "دو نفره",
         price: 45000,
+        icon: "assets/images/icons/size/two.svg",
       },
       {
         size: "خانوادگی",
         price: 55000,
+        icon: "assets/images/icons/size/family.svg",
       },
     ],
     images: [
@@ -84,14 +90,17 @@ const foodsData = [
       {
         size: "یک نفره",
         price: 50000,
+        icon: "assets/images/icons/size/one.svg",
       },
       {
         size: "دو نفره",
         price: 65000,
+        icon: "assets/images/icons/size/two.svg",
       },
       {
         size: "خانوادگی",
         price: 110000,
+        icon: "assets/images/icons/size/family.svg",
       },
     ],
     images: [
@@ -112,14 +121,17 @@ const foodsData = [
       {
         size: "یک نفره",
         price: 70000,
+        icon: "assets/images/icons/size/one.svg",
       },
       {
         size: "دو نفره",
         price: 90000,
+        icon: "assets/images/icons/size/two.svg",
       },
       {
         size: "خانوادگی",
         price: 120000,
+        icon: "assets/images/icons/size/family.svg",
       },
     ],
     images: [
@@ -140,10 +152,12 @@ const foodsData = [
       {
         size: "کوچیک",
         price: 10000,
+        icon: "assets/images/icons/size/one.svg",
       },
       {
         size: "بزرگ",
         price: 20000,
+        icon: "assets/images/icons/size/family.svg",
       },
     ],
     images: ["assets/images/foods/coca.png"],

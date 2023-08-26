@@ -141,6 +141,10 @@
   border-radius: 100%;
   cursor: pointer;
 }
+.size-holder img {
+  width: 40px;
+  height: 40px;
+}
 
 .active-size {
   background: linear-gradient(268.74deg, #d6180c 1.08%, #dd5900 102.31%);

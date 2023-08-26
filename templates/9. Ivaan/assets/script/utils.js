@@ -29,13 +29,16 @@ export function openPopup(food) {
     }
     sizeHolder.on("click", () => handleSizeClick(data.price, sizeHolder));
 
-    sizeHolder.append(sizeText);
+    const foodIcon = $("<img>").attr("src", data.icon);
+
+    sizeHolder.append(foodIcon, sizeText);
     sizes.append(sizeHolder);
   });
 
   // handle click event on size options price
   function handleSizeClick(sizePrice, sizeHolder) {
     // Remove the "active-size" class from all size options
+
     sizes.find("div").removeClass("active-size");
     // Add the "active-size" class to the clicked size option
     sizeHolder.addClass("active-size");
@@ -44,9 +47,7 @@ export function openPopup(food) {
   $(".popup_price").text(food.sizes[0].sizePrice);
 
   let isVideoOpen = false;
-
   $("#myVideo").attr("src", food.videoUrl);
-
   showVideoButton.on("click", () => {
     if (!isVideoOpen) {
       $("#myVideo").css({
