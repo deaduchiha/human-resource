@@ -83,12 +83,9 @@
   padding: 0 16px;
   row-gap: 17px;
   flex-wrap: wrap;
-
-  overflow: scroll;
-  height: 75vh;
 }
 .items:last-child {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .items {
   background-color: #2d3338;
@@ -108,7 +105,11 @@
 
 .items img {
   width: 102px;
+  max-width: 102px;
+  min-width: 102px;
   height: 102px;
+  max-height: 102px;
+  min-height: 102px;
   object-fit: cover;
   display: block;
   border-radius: 100%;
@@ -132,11 +133,11 @@
 }
 .description {
   color: #aeaeae;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   text-overflow: ellipsis;
   overflow: hidden;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   display: -webkit-box;
   font-family: iranSansX !important;
