@@ -2,8 +2,6 @@
   overflow: scroll;
   font-family: iranSansX !important;
   color: #ffffff;
-  border: 1px solid red;
-  overflow-y: scroll;
 }
 
 .second-page__header {
@@ -85,12 +83,12 @@
   row-gap: 17px;
   flex-wrap: wrap;
 
-  border: 1px solid red;
-  overflow-y: scroll;
-
-  height: auto;
+  overflow: scroll;
+  /* height: 100vh; */
 }
-
+.items:last-child {
+  margin-bottom: 10px;
+}
 .items {
   background-color: #2d3338;
   width: 42.5vw;
