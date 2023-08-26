@@ -1,10 +1,11 @@
 .second-page {
   overflow: scroll;
-  font-family: iranSansX !important;
+
   color: #ffffff;
 }
 
 .second-page__header {
+  font-family: iranSansX;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -44,7 +45,6 @@
 .categories .swiper-slide {
   color: #ffffff;
   cursor: pointer;
-
   width: fit-content;
 }
 .categories .swiper-slide:last-child {
@@ -113,10 +113,16 @@
 .title {
   font-size: 16px;
   font-weight: 600;
+  font-family: iranSansX !important;
 }
 .price {
   font-size: 14px;
   font-weight: 600;
+  font-family: dana;
+}
+.price::after {
+  content: "تومان";
+  margin-right: 5px;
 }
 .description {
   color: #aeaeae;
@@ -127,4 +133,5 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   display: -webkit-box;
+  font-family: iranSansX !important;
 }
