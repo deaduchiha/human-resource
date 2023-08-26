@@ -60,6 +60,20 @@
   font-size: 14px;
 }
 
+.subCategory {
+  margin-top: 24px;
+}
+.subCategory .swiper-slide {
+  background-color: #2b2f33;
+  width: fit-content;
+  border-radius: 16px;
+  padding: 10px;
+  color: #aaaaaa;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .foods {
   margin-top: 16px;
   display: flex;
