@@ -4,7 +4,7 @@ const categories = [
     category: "پیش غذا",
     subCategory: ["حمص", "سوپ"],
   },
-  { id: 2, category: "غذای اصلی" },
+  { id: 2, category: "غذای اصلی", subCategory: ["کباب"] },
   { id: 3, category: "سالاد" },
   {
     id: 4,
