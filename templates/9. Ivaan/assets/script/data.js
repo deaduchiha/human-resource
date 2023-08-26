@@ -46,6 +46,114 @@ const foodsData = [
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
   {
+    id: 1,
+    title: "حمص اسفناج",
+    category: "پیش غذا",
+    subCategory: "حمص",
+    sizes: [
+      {
+        size: "یک نفره",
+        price: 25000,
+      },
+      {
+        size: "دو نفره",
+        price: 45000,
+      },
+      {
+        size: "خانوادگی",
+        price: 70000,
+      },
+    ],
+    images: [
+      "assets/images/foods/esfenaj.jpg",
+      "assets/images/foods/esfenaj 1.jpeg",
+      "assets/images/foods/esfenaj 2.jpg",
+    ],
+    description:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
+  },
+  {
+    id: 1,
+    title: "حمص اسفناج",
+    category: "پیش غذا",
+    subCategory: "حمص",
+    sizes: [
+      {
+        size: "یک نفره",
+        price: 25000,
+      },
+      {
+        size: "دو نفره",
+        price: 45000,
+      },
+      {
+        size: "خانوادگی",
+        price: 70000,
+      },
+    ],
+    images: [
+      "assets/images/foods/esfenaj.jpg",
+      "assets/images/foods/esfenaj 1.jpeg",
+      "assets/images/foods/esfenaj 2.jpg",
+    ],
+    description:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
+  },
+  {
+    id: 1,
+    title: "حمص اسفناج",
+    category: "پیش غذا",
+    subCategory: "حمص",
+    sizes: [
+      {
+        size: "یک نفره",
+        price: 25000,
+      },
+      {
+        size: "دو نفره",
+        price: 45000,
+      },
+      {
+        size: "خانوادگی",
+        price: 70000,
+      },
+    ],
+    images: [
+      "assets/images/foods/esfenaj.jpg",
+      "assets/images/foods/esfenaj 1.jpeg",
+      "assets/images/foods/esfenaj 2.jpg",
+    ],
+    description:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
+  },
+  {
+    id: 1,
+    title: "حمص اسفناج",
+    category: "پیش غذا",
+    subCategory: "حمص",
+    sizes: [
+      {
+        size: "یک نفره",
+        price: 25000,
+      },
+      {
+        size: "دو نفره",
+        price: 45000,
+      },
+      {
+        size: "خانوادگی",
+        price: 70000,
+      },
+    ],
+    images: [
+      "assets/images/foods/esfenaj.jpg",
+      "assets/images/foods/esfenaj 1.jpeg",
+      "assets/images/foods/esfenaj 2.jpg",
+    ],
+    description:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
+  },
+  {
     id: 2,
     title: "حمص قارچ",
     category: "پیش غذا",
