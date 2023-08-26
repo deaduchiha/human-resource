@@ -28,12 +28,13 @@ $(document).ready(() => {
       subCategoryData.map((subCategory) => {
         const subCategorySwiperSlide = createSwiperSlide(subCategory);
         subCategoriesSwiperWrapper.append(subCategorySwiperSlide);
+        subCategorySwiperSlide.on("click", () => {
+          $(".swiper-slide").removeClass("active-sub-category");
+          subCategorySwiperSlide.addClass("active-sub-category");
+          filterFoodsByCategory(null, subCategory);
+        });
       });
-
       subCategoriesSwiper.update();
-      // console.log("Has subCategory:", subCategoryData);
-    } else {
-      // console.log("Does not have subCategory");
     }
   }
 
