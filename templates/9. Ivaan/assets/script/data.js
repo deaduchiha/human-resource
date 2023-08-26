@@ -9,7 +9,6 @@ const categories = [
   {
     id: 4,
     category: "دسر",
-    subCategory: ["اسموتی", "سرد", "دلستر"],
   },
   {
     id: 5,
@@ -38,11 +37,10 @@ const foodsData = [
         price: 70000,
       },
     ],
-    slideImage: [
-      "esfenaj.jpg",
-      "assets/images/foods/kimchi.jpg",
-      "esfenaj 1.jpeg",
-      "esfenaj 2.jpg",
+    images: [
+      "assets/images/foods/esfenaj.jpg",
+      "assets/images/foods/esfenaj 1.jpeg",
+      "assets/images/foods/esfenaj 2.jpg",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -66,7 +64,7 @@ const foodsData = [
         price: 55000,
       },
     ],
-    slideImage: [
+    images: [
       "assets/images/foods/gharch.jpg",
       "assets/images/foods/gharch 2.jpeg",
       "assets/images/foods/gharch 3.jpg",
@@ -93,7 +91,7 @@ const foodsData = [
         price: 110000,
       },
     ],
-    slideImage: [
+    images: [
       "assets/images/foods/soop jo.jpg",
       "assets/images/foods/soop jo 1.jpg",
       "assets/images/foods/soop jo 2.jpg",
@@ -119,7 +117,7 @@ const foodsData = [
         price: 120000,
       },
     ],
-    slideImage: [
+    images: [
       "assets/images/foods/koobide.jpg",
       "assets/images/foods/koobide 1.jpg",
       "assets/images/foods/koobide.jpg",
@@ -142,7 +140,7 @@ const foodsData = [
         price: 20000,
       },
     ],
-    slideImage: ["assets/images/foods/coca.png"],
+    images: ["assets/images/foods/coca.png"],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },

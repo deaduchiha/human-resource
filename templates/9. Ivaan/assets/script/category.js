@@ -1,53 +1,79 @@
 import { categories, foodsData } from "./data.js";
 
+// create a swiper slide
+function createSwiperSlide(text) {
+  return $("<div>").addClass("swiper-slide").append($("<span>").text(text));
+}
+
 $(document).ready(() => {
-  // categories slider
+  // categories
   new Swiper(".categories", {
     slidesPerView: "auto",
     spaceBetween: 22,
   });
 
-  // sub categories slider
-  new Swiper(".subCategory", {
+  const subCategoriesSwiper = new Swiper(".subCategory", {
     slidesPerView: "auto",
     spaceBetween: 15,
   });
 
   const swiperWrapper = $(".categories .swiper-wrapper");
   const subCategoriesSwiperWrapper = $(".subCategory .swiper-wrapper");
-  // const foodsWrapper = $(".foods");
+  const foods = $(".foods");
 
-  categories.map((data, index) => {
-    const swiperSlide = $("<div>").addClass("swiper-slide");
-    const category = $("<span>").text(data.category);
+  function populateSubCategories(subCategoryData) {
+    subCategoriesSwiperWrapper.empty();
 
-    // active first category
-    index === 0 && swiperSlide.addClass("active-category");
+    if (subCategoryData) {
+      subCategoryData.map((subCategory) => {
+        const subCategorySwiperSlide = createSwiperSlide(subCategory);
+        subCategoriesSwiperWrapper.append(subCategorySwiperSlide);
+      });
 
-    // update active category
+      subCategoriesSwiper.update();
+      // console.log("Has subCategory:", subCategoryData);
+    } else {
+      // console.log("Does not have subCategory");
+    }
+  }
+
+  categories.map((data) => {
+    const swiperSlide = createSwiperSlide(data.category);
+
     swiperSlide.on("click", () => {
-      subCategoriesSwiperWrapper.empty();
-
+      filterFoodsByCategory(data.category);
       $(".swiper-slide").removeClass("active-category");
       swiperSlide.addClass("active-category");
-
-      // check category for subCategory
-      if (data.hasOwnProperty("subCategory")) {
-        data.subCategory.map((subCategory) => {
-          const subCategorySwiperSlide = $("<div>").addClass("swiper-slide");
-          const subCategorySpan = $("<span>").text(subCategory);
-
-          subCategorySwiperSlide.append(subCategorySpan);
-          subCategoriesSwiperWrapper.append(subCategorySwiperSlide);
-        });
-
-        console.log("Has subCategory:", data.subCategory);
-      } else {
-        console.log("Does not have subCategory");
-      }
+      populateSubCategories(data.subCategory);
     });
 
-    swiperSlide.append(category);
     swiperWrapper.append(swiperSlide);
   });
+
+  function filterFoodsByCategory(category, subCategory) {
+    foods.empty();
+    const filteredFoods = category
+      ? foodsData.filter((food) => food.category == category)
+      : foodsData.filter((food) => food.subCategory == subCategory);
+
+    filteredFoods.map((data) => {
+      const food = $("<div>").addClass("items");
+      food.attr("data-food-id", data.id);
+      food.attr("id", "openBtn");
+
+      const foodImage = $("<img>")
+        .attr("src", data.images[0])
+        .attr("alt", data.title);
+
+      const foodTitle = $("<p>").addClass("title").text(data.title);
+
+      const foodPrice = $("<p>").addClass("price").text(data.sizes[0].price);
+
+      food.append(foodImage, foodTitle, foodPrice);
+      foods.append(food);
+    });
+  }
+
+  // Simulate a click on the first category to populate its subcategories
+  $(".categories .swiper-slide:first-child").trigger("click");
 });
