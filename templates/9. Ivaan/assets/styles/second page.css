@@ -84,8 +84,8 @@
   row-gap: 17px;
   flex-wrap: wrap;
   /* done */
-  height: 73vh;
-  border: 1px solid red;
+  height: 100%;
+  overflow: scroll;
 }
 .items:last-child {
   margin-bottom: 20px;
