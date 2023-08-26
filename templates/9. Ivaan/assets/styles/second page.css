@@ -83,6 +83,11 @@
   padding: 0 16px;
   row-gap: 17px;
   flex-wrap: wrap;
+
+  overflow-x: hidden !important;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-y: auto; /* added css prefix for safari */
 }
 .items:last-child {
   margin-bottom: 20px;
