@@ -103,6 +103,7 @@ const foodsData = [
     id: 4,
     title: "چلو کوبیده",
     category: "غذای اصلی",
+    subCategory: "کباب",
     sizes: [
       {
         size: "یک نفره",
