@@ -1,0 +1,16 @@
+body {
+  background-color: #24282c !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: dana;
+}
+
+.container {
+  position: relative;
+  width: 700px;
+  height: 100vh !important;
+}
