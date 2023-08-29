@@ -1,23 +1,12 @@
-// Get the current URL path
 const currentPath = window.location.pathname;
-
-// Split the path using '/' as the separator
 const pathParts = currentPath.split("/");
-
-// Get the last part of the path (which should be "ivaan.html" in your example)
 const lastPart = pathParts[pathParts.length - 1];
-
-// Remove the ".html" extension from the last part
-const fileNameWithoutExtension = lastPart.split(".")[0];
-
-console.log(fileNameWithoutExtension); // This will log "ivaan"
-
-// Construct the import path using dynamic import
-const importPath = `../../../../rinho/${fileNameWithoutExtension}.js`;
+const urlName = lastPart.split(".")[0];
+const importPath = `../../../../rinho/${urlName}.js`;
 
 import(importPath)
   .then(({ categories, foodsData }) => {
-    // Your code that uses categories and foodsData
+    // code that uses categories and foodsData
     $(document).ready(() => {
       // categories
       new Swiper(".categories", {
