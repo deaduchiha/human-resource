@@ -18,19 +18,37 @@ export function openPopup(food, isVideoOpen, popupBottomHolder, video) {
   $(".popup_food-description").text(food.description);
 
   const sizes = $(".popup_sizes");
+  let price = $(".popup_price");
   food.sizes.map((data, index) => {
     const sizeHolder = $("<div>").addClass("size-holder");
-    const sizeIcon = $("<svg>").attr("stroke", "currentColor").load(data.icon);
     const sizeText = $("<span>").text(data.size);
 
-    index === 0 && sizeHolder.addClass("active-size");
-    sizeHolder.on("click", () => handleSizeClick(data.sizePrice, sizeHolder));
+    if (index === 0) {
+      sizeHolder.addClass("active-size");
+      handleSizeClick(data.sizePrice, sizeHolder);
+    }
 
-    sizeHolder.append(sizeIcon, sizeText);
-    sizes.append(sizeHolder);
+    // Make an AJAX request to fetch the SVG content
+    $.ajax({
+      url: data.icon,
+      dataType: "xml", // Set the data type to xml
+      success: function (svgContent) {
+        // Create an <svg> element and append the fetched SVG content
+        const sizeIcon = $(svgContent.documentElement);
+        sizeIcon.attr("stroke", "currentColor");
+
+        sizeHolder.on("click", () =>
+          handleSizeClick(data.sizePrice, sizeHolder)
+        );
+
+        sizeHolder.append(sizeIcon, sizeText);
+        sizes.append(sizeHolder);
+      },
+      error: function () {
+        console.error("Error loading SVG");
+      },
+    });
   });
-
-  let price = $(".popup_price");
 
   // handle click event on size options price
   function handleSizeClick(sizePrice, sizeHolder) {
