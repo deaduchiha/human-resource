@@ -1,11 +1,11 @@
 .first-page {
-  background: url("../images/background.png") no-repeat;
+  background: url("../Template Images/Backgrounds/ivaan-first-page-bg.png")
+    no-repeat;
   background-size: cover;
   font-family: dana;
   height: 100vh !important;
   background-clip: content-box;
   color: #323232;
-  /* style */
 }
 
 /* - - - - - - - - - - - - - - - - - -  */

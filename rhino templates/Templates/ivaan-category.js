@@ -2,7 +2,7 @@ const currentPath = window.location.pathname;
 const pathParts = currentPath.split("/");
 const lastPart = pathParts[pathParts.length - 1];
 const urlName = lastPart.split(".")[0];
-const importPath = `../../../../rinho/${urlName}.js`;
+const importPath = `../../rinho/${urlName}.js`;
 
 import(importPath)
   .then(({ categories, foodsData }) => {

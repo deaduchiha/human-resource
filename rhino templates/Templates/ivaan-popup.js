@@ -2,9 +2,8 @@ const currentPath = window.location.pathname;
 const pathParts = currentPath.split("/");
 const lastPart = pathParts[pathParts.length - 1];
 const urlName = lastPart.split(".")[0];
-const importPath = `../../../../rinho/${urlName}.js`;
-
-import { openPopup } from "./utils.js";
+const importPath = `../../rinho/${urlName}.js`;
+import { openPopup } from "./ivaan-utils.js";
 
 const swiper = $(".popupImages .swiper-wrapper");
 const sizes = $(".popup_sizes");
