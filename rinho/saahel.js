@@ -41,6 +41,7 @@ const foodList = [
     id: 1,
     title: "برگر کلاسیک",
     category: "همبرگر",
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
     sizes: [
       {
         size: "کوچک",
@@ -71,6 +72,7 @@ const foodList = [
     id: 2,
     title: "چیز برگر",
     category: "همبرگر",
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
     sizes: [
       {
         size: "کوچک",
@@ -101,6 +103,7 @@ const foodList = [
     id: 3,
     title: "دوبل برگر",
     category: "همبرگر",
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
     sizes: [
       {
         size: "کوچک",
@@ -131,6 +134,7 @@ const foodList = [
     id: 4,
     title: "آیس آمریکانو",
     category: "قهوه سرد",
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
     sizes: [
       {
         size: "کوچک",
@@ -161,6 +165,7 @@ const foodList = [
     id: 5,
     title: "اسپرسو",
     category: "قهوه گرم",
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
     sizes: [
       {
         size: "کوچک",
@@ -191,6 +196,7 @@ const foodList = [
     id: 6,
     title: "پیتزا مخصوص",
     category: "پیتزا",
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
     sizes: [
       {
         size: "کوچک",
@@ -221,6 +227,7 @@ const foodList = [
     id: 7,
     title: "موکا",
     category: "قهوه گرم",
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
     sizes: [
       {
         size: "کوچک",

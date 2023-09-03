@@ -1,8 +1,6 @@
 export function openPopup(food, isVideoOpen, popupBottomHolder, video) {
   // const popupContainer = $(".popup-container");
   const swiper = $(".popupImages .swiper-wrapper");
-  const foodDetails = $(".popup_food-details");
-
   const showVideoButton = $(".video-button ");
   const spanText = showVideoButton.find("span");
 
@@ -58,7 +56,7 @@ export function openPopup(food, isVideoOpen, popupBottomHolder, video) {
         margin: "0 0 10px",
       });
 
-      const videoSrc = "../../common/video/pizza.mp4";
+      const videoSrc = food.videoUrl;
       const videoType = "video/mp4";
 
       video.empty();

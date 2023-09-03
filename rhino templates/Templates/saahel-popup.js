@@ -11,8 +11,8 @@ import(importPath)
     const swiper = $(".popupImages .swiper-wrapper");
     const sizes = $(".popup_sizes");
     let isVideoOpen = false;
-    const showVideoText = $(".video-button span ");
-    const popupBottomHolder = $(".popup_bottom-holder ");
+    const showVideoText = $(".video-button span");
+    const popupBottomHolder = $(".popup_bottom-holder");
 
     const video = $("<video>", {
       width: "100%",
