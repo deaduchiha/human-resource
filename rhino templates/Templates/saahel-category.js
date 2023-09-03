@@ -3,7 +3,7 @@ const pathParts = currentPath.split("/");
 const lastPart = pathParts[pathParts.length - 1];
 const urlName = lastPart.split(".")[0];
 const importPath = `../../rinho/${urlName}.js`;
-
+// fake
 import(importPath)
   .then(({ foodCategory, foodList, baseCategory }) => {
     $(document).ready(() => {
