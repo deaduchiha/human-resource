@@ -28,23 +28,23 @@ const foodsData = [
       {
         size: "یک نفره",
         price: 25000,
-        icon: "../templates/Ivaan/assets/images/icons/size/one.svg",
+        icon: "../rhino templates/Template Images/Icons/Sizes/ivaan-one.svg",
       },
       {
         size: "دو نفره",
         price: 45000,
-        icon: "../templates/Ivaan/assets/images/icons/size/two.svg",
+        icon: "../rhino templates/Template Images/Icons/Sizes/ivaan-two.svg",
       },
       {
         size: "خانوادگی",
         price: 70000,
-        icon: "../templates/Ivaan/assets/images/icons/size/family.svg",
+        icon: "../rhino templates/Template Images/Icons/Sizes/ivaan-family.svg",
       },
     ],
     images: [
-      "../templates/Ivaan/assets/images/foods/esfenaj.jpg",
-      "../templates/Ivaan/assets/images/foods/esfenaj 1.jpeg",
-      "../templates/Ivaan/assets/images/foods/esfenaj 2.jpg",
+      "../rhino templates/fake data/ivaan/esfenaj.jpg",
+      "../rhino templates/fake data/ivaan/esfenaj 1.jpeg",
+      "../rhino templates/fake data/ivaan/esfenaj 2.jpg",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -59,23 +59,23 @@ const foodsData = [
       {
         size: "یک نفره",
         price: 35000,
-        icon: "../templates/Ivaan/assets/images/icons/size/one.svg",
+        icon: "../rhino templates/Template Images/Icons/Sizes/ivaan-one.svg",
       },
       {
         size: "دو نفره",
         price: 45000,
-        icon: "../templates/Ivaan/assets/images/icons/size/two.svg",
+        icon: "../rhino templates/Template Images/Icons/Sizes/ivaan-two.svg",
       },
       {
         size: "خانوادگی",
         price: 55000,
-        icon: "../templates/Ivaan/assets/images/icons/size/family.svg",
+        icon: "../rhino templates/Template Images/Icons/Sizes/ivaan-family.svg",
       },
     ],
     images: [
-      "../templates/Ivaan/assets/images/foods/gharch.jpg",
-      "../templates/Ivaan/assets/images/foods/gharch 2.jpeg",
-      "../templates/Ivaan/assets/images/foods/gharch 3.jpg",
+      "../rhino templates/fake data/ivaan/gharch.jpg",
+      "../rhino templates/fake data/ivaan/gharch 2.jpeg",
+      "../rhino templates/fake data/ivaan/gharch 3.jpg",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -90,23 +90,23 @@ const foodsData = [
       {
         size: "یک نفره",
         price: 50000,
-        icon: "../templates/Ivaan/assets/images/icons/size/one.svg",
+        icon: "../rhino templates/Template Images/Icons/Sizes/ivaan-one.svg",
       },
       {
         size: "دو نفره",
         price: 65000,
-        icon: "../templates/Ivaan/assets/images/icons/size/two.svg",
+        icon: "../rhino templates/Template Images/Icons/Sizes/ivaan-two.svg",
       },
       {
         size: "خانوادگی",
         price: 110000,
-        icon: "../templates/Ivaan/assets/images/icons/size/family.svg",
+        icon: "../rhino templates/Template Images/Icons/Sizes/ivaan-family.svg",
       },
     ],
     images: [
-      "../templates/Ivaan/assets/images/foods/soop jo.jpg",
-      "../templates/Ivaan/assets/images/foods/soop jo 1.jpg",
-      "../templates/Ivaan/assets/images/foods/soop jo 2.jpg",
+      "../rhino templates/fake data/ivaan/soop jo.jpg",
+      "../rhino templates/fake data/ivaan/soop jo 1.jpg",
+      "../rhino templates/fake data/ivaan/soop jo 2.jpg",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -121,23 +121,23 @@ const foodsData = [
       {
         size: "یک نفره",
         price: 70000,
-        icon: "../templates/Ivaan/assets/images/icons/size/one.svg",
+        icon: "../rhino templates/Template Images/Icons/Sizes/ivaan-one.svg",
       },
       {
         size: "دو نفره",
         price: 90000,
-        icon: "../templates/Ivaan/assets/images/icons/size/two.svg",
+        icon: "../rhino templates/Template Images/Icons/Sizes/ivaan-two.svg",
       },
       {
         size: "خانوادگی",
         price: 120000,
-        icon: "../templates/Ivaan/assets/images/icons/size/family.svg",
+        icon: "../rhino templates/Template Images/Icons/Sizes/ivaan-family.svg",
       },
     ],
     images: [
-      "../templates/Ivaan/assets/images/foods/koobide.jpg",
-      "../templates/Ivaan/assets/images/foods/koobide 1.jpg",
-      "../templates/Ivaan/assets/images/foods/koobide.jpg",
+      "../rhino templates/fake data/ivaan/koobide.jpg",
+      "../rhino templates/fake data/ivaan/koobide 1.jpg",
+      "../rhino templates/fake data/ivaan/koobide.jpg",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -152,15 +152,15 @@ const foodsData = [
       {
         size: "کوچیک",
         price: 10000,
-        icon: "../templates/Ivaan/assets/images/icons/size/one.svg",
+        icon: "../rhino templates/Template Images/Icons/Sizes/ivaan-one.svg",
       },
       {
         size: "بزرگ",
         price: 20000,
-        icon: "../templates/Ivaan/assets/images/icons/size/family.svg",
+        icon: "../rhino templates/Template Images/Icons/Sizes/ivaan-family.svg",
       },
     ],
-    images: ["../templates/Ivaan/assets/images/foods/coca.png"],
+    images: ["../rhino templates/fake data/ivaan/coca.png"],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
