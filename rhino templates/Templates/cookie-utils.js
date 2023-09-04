@@ -15,7 +15,7 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
   // const priceHolder = $("<div>").addClass("popup-food_priceHolder");
   const sizesPrice = $("<span>")
     .addClass("popup-food_price")
-    .text(food.sizes[0].sizePrice);
+    .text(food.sizes[0].price);
 
   const toman = $("<p>").addClass("toman").text("تومان");
 
