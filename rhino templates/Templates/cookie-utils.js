@@ -2,8 +2,11 @@ export const videoHolder = $("<div>").addClass("videoHolder");
 
 export function openPopup(food, popupWrapper, prices, priceHolder) {
   let isVideoOpen = false;
+  $(".popup-content").css(
+    "background",
+    `url('${food.popupBackground}') no-repeat`
+  );
   const popupContainer = $(".popup-container");
-
   const title = $("<p>").addClass("popup-food_title").text(food.title);
   const englishTitle = $("<p>")
     .addClass("popup-food_english-title")
@@ -12,7 +15,6 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
     .addClass("popup-food_description")
     .text(food.description);
 
-  // const priceHolder = $("<div>").addClass("popup-food_priceHolder");
   const sizesPrice = $("<span>")
     .addClass("popup-food_price")
     .text(food.sizes[0].price);
@@ -26,7 +28,7 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
   });
 
   const videoLogo = $("<img>")
-    .attr("src", "assets/images/icons/video.svg")
+    .attr("src", "../rhino templates/Template Images/Icons/cookie-video.svg")
     .attr("alt", "video");
 
   const showVideo = $("<span>").text("نمایش ویدئو");
@@ -40,18 +42,18 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
       sizeOption.addClass("active-size");
     }
     // Add click event listener to each size option
-    sizeOption.on("click", () => handleSizeClick(data.sizePrice, sizeOption));
+    sizeOption.on("click", () => handleSizeClick(data.price, sizeOption));
 
     prices.append(sizeOption);
   });
   // handle click event on size options price
-  function handleSizeClick(sizePrice, sizeOption) {
+  function handleSizeClick(price, sizeOption) {
     // Remove the "active-size" class from all size options
     priceHolder.find("span").removeClass("active-size");
 
     // Add the "active-size" class to the clicked size option
     sizeOption.addClass("active-size");
-    sizesPrice.text(sizePrice);
+    sizesPrice.text(price);
   }
 
   videoHolder.on("click", () => handleVideo());

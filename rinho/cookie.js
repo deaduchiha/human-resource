@@ -37,6 +37,7 @@ const foodList = [
       { size: "متوسط", price: 85000 },
       { size: "بزرگ", price: 95000 },
     ],
+    popupBackground: "../rhino templates/fake data/cookie/popup-background.png",
     image: "../rhino templates/fake data/cookie/1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -50,6 +51,7 @@ const foodList = [
       { size: "متوسط", price: 85000 },
       { size: "بزرگ", price: 95000 },
     ],
+    popupBackground: "../rhino templates/fake data/cookie/popup-background.png",
     image: "../rhino templates/fake data/cookie/1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -64,6 +66,7 @@ const foodList = [
       { size: "متوسط", price: 55000 },
       { size: "بزرگ", price: 65000 },
     ],
+    popupBackground: "../rhino templates/fake data/cookie/popup-background.png",
     image: "../rhino templates/fake data/cookie/1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -78,6 +81,7 @@ const foodList = [
       { size: "متوسط", price: 85000 },
       { size: "بزرگ", price: 95000 },
     ],
+    popupBackground: "../rhino templates/fake data/cookie/popup-background.png",
     image: "../rhino templates/fake data/cookie/1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -92,6 +96,7 @@ const foodList = [
       { size: "متوسط", price: 85000 },
       { size: "بزرگ", price: 95000 },
     ],
+    popupBackground: "../rhino templates/fake data/cookie/popup-background.png",
     image: "../rhino templates/fake data/cookie/1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -106,6 +111,7 @@ const foodList = [
       { size: "متوسط", price: 85000 },
       { size: "بزرگ", price: 95000 },
     ],
+    popupBackground: "../rhino templates/fake data/cookie/popup-background.png",
     image: "../rhino templates/fake data/cookie/1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -121,6 +127,7 @@ const foodList = [
       { size: "متوسط", price: 85000 },
       { size: "بزرگ", price: 95000 },
     ],
+    popupBackground: "../rhino templates/fake data/cookie/popup-background.png",
     image: "../rhino templates/fake data/cookie/1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",

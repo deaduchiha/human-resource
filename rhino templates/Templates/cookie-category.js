@@ -21,7 +21,7 @@ import(importPath)
         const category = $("<div>").addClass("swiper-slide");
         category.attr("category-id", data.id);
         const iconHolder = $("<div>").addClass("icon-holder");
-        const icon = $("<svg>").attr("stroke", "currentColor").load(data.icon);
+        const icon = $("<svg>").attr("stroke", "currentColor");
         iconHolder.append(icon);
         const categoryTitle = $("<span>").text(data.text);
 
@@ -33,6 +33,19 @@ import(importPath)
         }
 
         category.on("click", () => handleCategoryClick(category, data.text));
+
+        // Make an AJAX request to fetch the SVG content
+        $.ajax({
+          url: data.icon, // URL to the SVG file
+          dataType: "xml", // Set the data type to XML
+          success: function (svgData) {
+            // On success, set the SVG content in the <svg> element
+            icon.html(svgData.documentElement);
+          },
+          error: function () {
+            console.error("Error loading SVG content");
+          },
+        });
       });
 
       // handle click event on category
