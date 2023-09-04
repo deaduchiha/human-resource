@@ -70,7 +70,7 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
       videoLogo.removeAttr("src").removeAttr("alt");
       showVideo.text("بستن ویدئو");
 
-      const videoSrc = "../../common/video/pizza.mp4";
+      const videoSrc = food.videoUrl;
       const videoType = "video/mp4";
 
       video.empty();
@@ -89,7 +89,10 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
         video.css("visibility", "hidden");
         showVideo.text("نمایش ویدئو");
         videoLogo
-          .attr("src", "assets/images/icons/video.svg")
+          .attr(
+            "src",
+            "../rhino templates/Template Images/Icons/cookie-video.svg"
+          )
           .attr("alt", "video");
         isVideoOpen = false;
       });
@@ -98,7 +101,10 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
       videoHolder.css("bottom", "30vh");
       showVideo.text("نمایش ویدئو");
       videoLogo
-        .attr("src", "assets/images/icons/video.svg")
+        .attr(
+          "src",
+          "../rhino templates/Template Images/Icons/cookie-video.svg"
+        )
         .attr("alt", "video");
       video.get(0).pause(); // Pause the video
       video.css("visibility", "hidden");
