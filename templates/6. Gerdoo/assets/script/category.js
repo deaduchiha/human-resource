@@ -89,14 +89,14 @@ $(document).ready(function () {
         foodSlide.attr("data-food-id", food.id); // Set the data-food-id attribute
         const foodImageHolder = $('<div class="food-item__image"></div>');
         const foodImage = $("<img>")
-          .attr("src", food.mainImage)
+          .attr("src", food.images[0])
           .attr("alt", food.title);
         const foodNameAndPriceHolder = $(
           '<div class="food-item_price_holder"></div>'
         );
         const foodTitle = $("<p>").text(food.title);
         const foodEnglishTitle = $("<span>").text(food.englishTitle);
-        const foodPrice = $('<span class="price">').text(food.price);
+        const foodPrice = $('<span class="price">').text(food.sizes[0].price);
 
         foodImageHolder.append(foodImage);
         foodNameAndPriceHolder.append(foodTitle, foodPrice);

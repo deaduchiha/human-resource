@@ -12,14 +12,13 @@ const foodList = [
     title: "آفوگاتو",
     englishTitle: "Afogato",
     category: "قهوه سرد",
-    price: 25000,
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
     sizes: [
-      { size: "کوچک", sizePrice: 75000 },
-      { size: "متوسط", sizePrice: 85000 },
-      { size: "بزرگ", sizePrice: 95000 },
+      { size: "کوچک", price: 75000 },
+      { size: "متوسط", price: 85000 },
+      { size: "بزرگ", price: 95000 },
     ],
-    mainImage: "assets/images/foods/1.png",
-    slideImage: [
+    images: [
       "assets/images/foods/1.png",
       "assets/images/foods/2.png",
       "assets/images/foods/3.png",
@@ -33,15 +32,13 @@ const foodList = [
     title: "لوتوس",
     englishTitle: "lotus",
     category: "قهوه سرد",
-    price: 35000,
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
     sizes: [
-      { size: "کوچک", sizePrice: 75000 },
-      { size: "متوسط", sizePrice: 85000 },
-      { size: "بزرگ", sizePrice: 95000 },
+      { size: "کوچک", price: 75000 },
+      { size: "متوسط", price: 85000 },
+      { size: "بزرگ", price: 95000 },
     ],
-    mainImage: "assets/images/foods/1.png",
-
-    slideImage: [
+    images: [
       "assets/images/foods/1.png",
       "assets/images/foods/2.png",
       "assets/images/foods/3.png",
@@ -55,15 +52,13 @@ const foodList = [
     title: "لاته",
     englishTitle: "latte",
     category: "قهوه گرم",
-    price: 45000,
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
     sizes: [
-      { size: "کوچک", sizePrice: 45000 },
-      { size: "متوسط", sizePrice: 55000 },
-      { size: "بزرگ", sizePrice: 65000 },
+      { size: "کوچک", price: 45000 },
+      { size: "متوسط", price: 55000 },
+      { size: "بزرگ", price: 65000 },
     ],
-    mainImage: "assets/images/foods/1.png",
-
-    slideImage: [
+    images: [
       "assets/images/foods/1.png",
       "assets/images/foods/2.png",
       "assets/images/foods/3.png",
@@ -77,15 +72,14 @@ const foodList = [
     title: "آیس کارامل",
     englishTitle: "ice caramel",
     category: "قهوه سرد",
-    price: 55000,
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
     sizes: [
-      { size: "کوچک", sizePrice: 75000 },
-      { size: "متوسط", sizePrice: 85000 },
-      { size: "بزرگ", sizePrice: 95000 },
+      { size: "کوچک", price: 75000 },
+      { size: "متوسط", price: 85000 },
+      { size: "بزرگ", price: 95000 },
     ],
-    mainImage: "assets/images/foods/2.png",
 
-    slideImage: [
+    images: [
       "assets/images/foods/6.png",
       "assets/images/foods/5.png",
       "assets/images/foods/4.png",
@@ -99,15 +93,13 @@ const foodList = [
     title: "مارشملو",
     englishTitle: "marshmello",
     category: "قهوه گرم",
-    price: 65000,
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
     sizes: [
-      { size: "کوچک", sizePrice: 75000 },
-      { size: "متوسط", sizePrice: 85000 },
-      { size: "بزرگ", sizePrice: 95000 },
+      { size: "کوچک", price: 75000 },
+      { size: "متوسط", price: 85000 },
+      { size: "بزرگ", price: 95000 },
     ],
-    mainImage: "assets/images/foods/3.png",
-
-    slideImage: [
+    images: [
       "assets/images/foods/3.png",
       "assets/images/foods/6.png",
       "assets/images/foods/5.png",
@@ -121,15 +113,13 @@ const foodList = [
     title: "تیرامیسو",
     englishTitle: "tiramiso",
     category: "دیگر",
-    price: 75000,
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
     sizes: [
-      { size: "کوچک", sizePrice: 75000 },
-      { size: "متوسط", sizePrice: 85000 },
-      { size: "بزرگ", sizePrice: 95000 },
+      { size: "کوچک", price: 75000 },
+      { size: "متوسط", price: 85000 },
+      { size: "بزرگ", price: 95000 },
     ],
-    mainImage: "assets/images/foods/4.png",
-
-    slideImage: [
+    images: [
       "assets/images/foods/2.png",
       "assets/images/foods/1.png",
       "assets/images/foods/4.png",
@@ -143,15 +133,13 @@ const foodList = [
     title: "موکا",
     englishTitle: "moca",
     category: "قهوه گرم",
-    price: 85000,
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
     sizes: [
-      { size: "کوچک", sizePrice: 75000 },
-      { size: "متوسط", sizePrice: 85000 },
-      { size: "بزرگ", sizePrice: 95000 },
+      { size: "کوچک", price: 75000 },
+      { size: "متوسط", price: 85000 },
+      { size: "بزرگ", price: 95000 },
     ],
-    mainImage: "assets/images/foods/5.png",
-
-    slideImage: [
+    images: [
       "assets/images/foods/6.png",
       "assets/images/foods/1.png",
       "assets/images/foods/5.png",
