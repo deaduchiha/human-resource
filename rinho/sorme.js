@@ -23,10 +23,10 @@ const foodList = [
     subCategoryFood: "سبزیجات",
     price: 75000,
     images: [
-      "assets/images/foods/kimchi.jpg",
-      "assets/images/foods/kimchi.jpg",
-      "assets/images/foods/kimchi.jpg",
-      "assets/images/foods/kimchi.jpg",
+      "../rhino templates/fake data/sorme/kimchi.jpg",
+      "../rhino templates/fake data/sorme/kimchi.jpg",
+      "../rhino templates/fake data/sorme/kimchi.jpg",
+      "../rhino templates/fake data/sorme/kimchi.jpg",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -39,10 +39,10 @@ const foodList = [
     subCategoryFood: "سبزیجات",
     price: 75000,
     images: [
-      "assets/images/foods/dragon roll.png",
-      "assets/images/foods/kimchi.jpg",
-      "assets/images/foods/kimchi.jpg",
-      "assets/images/foods/ramen 2.png",
+      "../rhino templates/fake data/sorme/dragon roll.png",
+      "../rhino templates/fake data/sorme/kimchi.jpg",
+      "../rhino templates/fake data/sorme/kimchi.jpg",
+      "../rhino templates/fake data/sorme/ramen 2.png",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -55,10 +55,10 @@ const foodList = [
     subCategoryFood: "گیاهی",
     price: 75000,
     images: [
-      "assets/images/foods/ramen.png",
-      "assets/images/foods/ramen 2.png",
-      "assets/images/foods/ramen 2.png",
-      "assets/images/foods/ramen.png",
+      "../rhino templates/fake data/sorme/ramen.png",
+      "../rhino templates/fake data/sorme/ramen 2.png",
+      "../rhino templates/fake data/sorme/ramen 2.png",
+      "../rhino templates/fake data/sorme/ramen.png",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -71,10 +71,10 @@ const foodList = [
     subCategoryFood: "تند",
     price: 75000,
     images: [
-      "assets/images/foods/ramen 2.png",
-      "assets/images/foods/ramen.png",
-      "assets/images/foods/ramen.png",
-      "assets/images/foods/ramen 2.png",
+      "../rhino templates/fake data/sorme/ramen 2.png",
+      "../rhino templates/fake data/sorme/ramen.png",
+      "../rhino templates/fake data/sorme/ramen.png",
+      "../rhino templates/fake data/sorme/ramen 2.png",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -87,10 +87,10 @@ const foodList = [
     subCategoryFood: "خرچنگ",
     price: 75000,
     images: [
-      "assets/images/foods/ramen.png",
-      "assets/images/foods/kimchi.jpg",
-      "assets/images/foods/kimchi.jpg",
-      "assets/images/foods/ramen.png",
+      "../rhino templates/fake data/sorme/ramen.png",
+      "../rhino templates/fake data/sorme/kimchi.jpg",
+      "../rhino templates/fake data/sorme/kimchi.jpg",
+      "../rhino templates/fake data/sorme/ramen.png",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -103,10 +103,10 @@ const foodList = [
     subCategoryFood: "اسموتی",
     price: 75000,
     images: [
-      "assets/images/foods/kimchi.jpg",
-      "assets/images/foods/ramen.png",
-      "assets/images/foods/kimchi.jpg",
-      "assets/images/foods/ramen.png",
+      "../rhino templates/fake data/sorme/kimchi.jpg",
+      "../rhino templates/fake data/sorme/ramen.png",
+      "../rhino templates/fake data/sorme/kimchi.jpg",
+      "../rhino templates/fake data/sorme/ramen.png",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -119,10 +119,10 @@ const foodList = [
     subCategoryFood: "تند",
     price: 75000,
     images: [
-      "assets/images/foods/dragon roll.png",
-      "assets/images/foods/kimchi.jpg",
-      "assets/images/foods/kimchi.jpg",
-      "assets/images/foods/ramen.png",
+      "../rhino templates/fake data/sorme/dragon roll.png",
+      "../rhino templates/fake data/sorme/kimchi.jpg",
+      "../rhino templates/fake data/sorme/kimchi.jpg",
+      "../rhino templates/fake data/sorme/ramen.png",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
