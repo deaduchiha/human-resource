@@ -16,9 +16,19 @@ import(importPath)
         const slide = $("<div>").addClass("swiper-slide");
         slide.attr("data-category-id", category.id);
 
-        const img = $("<svg>")
-          .attr("stroke", "currentColor")
-          .load(category.icon);
+        const img = $("<svg>").attr("stroke", "currentColor");
+
+        $.ajax({
+          url: category.icon,
+          dataType: "xml",
+          success: function (svgData) {
+            img.html(svgData.documentElement);
+          },
+          error: function () {
+            console.log("Error loading svg content");
+          },
+        });
+
         const span = $("<span>").text(category.text);
 
         // Append the image and span to the slide
