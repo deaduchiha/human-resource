@@ -29,7 +29,7 @@ export function openPopup(food) {
   }
 
   $(".food-details__video").click(function () {
-    const videoSrc = "../../common/video/pizza.mp4"; // New video source
+    const videoSrc = food.videoUrl; // New video source
     const videoType = "video/mp4"; // New video type
 
     const $video = $("#myvideo");
