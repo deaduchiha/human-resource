@@ -6,7 +6,8 @@
 */
 
 .first-page {
-  background: url("../images//first page bg.png") no-repeat;
+  background: url("../Template Images/Backgrounds/gerdoo-first-page-bg.png")
+    no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh !important;

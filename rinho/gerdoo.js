@@ -1,9 +1,29 @@
 const foodCategory = [
-  { id: 1, text: "قهوه گرم", icon: "assets/images/foods-icon/1.svg" },
-  { id: 2, text: "قهوه سرد", icon: "assets/images/foods-icon/2.svg" },
-  { id: 3, text: "شیرینی", icon: "assets/images/foods-icon/3.svg" },
-  { id: 4, text: "کیک", icon: "assets/images/foods-icon/2.svg" },
-  { id: 5, text: "دیگر", icon: "assets/images/foods-icon/1.svg" },
+  {
+    id: 1,
+    text: "قهوه گرم",
+    icon: "../rhino templates/fake data/gerdoo/foods-icon/1.svg",
+  },
+  {
+    id: 2,
+    text: "قهوه سرد",
+    icon: "../rhino templates/fake data/gerdoo/foods-icon/2.svg",
+  },
+  {
+    id: 3,
+    text: "شیرینی",
+    icon: "../rhino templates/fake data/gerdoo/foods-icon/3.svg",
+  },
+  {
+    id: 4,
+    text: "کیک",
+    icon: "../rhino templates/fake data/gerdoo/foods-icon/2.svg",
+  },
+  {
+    id: 5,
+    text: "دیگر",
+    icon: "../rhino templates/fake data/gerdoo/foods-icon/1.svg",
+  },
 ];
 
 const foodList = [
@@ -19,10 +39,10 @@ const foodList = [
       { size: "بزرگ", price: 95000 },
     ],
     images: [
-      "assets/images/foods/1.png",
-      "assets/images/foods/2.png",
-      "assets/images/foods/3.png",
-      "assets/images/foods/4.png",
+      "../rhino templates/fake data/gerdoo/1.png",
+      "../rhino templates/fake data/gerdoo/2.png",
+      "../rhino templates/fake data/gerdoo/3.png",
+      "../rhino templates/fake data/gerdoo/4.png",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -39,10 +59,10 @@ const foodList = [
       { size: "بزرگ", price: 95000 },
     ],
     images: [
-      "assets/images/foods/1.png",
-      "assets/images/foods/2.png",
-      "assets/images/foods/3.png",
-      "assets/images/foods/4.png",
+      "../rhino templates/fake data/gerdoo/1.png",
+      "../rhino templates/fake data/gerdoo/2.png",
+      "../rhino templates/fake data/gerdoo/3.png",
+      "../rhino templates/fake data/gerdoo/4.png",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -59,10 +79,10 @@ const foodList = [
       { size: "بزرگ", price: 65000 },
     ],
     images: [
-      "assets/images/foods/1.png",
-      "assets/images/foods/2.png",
-      "assets/images/foods/3.png",
-      "assets/images/foods/4.png",
+      "../rhino templates/fake data/gerdoo/1.png",
+      "../rhino templates/fake data/gerdoo/2.png",
+      "../rhino templates/fake data/gerdoo/3.png",
+      "../rhino templates/fake data/gerdoo/4.png",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -80,10 +100,10 @@ const foodList = [
     ],
 
     images: [
-      "assets/images/foods/6.png",
-      "assets/images/foods/5.png",
-      "assets/images/foods/4.png",
-      "assets/images/foods/3.png",
+      "../rhino templates/fake data/gerdoo/6.png",
+      "../rhino templates/fake data/gerdoo/5.png",
+      "../rhino templates/fake data/gerdoo/4.png",
+      "../rhino templates/fake data/gerdoo/3.png",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -100,10 +120,10 @@ const foodList = [
       { size: "بزرگ", price: 95000 },
     ],
     images: [
-      "assets/images/foods/3.png",
-      "assets/images/foods/6.png",
-      "assets/images/foods/5.png",
-      "assets/images/foods/2.png",
+      "../rhino templates/fake data/gerdoo/3.png",
+      "../rhino templates/fake data/gerdoo/6.png",
+      "../rhino templates/fake data/gerdoo/5.png",
+      "../rhino templates/fake data/gerdoo/2.png",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -120,10 +140,10 @@ const foodList = [
       { size: "بزرگ", price: 95000 },
     ],
     images: [
-      "assets/images/foods/2.png",
-      "assets/images/foods/1.png",
-      "assets/images/foods/4.png",
-      "assets/images/foods/6.png",
+      "../rhino templates/fake data/gerdoo/2.png",
+      "../rhino templates/fake data/gerdoo/1.png",
+      "../rhino templates/fake data/gerdoo/4.png",
+      "../rhino templates/fake data/gerdoo/6.png",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -140,10 +160,10 @@ const foodList = [
       { size: "بزرگ", price: 95000 },
     ],
     images: [
-      "assets/images/foods/6.png",
-      "assets/images/foods/1.png",
-      "assets/images/foods/5.png",
-      "assets/images/foods/2.png",
+      "../rhino templates/fake data/gerdoo/6.png",
+      "../rhino templates/fake data/gerdoo/1.png",
+      "../rhino templates/fake data/gerdoo/5.png",
+      "../rhino templates/fake data/gerdoo/2.png",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
