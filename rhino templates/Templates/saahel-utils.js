@@ -28,7 +28,6 @@ export function openPopup(food, isVideoOpen, popupBottomHolder, video) {
       handleSizeClick(data.sizePrice, sizeHolder);
     }
 
-    // Make an AJAX request to fetch the SVG content
     $.ajax({
       url: data.icon,
       dataType: "xml", // Set the data type to xml
