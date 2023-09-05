@@ -8,7 +8,7 @@ export function openPopup(food) {
 
   // Set the src attribute of the img tag inside popup-image__holder
   const popupImageHolder = $(".popup-image__holder");
-  const activeImageSrc = food.slideImage[0];
+  const activeImageSrc = food.images[0];
   popupImageHolder.find("img").attr("src", activeImageSrc);
 
   // Create swiper slides dynamically
@@ -16,13 +16,13 @@ export function openPopup(food) {
   swiperWrapper.empty(); // Clear existing slides
 
   // Loop through slideImage array and create swiper-slide elements
-  for (let i = 0; i < food.slideImage.length; i++) {
-    const slideImage = food.slideImage[i];
+  for (let i = 0; i < food.images.length; i++) {
+    const slideImage = food.images[i];
     const swiperSlide = $("<div>").addClass("swiper-slide");
 
     // Create img tag and set the source from slideImage array
     const img = $("<img>")
-      .attr("src", slideImage)
+      .attr("src", food.images[i])
       .attr("alt", "")
       .data("index", i); // Set the data-index attribute with the slide index
 
@@ -31,7 +31,7 @@ export function openPopup(food) {
       const clickedIndex = $(this).data("index");
 
       // Update the active index and set the corresponding image src
-      const activeImageSrc = food.slideImage[clickedIndex];
+      const activeImageSrc = food.images[clickedIndex];
       popupImageHolder.find("img").attr("src", activeImageSrc);
 
       // Activate the corresponding swiper-slide
@@ -60,7 +60,7 @@ export function openPopup(food) {
 
 export function createFood(food) {
   const foodSlide = $('<div class="swiper-slide"></div>');
-  const foodImage = $("<img>").attr("src", food.mainImage).attr("alt", "");
+  const foodImage = $("<img>").attr("src", food.images[0]).attr("alt", "");
   const foodNames = $('<div class="food-names"></div>');
   const foodTitle = $("<p>").text(food.title);
   const foodEnglishTitle = $("<span>").text(food.englishTitle);

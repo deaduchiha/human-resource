@@ -5,7 +5,9 @@ $(document).ready(function () {
 
   foodList.forEach(function (food) {
     const foodSlide = $('<div class="swiper-slide" id="openBtn"></div>');
-    const foodImage = $("<img>").attr("src", food.mainImage).attr("alt", "");
+    const foodImage = $("<img>")
+      .attr("src", food.images[0])
+      .attr("alt", "image");
     const foodNames = $('<div class="food-names"></div>');
     const foodTitle = $("<p>").text(food.title);
     const foodEnglishTitle = $("<span>").text(food.englishTitle);
@@ -16,7 +18,7 @@ $(document).ready(function () {
     swiperWrapper.append(foodSlide);
   });
 
-  const mySwiper = new Swiper(".foodSwiper", {
+  new Swiper(".foodSwiper", {
     slidesPerView: "auto",
     centeredSlides: true,
     watchSlidesProgress: true,

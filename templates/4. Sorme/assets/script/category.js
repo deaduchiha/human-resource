@@ -2,6 +2,11 @@ import { foodCategory, foodList } from "./data.js";
 import { openPopup } from "./utils.js";
 
 $(document).ready(function () {
+  new Swiper(".subCategory", {
+    slidesPerView: "auto",
+    spaceBetween: 15,
+  });
+
   const swiperWrapper = $(".categorySwiper .swiper-wrapper");
   const foodSwiperWrapper = $(".foodSwiper .swiper-wrapper");
   let foodSwiper;
@@ -15,7 +20,7 @@ $(document).ready(function () {
   });
 
   // Initialize the Swiper component
-  const mySwiper = new Swiper(".categorySwiper", {
+  new Swiper(".categorySwiper", {
     slidesPerView: "auto",
     spaceBetween: 15,
   });
@@ -90,7 +95,7 @@ $(document).ready(function () {
         filteredFoodListBySubCategory.forEach(function (food) {
           const foodSlide = $('<div class="swiper-slide"></div>');
           const foodImage = $("<img>")
-            .attr("src", food.mainImage)
+            .attr("src", food.images[0])
             .attr("alt", "");
           const foodNames = $('<div class="food-names"></div>');
           const foodTitle = $("<p>").text(food.title);
@@ -128,7 +133,7 @@ $(document).ready(function () {
     // Generate HTML for each food item
     filteredFoodList.forEach(function (food) {
       const foodSlide = $('<div class="swiper-slide"></div>');
-      const foodImage = $("<img>").attr("src", food.mainImage).attr("alt", "");
+      const foodImage = $("<img>").attr("src", food.images[0]).attr("alt", "");
       const foodNames = $('<div class="food-names"></div>');
       const foodTitle = $("<p>").text(food.title);
       const foodEnglishTitle = $("<span>").text(food.englishTitle);

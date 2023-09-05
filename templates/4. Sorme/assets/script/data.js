@@ -22,8 +22,7 @@ const foodList = [
     category: "سوشی",
     subCategoryFood: "سبزیجات",
     price: 75000,
-    mainImage: "assets/images/foods/dragon roll.png",
-    slideImage: [
+    images: [
       "assets/images/foods/kimchi.jpg",
       "assets/images/foods/kimchi.jpg",
       "assets/images/foods/kimchi.jpg",
@@ -39,10 +38,9 @@ const foodList = [
     category: "سوشی",
     subCategoryFood: "سبزیجات",
     price: 75000,
-    mainImage: "assets/images/foods/dragon roll.png",
-    slideImage: [
-      "assets/images/foods/kimchi.jpg",
+    images: [
       "assets/images/foods/dragon roll.png",
+      "assets/images/foods/kimchi.jpg",
       "assets/images/foods/kimchi.jpg",
       "assets/images/foods/ramen 2.png",
     ],
@@ -56,10 +54,9 @@ const foodList = [
     category: "سوشی",
     subCategoryFood: "گیاهی",
     price: 75000,
-    mainImage: "assets/images/foods/dragon roll.png",
-    slideImage: [
-      "assets/images/foods/ramen 2.png",
+    images: [
       "assets/images/foods/ramen.png",
+      "assets/images/foods/ramen 2.png",
       "assets/images/foods/ramen 2.png",
       "assets/images/foods/ramen.png",
     ],
@@ -73,10 +70,9 @@ const foodList = [
     category: "رامن",
     subCategoryFood: "تند",
     price: 75000,
-    mainImage: "assets/images/foods/ramen 2.png",
-    slideImage: [
-      "assets/images/foods/ramen.png",
+    images: [
       "assets/images/foods/ramen 2.png",
+      "assets/images/foods/ramen.png",
       "assets/images/foods/ramen.png",
       "assets/images/foods/ramen 2.png",
     ],
@@ -90,10 +86,9 @@ const foodList = [
     category: "رامن",
     subCategoryFood: "خرچنگ",
     price: 75000,
-    mainImage: "assets/images/foods/ramen.png",
-    slideImage: [
-      "assets/images/foods/kimchi.jpg",
+    images: [
       "assets/images/foods/ramen.png",
+      "assets/images/foods/kimchi.jpg",
       "assets/images/foods/kimchi.jpg",
       "assets/images/foods/ramen.png",
     ],
@@ -107,8 +102,7 @@ const foodList = [
     category: "نوشیدنی",
     subCategoryFood: "اسموتی",
     price: 75000,
-    mainImage: "assets/images/foods/kimchi.jpg",
-    slideImage: [
+    images: [
       "assets/images/foods/kimchi.jpg",
       "assets/images/foods/ramen.png",
       "assets/images/foods/kimchi.jpg",
@@ -124,10 +118,9 @@ const foodList = [
     category: "سوشی",
     subCategoryFood: "تند",
     price: 75000,
-    mainImage: "assets/images/foods/kimchi.jpg",
-    slideImage: [
+    images: [
+      "assets/images/foods/dragon roll.png",
       "assets/images/foods/kimchi.jpg",
-      "assets/images/foods/ramen.png",
       "assets/images/foods/kimchi.jpg",
       "assets/images/foods/ramen.png",
     ],
