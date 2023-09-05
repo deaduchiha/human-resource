@@ -1,12 +1,44 @@
 const foodCategory = [
-  { id: 1, text: "بیکری", image: "assets/images/bakery.png" },
-  { id: 2, text: "چای", image: "assets/images/coffe.png" },
-  { id: 3, text: "قهوه", image: "assets/images/ice-vanila.png" },
-  { id: 4, text: "قهوه سرد", image: "assets/images/bakery.png" },
-  { id: 5, text: "نوشیدنی", image: "assets/images/coffe.png" },
-  { id: 6, text: "جدید", image: "assets/images/coffe.png" },
-  { id: 7, text: "جدید2", image: "assets/images/bakery.png" },
-  { id: 8, text: "جدید3", image: "assets/images/ice-vanila.png" },
+  {
+    id: 1,
+    text: "بیکری",
+    image: "../rhino templates/fake data/zomorod/bakery.png",
+  },
+  {
+    id: 2,
+    text: "چای",
+    image: "../rhino templates/fake data/zomorod/coffe.png",
+  },
+  {
+    id: 3,
+    text: "قهوه",
+    image: "../rhino templates/fake data/zomorod/ice-vanila.png",
+  },
+  {
+    id: 4,
+    text: "قهوه سرد",
+    image: "../rhino templates/fake data/zomorod/bakery.png",
+  },
+  {
+    id: 5,
+    text: "نوشیدنی",
+    image: "../rhino templates/fake data/zomorod/coffe.png",
+  },
+  {
+    id: 6,
+    text: "جدید",
+    image: "../rhino templates/fake data/zomorod/coffe.png",
+  },
+  {
+    id: 7,
+    text: "جدید2",
+    image: "../rhino templates/fake data/zomorod/bakery.png",
+  },
+  {
+    id: 8,
+    text: "جدید3",
+    image: "../rhino templates/fake data/zomorod/ice-vanila.png",
+  },
 ];
 
 const foodList = [
@@ -19,8 +51,7 @@ const foodList = [
       { size: "big", price: 95000, title: "خیلی بزرگ" },
     ],
     category: "بیکری",
-    price: 75000,
-    image: "./assets/images/starbucks/starbucks1.png",
+    image: "../rhino templates/fake data/zomorod/starbucks1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
@@ -33,8 +64,7 @@ const foodList = [
       { size: "big", price: 95000, title: "خیلی بزرگ" },
     ],
     category: "بیکری",
-    price: 75000,
-    image: "./assets/images/starbucks/starbucks1.png",
+    image: "../rhino templates/fake data/zomorod/starbucks1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
@@ -48,7 +78,7 @@ const foodList = [
     ],
     category: "بیکری",
     price: 75000,
-    image: "./assets/images/starbucks/starbucks1.png",
+    image: "../rhino templates/fake data/zomorod/starbucks1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
@@ -61,8 +91,7 @@ const foodList = [
       { size: "big", price: 95000, title: "خیلی بزرگ" },
     ],
     category: "چای",
-    price: 75000,
-    image: "./assets/images/starbucks/starbucks1.png",
+    image: "../rhino templates/fake data/zomorod/starbucks1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
@@ -75,8 +104,7 @@ const foodList = [
       { size: "big", price: 95000, title: "خیلی بزرگ" },
     ],
     category: "قهوه",
-    price: 75000,
-    image: "./assets/images/starbucks/starbucks1.png",
+    image: "../rhino templates/fake data/zomorod/starbucks1.png",
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },

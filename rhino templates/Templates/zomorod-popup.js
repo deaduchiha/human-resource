@@ -1,4 +1,4 @@
-import { foodList } from "./data.js";
+import { foodList } from "../../../../rinho/zomorod.js";
 
 $(document).ready(function () {
   $(document).on("click", "#openBtn", function () {
@@ -20,8 +20,8 @@ $(document).ready(function () {
       const isActiveSize = size.size === "small";
       const activeClass = isActiveSize ? "active-size" : "";
       const activeImage = isActiveSize
-        ? "assets/images/active-bucket.svg"
-        : "assets/images/bucket.svg";
+        ? "../rhino templates/Template Images/Icons/zomorod-active-bucket.svg"
+        : "../rhino templates/Template Images/Icons/zomorod-bucket.svg";
       const sizeElement = `
         <div data-index="${index}" class="${activeClass}">
           <div class="sizes__image">
@@ -73,7 +73,8 @@ $(document).ready(function () {
     if (selectedSize) {
       const selectedSizePrice =
         selectedSize.price.toLocaleString("fa-IR") + " تومان";
-      const selectedSizeImageUrl = "./assets/images/active-bucket.svg"; // Assuming there is an "image" property in the selectedSize object
+      const selectedSizeImageUrl =
+        "../rhino templates/Template Images/Icons/zomorod-active-bucket.svg"; // Assuming there is an "image" property in the selectedSize object
 
       $("#popup .popup-info span:last-child").text(selectedSizePrice);
 
@@ -87,7 +88,8 @@ $(document).ready(function () {
       $(this).find(".sizes__image img").attr("src", selectedSizeImageUrl);
     } else {
       // Revert to the default image URL
-      const defaultImageUrl = "assets/images/bucket.svg";
+      const defaultImageUrl =
+        "../rhino templates/Template Images/Icons/zomorod-bucket.svg";
       $("#popup .sizes__image img").attr("src", defaultImageUrl);
     }
   });
