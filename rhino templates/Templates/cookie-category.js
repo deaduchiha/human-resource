@@ -39,7 +39,6 @@ import(importPath)
           url: data.icon, // URL to the SVG file
           dataType: "xml", // Set the data type to XML
           success: function (svgData) {
-            // On success, set the SVG content in the <svg> element
             icon.html(svgData.documentElement);
           },
           error: function () {

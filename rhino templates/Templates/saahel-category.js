@@ -64,7 +64,6 @@ import(importPath)
             url: data.icon,
             dataType: "xml", // Set the data type to xml
             success: function (svgContent) {
-              // Create an <svg> element and append the fetched SVG content
               const icon = $(svgContent.documentElement);
               iconHolder.append(icon);
 
