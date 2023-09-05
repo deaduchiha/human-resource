@@ -22,6 +22,7 @@ const foodList = [
     category: "سوشی",
     subCategoryFood: "سبزیجات",
     price: 75000,
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
     images: [
       "../rhino templates/fake data/sorme/kimchi.jpg",
       "../rhino templates/fake data/sorme/kimchi.jpg",
@@ -38,6 +39,7 @@ const foodList = [
     category: "سوشی",
     subCategoryFood: "سبزیجات",
     price: 75000,
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
     images: [
       "../rhino templates/fake data/sorme/dragon roll.png",
       "../rhino templates/fake data/sorme/kimchi.jpg",
@@ -54,6 +56,7 @@ const foodList = [
     category: "سوشی",
     subCategoryFood: "گیاهی",
     price: 75000,
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
     images: [
       "../rhino templates/fake data/sorme/ramen.png",
       "../rhino templates/fake data/sorme/ramen 2.png",
@@ -70,6 +73,7 @@ const foodList = [
     category: "رامن",
     subCategoryFood: "تند",
     price: 75000,
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
     images: [
       "../rhino templates/fake data/sorme/ramen 2.png",
       "../rhino templates/fake data/sorme/ramen.png",
@@ -86,6 +90,7 @@ const foodList = [
     category: "رامن",
     subCategoryFood: "خرچنگ",
     price: 75000,
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
     images: [
       "../rhino templates/fake data/sorme/ramen.png",
       "../rhino templates/fake data/sorme/kimchi.jpg",
@@ -102,6 +107,7 @@ const foodList = [
     category: "نوشیدنی",
     subCategoryFood: "اسموتی",
     price: 75000,
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
     images: [
       "../rhino templates/fake data/sorme/kimchi.jpg",
       "../rhino templates/fake data/sorme/ramen.png",
@@ -118,6 +124,7 @@ const foodList = [
     category: "سوشی",
     subCategoryFood: "تند",
     price: 75000,
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
     images: [
       "../rhino templates/fake data/sorme/dragon roll.png",
       "../rhino templates/fake data/sorme/kimchi.jpg",
