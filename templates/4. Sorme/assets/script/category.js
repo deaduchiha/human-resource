@@ -111,10 +111,6 @@ $(document).ready(function () {
             const foodId = food.id; // Use the ID or a unique identifier of the food item
             const clickedFood = foodList.find((item) => item.id === foodId);
 
-            // Show the details of the clicked food item
-            console.log(clickedFood);
-            // Replace the above line with your code to show the details of the clicked food item
-
             // Open the popup with the details of the clicked food item
             openPopup(clickedFood);
           });
@@ -147,10 +143,6 @@ $(document).ready(function () {
       foodSlide.on("click", function () {
         const foodId = food.id; // Use the ID or a unique identifier of the food item
         const clickedFood = foodList.find((item) => item.id === foodId);
-
-        // Show the details of the clicked food item
-        console.log(clickedFood);
-        // Replace the above line with your code to show the details of the clicked food item
 
         // Open the popup with the details of the clicked food item
         openPopup(clickedFood);
