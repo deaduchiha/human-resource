@@ -29,8 +29,8 @@ export function openPopup(food) {
   }
 
   $(".food-details__video").click(function () {
-    const videoSrc = food.videoUrl; // New video source
-    const videoType = "video/mp4"; // New video type
+    const videoSrc = food.videoUrl;
+    const videoType = "video/mp4";
 
     const $video = $("#myvideo");
     $video.empty(); // Clear existing source elements
