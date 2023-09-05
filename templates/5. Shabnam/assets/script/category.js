@@ -21,8 +21,7 @@ $(document).ready(function () {
     swiperWrapper.append(slide);
   });
 
-  // Initialize the Swiper component
-  const mySwiper = new Swiper(".categorySwiper", {
+  new Swiper(".categorySwiper", {
     slidesPerView: "auto",
     spaceBetween: 15,
   });
@@ -75,7 +74,7 @@ $(document).ready(function () {
 
         const foodImageHolder = $('<div class="food-item__image"></div>');
         const foodImage = $("<img>")
-          .attr("src", food.mainImage)
+          .attr("src", food.images[0])
           .attr("alt", food.title);
         const foodTitle = $("<p>").text(food.title);
         const foodEnglishTitle = $("<span>").text(food.englishTitle);

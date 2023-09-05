@@ -12,8 +12,8 @@ export function openPopup(food) {
   swiperWrapper.empty(); // Clear existing slides
 
   // Loop through slideImage array and create swiper-slide elements
-  for (let i = 0; i < food.slideImage.length; i++) {
-    const slideImage = food.slideImage[i];
+  for (let i = 0; i < food.images.length; i++) {
+    const slideImage = food.images[i];
     const swiperSlide = $("<div>").addClass("swiper-slide");
     const imageShadow = $("<div>").addClass("sliderShadow");
 
@@ -28,6 +28,26 @@ export function openPopup(food) {
     swiperWrapper.append(swiperSlide);
   }
 
+  $(".food-details__video").click(function () {
+    const videoSrc = "../../common/video/pizza.mp4"; // New video source
+    const videoType = "video/mp4"; // New video type
+
+    const $video = $("#myvideo");
+    $video.empty(); // Clear existing source elements
+
+    const $source = $("<source>");
+    $source.attr("src", videoSrc);
+    $source.attr("type", videoType);
+
+    $video.append($source);
+    $video.css("display", "inherit");
+    $video.get(0).play(); // Start playing the video
+
+    $video.on("ended", function () {
+      $(this).css("display", "none");
+    });
+  });
+
   // Initialize the swiper after dynamically creating the slides
   popupSwiper = new Swiper(".popupSlider", {
     slidesPerView: 1,
@@ -40,7 +60,6 @@ export function openPopup(food) {
   $("#popup").fadeIn();
 }
 
-// Function to destroy the Swiper instance
 export function destroyPopupSwiper() {
   if (popupSwiper) {
     popupSwiper.destroy();

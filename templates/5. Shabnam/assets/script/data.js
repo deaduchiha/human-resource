@@ -13,8 +13,7 @@ const foodList = [
     englishTitle: "Summer Salad",
     category: "سالاد",
     price: 25000,
-    mainImage: "assets/images/foods/salad 1.png",
-    slideImage: [
+    images: [
       "assets/images/foods/image test.png",
       "assets/images/foods/test 2.jpg",
       "assets/images/foods/test 3.webp",
@@ -29,10 +28,9 @@ const foodList = [
     englishTitle: "Spinach Salad",
     category: "سالاد",
     price: 35000,
-    mainImage: "assets/images/foods/salad 2.png",
-    slideImage: [
-      "assets/images/foods/image test.png",
+    images: [
       "assets/images/foods/test 2.jpg",
+      "assets/images/foods/image test.png",
       "assets/images/foods/test 3.webp",
       "assets/images/foods/test 4.webp",
     ],
@@ -45,11 +43,10 @@ const foodList = [
     englishTitle: "Avocado Salad",
     category: "سالاد",
     price: 45000,
-    mainImage: "assets/images/foods/salad 3.png",
-    slideImage: [
+    images: [
+      "assets/images/foods/test 3.webp",
       "assets/images/foods/image test.png",
       "assets/images/foods/test 2.jpg",
-      "assets/images/foods/test 3.webp",
       "assets/images/foods/test 4.webp",
     ],
     description:
@@ -61,12 +58,11 @@ const foodList = [
     englishTitle: "Season Salad",
     category: "صبحانه",
     price: 55000,
-    mainImage: "assets/images/foods/salad 4.png",
-    slideImage: [
+    images: [
+      "assets/images/foods/test 4.webp",
       "assets/images/foods/image test.png",
       "assets/images/foods/test 2.jpg",
       "assets/images/foods/test 3.webp",
-      "assets/images/foods/test 4.webp",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
@@ -77,11 +73,10 @@ const foodList = [
     englishTitle: "strawberry salad",
     category: "صبحانه",
     price: 65000,
-    mainImage: "assets/images/foods/salad 5.png",
-    slideImage: [
+    images: [
       "assets/images/foods/image test.png",
-      "assets/images/foods/test 2.jpg",
       "assets/images/foods/test 3.webp",
+      "assets/images/foods/test 2.jpg",
       "assets/images/foods/test 4.webp",
     ],
     description:
@@ -93,11 +88,10 @@ const foodList = [
     englishTitle: "cezar salad",
     category: "نوشیدنی",
     price: 75000,
-    mainImage: "assets/images/foods/salad 6.png",
-    slideImage: [
+    images: [
+      "assets/images/foods/test 3.webp",
       "assets/images/foods/image test.png",
       "assets/images/foods/test 2.jpg",
-      "assets/images/foods/test 3.webp",
       "assets/images/foods/test 4.webp",
     ],
     description:
@@ -109,12 +103,11 @@ const foodList = [
     englishTitle: "سالاد تابستانه",
     category: "سالاد",
     price: 85000,
-    mainImage: "assets/images/foods/salad 1.png",
-    slideImage: [
+    images: [
+      "assets/images/foods/test 4.webp",
       "assets/images/foods/image test.png",
       "assets/images/foods/test 2.jpg",
       "assets/images/foods/test 3.webp",
-      "assets/images/foods/test 4.webp",
     ],
     description:
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
