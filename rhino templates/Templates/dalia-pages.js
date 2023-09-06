@@ -5,6 +5,11 @@ const swiper = new Swiper(".popupSwiper", {
   },
 });
 
+new Swiper(".categorySwiper", {
+  slidesPerView: "auto",
+  spaceBetween: 25,
+});
+
 $(document).ready(function () {
   const outerSwiper = new Swiper(".mySwiper", {});
 

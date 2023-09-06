@@ -30,7 +30,7 @@
     />
     <link
       rel="stylesheet"
-      href="../rhino templates/Templates/gerdoo-second-page.css"
+      href="../rhino templates/Templates/dalia-second-page.css"
     />
   </head>
   <body style="background-color: #323232">
@@ -72,49 +72,35 @@
 
           <img src="../rhino templates/fake data/dalia/page.svg" alt="page" />
         </div>
-        <div class="swiper-slide dalia-second-page"></div>
+        <div class="swiper-slide dalia-second-page">
+          <!-- header -->
+          <div class="second-page__header">
+            <img
+              src="../rhino templates/fake data/dalia/logo 1.svg"
+              alt="logo"
+            />
+          </div>
+          <!-- foods -->
+          <div class="second-page__parts">
+            <!-- categories swiper -->
+            <div class="swiper categorySwiper">
+              <div class="swiper-wrapper">
+                <!-- swiper-slide -->
+              </div>
+            </div>
+
+            <!-- selected category image -->
+            <div class="selected-category-holder">
+              <span></span>
+              <p></p>
+              <img src="" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
 
       <div id="popup" class="popup-container">
-        <div class="popup-content">
-          <div class="swiper popupSlider">
-            <div class="swiper-wrapper">
-              <!-- swiper-slide -->
-            </div>
-            <div class="sliderShadow">
-              <!-- food name -->
-              <div class="food-name">
-                <p><!-- title --></p>
-                <span><!-- english title --></span>
-              </div>
-              <!-- video -->
-              <div class="food-details__video">
-                <img
-                  src="../rhino templates/Template Images/Icons/gerdoo-video.svg"
-                  alt="video"
-                />
-                <p>نمایش ویدئو</p>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-
-          <div class="popupClose" id="closeBtn"><</div>
-
-          <video width="100%" controls id="myvideo"></video>
-
-          <!-- food information -->
-          <div class="food-information">
-            <li>توضیحات</li>
-            <span><!-- description --></span>
-          </div>
-
-          <div class="food-size">
-            <p></p>
-            <div class="sizes"></div>
-            <span class="price"></span>
-          </div>
-        </div>
+        <div class="popup-content"></div>
       </div>
     </div>
   </body>
@@ -122,4 +108,8 @@
 <script
   type="module"
   src="../rhino templates/Templates/dalia-pages.js"
+></script>
+<script
+  type="module"
+  src="../rhino templates/Templates/dalia-category.js"
 ></script>
