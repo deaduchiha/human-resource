@@ -1,10 +1,12 @@
+// swiper
+const swiper = new Swiper(".popupSwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
 $(document).ready(function () {
-  const outerSwiper = new Swiper(".mySwiper", {
-    navigation: {
-      nextEl: ".first-page__next",
-      prevEl: ".second-page__prev",
-    },
-  });
+  const outerSwiper = new Swiper(".mySwiper", {});
 
   const innerSwiper = new Swiper(".menuSwiper", {
     initialSlide: 0,

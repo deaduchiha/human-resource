@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dalia v1</title>
+    <!-- jquery -->
+    <script src="../rhino templates/Shared/Packages/jquery-3.7.0.min.js"></script>
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="../rhino templates/Shared/Styles/swiper-bundle.min.css"
+    />
+    <script src="../rhino templates/Shared/Packages/swiper-bundle.min.js"></script>
+    <!-- fonts -->
+    <link rel="stylesheet" href="../rhino templates/Shared/Styles/fonts.css" />
+    <!-- popup -->
+    <link
+      rel="stylesheet"
+      href="../rhino templates/Templates/gerdoo-popup.css"
+    />
+    <!-- style-->
+    <link rel="stylesheet" href="../rhino templates/Shared/Styles/global.css" />
+    <!-- templates -->
+    <link rel="stylesheet" href="../rhino templates/Templates/dalia.css" />
+    <link
+      rel="stylesheet"
+      href="../rhino templates/Templates/dalia-v1-first-page.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../rhino templates/Templates/gerdoo-second-page.css"
+    />
+  </head>
+  <body style="background-color: #323232">
+    <div class="mySwiper container" style="overflow: hidden">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide dalia-first-page">
+          <!-- logo -->
+          <div class="logo-holder">
+            <img
+              src="../rhino templates/fake data/dalia/logo 1.svg"
+              alt="logo"
+            />
+          </div>
+          <!-- title -->
+          <p>پیتزا ۱۸۰</p>
+          <!-- social media -->
+          <div class="social_media-holder">
+            <a href="#">
+              <img
+                src="../rhino templates/Template Images/Icons/dalia-v1-call.svg"
+                alt="call"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="../rhino templates/Template Images/Icons/dalia-v1-navigation.svg"
+                alt="call"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="../rhino templates/Template Images/Icons/dalia-v1-instagram.svg"
+                alt="call"
+              />
+            </a>
+          </div>
+          <!-- quote -->
+          <span>مزه‌ی پیتزای ما از یاد نمیره</span>
+
+          <img src="../rhino templates/fake data/dalia/page.svg" alt="page" />
+        </div>
+        <div class="swiper-slide dalia-second-page"></div>
+      </div>
+
+      <div id="popup" class="popup-container">
+        <div class="popup-content">
+          <div class="swiper popupSlider">
+            <div class="swiper-wrapper">
+              <!-- swiper-slide -->
+            </div>
+            <div class="sliderShadow">
+              <!-- food name -->
+              <div class="food-name">
+                <p><!-- title --></p>
+                <span><!-- english title --></span>
+              </div>
+              <!-- video -->
+              <div class="food-details__video">
+                <img
+                  src="../rhino templates/Template Images/Icons/gerdoo-video.svg"
+                  alt="video"
+                />
+                <p>نمایش ویدئو</p>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="popupClose" id="closeBtn"><</div>
+
+          <video width="100%" controls id="myvideo"></video>
+
+          <!-- food information -->
+          <div class="food-information">
+            <li>توضیحات</li>
+            <span><!-- description --></span>
+          </div>
+
+          <div class="food-size">
+            <p></p>
+            <div class="sizes"></div>
+            <span class="price"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script
+  type="module"
+  src="../rhino templates/Templates/dalia-pages.js"
+></script>
