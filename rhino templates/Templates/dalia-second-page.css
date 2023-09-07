@@ -76,7 +76,7 @@
 }
 
 .foods-holder {
-  padding: 20px 0;
+  padding: 20px 0 5vh;
   overflow: auto;
   height: calc(100% - 260px);
   width: 90vw;
