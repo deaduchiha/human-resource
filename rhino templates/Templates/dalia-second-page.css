@@ -78,7 +78,7 @@
 .foods-holder {
   padding: 20px 0;
   overflow: scroll;
-  height: calc(100vh - 260px);
+  height: calc(100% - 260px);
   width: 90vw;
   margin: 0 auto;
   font-family: iran yekan;
