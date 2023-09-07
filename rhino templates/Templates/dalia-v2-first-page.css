@@ -1,0 +1,39 @@
+.dalia-first-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+  color: #323232;
+  position: relative;
+}
+
+.logo-holder {
+  width: 174px;
+  height: 174px;
+  overflow: hidden;
+}
+.logo-holder img {
+  width: 100%;
+  height: 100%;
+}
+
+.dalia-first-page > p {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.social_media-holder {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-radius: 28px;
+  padding: 12px 28px;
+  background-color: #4a4a3d;
+}
+
+.dalia-first-page > img {
+  position: absolute;
+  bottom: 3vh;
+  left: 3vw;
+}
