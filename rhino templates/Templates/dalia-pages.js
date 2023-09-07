@@ -13,6 +13,10 @@ new Swiper(".imagesSwiper", {
   pagination: {
     el: ".swiper-pagination",
   },
+  navigation: {
+    nextEl: ".nextIMG",
+    prevEl: ".prevIMG",
+  },
 });
 
 $(document).ready(function () {
