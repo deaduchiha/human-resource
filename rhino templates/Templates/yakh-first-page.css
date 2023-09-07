@@ -1,12 +1,12 @@
 .first-template__container {
-  /* first-template__container background */
   background: #030303;
-
   flex-direction: column;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   display: flex;
+  gap: 60px;
   padding: 4rem 0;
-  /* first-template__container width&height */
   max-width: 360px;
   height: 640px;
 }
@@ -41,10 +41,8 @@
   /* template-container__frame width&height */
   width: 224px;
   height: 56px;
-
   display: flex;
-
-  margin-bottom: 44px;
+  justify-content: space-between;
 }
 .first-template__frame a {
   height: 48px;
@@ -73,7 +71,4 @@
   width: 16px;
   background-color: #de7129;
   border-radius: 4px;
-}
-
-@media screen and (max-width: 360px) {
 }

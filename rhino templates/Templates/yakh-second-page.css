@@ -1,0 +1,106 @@
+body {
+  font-family: dana;
+}
+
+.categorySwiper {
+  margin-top: 14px;
+  padding-right: 30px;
+}
+
+.categorySwiper .swiper-slide {
+  font-family: iran yekan !important;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  width: fit-content;
+  background-color: #2d2f31;
+  padding: 8px 16px;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.categorySwiper .swiper-slide:last-child {
+  margin-left: 10px;
+}
+
+.active-category {
+  background-color: #de7129 !important;
+  font-weight: 700;
+}
+
+.second-template__container {
+  text-align: right;
+  padding-top: 15px;
+  background: url("../Template Images/Icons/yakh-backcground.svg") no-repeat;
+  height: 100vh;
+  color: #fff;
+  background-position: 0 -29vh;
+  background-size: 100% 100%;
+}
+
+.foodsSwipper {
+  height: calc(100% - 169px);
+  display: flex;
+  align-items: center;
+  padding-top: 10vh;
+}
+.foodsSwipper .swiper-slide {
+  width: 206px;
+  height: 271px;
+  background-color: #252728;
+  border-radius: 64px 64px 20px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.second-template__container img.third-template__logo {
+  width: 77px;
+  padding-right: 12px;
+}
+
+.second-template__container h2.second-template__title {
+  color: #fff;
+  font-size: 24px;
+  padding-right: 12px;
+}
+
+.second-template__frame {
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.food-image-holder {
+  border-radius: 100%;
+  box-shadow: 0px 20px 26px 0px rgba(0, 0, 0, 0.701);
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  margin-top: -95px;
+}
+.food-image-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.foodsSwipper .swiper-slide h3 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.foodsSwipper .swiper-slide p {
+  font-weight: 400;
+  font-size: 0.825rem;
+}
+.foodsSwipper .swiper-slide span::after {
+  content: "تومان";
+  color: #de7129;
+  margin-right: 5px;
+}
+.foodsSwipper .swiper-slide span {
+  font-weight: 500;
+  font-size: 1rem;
+}
