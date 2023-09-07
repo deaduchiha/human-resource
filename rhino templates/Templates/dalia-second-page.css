@@ -16,7 +16,7 @@
 }
 
 .second-page__parts {
-  height: calc(100vh - 90px);
+  overflow: scroll;
 }
 
 .categorySwiper {
@@ -73,4 +73,49 @@
   height: 125px;
   bottom: -5.8vh;
   left: -4.8vw;
+}
+
+.foods-holder {
+  padding: 20px 0;
+  overflow: scroll;
+  height: calc(100vh - 260px);
+  width: 90vw;
+  margin: 0 auto;
+  font-family: iran yekan;
+  color: #535353;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.item {
+  height: 80px;
+  width: 100%;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 100%;
+}
+.item p {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.item span {
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-family: dana;
+}
+.item span::after {
+  content: "تومان";
+  font-size: 0.725rem;
+  margin-right: 5px;
 }
