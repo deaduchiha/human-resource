@@ -14,6 +14,7 @@ const categories = [
 
 const foods = [
   {
+    id: 1,
     category: "پیتزا",
     images: [
       "../rhino templates/fake data/gerdoo/1.png",
@@ -27,6 +28,7 @@ const foods = [
       "سس مارینارا، پنیر موتزارلا، پنیر پارمزان، روغن زیتون فرابکر، قارچ، چیپس کدو سبز، بادمجان کبابی، بازیل",
   },
   {
+    id: 2,
     category: "پیتزا",
     images: [
       "../rhino templates/fake data/gerdoo/1.png",
@@ -40,6 +42,7 @@ const foods = [
       "سس مارینارا، پنیر موتزارلا، پنیر پارمزان، روغن زیتون فرابکر، قارچ، چیپس کدو سبز، بادمجان کبابی، بازیل",
   },
   {
+    id: 3,
     category: "پیتزا",
     images: [
       "../rhino templates/fake data/gerdoo/1.png",
@@ -53,6 +56,7 @@ const foods = [
       "سس مارینارا، پنیر موتزارلا، پنیر پارمزان، روغن زیتون فرابکر، قارچ، چیپس کدو سبز، بادمجان کبابی، بازیل",
   },
   {
+    id: 4,
     category: "پیتزا",
     images: [
       "../rhino templates/fake data/gerdoo/1.png",
@@ -66,6 +70,7 @@ const foods = [
       "سس مارینارا، پنیر موتزارلا، پنیر پارمزان، روغن زیتون فرابکر، قارچ، چیپس کدو سبز، بادمجان کبابی، بازیل",
   },
   {
+    id: 5,
     category: "پیتزا",
     images: [
       "../rhino templates/fake data/gerdoo/1.png",
@@ -79,6 +84,7 @@ const foods = [
       "سس مارینارا، پنیر موتزارلا، پنیر پارمزان، روغن زیتون فرابکر، قارچ، چیپس کدو سبز، بادمجان کبابی، بازیل",
   },
   {
+    id: 6,
     category: "پیتزا",
     images: [
       "../rhino templates/fake data/gerdoo/1.png",
@@ -92,6 +98,7 @@ const foods = [
       "سس مارینارا، پنیر موتزارلا، پنیر پارمزان، روغن زیتون فرابکر، قارچ، چیپس کدو سبز، بادمجان کبابی، بازیل",
   },
   {
+    id: 7,
     category: "برگر",
     images: [
       "../rhino templates/fake data/gerdoo/1.png",

@@ -32,6 +32,10 @@
       rel="stylesheet"
       href="../rhino templates/Templates/dalia-second-page.css"
     />
+    <link
+      rel="stylesheet"
+      href="../rhino templates/Templates/dalia-popup.css"
+    />
   </head>
   <body style="background-color: #323232">
     <div class="mySwiper container" style="overflow: hidden">
@@ -104,7 +108,32 @@
       </div>
 
       <div id="popup" class="popup-container">
-        <div class="popup-content"></div>
+        <div class="popup-content">
+          <!-- popup header -->
+          <div class="popup-header">
+            <img
+              src="../rhino templates/Template Images/Icons/dalia-v1-back-arrow.svg"
+              alt=""
+              id="closeBtn"
+            />
+            <p class="popup-food-title">
+              <!-- food title -->
+            </p>
+          </div>
+          <!-- popup images -->
+          <div class="swiper imagesSwiper">
+            <div class="swiper-wrapper">
+              <!-- swiper-slide -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- description -->
+          <div class="popup-description-holder">
+            <p></p>
+            <div>button</div>
+            <span></span>
+          </div>
+        </div>
       </div>
     </div>
   </body>
@@ -116,4 +145,8 @@
 <script
   type="module"
   src="../rhino templates/Templates/dalia-category.js"
+></script>
+<script
+  type="module"
+  src="../rhino templates/Templates/dalia-popup.js"
 ></script>

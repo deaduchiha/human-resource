@@ -9,6 +9,11 @@ new Swiper(".categorySwiper", {
   slidesPerView: "auto",
   spaceBetween: 25,
 });
+new Swiper(".imagesSwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
 
 $(document).ready(function () {
   const outerSwiper = new Swiper(".mySwiper", {});

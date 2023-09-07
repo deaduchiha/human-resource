@@ -39,7 +39,11 @@ import(importPath)
         );
 
         selectedCategory.map((data) => {
-          const food = $("<div>").addClass("item");
+          const food = $("<div>")
+            .addClass("item")
+            .attr("data-food-id", data.id)
+            .attr("id", "openBtn");
+
           const image = $("<img>")
             .attr("src", data.images[0])
             .attr("alt", data.title);

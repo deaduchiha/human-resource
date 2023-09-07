@@ -1,0 +1,116 @@
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.681);
+  z-index: 9999;
+}
+
+.popup-content {
+  position: absolute;
+  overflow: hidden;
+  overflow-y: scroll;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-color: #efefef;
+  animation: popup-fade 0.6s ease-in-out;
+  position: relative;
+}
+
+.popup-header {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+}
+.popup-header p {
+  flex: 1;
+  text-align: center;
+}
+
+.imagesSwiper {
+  width: 90vw;
+  height: 260px;
+  margin: 0 auto;
+}
+
+.imagesSwiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imagesSwiper .swiper-slide img {
+  width: 240px;
+  height: 245px;
+  object-fit: contain;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 0px !important;
+}
+.swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  border-radius: 4px;
+  background-color: #7d7d7d !important;
+  transition: 0.5s;
+}
+.swiper-pagination-bullet-active {
+  background-color: #b8b8b8 !important;
+  width: 26px;
+}
+
+.popup-description-holder {
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  height: 40vh;
+  width: 100%;
+  padding: 30px 40px;
+  border-radius: 24px 24px 0 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.popup-description-holder span {
+  background-color: #4a4a3d;
+  padding: 8px 28px;
+  border-radius: 28px;
+  color: #fff;
+}
+.popup-description-holder span::after {
+  content: "تومان";
+  font-size: 0.825rem;
+  margin-right: 5px;
+  font-family: iran yekan;
+}
+
+.popup-description-holder p {
+  font-family: iran yekan;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+@keyframes popup-fade {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
