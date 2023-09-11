@@ -1,15 +1,15 @@
-const foodCategory = [
-  { id: 1, text: "همه" },
+const categories = [
+  { id: 1, category: "همه" },
   {
     id: 2,
-    text: "سوشی",
+    category: "سوشی",
     subCategory: ["سبزیجات", "گیاهی", "تند", "خرچنگ"],
   },
-  { id: 3, text: "رامن" },
-  { id: 4, text: "کیمچی" },
+  { id: 3, category: "رامن" },
+  { id: 4, category: "کیمچی" },
   {
     id: 6,
-    text: "نوشیدنی",
+    category: "نوشیدنی",
     subCategory: ["اسموتی", "سرد", "دلستر"],
   },
 ];
@@ -118,7 +118,7 @@ const foodList = [
       "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.",
   },
   {
-    id: 6,
+    id: 7,
     title: "کیمچی",
     englishTitle: "kimchi",
     category: "سوشی",
@@ -136,4 +136,4 @@ const foodList = [
   },
 ];
 
-export { foodCategory, foodList };
+export { categories, foodList };

@@ -7,7 +7,7 @@ const urlName = lastPart.split(".")[0];
 const importPath = `../../rinho/${urlName}.js`;
 
 import(importPath)
-  .then(({ foodCategory, foodList }) => {
+  .then(({ categories, foodList }) => {
     $(document).ready(function () {
       new Swiper(".subCategory", {
         slidesPerView: "auto",
@@ -19,8 +19,10 @@ import(importPath)
       let foodSwiper;
 
       // Generate HTML for each category
-      foodCategory.forEach((category) => {
-        const slide = $("<div>").addClass("swiper-slide").text(category.text);
+      categories.forEach((category) => {
+        const slide = $("<div>")
+          .addClass("swiper-slide")
+          .text(category.category);
         slide.attr("data-category-id", category.id);
 
         swiperWrapper.append(slide);
@@ -60,7 +62,7 @@ import(importPath)
         const categoryId = $(this).data("category-id");
 
         // Check if the selected category has subcategories
-        const selectedCategory = foodCategory.find(
+        const selectedCategory = categories.find(
           (category) => category.id === categoryId
         );
 
@@ -189,7 +191,7 @@ import(importPath)
           return foodList;
         } else {
           // Filter food items based on the selected category ID
-          const selectedCategory = foodCategory.find(
+          const selectedCategory = categories.find(
             (category) => category.id === categoryId
           );
           if (selectedCategory) {

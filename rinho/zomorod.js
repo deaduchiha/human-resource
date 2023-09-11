@@ -1,47 +1,47 @@
-const foodCategory = [
+const categories = [
   {
     id: 1,
-    text: "بیکری",
-    image: "../rhino templates/fake data/zomorod/bakery.png",
+    category: "بیکری",
+    icon: "../rhino templates/fake data/zomorod/bakery.png",
   },
   {
     id: 2,
-    text: "چای",
-    image: "../rhino templates/fake data/zomorod/coffe.png",
+    category: "چای",
+    icon: "../rhino templates/fake data/zomorod/coffe.png",
   },
   {
     id: 3,
-    text: "قهوه",
-    image: "../rhino templates/fake data/zomorod/ice-vanila.png",
+    category: "قهوه",
+    icon: "../rhino templates/fake data/zomorod/ice-vanila.png",
   },
   {
     id: 4,
-    text: "قهوه سرد",
-    image: "../rhino templates/fake data/zomorod/bakery.png",
+    category: "قهوه سرد",
+    icon: "../rhino templates/fake data/zomorod/bakery.png",
   },
   {
     id: 5,
-    text: "نوشیدنی",
-    image: "../rhino templates/fake data/zomorod/coffe.png",
+    category: "نوشیدنی",
+    icon: "../rhino templates/fake data/zomorod/coffe.png",
   },
   {
     id: 6,
-    text: "جدید",
-    image: "../rhino templates/fake data/zomorod/coffe.png",
+    category: "جدید",
+    icon: "../rhino templates/fake data/zomorod/coffe.png",
   },
   {
     id: 7,
-    text: "جدید2",
-    image: "../rhino templates/fake data/zomorod/bakery.png",
+    category: "جدید2",
+    icon: "../rhino templates/fake data/zomorod/bakery.png",
   },
   {
     id: 8,
-    text: "جدید3",
-    image: "../rhino templates/fake data/zomorod/ice-vanila.png",
+    category: "جدید3",
+    icon: "../rhino templates/fake data/zomorod/ice-vanila.png",
   },
 ];
 
-const foodList = [
+const foods = [
   {
     name: "کارامل فراپاچینو",
     sizes: [
@@ -110,4 +110,4 @@ const foodList = [
   },
 ];
 
-export { foodCategory, foodList };
+export { categories, foods };

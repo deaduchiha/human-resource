@@ -5,7 +5,7 @@ const urlName = lastPart.split(".")[0];
 const importPath = `../../rinho/${urlName}.js`;
 
 import(importPath)
-  .then(({ foodCategory, foodList }) => {
+  .then(({ categories, foods }) => {
     // Create a function to initialize the swiper
     const mySwiper = new Swiper(".zomorodSwiper", {
       slidesPerView: 4,
@@ -18,7 +18,7 @@ import(importPath)
       $(".swiper-wrapper.zomorod-items__container").empty();
 
       // Filter the foodList based on the selected category
-      const filteredFoodList = foodList.filter(function (food) {
+      const filteredFoodList = foods.filter(function (food) {
         return food.category === category;
       });
 
@@ -50,20 +50,20 @@ import(importPath)
     }
 
     // Loop foodCategory data
-    foodCategory.forEach(function (category) {
+    categories.forEach(function (category) {
       const swiperSlide = $("<div>").addClass("swiper-slide");
       const imageHolder = $("<div>")
         .addClass("swiper-image-holder")
-        .attr("data-category", category.text);
-      const image = $("<img>").attr("src", category.image).attr("alt", "image");
+        .attr("data-category", category.category);
+      const image = $("<img>").attr("src", category.icon).attr("alt", "image");
       imageHolder.append(image);
-      const span = $("<span>").text(category.text);
+      const span = $("<span>").text(category.category);
       swiperSlide.append(imageHolder, span);
 
       // Add click event listener to each category slide
       swiperSlide.click(function () {
         // Get the category value
-        const categoryValue = category.text;
+        const categoryValue = category.category;
         // Filter food items based on the selected category
         filterFoodItems(categoryValue);
       });
@@ -91,7 +91,7 @@ import(importPath)
       foodContainer.empty();
 
       // Iterate through the foodList array
-      foodList.forEach(function (food) {
+      foods.forEach(function (food) {
         const html = `
       <div class="swiper-slide zomorod-items" id="openBtn">
         <div class="items__image">

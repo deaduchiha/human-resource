@@ -1,9 +1,9 @@
-const foodCategory = [
-  { id: 1, text: "صبحانه" },
-  { id: 2, text: "سالاد" },
-  { id: 3, text: "سوپ" },
-  { id: 4, text: "غذای اصلی" },
-  { id: 5, text: "نوشیدنی" },
+const categories = [
+  { id: 1, category: "صبحانه" },
+  { id: 2, category: "سالاد" },
+  { id: 3, category: "سوپ" },
+  { id: 4, category: "غذای اصلی" },
+  { id: 5, category: "نوشیدنی" },
 ];
 
 const foodList = [
@@ -121,4 +121,4 @@ const foodList = [
   },
 ];
 
-export { foodCategory, foodList };
+export { categories, foodList };

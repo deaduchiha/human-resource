@@ -5,7 +5,7 @@ const urlName = lastPart.split(".")[0];
 const importPath = `../../rinho/${urlName}.js`;
 
 import(importPath)
-  .then(({ foodCategory, foodList, baseCategory }) => {
+  .then(({ categories, foodList, baseCategory }) => {
     $(document).ready(() => {
       // categories slider
       let mySwiper = new Swiper(".categories", {
@@ -43,7 +43,7 @@ import(importPath)
         baseItems.addClass("active-base-category");
 
         // filter foodCategory based on the selected base category
-        const filteredFoodCategory = foodCategory.filter(
+        const filteredFoodCategory = categories.filter(
           (item) => item.base === base
         );
         swiperWrapper.empty();
@@ -52,11 +52,11 @@ import(importPath)
           const category = $("<div>").addClass("swiper-slide");
           category.attr("category-id", data.id);
           const iconHolder = $("<div>").addClass("icon-holder");
-          const categoryTitle = $("<span>").text(data.text);
+          const categoryTitle = $("<span>").text(data.category);
 
           if (index === 0) {
             category.addClass("active-category");
-            filterFoodsByCategory(data.text);
+            filterFoodsByCategory(data.category);
           }
 
           // Make an AJAX request to fetch the SVG content
@@ -72,7 +72,7 @@ import(importPath)
               swiperWrapper.append(category);
 
               category.on("click", () =>
-                handleCategoryClick(category, data.text)
+                handleCategoryClick(category, data.category)
               );
             },
             error: function () {
@@ -127,7 +127,7 @@ import(importPath)
         foodsWrapper.append(foodElements);
       }
 
-      filterFoodsByCategory(foodCategory[0].text);
+      filterFoodsByCategory(categories[0].category);
     });
   })
   .catch((error) => {

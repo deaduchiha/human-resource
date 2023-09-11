@@ -3,35 +3,35 @@ const baseCategory = [
   { id: 2, text: "نوشیدنی" },
 ];
 
-const foodCategory = [
+const categories = [
   {
     id: 1,
     base: "غذا",
-    text: "همبرگر",
+    category: "همبرگر",
     icon: "../rhino templates/fake data/sahel/foods-icon/1.svg",
   },
   {
     id: 2,
     base: "غذا",
-    text: "پیتزا",
+    category: "پیتزا",
     icon: "../rhino templates/fake data/sahel/foods-icon/2.svg",
   },
   {
     id: 3,
     base: "غذا",
-    text: "شیرینی",
+    category: "شیرینی",
     icon: "../rhino templates/fake data/sahel/foods-icon/3.svg",
   },
   {
     id: 4,
     base: "نوشیدنی",
-    text: "قهوه گرم",
+    category: "قهوه گرم",
     icon: "../rhino templates/fake data/sahel/foods-icon/2.svg",
   },
   {
     id: 5,
     base: "نوشیدنی",
-    text: "قهوه سرد",
+    category: "قهوه سرد",
     icon: "../rhino templates/fake data/sahel/foods-icon/1.svg",
   },
 ];
@@ -256,4 +256,4 @@ const foodList = [
   },
 ];
 
-export { foodCategory, foodList, baseCategory };
+export { categories, foodList, baseCategory };

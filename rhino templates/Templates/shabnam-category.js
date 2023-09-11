@@ -5,14 +5,16 @@ const urlName = lastPart.split(".")[0];
 const importPath = `../../rinho/${urlName}.js`;
 
 import(importPath)
-  .then(({ foodCategory, foodList }) => {
+  .then(({ categories, foodList }) => {
     $(document).ready(function () {
       const swiperWrapper = $(".categorySwiper .swiper-wrapper");
       const foodsWrapper = $(".foods");
 
       // Generate HTML for each category
-      foodCategory.forEach((category, index) => {
-        const slide = $("<div>").addClass("swiper-slide").text(category.text);
+      categories.forEach((category, index) => {
+        const slide = $("<div>")
+          .addClass("swiper-slide")
+          .text(category.category);
         slide.attr("data-category-id", category.id);
 
         // Set the first category as active
@@ -33,7 +35,7 @@ import(importPath)
       });
 
       // Filter foods based on the first category when the page loads
-      filterFoodsByCategory(foodCategory[0].id);
+      filterFoodsByCategory(categories[0].id);
 
       // Add click event handler to each slide
       const swiperSlides = $(".swiper-slide");
@@ -68,13 +70,14 @@ import(importPath)
         foodsWrapper.empty();
 
         // Get the selected category
-        const selectedCategory = foodCategory.find(
+        const selectedCategory = categories.find(
           (category) => category.id === categoryId
         );
+        console.log(selectedCategory);
 
         // Generate HTML for each food item of the selected category
         foodList.forEach(function (food) {
-          if (food.category === selectedCategory.text) {
+          if (food.category === selectedCategory.category) {
             const foodSlide = $('<div class="foods-item" id="openBtn" ></div>');
             foodSlide.attr("data-food-id", food.id); // Set the data-food-id attribute
 
