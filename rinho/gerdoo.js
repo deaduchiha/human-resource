@@ -1,27 +1,27 @@
-const foodCategory = [
+const categories = [
   {
     id: 1,
-    text: "قهوه گرم",
+    category: "قهوه گرم",
     icon: "../rhino templates/fake data/gerdoo/foods-icon/1.svg",
   },
   {
     id: 2,
-    text: "قهوه سرد",
+    category: "قهوه سرد",
     icon: "../rhino templates/fake data/gerdoo/foods-icon/2.svg",
   },
   {
     id: 3,
-    text: "شیرینی",
+    category: "شیرینی",
     icon: "../rhino templates/fake data/gerdoo/foods-icon/3.svg",
   },
   {
     id: 4,
-    text: "کیک",
+    category: "کیک",
     icon: "../rhino templates/fake data/gerdoo/foods-icon/2.svg",
   },
   {
     id: 5,
-    text: "دیگر",
+    category: "دیگر",
     icon: "../rhino templates/fake data/gerdoo/foods-icon/1.svg",
   },
 ];
@@ -170,4 +170,4 @@ const foodList = [
   },
 ];
 
-export { foodCategory, foodList };
+export { categories, foodList };

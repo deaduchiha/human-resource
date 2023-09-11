@@ -5,13 +5,13 @@ const urlName = lastPart.split(".")[0];
 const importPath = `../../rinho/${urlName}.js`;
 
 import(importPath)
-  .then(({ foodCategory, foodList }) => {
+  .then(({ categories, foodList }) => {
     $(document).ready(function () {
       const swiperWrapper = $(".categorySwiper .swiper-wrapper");
       const foodsWrapper = $(".foods");
 
-      // Loop through the foodCategory array
-      foodCategory.forEach((category, index) => {
+      // Loop through the categories array
+      categories.forEach((category, index) => {
         // Create a new swiper slide div with the category text and icon
         const slide = $("<div>").addClass("swiper-slide");
         slide.attr("data-category-id", category.id);
@@ -29,7 +29,7 @@ import(importPath)
           },
         });
 
-        const span = $("<span>").text(category.text);
+        const span = $("<span>").text(category.category);
 
         // Append the image and span to the slide
         slide.append(img).append(span);
@@ -55,7 +55,7 @@ import(importPath)
       });
 
       // Filter foods based on the first category when the page loads
-      filterFoodsByCategory(foodCategory[0].id);
+      filterFoodsByCategory(categories[0].id);
 
       // Add click event handler to each slide
       const swiperSlides = $(".second-page .swiper-slide");
@@ -95,13 +95,13 @@ import(importPath)
         foodsWrapper.empty();
 
         // Get the selected category
-        const selectedCategory = foodCategory.find(
+        const selectedCategory = categories.find(
           (category) => category.id === categoryId
         );
 
         // Generate HTML for each food item of the selected category
         foodList.forEach(function (food) {
-          if (food.category === selectedCategory.text) {
+          if (food.category === selectedCategory.category) {
             const foodSlide = $('<div class="foods-item" id="openBtn"></div>');
             foodSlide.attr("data-food-id", food.id); // Set the data-food-id attribute
             const foodImageHolder = $('<div class="food-item__image"></div>');

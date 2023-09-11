@@ -5,7 +5,7 @@ const urlName = lastPart.split(".")[0];
 const importPath = `../../rinho/${urlName}.js`;
 
 import(importPath)
-  .then(({ foodCategory, foodList }) => {
+  .then(({ categories, foodList }) => {
     $(document).ready(() => {
       // categories slider
       new Swiper(".categories", {
@@ -17,7 +17,7 @@ import(importPath)
       const foodsWrapper = $(".foods");
 
       // show categories
-      foodCategory.map((data, index) => {
+      categories.map((data, index) => {
         const category = $("<div>").addClass("swiper-slide");
         category.attr("category-id", data.id);
         const iconHolder = $("<div>").addClass("icon-holder");
@@ -92,7 +92,7 @@ import(importPath)
         foodsWrapper.append(foodElements);
       };
 
-      filterFoodsByCategory(foodCategory[0].text); // Pass the category name instead of ID
+      filterFoodsByCategory(categories[0].text); // Pass the category name instead of ID
     });
   })
   .catch((error) => {

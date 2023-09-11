@@ -1,4 +1,4 @@
-const foodCategory = [
+const categories = [
   {
     id: 1,
     text: "قهوه گرم",
@@ -141,4 +141,4 @@ const foodList = [
   },
 ];
 
-export { foodCategory, foodList };
+export { categories, foodList };

@@ -1,14 +1,14 @@
 const categories = [
-  { category: "پیتزا", image: "../rhino templates/fake data/dalia/pizza.png" },
-  { category: "برگر", image: "../rhino templates/fake data/dalia/burger.jpg" },
+  { category: "پیتزا", icon: "../rhino templates/fake data/dalia/pizza.png" },
+  { category: "برگر", icon: "../rhino templates/fake data/dalia/burger.jpg" },
   {
     category: "مرغ سوخاری",
-    image: "../rhino templates/fake data/dalia/pizza.png",
+    icon: "../rhino templates/fake data/dalia/pizza.png",
   },
-  { category: "سالاد", image: "../rhino templates/fake data/dalia/burger.jpg" },
+  { category: "سالاد", icon: "../rhino templates/fake data/dalia/burger.jpg" },
   {
     category: "پیش غذا",
-    image: "../rhino templates/fake data/dalia/pizza.png",
+    icon: "../rhino templates/fake data/dalia/pizza.png",
   },
 ];
 

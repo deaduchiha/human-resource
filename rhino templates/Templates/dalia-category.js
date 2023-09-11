@@ -24,7 +24,7 @@ import(importPath)
 
             $(this).addClass("active-category");
             $(".selected-category-holder span").text(data.category);
-            $(".selected-category-holder img").attr("src", data.image);
+            $(".selected-category-holder img").attr("src", data.icon);
 
             filterFoodsByCategory(data.category);
           });
