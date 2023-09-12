@@ -17,7 +17,7 @@ const categories = [
   },
 ];
 
-const foodsData = [
+const foods = [
   {
     id: 1,
     title: "حمص اسفناج",
@@ -166,4 +166,4 @@ const foodsData = [
   },
 ];
 
-export { categories, foodsData };
+export { categories, foods };

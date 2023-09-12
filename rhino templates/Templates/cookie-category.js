@@ -5,7 +5,7 @@ const urlName = lastPart.split(".")[0];
 const importPath = `../../rinho/${urlName}.js`;
 
 import(importPath)
-  .then(({ categories, foodList }) => {
+  .then(({ categories, foods }) => {
     $(document).ready(() => {
       // categories slider
       new Swiper(".categories", {
@@ -65,7 +65,7 @@ import(importPath)
         foodsWrapper.empty();
 
         // Get the selected category
-        const selectedCategory = foodList.filter(
+        const selectedCategory = foods.filter(
           (data) => data.category === categoryName
         );
 

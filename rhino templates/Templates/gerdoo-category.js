@@ -5,7 +5,7 @@ const urlName = lastPart.split(".")[0];
 const importPath = `../../rinho/${urlName}.js`;
 
 import(importPath)
-  .then(({ categories, foodList }) => {
+  .then(({ categories, foods }) => {
     $(document).ready(function () {
       const swiperWrapper = $(".categorySwiper .swiper-wrapper");
       const foodsWrapper = $(".foods");
@@ -84,12 +84,12 @@ import(importPath)
           // Get the selected category ID
           const categoryId = $(this).data("category-id");
 
-          // Filter foodList based on the selected category
+          // Filter foods based on the selected category
           filterFoodsByCategory(categoryId);
         }
       });
 
-      // Function to filter foodList based on the category ID
+      // Function to filter foods based on the category ID
       function filterFoodsByCategory(categoryId) {
         // Clear existing food items
         foodsWrapper.empty();
@@ -100,7 +100,7 @@ import(importPath)
         );
 
         // Generate HTML for each food item of the selected category
-        foodList.forEach(function (food) {
+        foods.forEach(function (food) {
           if (food.category === selectedCategory.category) {
             const foodSlide = $('<div class="foods-item" id="openBtn"></div>');
             foodSlide.attr("data-food-id", food.id); // Set the data-food-id attribute

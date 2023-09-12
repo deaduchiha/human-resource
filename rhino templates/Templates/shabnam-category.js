@@ -5,7 +5,7 @@ const urlName = lastPart.split(".")[0];
 const importPath = `../../rinho/${urlName}.js`;
 
 import(importPath)
-  .then(({ categories, foodList }) => {
+  .then(({ categories, foods }) => {
     $(document).ready(function () {
       const swiperWrapper = $(".categorySwiper .swiper-wrapper");
       const foodsWrapper = $(".foods");
@@ -76,7 +76,7 @@ import(importPath)
         console.log(selectedCategory);
 
         // Generate HTML for each food item of the selected category
-        foodList.forEach(function (food) {
+        foods.forEach(function (food) {
           if (food.category === selectedCategory.category) {
             const foodSlide = $('<div class="foods-item" id="openBtn" ></div>');
             foodSlide.attr("data-food-id", food.id); // Set the data-food-id attribute

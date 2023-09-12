@@ -6,7 +6,7 @@ const categories = [
   { id: 5, category: "نوشیدنی" },
 ];
 
-const foodList = [
+const foods = [
   {
     id: 1,
     title: "سالاد تابستانه",
@@ -121,4 +121,4 @@ const foodList = [
   },
 ];
 
-export { categories, foodList };
+export { categories, foods };

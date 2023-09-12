@@ -36,7 +36,7 @@ const subCategories = [
   },
 ];
 
-const foodList = [
+const foods = [
   {
     id: 1,
     title: "برگر کلاسیک",
@@ -256,4 +256,4 @@ const foodList = [
   },
 ];
 
-export { categories, foodList, subCategories };
+export { categories, foods, subCategories };

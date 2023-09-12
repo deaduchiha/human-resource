@@ -26,7 +26,7 @@ const categories = [
   },
 ];
 
-const foodList = [
+const foods = [
   {
     id: 1,
     title: "آفوگاتو",
@@ -170,4 +170,4 @@ const foodList = [
   },
 ];
 
-export { categories, foodList };
+export { categories, foods };

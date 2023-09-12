@@ -5,7 +5,7 @@ const urlName = lastPart.split(".")[0];
 const importPath = `../../rinho/${urlName}.js`;
 
 import(importPath)
-  .then(({ categories, foodsData }) => {
+  .then(({ categories, foods }) => {
     // code that uses categories and foodsData
     $(document).ready(() => {
       // categories
@@ -21,7 +21,7 @@ import(importPath)
 
       const swiperWrapper = $(".categories .swiper-wrapper");
       const subCategoriesSwiperWrapper = $(".subCategory .swiper-wrapper");
-      const foods = $(".foods");
+      const foodsDiv = $(".foods");
 
       function populateSubCategories(subCategoryData) {
         subCategoriesSwiperWrapper.empty();
@@ -54,10 +54,10 @@ import(importPath)
       });
 
       function filterFoodsByCategory(category, subCategory) {
-        foods.empty();
+        foodsDiv.empty();
         const filteredFoods = category
-          ? foodsData.filter((food) => food.category == category)
-          : foodsData.filter((food) => food.subCategory == subCategory);
+          ? foods.filter((food) => food.category == category)
+          : foods.filter((food) => food.subCategory == subCategory);
 
         filteredFoods.map((data) => {
           const food = $("<div>").addClass("items");
@@ -77,7 +77,7 @@ import(importPath)
             .text(data.description);
 
           food.append(foodImage, foodTitle, foodPrice, foodDescription);
-          foods.append(food);
+          foodsDiv.append(food);
         });
       }
 

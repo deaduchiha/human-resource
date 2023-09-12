@@ -5,11 +5,11 @@ const urlName = lastPart.split(".")[0];
 const importPath = `../../rinho/${urlName}.js`;
 
 import(importPath)
-  .then(({ foodList }) => {
+  .then(({ foods }) => {
     $(document).ready(function () {
       const swiperWrapper = $(".foodSwiper .swiper-wrapper");
 
-      foodList.forEach(function (food) {
+      foods.forEach(function (food) {
         const foodSlide = $('<div class="swiper-slide" id="openBtn"></div>');
         const foodImage = $("<img>")
           .attr("src", food.images[0])

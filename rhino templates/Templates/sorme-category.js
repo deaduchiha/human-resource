@@ -7,7 +7,7 @@ const urlName = lastPart.split(".")[0];
 const importPath = `../../rinho/${urlName}.js`;
 
 import(importPath)
-  .then(({ categories, foodList }) => {
+  .then(({ categories, foods }) => {
     $(document).ready(function () {
       new Swiper(".subCategory", {
         slidesPerView: "auto",
@@ -118,7 +118,7 @@ import(importPath)
               // Add click event handler to the food slide
               foodSlide.on("click", function () {
                 const foodId = food.id; // Use the ID or a unique identifier of the food item
-                const clickedFood = foodList.find((item) => item.id === foodId);
+                const clickedFood = foods.find((item) => item.id === foodId);
 
                 // Open the popup with the details of the clicked food item
                 openPopup(clickedFood);
@@ -153,7 +153,7 @@ import(importPath)
           // Add click event handler to the food slide
           foodSlide.on("click", function () {
             const foodId = food.id; // Use the ID or a unique identifier of the food item
-            const clickedFood = foodList.find((item) => item.id === foodId);
+            const clickedFood = foods.find((item) => item.id === foodId);
 
             // Open the popup with the details of the clicked food item
             openPopup(clickedFood);
@@ -188,14 +188,14 @@ import(importPath)
       function getFoodListByCategory(categoryId) {
         if (categoryId === 1) {
           // Return all food items
-          return foodList;
+          return foods;
         } else {
           // Filter food items based on the selected category ID
           const selectedCategory = categories.find(
             (category) => category.id === categoryId
           );
           if (selectedCategory) {
-            return foodList.filter(
+            return foods.filter(
               (food) => food.category === selectedCategory.text
             );
           } else {

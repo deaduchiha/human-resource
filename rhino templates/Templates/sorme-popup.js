@@ -7,11 +7,11 @@ const urlName = lastPart.split(".")[0];
 const importPath = `../../rinho/${urlName}.js`;
 
 import(importPath)
-  .then(({ foodList }) => {
+  .then(({ foods }) => {
     $(document).ready(function () {
       $(document).on("click", "#openBtn", function () {
         const foodIndex = $(this).index();
-        const food = foodList[foodIndex];
+        const food = foods[foodIndex];
 
         openPopup(food);
       });

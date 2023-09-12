@@ -7,11 +7,11 @@ const urlName = lastPart.split(".")[0];
 const importPath = `../../rinho/${urlName}.js`;
 
 import(importPath)
-  .then(({ foodList }) => {
+  .then(({ foods }) => {
     $(document).ready(function () {
       $(document).on("click", "#openBtn", function () {
         const foodId = $(this).data("food-id"); // Get the data-food-id attribute from the clicked food item
-        const food = foodList.find((item) => item.id === foodId); // Find the corresponding food object
+        const food = foods.find((item) => item.id === foodId); // Find the corresponding food object
 
         openPopup(food);
       });
