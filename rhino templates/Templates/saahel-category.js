@@ -5,7 +5,7 @@ const urlName = lastPart.split(".")[0];
 const importPath = `../../rinho/${urlName}.js`;
 
 import(importPath)
-  .then(({ categories, foodList, baseCategory }) => {
+  .then(({ subCategories, foodList, categories }) => {
     $(document).ready(() => {
       // categories slider
       let mySwiper = new Swiper(".categories", {
@@ -17,20 +17,20 @@ import(importPath)
       const foodsWrapper = $(".foods");
       const baseCategoryHolder = $(".second-page__base-category");
 
-      baseCategory.map((base, index) => {
-        const baseItems = $("<span>").text(base.text);
+      categories.map((base, index) => {
+        const baseItems = $("<span>").text(base.category);
 
         if (index === 0) {
           baseItems.addClass("active-base-category");
           handleBaseCategoryClick(
-            base.text,
+            base.category,
             baseCategoryHolder.find("span:first-child")
           );
         }
 
         baseCategoryHolder.append(baseItems);
         baseItems.on("click", () =>
-          handleBaseCategoryClick(base.text, baseItems)
+          handleBaseCategoryClick(base.category, baseItems)
         );
       });
 
@@ -43,8 +43,8 @@ import(importPath)
         baseItems.addClass("active-base-category");
 
         // filter foodCategory based on the selected base category
-        const filteredFoodCategory = categories.filter(
-          (item) => item.base === base
+        const filteredFoodCategory = subCategories.filter(
+          (item) => item.category === base
         );
         swiperWrapper.empty();
 
@@ -52,11 +52,11 @@ import(importPath)
           const category = $("<div>").addClass("swiper-slide");
           category.attr("category-id", data.id);
           const iconHolder = $("<div>").addClass("icon-holder");
-          const categoryTitle = $("<span>").text(data.category);
+          const categoryTitle = $("<span>").text(data.subCategory);
 
           if (index === 0) {
             category.addClass("active-category");
-            filterFoodsByCategory(data.category);
+            filterFoodsByCategory(data.subCategory);
           }
 
           // Make an AJAX request to fetch the SVG content
@@ -72,7 +72,7 @@ import(importPath)
               swiperWrapper.append(category);
 
               category.on("click", () =>
-                handleCategoryClick(category, data.category)
+                handleCategoryClick(category, data.subCategory)
               );
             },
             error: function () {
@@ -127,7 +127,7 @@ import(importPath)
         foodsWrapper.append(foodElements);
       }
 
-      filterFoodsByCategory(categories[0].category);
+      filterFoodsByCategory(subCategories[0].subCategory);
     });
   })
   .catch((error) => {
