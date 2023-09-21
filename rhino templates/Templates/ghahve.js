@@ -20,10 +20,16 @@ import(importPath).then(({ categories, subCategories }) => {
     const filteredSubCategories = subCategories.filter(
       (subData) => subData.category === selectedCategory
     );
-    filteredSubCategories.forEach((subCat) => {
+    filteredSubCategories.map((subCat) => {
       const subSwiperSlide = $("<div>")
         .addClass("swiper-slide")
         .text(subCat.subCategory);
+      subSwiperSlide.on("click", () => {
+        $(".sub-category-swiper .swiper-slide").removeClass(
+          "active-subCategory"
+        );
+        subSwiperSlide.addClass("active-subCategory");
+      });
       subCategoryWrapper.append(subSwiperSlide);
     });
     // Initialize the sub-category swiper for the new content
@@ -32,7 +38,7 @@ import(importPath).then(({ categories, subCategories }) => {
     });
   }
 
-  categories.forEach((data) => {
+  categories.map((data) => {
     const categorySwiperSlide = $("<div>").addClass("swiper-slide");
     const categoryIcon = $("<div>").addClass("category-icon");
     const icon = $("<svg>").attr("stroke", "currentColor");
@@ -57,6 +63,7 @@ import(importPath).then(({ categories, subCategories }) => {
 
       // Update subcategories based on the selected category
       updateSubcategories(selectedCategory);
+      $(".sub-category-swiper .swiper-slide:first-child").trigger("click");
     });
 
     categorySwiperSlide.append(categoryIcon, categoryText);

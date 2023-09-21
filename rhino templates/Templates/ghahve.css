@@ -123,13 +123,17 @@ a {
   stroke: #fff;
 }
 
+.sub-category-swiper .swiper-slide {
+  opacity: 0.5;
+}
 .sub-category-swiper {
   margin: 18px 0;
   font-weight: 600;
   color: #fff;
 }
 .active-subCategory {
-  color: red !important;
+  color: #fff !important;
+  opacity: 1 !important;
 }
 
 @media screen and (max-width: 700px) {
