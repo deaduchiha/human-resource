@@ -41,6 +41,11 @@ const subCategories = [
     category: "نوشیدنی گرم",
     subCategory: "دمنوش",
   },
+  {
+    id: 4,
+    category: "شیرینی",
+    subCategory: "شکلات",
+  },
 ];
 const foods = [];
 

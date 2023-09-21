@@ -123,6 +123,15 @@ a {
   stroke: #fff;
 }
 
+.sub-category-swiper {
+  margin: 18px 0;
+  font-weight: 600;
+  color: #fff;
+}
+.active-subCategory {
+  color: red !important;
+}
+
 @media screen and (max-width: 700px) {
   .container {
     height: 100vh;
