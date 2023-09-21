@@ -5,7 +5,6 @@ const urlName = lastPart.split(".")[0];
 const importPath = `../../rinho/${urlName}.js`;
 
 import(importPath).then(({ categories, subCategories }) => {
-  //   $(document).ready(function () {});
   new Swiper(".category-swiper", {
     slidesPerView: "auto",
   });
@@ -15,13 +14,31 @@ import(importPath).then(({ categories, subCategories }) => {
   const categorySwiperWrapper = $(".category-swiper .swiper-wrapper");
   const subCategoryWrapper = $(".sub-category-swiper .swiper-wrapper");
 
-  categories.map((data) => {
+  // Define a function to update subcategories
+  function updateSubcategories(selectedCategory) {
+    subCategoryWrapper.empty();
+    const filteredSubCategories = subCategories.filter(
+      (subData) => subData.category === selectedCategory
+    );
+    filteredSubCategories.forEach((subCat) => {
+      const subSwiperSlide = $("<div>")
+        .addClass("swiper-slide")
+        .text(subCat.subCategory);
+      subCategoryWrapper.append(subSwiperSlide);
+    });
+    // Initialize the sub-category swiper for the new content
+    new Swiper(".sub-category-swiper", {
+      slidesPerView: 5,
+    });
+  }
+
+  categories.forEach((data) => {
     const categorySwiperSlide = $("<div>").addClass("swiper-slide");
     const categoryIcon = $("<div>").addClass("category-icon");
     const icon = $("<svg>").attr("stroke", "currentColor");
     categoryIcon.append(icon);
     const categoryText = $("<span>").text(data.category);
-    // Make an AJAX request to fetch the SVG content
+
     $.ajax({
       url: data.icon, // URL to the SVG file
       dataType: "xml", // Set the data type to XML
@@ -34,34 +51,18 @@ import(importPath).then(({ categories, subCategories }) => {
     });
 
     categorySwiperSlide.on("click", () => {
-      //   const selectedCategory = data.category;
       $(".category-swiper .swiper-slide").removeClass("active-category");
-      // Add active class to the clicked slide
       categorySwiperSlide.addClass("active-category");
+      const selectedCategory = data.category;
 
-      const selectedCategory = subCategories.filter(
-        (subData) => subData.category === data.category
-      );
-
-      subCategoryWrapper.empty();
-      selectedCategory.map((data) => {
-        const subSwiperSlide = $("<div>").addClass("swiper-slide");
-        subSwiperSlide.text(data.subCategory);
-        subCategoryWrapper.append(subSwiperSlide);
-
-        subSwiperSlide.on("click", () => {
-          $(".sub-category-swiper .swiper-slide").removeClass(
-            "active-subCategory"
-          );
-          subSwiperSlide.addClass("active-subCategory");
-        });
-      });
-
-      $(".sub-category-swiper .swiper-slide:first-child").trigger("click");
+      // Update subcategories based on the selected category
+      updateSubcategories(selectedCategory);
     });
 
     categorySwiperSlide.append(categoryIcon, categoryText);
     categorySwiperWrapper.append(categorySwiperSlide);
   });
+
+  // Trigger the click event for the first category slide to initialize subcategories
   $(".swiper-slide:first-child").trigger("click");
 });
