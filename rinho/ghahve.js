@@ -2,27 +2,27 @@ const categories = [
   {
     id: 1,
     category: "نوشیدنی گرم",
-    icon: "",
+    icon: "../rhino templates/fake data/sahel/foods-icon/1.svg",
   },
   {
     id: 2,
     category: "نوشیدنی سرد",
-    icon: "",
+    icon: "../rhino templates/fake data/sahel/foods-icon/2.svg",
   },
   {
     id: 3,
     category: "شیرینی",
-    icon: "",
+    icon: "../rhino templates/fake data/sahel/foods-icon/3.svg",
   },
   {
     id: 4,
     category: "کیک",
-    icon: "",
+    icon: "../rhino templates/fake data/sahel/foods-icon/2.svg",
   },
   {
     id: 5,
     category: "دیگر",
-    icon: "",
+    icon: "../rhino templates/fake data/sahel/foods-icon/1.svg",
   },
 ];
 const subCategories = [

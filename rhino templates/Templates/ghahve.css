@@ -43,6 +43,7 @@ a {
   background-size: cover;
   height: 45vh;
   padding: 16px;
+
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -95,16 +96,31 @@ a {
   font-weight: 400;
   font-size: 1rem;
   margin-left: 25px;
-
+  opacity: 0.5;
   display: flex;
   align-items: center;
   gap: 12px;
+}
+.active-category {
+  background-color: #6c5746 !important;
+  opacity: 1 !important;
 }
 .category-icon {
   width: 40px;
   height: 40px;
   border-radius: 100%;
   background-color: #413831;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.category-icon svg {
+  width: 28px;
+  height: 30px;
+}
+.category-icon svg path {
+  stroke: #fff;
 }
 
 @media screen and (max-width: 700px) {
