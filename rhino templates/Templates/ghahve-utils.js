@@ -25,5 +25,6 @@ export function openPopup(food) {
   });
   //   details
   $(".popup_details p").text(food.description);
+
   $("#popup").fadeIn();
 }
