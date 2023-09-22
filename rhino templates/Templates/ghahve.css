@@ -213,3 +213,33 @@ a {
     height: 130px;
   }
 }
+
+@media screen and (max-height: 629px) {
+  .header {
+    height: 45vh;
+  }
+  .header > h3 {
+    bottom: 0;
+  }
+  .category-swiper .swiper-slide {
+    font-size: 0.825rem;
+    padding: 5px 10px;
+  }
+  .category-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .category-icon svg {
+    width: 18px;
+    height: 20px;
+  }
+  .sub-category-swiper {
+    margin: 10px 0;
+  }
+  .foodsSwiper {
+    height: calc(100vh - 59vh);
+  }
+  .foods-image {
+    height: 100px;
+  }
+}
