@@ -32,13 +32,20 @@ export function openPopup(food) {
   $(".videoHolder video").attr("src", food.videoUrl);
   videoHolder.on("click", () => {
     isVideoOpen = !isVideoOpen;
-    isVideoOpen
-      ? $(".videoHolder").css("display", "block")
-      : $(".videoHolder").css("display", "none");
-    $("html, body, .popup-container, .popup-content").animate(
-      { scrollTop: $(document).height() },
-      "slow"
-    );
+    if (isVideoOpen) {
+      $(".videoHolder").css("display", "block");
+
+      $("html, body, .popup-container, .popup-content").animate(
+        { scrollTop: $(document).height() },
+        "slow"
+      );
+
+      $(".popup_video span").text("بستن ویدیو");
+    } else {
+      $(".videoHolder").css("display", "none");
+
+      $(".popup_video span").text("نمایش ویدیو");
+    }
   });
 
   $("#popup").fadeIn();
