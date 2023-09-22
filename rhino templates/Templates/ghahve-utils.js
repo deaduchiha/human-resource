@@ -25,6 +25,17 @@ export function openPopup(food) {
   });
   //   details
   $(".popup_details p").text(food.description);
-
+  //video
+  const videoHolder = $(".popup_video");
+  let isVideoOpen = false;
+  $(".videoHolder").css("display", "none");
+  $(".videoHolder video").attr("src", food.videoUrl);
+  videoHolder.on("click", () => {
+    isVideoOpen = !isVideoOpen;
+    isVideoOpen
+      ? $(".videoHolder").css("display", "block")
+      : $(".videoHolder").css("display", "none");
+    console.log(isVideoOpen);
+  });
   $("#popup").fadeIn();
 }
