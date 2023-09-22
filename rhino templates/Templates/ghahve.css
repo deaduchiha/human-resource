@@ -139,6 +139,12 @@ a {
 .foodsSwiper {
   height: calc(100vh - 61.1vh);
 }
+.foodsSwiper .swiper-slide-prev {
+  transform: translateX(-25px);
+}
+.foodsSwiper .swiper-slide-next {
+  transform: translateX(25px);
+}
 .foodsSwiper .swiper-slide {
   width: 180px;
   display: flex;
@@ -158,6 +164,8 @@ a {
 }
 .foods-image img {
   object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 .foodsSwiper .swiper-slide h2 {
   color: #fff;
@@ -188,5 +196,20 @@ a {
   .container {
     height: 100vh;
     width: 100%;
+  }
+}
+
+@media screen and (max-height: 674px) {
+  .header {
+    height: 40vh;
+  }
+  .header > h3 {
+    bottom: 0;
+  }
+  .foodsSwiper {
+    height: calc(100vh - 59vh);
+  }
+  .foods-image {
+    height: 130px;
   }
 }
