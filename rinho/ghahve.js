@@ -112,6 +112,37 @@ const foods = [
   },
   {
     id: 2,
+    title: "کیک شکلاتی",
+    englishTitle: "chocolate cake",
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
+    images: [
+      "../rhino templates/fake data/ghahve/pumpkin late.png",
+      "../rhino templates/fake data/ghahve/pumpkin late.png",
+      "../rhino templates/fake data/ghahve/pumpkin late.png",
+    ],
+    category: "شیرینی",
+    subCategory: "شکلات",
+    sizes: [
+      {
+        price: 55000,
+        size: "۸۰ ٪ شیر",
+      },
+      {
+        price: 65000,
+        size: "۶۰ ٪ شیر",
+      },
+      {
+        price: 75000,
+        size: "۴۰ ٪ شیر",
+      },
+      {
+        price: 85000,
+        size: "بدون شیر",
+      },
+    ],
+  },
+  {
+    id: 2,
     title: "کارامل ماکیاتو",
     englishTitle: "caramel makiato",
     videoUrl: "../rhino templates/Shared/pizza.mp4",
