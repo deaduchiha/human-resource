@@ -24,5 +24,6 @@ export function openPopup(food) {
     imagesWrapper.append(imgSlide);
   });
   //   details
+  $(".popup_details p").text(food.description);
   $("#popup").fadeIn();
 }
