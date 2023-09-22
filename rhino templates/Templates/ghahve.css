@@ -140,7 +140,6 @@ a {
 }
 
 .foodsSwiper {
-  height: calc(100vh - 61.1vh);
 }
 .foodsSwiper .swiper-slide-prev {
   transform: translateX(-25px);
@@ -211,7 +210,6 @@ a {
     bottom: 0;
   }
   .foodsSwiper {
-    height: calc(100vh - 59vh);
   }
   .foods-image {
     height: 130px;
