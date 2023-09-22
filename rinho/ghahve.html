@@ -16,7 +16,10 @@
     <!-- fonts -->
     <link rel="stylesheet" href="../rhino templates/Shared/Styles/fonts.css" />
     <!-- popup -->
-
+    <link
+      rel="stylesheet"
+      href="../rhino templates/Templates/ghahve-popup.css"
+    />
     <!-- templates -->
     <link rel="stylesheet" href="../rhino templates/Templates/ghahve.css" />
   </head>
@@ -72,8 +75,67 @@
           </div>
         </div>
       </div>
+      <div id="popup" class="popup-container">
+        <div class="popup-content">
+          <!-- popup header -->
+          <div class="popup_header">
+            <div id="closeBtn">
+              <img
+                src="../rhino templates/Template Images/Icons/ghahve-back-arrow.svg"
+                alt="close"
+              />
+            </div>
+          </div>
+          <!-- popup food title -->
+          <div class="popup_titles">
+            <h2>title number 2</h2>
+            <h3>title number 1</h3>
+          </div>
+          <!-- popup food title -->
+          <div class="popup_price">
+            <span>20,000</span>
+          </div>
+          <!-- popup food sizes -->
+          <div class="popup_sizes">
+            <div>۸۰ شیر</div>
+            <div>۶۰ شیر</div>
+            <div>۴۰ شیر</div>
+            <div>بدون شیر</div>
+          </div>
+          <!-- popup food images -->
+          <div class="popup_images">
+            <div class="swiper popup-images-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="../rhino templates/fake data/ghahve/pumpkin late.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="../rhino templates/fake data/ghahve/pumpkin late.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="../rhino templates/fake data/ghahve/pumpkin late.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
 
-<script src="../rhino templates/Templates/ghahve.js"></script>
+<script src="../rhino templates/Templates/ghahve.js" type="module"></script>
+<script
+  src="../rhino templates/Templates/ghahve-popup.js"
+  type="module"
+></script>

@@ -50,6 +50,8 @@ import(importPath).then(({ categories, subCategories, foods }) => {
 
     filteredFoodsBySubCategory.map((foodData) => {
       const swiperSlide = $("<div>").addClass("swiper-slide");
+      swiperSlide.attr("data-food-id", foodData.id);
+      swiperSlide.attr("id", "openBtn");
       const foodImageHolder = $("<div>").addClass("foods-image");
       const image = $("<img>")
         .attr("src", foodData.images[0])
