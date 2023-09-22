@@ -4,7 +4,7 @@ const lastPart = pathParts[pathParts.length - 1];
 const urlName = lastPart.split(".")[0];
 const importPath = `../../rinho/${urlName}.js`;
 
-import(importPath).then(({ categories, subCategories }) => {
+import(importPath).then(({ categories, subCategories, foods }) => {
   new Swiper(".category-swiper", {
     slidesPerView: "auto",
   });
@@ -13,10 +13,12 @@ import(importPath).then(({ categories, subCategories }) => {
   });
   const categorySwiperWrapper = $(".category-swiper .swiper-wrapper");
   const subCategoryWrapper = $(".sub-category-swiper .swiper-wrapper");
+  const foodsWrapper = $(".foodsSwiper .swiper-wrapper");
 
-  // Define a function to update subcategories
   function updateSubcategories(selectedCategory) {
     subCategoryWrapper.empty();
+    foodsWrapper.empty();
+
     const filteredSubCategories = subCategories.filter(
       (subData) => subData.category === selectedCategory
     );
@@ -24,11 +26,13 @@ import(importPath).then(({ categories, subCategories }) => {
       const subSwiperSlide = $("<div>")
         .addClass("swiper-slide")
         .text(subCat.subCategory);
+      // click on sub category
       subSwiperSlide.on("click", () => {
         $(".sub-category-swiper .swiper-slide").removeClass(
           "active-subCategory"
         );
         subSwiperSlide.addClass("active-subCategory");
+        filterFoods(subCat.subCategory);
       });
       subCategoryWrapper.append(subSwiperSlide);
     });
@@ -37,6 +41,36 @@ import(importPath).then(({ categories, subCategories }) => {
       slidesPerView: 5,
     });
   }
+
+  function filterFoods(subCategory) {
+    const filteredFoodsBySubCategory = foods.filter(
+      (foodData) => foodData.subCategory === subCategory
+    );
+    foodsWrapper.empty();
+
+    filteredFoodsBySubCategory.map((foodData) => {
+      const swiperSlide = $("<div>").addClass("swiper-slide");
+      const foodImageHolder = $("<div>").addClass("foods-image");
+      const image = $("<img>")
+        .attr("src", foodData.images[0])
+        .attr("alt", foodData.englishTitle);
+      foodImageHolder.append(image);
+      const titleHolder = $("<div>");
+      const title = $("<h3>").text(foodData.title);
+      const englishTitle = $("<h2>").text(foodData.englishTitle);
+      titleHolder.append(title, englishTitle);
+      const price = $("<span>").text(foodData.sizes[0].price);
+      swiperSlide.append(foodImageHolder, titleHolder, price);
+      foodsWrapper.append(swiperSlide);
+    });
+  }
+  // Initialize the foods swiper
+  new Swiper(".foodsSwiper", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 30,
+    initialSlide: 1,
+  });
 
   categories.map((data) => {
     const categorySwiperSlide = $("<div>").addClass("swiper-slide");

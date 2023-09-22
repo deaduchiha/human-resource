@@ -47,6 +47,100 @@ const subCategories = [
     subCategory: "شکلات",
   },
 ];
-const foods = [];
+const foods = [
+  {
+    id: 1,
+    title: "لاته کدو حلوایی",
+    englishTitle: "pumpkin late",
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
+    images: [
+      "../rhino templates/fake data/ghahve/pumpkin late.png",
+      "../rhino templates/fake data/ghahve/pumpkin late.png",
+      "../rhino templates/fake data/ghahve/pumpkin late.png",
+    ],
+    category: "نوشیدنی گرم",
+    subCategory: "قهوه",
+    sizes: [
+      {
+        price: 75000,
+        size: "۸۰ ٪ شیر",
+      },
+      {
+        price: 85000,
+        size: "۶۰ ٪ شیر",
+      },
+      {
+        price: 95000,
+        size: "۴۰ ٪ شیر",
+      },
+      {
+        price: 105000,
+        size: "بدون شیر",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "موکا",
+    englishTitle: "moka",
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
+    images: [
+      "../rhino templates/fake data/ghahve/pumpkin late.png",
+      "../rhino templates/fake data/ghahve/pumpkin late.png",
+      "../rhino templates/fake data/ghahve/pumpkin late.png",
+    ],
+    category: "نوشیدنی گرم",
+    subCategory: "قهوه",
+    sizes: [
+      {
+        price: 25000,
+        size: "۸۰ ٪ شیر",
+      },
+      {
+        price: 35000,
+        size: "۶۰ ٪ شیر",
+      },
+      {
+        price: 45000,
+        size: "۴۰ ٪ شیر",
+      },
+      {
+        price: 55000,
+        size: "بدون شیر",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "کارامل ماکیاتو",
+    englishTitle: "caramel makiato",
+    videoUrl: "../rhino templates/Shared/pizza.mp4",
+    images: [
+      "../rhino templates/fake data/ghahve/pumpkin late.png",
+      "../rhino templates/fake data/ghahve/pumpkin late.png",
+      "../rhino templates/fake data/ghahve/pumpkin late.png",
+    ],
+    category: "نوشیدنی گرم",
+    subCategory: "قهوه",
+    sizes: [
+      {
+        price: 55000,
+        size: "۸۰ ٪ شیر",
+      },
+      {
+        price: 65000,
+        size: "۶۰ ٪ شیر",
+      },
+      {
+        price: 75000,
+        size: "۴۰ ٪ شیر",
+      },
+      {
+        price: 85000,
+        size: "بدون شیر",
+      },
+    ],
+  },
+];
 
 export { categories, subCategories, foods };
