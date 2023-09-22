@@ -155,6 +155,22 @@
   font-weight: 400;
   top: 73vh;
   text-align: justify;
+  height: 130px;
+  overflow: hidden;
+}
+
+.popup_video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #ffffff66;
+  color: #302924;
+  padding: 8px 16px;
+  border-radius: 12px;
+  position: absolute;
+  top: 90vh;
+  margin-right: 16px;
 }
 
 @keyframes popup-fade {
