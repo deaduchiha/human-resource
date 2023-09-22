@@ -35,7 +35,11 @@ export function openPopup(food) {
     isVideoOpen
       ? $(".videoHolder").css("display", "block")
       : $(".videoHolder").css("display", "none");
-    console.log(isVideoOpen);
+    $("html, body, .popup-container, .popup-content").animate(
+      { scrollTop: $(document).height() },
+      "slow"
+    );
   });
+
   $("#popup").fadeIn();
 }
