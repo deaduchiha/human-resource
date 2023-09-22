@@ -100,6 +100,8 @@ a {
   display: flex;
   align-items: center;
   gap: 12px;
+
+  cursor: pointer;
 }
 .active-category {
   background-color: #6c5746 !important;
@@ -125,6 +127,7 @@ a {
 
 .sub-category-swiper .swiper-slide {
   opacity: 0.5;
+  cursor: pointer;
 }
 .sub-category-swiper {
   margin: 18px 0;
@@ -153,6 +156,7 @@ a {
   text-align: center;
   gap: 16px;
   opacity: 0.5;
+  cursor: pointer;
 }
 .foods-image {
   width: 100%;
