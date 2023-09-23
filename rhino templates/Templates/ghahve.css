@@ -209,8 +209,7 @@ a {
   .header > h3 {
     bottom: 0;
   }
-  .foodsSwiper {
-  }
+
   .foods-image {
     height: 130px;
   }
@@ -238,10 +237,20 @@ a {
   .sub-category-swiper {
     margin: 10px 0;
   }
-  .foodsSwiper {
-    height: calc(100vh - 59vh);
-  }
+
   .foods-image {
     height: 100px;
+  }
+}
+
+@media screen and (max-height: 551px) {
+  .header {
+    height: 250px;
+  }
+  .foodsSwiper .swiper-slide {
+    gap: 8;
+  }
+  .foods-image {
+    height: 80px;
   }
 }
