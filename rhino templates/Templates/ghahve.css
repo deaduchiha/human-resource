@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent !important;
+  outline: none !important;
 }
 
 body {
@@ -84,7 +86,7 @@ a {
   color: #fff;
 }
 .content {
-  padding: 0 16px;
+  padding: 0 16px 0 0;
 }
 
 .category-swiper .swiper-slide {
@@ -100,7 +102,6 @@ a {
   display: flex;
   align-items: center;
   gap: 12px;
-
   cursor: pointer;
 }
 .active-category {
@@ -139,8 +140,6 @@ a {
   opacity: 1 !important;
 }
 
-.foodsSwiper {
-}
 .foodsSwiper .swiper-slide-prev {
   transform: translateX(-25px);
 }
@@ -148,6 +147,7 @@ a {
   transform: translateX(25px);
 }
 .foodsSwiper .swiper-slide {
+  transition: 0.6s all;
   width: 180px;
   display: flex;
   flex-direction: column;
