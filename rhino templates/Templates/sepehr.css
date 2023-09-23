@@ -69,15 +69,16 @@ a {
   font-family: dana;
   margin-top: 20px;
 }
+
 .first-page_next {
-  background: linear-gradient(285.5deg, #c96424 7.38%, #ffa75f 91.69%);
+  /* background: linear-gradient(285.5deg, #c96424 7.38%, #ffa75f 91.69%); */
   width: 128px;
   height: 128px;
   border-radius: 100%;
   align-self: flex-end;
 
   position: relative;
-  left: -30px;
+  left: -20px;
   margin-top: 50px;
 
   display: flex;
