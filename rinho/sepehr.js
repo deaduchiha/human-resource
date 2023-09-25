@@ -1,28 +1,28 @@
 const categories = [
   {
     id: 1,
-    category: "صبحانه",
-    icon: "./rhino templates/fake data/sahel/foods-icon/1.svg",
+    category: "آسیایی",
+    icon: "../rhino templates/fake data/sahel/foods-icon/1.svg",
   },
   {
     id: 2,
-    category: "سالاد",
-    icon: "./rhino templates/fake data/sahel/foods-icon/2.svg",
+    category: "نودل",
+    icon: "../rhino templates/fake data/sahel/foods-icon/2.svg",
   },
   {
     id: 3,
     category: "سوپ",
-    icon: "./rhino templates/fake data/sahel/foods-icon/3.svg",
+    icon: "../rhino templates/fake data/sahel/foods-icon/3.svg",
   },
   {
     id: 4,
     category: "غذای اصلی",
-    icon: "./rhino templates/fake data/sahel/foods-icon/2.svg",
+    icon: "../rhino templates/fake data/sahel/foods-icon/2.svg",
   },
   {
     id: 5,
     category: "نوشیدنی",
-    icon: "./rhino templates/fake data/sahel/foods-icon/1.svg",
+    icon: "../rhino templates/fake data/sahel/foods-icon/1.svg",
   },
 ];
 
@@ -31,7 +31,7 @@ const foods = [
     id: 1,
     title: "سالاد تابستانه",
     englishTitle: "Summer Salad",
-    category: "سالاد",
+    category: "نودل",
     videoUrl: "../rhino templates/Shared/pizza.mp4",
     sizes: [
       { size: "یک نفره", price: 25000 },
@@ -51,7 +51,7 @@ const foods = [
     id: 2,
     title: "سالاد استفناج ساده",
     englishTitle: "Spinach Salad",
-    category: "سالاد",
+    category: "نودل",
     videoUrl: "../rhino templates/Shared/pizza.mp4",
     sizes: [
       { size: "یک نفره", price: 25000 },
@@ -71,7 +71,7 @@ const foods = [
     id: 3,
     title: "سالاد آووکادو",
     englishTitle: "Avocado Salad",
-    category: "سالاد",
+    category: "نودل",
     videoUrl: "../rhino templates/Shared/pizza.mp4",
     sizes: [
       { size: "یک نفره", price: 25000 },
@@ -91,7 +91,7 @@ const foods = [
     id: 4,
     title: "سالاد فصل",
     englishTitle: "Season Salad",
-    category: "صبحانه",
+    category: "آسیایی",
     videoUrl: "../rhino templates/Shared/pizza.mp4",
     sizes: [
       { size: "یک نفره", price: 25000 },
@@ -111,7 +111,7 @@ const foods = [
     id: 5,
     title: "سالاد توت‌فرنگی",
     englishTitle: "strawberry salad",
-    category: "صبحانه",
+    category: "آسیایی",
     videoUrl: "../rhino templates/Shared/pizza.mp4",
     sizes: [
       { size: "یک نفره", price: 25000 },
@@ -151,7 +151,7 @@ const foods = [
     id: 7,
     title: "سالاد تابستانه",
     englishTitle: "سالاد تابستانه",
-    category: "سالاد",
+    category: "نودل",
     videoUrl: "../rhino templates/Shared/pizza.mp4",
     sizes: [
       { size: "یک نفره", price: 25000 },

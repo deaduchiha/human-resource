@@ -16,3 +16,7 @@
   font-family: iranSansX;
   src: url("../Fonts/iran\ sans\ x.ttf");
 }
+@font-face {
+  font-family: vazir;
+  src: url("../Fonts/Vazirmatn.ttf");
+}

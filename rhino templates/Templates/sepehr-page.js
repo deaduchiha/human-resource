@@ -8,6 +8,7 @@ const outerSwiper = new Swiper(".mySwiper", {
 
 const innerSwiper = new Swiper(".categorySwiper", {
   slidesPerView: "auto",
+  spaceBetween: 20,
   nested: true, // Enable nested swiper
 });
 
