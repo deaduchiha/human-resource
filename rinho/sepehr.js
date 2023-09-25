@@ -1,9 +1,29 @@
 const categories = [
-  { id: 1, category: "صبحانه" },
-  { id: 2, category: "سالاد" },
-  { id: 3, category: "سوپ" },
-  { id: 4, category: "غذای اصلی" },
-  { id: 5, category: "نوشیدنی" },
+  {
+    id: 1,
+    category: "صبحانه",
+    icon: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  },
+  {
+    id: 2,
+    category: "سالاد",
+    icon: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  },
+  {
+    id: 3,
+    category: "سوپ",
+    icon: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  },
+  {
+    id: 4,
+    category: "غذای اصلی",
+    icon: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  },
+  {
+    id: 5,
+    category: "نوشیدنی",
+    icon: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  },
 ];
 
 const foods = [
