@@ -100,6 +100,18 @@ a {
   align-self: center;
 }
 
+/* second page */
+
 .second-page {
   background: #ffffff;
+}
+
+.second-page__prev {
+  width: 35px;
+  height: 35px;
+  margin: 30px 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
