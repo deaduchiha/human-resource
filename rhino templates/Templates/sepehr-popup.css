@@ -32,12 +32,12 @@
 
 .popup-images-swiper {
   margin: 16px;
-  height: 35vh;
+  height: 33vh;
 }
 .popup-images-swiper img {
   object-fit: contain;
   width: 100%;
-  height: 85%;
+  height: 88%;
 }
 
 .popup-images-swiper .swiper-pagination-bullet {
@@ -51,6 +51,80 @@
 .popup-images-swiper .swiper-pagination-bullet-active {
   background-color: #6079a8;
   width: 26px;
+}
+.popup_sizes {
+  display: flex;
+  gap: 40px;
+  margin: 34px auto;
+  width: fit-content;
+  color: #727272;
+}
+.popup_titles {
+  margin: 0 16px;
+}
+.popup_titles h2 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #323232;
+}
+.popup_titles h3 {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #727272;
+  margin-top: 4px;
+}
+.popup_details h2 {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #323232;
+}
+.popup_details p {
+  font-family: vazir;
+  font-weight: 400;
+  font-size: 0.925rem;
+  color: #727272;
+  text-align: justify;
+}
+.popup_details {
+  margin: 0 16px 30px;
+}
+
+.popup-price_video {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 16px;
+}
+.popup-video_holder {
+  color: #323232;
+  font-weight: 400;
+  font-size: 0.925rem;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.popup_price span::after {
+  font-family: vazir;
+  margin-right: 5px;
+  content: "تومان";
+  font-weight: 400;
+  font-size: 0.925rem;
+}
+.popup_price span {
+  font-family: dana;
+  color: #323232;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.videoHolder {
+  position: relative;
+  top: 5vh;
+}
+.videoHolder video {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
 }
 
 @keyframes popup-fade {
