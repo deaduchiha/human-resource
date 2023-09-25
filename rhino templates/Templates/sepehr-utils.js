@@ -22,7 +22,14 @@ export function openPopup(food) {
   food.sizes.map((sizeData) => {
     const size = $("<div>").text(sizeData.size);
     sizes.append(size);
+
+    size.on("click", () => {
+      $(".popup_sizes div").removeClass("active-size");
+      size.addClass("active-size");
+      $(".popup_price span").text(sizeData.price);
+    });
   });
+  $(".popup_sizes div:first-child").trigger("click");
 
   //   details
   $(".popup_details p").text(food.description);

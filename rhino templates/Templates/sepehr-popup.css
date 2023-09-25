@@ -127,6 +127,11 @@
   margin-bottom: 10px;
 }
 
+.active-size {
+  color: #323232 !important;
+  font-weight: 700;
+}
+
 @keyframes popup-fade {
   0% {
     opacity: 0;
