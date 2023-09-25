@@ -6,11 +6,8 @@ const outerSwiper = new Swiper(".mySwiper", {
   allowTouchMove: false, // Disable dragging on touch devices
 });
 
-const innerSwiper = new Swiper(".menuSwiper", {
-  initialSlide: 0,
-  watchSlidesProgress: true,
+const innerSwiper = new Swiper(".categorySwiper", {
   slidesPerView: "auto",
-  spaceBetween: 45,
   nested: true, // Enable nested swiper
 });
 

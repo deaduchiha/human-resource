@@ -2,27 +2,27 @@ const categories = [
   {
     id: 1,
     category: "صبحانه",
-    icon: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    icon: "./rhino templates/fake data/sahel/foods-icon/1.svg",
   },
   {
     id: 2,
     category: "سالاد",
-    icon: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    icon: "./rhino templates/fake data/sahel/foods-icon/2.svg",
   },
   {
     id: 3,
     category: "سوپ",
-    icon: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    icon: "./rhino templates/fake data/sahel/foods-icon/3.svg",
   },
   {
     id: 4,
     category: "غذای اصلی",
-    icon: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    icon: "./rhino templates/fake data/sahel/foods-icon/2.svg",
   },
   {
     id: 5,
     category: "نوشیدنی",
-    icon: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    icon: "./rhino templates/fake data/sahel/foods-icon/1.svg",
   },
 ];
 

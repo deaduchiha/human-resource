@@ -105,6 +105,8 @@ a {
 .second-page {
   background: #ffffff;
   position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
 .second-page__prev {
@@ -183,4 +185,11 @@ a {
       #f5f7fb 73.04%
     ),
     linear-gradient(0deg, #ffffff, #ffffff);
+}
+
+.categorySwiper {
+  width: 100%;
+  height: 100%;
+}
+.categorySwiper .swiper-slide {
 }
