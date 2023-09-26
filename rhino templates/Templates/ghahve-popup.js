@@ -22,6 +22,8 @@ import(importPath)
     });
 
     $(document).on("click", "#closeBtn", function () {
+      $(".videoHolder").css("display", "none");
+      $(".popup_video span").text("نمایش ویدیو");
       $("#popup").fadeOut();
     });
   })
