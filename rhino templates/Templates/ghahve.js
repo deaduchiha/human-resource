@@ -18,7 +18,6 @@ import(importPath).then(({ categories, subCategories, foods }) => {
     slidesPerView: "auto",
     centeredSlides: true,
     spaceBetween: 30,
-    initialSlide: 1,
   });
   const categorySwiperWrapper = $(".category-swiper .swiper-wrapper");
   const subCategoryWrapper = $(".sub-category-swiper .swiper-wrapper");
@@ -39,7 +38,6 @@ import(importPath).then(({ categories, subCategories, foods }) => {
       slidesPerView: "auto",
       centeredSlides: true, // You can set it here again
       spaceBetween: 30,
-      initialSlide: 1,
     });
     filteredSubCategories.map((subCat) => {
       const subSwiperSlide = $("<div>")
