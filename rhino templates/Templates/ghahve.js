@@ -100,13 +100,12 @@ import(importPath).then(({ categories, subCategories, foods }) => {
 
     categorySwiperSlide.on("click", () => {
       foodsSwiper.destroy();
-      // Create a new Swiper instance with updated options
-
+      // Initialize the swiper with updated content
       foodsSwiper = new Swiper(".foodsSwiper", {
         slidesPerView: "auto",
         centeredSlides: true,
         spaceBetween: 30,
-        initialSlide: 1,
+        initialSlide: 1, // Set the initial slide here
       });
 
       $(".category-swiper .swiper-slide").removeClass("active-category");
