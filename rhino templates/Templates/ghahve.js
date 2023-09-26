@@ -4,12 +4,21 @@ const lastPart = pathParts[pathParts.length - 1];
 const urlName = lastPart.split(".")[0];
 const importPath = `../../rinho/${urlName}.js`;
 
+new Swiper(".category-swiper", {
+  slidesPerView: "auto",
+});
+new Swiper(".sub-category-swiper", {
+  slidesPerView: 5,
+});
+
+// Initialize the foods swiper
+
 import(importPath).then(({ categories, subCategories, foods }) => {
-  new Swiper(".category-swiper", {
+  let foodsSwiper = new Swiper(".foodsSwiper", {
     slidesPerView: "auto",
-  });
-  new Swiper(".sub-category-swiper", {
-    slidesPerView: 5,
+    centeredSlides: true,
+    spaceBetween: 30,
+    initialSlide: 1,
   });
   const categorySwiperWrapper = $(".category-swiper .swiper-wrapper");
   const subCategoryWrapper = $(".sub-category-swiper .swiper-wrapper");
@@ -22,6 +31,16 @@ import(importPath).then(({ categories, subCategories, foods }) => {
     const filteredSubCategories = subCategories.filter(
       (subData) => subData.category === selectedCategory
     );
+    // Destroy the existing Swiper instance
+    foodsSwiper.destroy();
+
+    // Create a new Swiper instance with updated options
+    foodsSwiper = new Swiper(".foodsSwiper", {
+      slidesPerView: "auto",
+      centeredSlides: true, // You can set it here again
+      spaceBetween: 30,
+      initialSlide: 1,
+    });
     filteredSubCategories.map((subCat) => {
       const subSwiperSlide = $("<div>")
         .addClass("swiper-slide")
@@ -67,13 +86,6 @@ import(importPath).then(({ categories, subCategories, foods }) => {
       foodsWrapper.append(swiperSlide);
     });
   }
-  // Initialize the foods swiper
-  new Swiper(".foodsSwiper", {
-    slidesPerView: "auto",
-    centeredSlides: true,
-    spaceBetween: 30,
-    initialSlide: 1,
-  });
 
   categories.map((data) => {
     const categorySwiperSlide = $("<div>").addClass("swiper-slide");
