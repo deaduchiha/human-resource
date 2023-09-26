@@ -11,14 +11,7 @@ new Swiper(".sub-category-swiper", {
   slidesPerView: 5,
 });
 
-// Initialize the foods swiper
-
 import(importPath).then(({ categories, subCategories, foods }) => {
-  let foodsSwiper = new Swiper(".foodsSwiper", {
-    slidesPerView: "auto",
-    centeredSlides: true,
-    spaceBetween: 30,
-  });
   const categorySwiperWrapper = $(".category-swiper .swiper-wrapper");
   const subCategoryWrapper = $(".sub-category-swiper .swiper-wrapper");
   const foodsWrapper = $(".foodsSwiper .swiper-wrapper");
@@ -30,15 +23,7 @@ import(importPath).then(({ categories, subCategories, foods }) => {
     const filteredSubCategories = subCategories.filter(
       (subData) => subData.category === selectedCategory
     );
-    // Destroy the existing Swiper instance
-    foodsSwiper.destroy();
 
-    // Create a new Swiper instance with updated options
-    foodsSwiper = new Swiper(".foodsSwiper", {
-      slidesPerView: "auto",
-      centeredSlides: true, // You can set it here again
-      spaceBetween: 30,
-    });
     filteredSubCategories.map((subCat) => {
       const subSwiperSlide = $("<div>")
         .addClass("swiper-slide")
@@ -51,8 +36,10 @@ import(importPath).then(({ categories, subCategories, foods }) => {
         subSwiperSlide.addClass("active-subCategory");
         filterFoods(subCat.subCategory);
       });
+
       subCategoryWrapper.append(subSwiperSlide);
     });
+
     // Initialize the sub-category swiper for the new content
     new Swiper(".sub-category-swiper", {
       slidesPerView: 5,
@@ -103,7 +90,23 @@ import(importPath).then(({ categories, subCategories, foods }) => {
       },
     });
 
+    let foodsSwiper = new Swiper(".foodsSwiper", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 30,
+      initialSlide: 1,
+    });
     categorySwiperSlide.on("click", () => {
+      foodsSwiper.destroy();
+      // Create a new Swiper instance with updated options
+      foodsSwiper = new Swiper(".foodsSwiper", {
+        slidesPerView: "auto",
+        centeredSlides: true, // You can set it here again
+        spaceBetween: 30,
+        initialSlide: 1,
+      });
+      foodsSwiper.update();
+
       $(".category-swiper .swiper-slide").removeClass("active-category");
       categorySwiperSlide.addClass("active-category");
       const selectedCategory = data.category;
