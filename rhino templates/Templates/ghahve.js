@@ -78,6 +78,14 @@ import(importPath).then(({ categories, subCategories, foods }) => {
       swiperSlide.append(foodImageHolder, titleHolder, price);
       foodsWrapper.append(swiperSlide);
     });
+    foodsSwiper.update();
+    // Initialize the swiper with updated content
+    foodsSwiper = new Swiper(".foodsSwiper", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 30,
+      initialSlide: 1, // Set the initial slide here
+    });
   }
 
   categories.map((data) => {
