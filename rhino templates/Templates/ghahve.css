@@ -128,12 +128,12 @@ a {
   opacity: 1 !important;
 }
 
-.foodsSwiper .swiper-slide-prev {
+/* .foodsSwiper .swiper-slide-prev {
   transform: translateX(-25px);
 }
 .foodsSwiper .swiper-slide-next {
   transform: translateX(25px);
-}
+} */
 .foodsSwiper .swiper-slide {
   transition: 0.6s all;
   width: 180px;
