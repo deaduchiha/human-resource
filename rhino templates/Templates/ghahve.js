@@ -62,6 +62,7 @@ import(importPath).then(({ categories, subCategories, foods }) => {
       const englishTitle = $("<h2>").text(foodData.englishTitle);
       titleHolder.append(title, englishTitle);
       const price = $("<span>").text(foodData.sizes[0].price);
+
       swiperSlide.append(foodImageHolder, titleHolder, price);
       foodsWrapper.append(swiperSlide);
     });

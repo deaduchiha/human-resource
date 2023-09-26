@@ -10,8 +10,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
+
   overflow: hidden;
   font-family: dana;
 }
@@ -25,18 +24,7 @@ a {
   background: #37302b;
   height: 100vh;
   width: 700px;
-}
-
-/* popup container */
-.popup-container {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9999;
+  max-height: 100vh;
 }
 
 .header {

@@ -9,6 +9,10 @@ export function openPopup(food) {
   food.sizes.map((sizeData) => {
     const size = $("<div>").text(sizeData.size);
     sizes.append(size);
+
+    size.on("click", () => {
+      $(".popup_price span").text(sizeData.price);
+    });
   });
 
   // images
