@@ -23,7 +23,6 @@
     inset 0px -162px 147px -52px rgba(0, 0, 0, 0.952);
 
   animation: popup-fade 0.6s ease-in-out;
-  /* border-radius: 28px; */
 }
 .popup__info {
   padding: 24px 16px;

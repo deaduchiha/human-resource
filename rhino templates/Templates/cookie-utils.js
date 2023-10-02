@@ -2,10 +2,10 @@ export const videoHolder = $("<div>").addClass("videoHolder");
 
 export function openPopup(food, popupWrapper, prices, priceHolder) {
   let isVideoOpen = false;
-  $(".popup-content").css(
-    "background",
-    `url('${food.popupBackground}') no-repeat`
-  );
+  $(".popup-content").css({
+    background: `url('${food.popupBackground}') no-repeat`,
+  });
+  $(".popup-content").css("background-size", "cover");
   const popupContainer = $(".popup-container");
   const title = $("<p>").addClass("popup-food_title").text(food.title);
   const englishTitle = $("<p>")
