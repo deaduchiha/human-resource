@@ -77,6 +77,12 @@ export function openPopup(food, popupWrapper, prices, priceHolder) {
       const source = $("<source>");
       source.attr("src", videoSrc);
       source.attr("type", videoType);
+      videoLogo
+        .attr(
+          "src",
+          "../rhino templates/Template Images/Icons/cookie-video.svg"
+        )
+        .attr("alt", "video");
 
       video.append(source);
       video.css("visibility", "visible");
