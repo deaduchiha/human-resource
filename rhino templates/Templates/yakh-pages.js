@@ -28,7 +28,13 @@ new Swiper(".foodsSwipper", {
 });
 
 $(document).ready(function () {
-  const outerSwiper = new Swiper(".mySwiper", {});
+  const outerSwiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".first-page__next",
+      prevEl: ".second-page__prev",
+    },
+    allowTouchMove: false, // Disable dragging on touch devices
+  });
 
   const innerSwiper = new Swiper(".menuSwiper", {
     initialSlide: 0,
